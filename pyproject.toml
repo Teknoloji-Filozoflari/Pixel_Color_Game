@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixel-coloring"
+version = "0.15.0"
+description = "Piksel Atolyesi — a desktop color-by-number game"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.13"
+dependencies = ["PySide6-Essentials>=6.8,<7", "numpy>=2.1,<3", "Pillow>=11,<13"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.11"]
+
+[project.scripts]
+pixel-coloring = "pixel_coloring.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pixel_coloring = ["resources/fonts/*", "resources/paintings/*.pcolor", "resources/paintings/*.json", "resources/icons/*", "resources/translations.json", "resources/painting_titles.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

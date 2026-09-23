@@ -1,0 +1,3218 @@
+{
+  "sample-gallery-01-v1": {
+    "en": "Gentleman of the Forest",
+    "az": "Meşənin centlmeni",
+    "es": "El caballero del bosque",
+    "ru": "Джентльмен леса"
+  },
+  "sample-gallery-02-v1": {
+    "en": "Autumn Wanderer",
+    "az": "Payız səyyahı",
+    "es": "Viajero de otoño",
+    "ru": "Осенний странник"
+  },
+  "sample-gallery-03-v1": {
+    "en": "Library Guardian",
+    "az": "Kitabxana keşikçisi",
+    "es": "Guardián de la biblioteca",
+    "ru": "Хранитель библиотеки"
+  },
+  "sample-gallery-04-v1": {
+    "en": "The Ibex's Rocky Throne",
+    "az": "Dağ keçisinin qayalı taxtı",
+    "es": "El trono rocoso del íbice",
+    "ru": "Скальный трон горного козла"
+  },
+  "sample-gallery-05-v1": {
+    "en": "Palace Peacock",
+    "az": "Saray tovuzquşu",
+    "es": "El pavo real del palacio",
+    "ru": "Дворцовый павлин"
+  },
+  "sample-gallery-06-v1": {
+    "en": "The Lighthouse's Last Light",
+    "az": "Mayakın son işığı",
+    "es": "La última luz del faro",
+    "ru": "Последний свет маяка"
+  },
+  "sample-gallery-07-v1": {
+    "en": "Mountain Express",
+    "az": "Dağ ekspresi",
+    "es": "Expreso de montaña",
+    "ru": "Горный экспресс"
+  },
+  "sample-gallery-08-v1": {
+    "en": "Cherry Blossom Garden",
+    "az": "Sakura bağı",
+    "es": "Jardín de cerezos",
+    "ru": "Сад сакуры"
+  },
+  "sample-gallery-09-v1": {
+    "en": "Coral Traveler",
+    "az": "Mərcanların yolçusu",
+    "es": "Viajero entre corales",
+    "ru": "Путник среди кораллов"
+  },
+  "sample-gallery-10-v1": {
+    "en": "Dragon's Castle",
+    "az": "Əjdahanın qalası",
+    "es": "El castillo del dragón",
+    "ru": "Замок дракона"
+  },
+  "sample-gallery-11-v1": {
+    "en": "Moonlight Fairy",
+    "az": "Ay işığı pərisi",
+    "es": "Hada de la luz lunar",
+    "ru": "Фея лунного света"
+  },
+  "sample-gallery-12-v1": {
+    "en": "Paper Fairytale",
+    "az": "Kağız nağıl",
+    "es": "Cuento de papel",
+    "ru": "Бумажная сказка"
+  },
+  "sample-gallery-13-v1": {
+    "en": "Sky Island",
+    "az": "Səma adası",
+    "es": "Isla del cielo",
+    "ru": "Небесный остров"
+  },
+  "sample-gallery-14-v1": {
+    "en": "Mushroom Village",
+    "az": "Göbələk kəndi",
+    "es": "Aldea de setas",
+    "ru": "Грибная деревня"
+  },
+  "sample-gallery-15-v1": {
+    "en": "Starry Unicorn",
+    "az": "Ulduzlu təkbuynuz",
+    "es": "Unicornio estrellado",
+    "ru": "Звёздный единорог"
+  },
+  "sample-gallery-16-v1": {
+    "en": "Little Firebird",
+    "az": "Balaca od quşu",
+    "es": "Pequeño pájaro de fuego",
+    "ru": "Маленькая жар-птица"
+  },
+  "sample-gallery-17-v1": {
+    "en": "King of the Forest",
+    "az": "Meşənin kralı",
+    "es": "Rey del bosque",
+    "ru": "Король леса"
+  },
+  "sample-gallery-18-v1": {
+    "en": "Bamboo Friend",
+    "az": "Bambuk dostu",
+    "es": "Amigo del bambú",
+    "ru": "Бамбуковый друг"
+  },
+  "sample-gallery-19-v1": {
+    "en": "Curious Meerkat",
+    "az": "Maraqlı surikat",
+    "es": "Suricata curiosa",
+    "ru": "Любопытный сурикат"
+  },
+  "sample-gallery-20-v1": {
+    "en": "Polar Penguin",
+    "az": "Qütb pinqvini",
+    "es": "Pingüino polar",
+    "ru": "Полярный пингвин"
+  },
+  "sample-gallery-21-v1": {
+    "en": "Leaf in the Ice",
+    "az": "Buzdakı yarpaq",
+    "es": "Hoja en el hielo",
+    "ru": "Лист во льду"
+  },
+  "sample-gallery-22-v1": {
+    "en": "Sound of the Waterfall",
+    "az": "Şəlalənin səsi",
+    "es": "El sonido de la cascada",
+    "ru": "Шум водопада"
+  },
+  "sample-gallery-23-v1": {
+    "en": "Colors of the Desert",
+    "az": "Səhranın rəngləri",
+    "es": "Colores del desierto",
+    "ru": "Краски пустыни"
+  },
+  "sample-gallery-24-v1": {
+    "en": "Stone Pine Bark",
+    "az": "Fıstıq şamının qabığı",
+    "es": "Corteza de pino piñonero",
+    "ru": "Кора пинии"
+  },
+  "sample-gallery-25-v1": {
+    "en": "Snowy Pines",
+    "az": "Qarlı şamlar",
+    "es": "Pinos nevados",
+    "ru": "Заснеженные сосны"
+  },
+  "sample-gallery-26-v1": {
+    "en": "Pine Cones",
+    "az": "Şam qozaları",
+    "es": "Piñas de pino",
+    "ru": "Сосновые шишки"
+  },
+  "sample-gallery-27-v1": {
+    "en": "Cappadocia Balloons",
+    "az": "Kapadokya şarları",
+    "es": "Globos de Capadocia",
+    "ru": "Воздушные шары Каппадокии"
+  },
+  "sample-gallery-28-v1": {
+    "en": "Glow of the Night Sea",
+    "az": "Gecə dənizinin parıltısı",
+    "es": "El brillo del mar nocturno",
+    "ru": "Сияние ночного моря"
+  },
+  "sample-gallery-29-v1": {
+    "en": "Tuscan Road",
+    "az": "Toskana yolu",
+    "es": "Camino de la Toscana",
+    "ru": "Дорога Тосканы"
+  },
+  "sample-gallery-30-v1": {
+    "en": "Sand Spits of the Shallow Lake",
+    "az": "Dayaz gölün qum dilləri",
+    "es": "Lenguas de arena del lago",
+    "ru": "Песчаные косы мелкого озера"
+  },
+  "sample-gallery-31-v1": {
+    "en": "Sailboat Bay",
+    "az": "Yelkənli körfəz",
+    "es": "Bahía de veleros",
+    "ru": "Бухта парусников"
+  },
+  "sample-gallery-32-v1": {
+    "en": "Dirt Road After Rain",
+    "az": "Yağışdan sonrakı torpaq yol",
+    "es": "Camino de tierra tras la lluvia",
+    "ru": "Грунтовая дорога после дождя"
+  },
+  "sample-gallery-33-v1": {
+    "en": "Windmill",
+    "az": "Külək dəyirmanı",
+    "es": "Molino de viento",
+    "ru": "Ветряная мельница"
+  },
+  "sample-gallery-34-v1": {
+    "en": "Moon's Reflection",
+    "az": "Ayın əksi",
+    "es": "El reflejo de la luna",
+    "ru": "Отражение луны"
+  },
+  "sample-gallery-35-v1": {
+    "en": "Sunset Pier",
+    "az": "Günbatımı körpüsü",
+    "es": "Muelle al atardecer",
+    "ru": "Причал на закате"
+  },
+  "sample-gallery-36-v1": {
+    "en": "Istanbul Evening",
+    "az": "İstanbul axşamı",
+    "es": "Atardecer en Estambul",
+    "ru": "Вечер в Стамбуле"
+  },
+  "sample-gallery-37-v1": {
+    "en": "Venice Canal",
+    "az": "Venesiya kanalı",
+    "es": "Canal de Venecia",
+    "ru": "Венецианский канал"
+  },
+  "sample-gallery-38-v1": {
+    "en": "Paris Street",
+    "az": "Paris küçəsi",
+    "es": "Calle de París",
+    "ru": "Парижская улица"
+  },
+  "sample-gallery-39-v1": {
+    "en": "Kyoto Lanterns",
+    "az": "Kyoto fənərləri",
+    "es": "Faroles de Kioto",
+    "ru": "Фонари Киото"
+  },
+  "sample-gallery-40-v1": {
+    "en": "Prague Bridge",
+    "az": "Praqa körpüsü",
+    "es": "Puente de Praga",
+    "ru": "Пражский мост"
+  },
+  "sample-gallery-41-v1": {
+    "en": "Amsterdam Houses",
+    "az": "Amsterdam evləri",
+    "es": "Casas de Ámsterdam",
+    "ru": "Дома Амстердама"
+  },
+  "sample-gallery-42-v1": {
+    "en": "Stones of Mardin",
+    "az": "Mardin daşları",
+    "es": "Las piedras de Mardin",
+    "ru": "Камни Мардина"
+  },
+  "sample-gallery-43-v1": {
+    "en": "Mosaic Passage",
+    "az": "Mozaikalı keçid",
+    "es": "Pasaje de mosaicos",
+    "ru": "Мозаичный проход"
+  },
+  "sample-gallery-44-v1": {
+    "en": "Metro Platform",
+    "az": "Metro platforması",
+    "es": "Andén de metro",
+    "ru": "Платформа метро"
+  },
+  "sample-gallery-45-v1": {
+    "en": "Castle of Clouds",
+    "az": "Buludların qalası",
+    "es": "Castillo de las nubes",
+    "ru": "Замок облаков"
+  },
+  "sample-gallery-46-v1": {
+    "en": "Forest Wizard",
+    "az": "Meşə sehrbazı",
+    "es": "Mago del bosque",
+    "ru": "Лесной волшебник"
+  },
+  "sample-gallery-47-v1": {
+    "en": "Red Fox",
+    "az": "Qırmızı tülkü",
+    "es": "Zorro rojo",
+    "ru": "Рыжая лиса"
+  },
+  "sample-gallery-48-v1": {
+    "en": "Dancer of the Sea",
+    "az": "Dənizin rəqqası",
+    "es": "Bailarín del mar",
+    "ru": "Танцор моря"
+  },
+  "sample-gallery-49-v1": {
+    "en": "Poppy Field",
+    "az": "Xaşxaş tarlası",
+    "es": "Campo de amapolas",
+    "ru": "Маковое поле"
+  },
+  "sample-gallery-50-v1": {
+    "en": "Tropical Garden",
+    "az": "Tropik bağ",
+    "es": "Jardín tropical",
+    "ru": "Тропический сад"
+  },
+  "sample-gallery-51-v1": {
+    "en": "Mediterranean Lighthouse",
+    "az": "Aralıq dənizi mayakı",
+    "es": "Faro mediterráneo",
+    "ru": "Средиземноморский маяк"
+  },
+  "sample-gallery-52-v1": {
+    "en": "Beyond the Mountains",
+    "az": "Dağların arxasında",
+    "es": "Más allá de las montañas",
+    "ru": "За горами"
+  },
+  "sample-gallery-53-v1": {
+    "en": "Alaçatı Street",
+    "az": "Alaçatı küçəsi",
+    "es": "Calle de Alaçatı",
+    "ru": "Улица Алачаты"
+  },
+  "sample-gallery-54-v1": {
+    "en": "London Evening",
+    "az": "London axşamı",
+    "es": "Atardecer en Londres",
+    "ru": "Лондонский вечер"
+  },
+  "sample-gallery-55-v1": {
+    "en": "Sunflower Morning",
+    "az": "Günəbaxan səhəri",
+    "es": "Mañana de girasoles",
+    "ru": "Утро подсолнухов"
+  },
+  "sample-gallery-56-v1": {
+    "en": "Forest Stream",
+    "az": "Meşə çayı",
+    "es": "Arroyo del bosque",
+    "ru": "Лесной ручей"
+  },
+  "sample-gallery-57-v1": {
+    "en": "Colors of the Canyon",
+    "az": "Kanyonun rəngləri",
+    "es": "Colores del cañón",
+    "ru": "Краски каньона"
+  },
+  "sample-gallery-58-v1": {
+    "en": "Spring Meadow",
+    "az": "Bahar çəmənliyi",
+    "es": "Pradera primaveral",
+    "ru": "Весенний луг"
+  },
+  "sample-gallery-59-v1": {
+    "en": "Emerald Dragon",
+    "az": "Zümrüd əjdaha",
+    "es": "Dragón esmeralda",
+    "ru": "Изумрудный дракон"
+  },
+  "sample-gallery-60-v1": {
+    "en": "World of the Music Box",
+    "az": "Musiqi qutusunun dünyası",
+    "es": "El mundo de la caja de música",
+    "ru": "Мир музыкальной шкатулки"
+  },
+  "sample-gallery-61-v1": {
+    "en": "Sky Ship",
+    "az": "Səma gəmisi",
+    "es": "Barco del cielo",
+    "ru": "Небесный корабль"
+  },
+  "sample-gallery-62-v1": {
+    "en": "Mermaid's Garden",
+    "az": "Su pərisinin bağı",
+    "es": "Jardín de la sirena",
+    "ru": "Сад русалки"
+  },
+  "sample-gallery-63-v1": {
+    "en": "Spotted Salamander",
+    "az": "Xallı salamandra",
+    "es": "Salamandra moteada",
+    "ru": "Пятнистая саламандра"
+  },
+  "sample-gallery-64-v1": {
+    "en": "Dance of the Crowned Cranes",
+    "az": "Taclı durnaların rəqsi",
+    "es": "Danza de las grullas coronadas",
+    "ru": "Танец венценосных журавлей"
+  },
+  "sample-gallery-65-v1": {
+    "en": "Steppe Horse",
+    "az": "Bozqır atı",
+    "es": "Caballo de la estepa",
+    "ru": "Степная лошадь"
+  },
+  "sample-gallery-66-v1": {
+    "en": "Rainforest Toucan",
+    "az": "Yağış meşəsinin tukanı",
+    "es": "Tucán de la selva",
+    "ru": "Тукан тропического леса"
+  },
+  "sample-gallery-67-v1": {
+    "en": "Fjord Morning",
+    "az": "Fyord səhəri",
+    "es": "Mañana en el fiordo",
+    "ru": "Утро во фьорде"
+  },
+  "sample-gallery-68-v1": {
+    "en": "Rice Terraces",
+    "az": "Düyü terrasları",
+    "es": "Terrazas de arroz",
+    "ru": "Рисовые террасы"
+  },
+  "sample-gallery-69-v1": {
+    "en": "Snowy Mountain Cabin",
+    "az": "Qarlı dağ evi",
+    "es": "Cabaña de montaña nevada",
+    "ru": "Заснеженный горный домик"
+  },
+  "sample-gallery-70-v1": {
+    "en": "Lakeside Camp",
+    "az": "Göl kənarında düşərgə",
+    "es": "Campamento junto al lago",
+    "ru": "Лагерь у озера"
+  },
+  "sample-gallery-71-v1": {
+    "en": "Lisbon Tram",
+    "az": "Lissabon tramvayı",
+    "es": "Tranvía de Lisboa",
+    "ru": "Лиссабонский трамвай"
+  },
+  "sample-gallery-72-v1": {
+    "en": "Safranbolu Houses",
+    "az": "Safranbolu evləri",
+    "es": "Casas de Safranbolu",
+    "ru": "Дома Сафранболу"
+  },
+  "sample-gallery-73-v1": {
+    "en": "Copenhagen Harbor",
+    "az": "Kopenhagen limanı",
+    "es": "Puerto de Copenhague",
+    "ru": "Гавань Копенгагена"
+  },
+  "sample-gallery-74-v1": {
+    "en": "Seoul Street",
+    "az": "Seul küçəsi",
+    "es": "Calle de Seúl",
+    "ru": "Улица Сеула"
+  },
+  "sample-gallery-75-v1": {
+    "en": "Smiling Daisy",
+    "az": "Gülümsəyən çobanyastığı",
+    "es": "Margarita sonriente",
+    "ru": "Улыбающаяся ромашка"
+  },
+  "sample-gallery-76-v1": {
+    "en": "Apple Tree",
+    "az": "Alma ağacı",
+    "es": "Manzano",
+    "ru": "Яблоня"
+  },
+  "sample-gallery-77-v1": {
+    "en": "Peaceful Sunset",
+    "az": "Sakit günbatımı",
+    "es": "Atardecer tranquilo",
+    "ru": "Тихий закат"
+  },
+  "sample-gallery-78-v1": {
+    "en": "Forest Mushrooms",
+    "az": "Meşə göbələkləri",
+    "es": "Setas del bosque",
+    "ru": "Лесные грибы"
+  },
+  "sample-gallery-79-v1": {
+    "en": "White Water Lily",
+    "az": "Ağ su zanbağı",
+    "es": "Nenúfar blanco",
+    "ru": "Белая кувшинка"
+  },
+  "sample-gallery-80-v1": {
+    "en": "Little Waterfall",
+    "az": "Balaca şəlalə",
+    "es": "Pequeña cascada",
+    "ru": "Маленький водопад"
+  },
+  "sample-gallery-81-v1": {
+    "en": "Wheat Path",
+    "az": "Sünbül yolu",
+    "es": "Sendero de espigas",
+    "ru": "Тропа среди колосьев"
+  },
+  "sample-gallery-82-v1": {
+    "en": "Duckling",
+    "az": "Ördək balası",
+    "es": "Patito",
+    "ru": "Утёнок"
+  },
+  "sample-gallery-83-v1": {
+    "en": "Ladybird",
+    "az": "Parabüzən",
+    "es": "Mariquita",
+    "ru": "Божья коровка"
+  },
+  "sample-gallery-84-v1": {
+    "en": "Cheerful Goldfish",
+    "az": "Şən qızıl balıq",
+    "es": "Pez dorado alegre",
+    "ru": "Весёлая золотая рыбка"
+  },
+  "sample-gallery-85-v1": {
+    "en": "Bunny with a Carrot",
+    "az": "Yerkökülü dovşan",
+    "es": "Conejo con zanahoria",
+    "ru": "Кролик с морковкой"
+  },
+  "sample-gallery-86-v1": {
+    "en": "Little Turtle",
+    "az": "Balaca tısbağa",
+    "es": "Pequeña tortuga",
+    "ru": "Маленькая черепаха"
+  },
+  "sample-gallery-87-v1": {
+    "en": "Blue Bird",
+    "az": "Mavi quş",
+    "es": "Pájaro azul",
+    "ru": "Синяя птица"
+  },
+  "sample-gallery-88-v1": {
+    "en": "Hedgehog with an Apple",
+    "az": "Almalı kirpi",
+    "es": "Erizo con manzana",
+    "ru": "Ёжик с яблоком"
+  },
+  "sample-gallery-89-v1": {
+    "en": "Magic Star",
+    "az": "Sehrli ulduz",
+    "es": "Estrella mágica",
+    "ru": "Волшебная звезда"
+  },
+  "sample-gallery-90-v1": {
+    "en": "Sleeping Moon",
+    "az": "Yatan ay",
+    "es": "La luna dormida",
+    "ru": "Спящая луна"
+  },
+  "sample-gallery-91-v1": {
+    "en": "Pocket Rainbow",
+    "az": "Cib göy qurşağı",
+    "es": "Arcoíris de bolsillo",
+    "ru": "Карманная радуга"
+  },
+  "sample-gallery-92-v1": {
+    "en": "Enchanted Key",
+    "az": "Sehrli açar",
+    "es": "Llave encantada",
+    "ru": "Заколдованный ключ"
+  },
+  "sample-gallery-93-v1": {
+    "en": "Crystal Flower",
+    "az": "Kristal çiçək",
+    "es": "Flor de cristal",
+    "ru": "Хрустальный цветок"
+  },
+  "sample-gallery-94-v1": {
+    "en": "Cloud Dragon",
+    "az": "Bulud əjdahası",
+    "es": "Dragón de las nubes",
+    "ru": "Облачный дракон"
+  },
+  "sample-gallery-95-v1": {
+    "en": "Sunny Hills",
+    "az": "Günəşli təpələr",
+    "es": "Colinas soleadas",
+    "ru": "Солнечные холмы"
+  },
+  "sample-gallery-96-v1": {
+    "en": "Little Island",
+    "az": "Balaca ada",
+    "es": "Pequeña isla",
+    "ru": "Маленький остров"
+  },
+  "sample-gallery-97-v1": {
+    "en": "Quiet Bay",
+    "az": "Sakit körfəz",
+    "es": "Bahía tranquila",
+    "ru": "Тихая бухта"
+  },
+  "sample-gallery-98-v1": {
+    "en": "Sailing on the Lake",
+    "az": "Göldə yelkən",
+    "es": "Velero en el lago",
+    "ru": "Парус на озере"
+  },
+  "sample-gallery-99-v1": {
+    "en": "Mountain Path",
+    "az": "Dağ cığırı",
+    "es": "Sendero de montaña",
+    "ru": "Горная тропа"
+  },
+  "sample-gallery-100-v1": {
+    "en": "The Street's Red Bench",
+    "az": "Küçənin qırmızı skamyası",
+    "es": "El banco rojo de la calle",
+    "ru": "Красная уличная скамейка"
+  },
+  "sample-gallery-101-v1": {
+    "en": "Clock Tower",
+    "az": "Saat qülləsi",
+    "es": "Torre del reloj",
+    "ru": "Часовая башня"
+  },
+  "sample-gallery-102-v1": {
+    "en": "Corner Kiosk",
+    "az": "Künc köşkü",
+    "es": "Quiosco de la esquina",
+    "ru": "Угловой киоск"
+  },
+  "sample-gallery-103-v1": {
+    "en": "Little Bridge",
+    "az": "Balaca körpü",
+    "es": "Pequeño puente",
+    "ru": "Маленький мост"
+  },
+  "sample-gallery-104-v1": {
+    "en": "Street Café",
+    "az": "Küçə kafesi",
+    "es": "Café de la calle",
+    "ru": "Уличное кафе"
+  },
+  "sample-gallery-105-v1": {
+    "en": "Market Rooftops",
+    "az": "Bazarın damları",
+    "es": "Tejados del mercado",
+    "ru": "Крыши рынка"
+  },
+  "sample-gallery-106-v1": {
+    "en": "Misty Redwood Forest",
+    "az": "Dumanlı sekvoya meşəsi",
+    "es": "Bosque de secuoyas entre niebla",
+    "ru": "Туманный лес секвой"
+  },
+  "sample-gallery-107-v1": {
+    "en": "Coral Garden",
+    "az": "Mərcan bağı",
+    "es": "Jardín de coral",
+    "ru": "Коралловый сад"
+  },
+  "sample-gallery-108-v1": {
+    "en": "Autumn Valley",
+    "az": "Payız vadisi",
+    "es": "Valle otoñal",
+    "ru": "Осенняя долина"
+  },
+  "sample-gallery-109-v1": {
+    "en": "Snow Tiger",
+    "az": "Qar pələngi",
+    "es": "Tigre de las nieves",
+    "ru": "Снежный тигр"
+  },
+  "sample-gallery-110-v1": {
+    "en": "Elephant Family",
+    "az": "Fil ailəsi",
+    "es": "Familia de elefantes",
+    "ru": "Семья слонов"
+  },
+  "sample-gallery-111-v1": {
+    "en": "Dance of Wings",
+    "az": "Qanadların rəqsi",
+    "es": "Danza de alas",
+    "ru": "Танец крыльев"
+  },
+  "sample-gallery-112-v1": {
+    "en": "Star Harbor",
+    "az": "Ulduz limanı",
+    "es": "Puerto de estrellas",
+    "ru": "Звёздная гавань"
+  },
+  "sample-gallery-113-v1": {
+    "en": "Ancient Tree Library",
+    "az": "Qədim ağac kitabxanası",
+    "es": "Biblioteca del árbol ancestral",
+    "ru": "Библиотека древнего дерева"
+  },
+  "sample-gallery-114-v1": {
+    "en": "Crystal Phoenix",
+    "az": "Kristal simurq",
+    "es": "Fénix de cristal",
+    "ru": "Хрустальный феникс"
+  },
+  "sample-gallery-115-v1": {
+    "en": "Glacial Lake",
+    "az": "Buzlaq gölü",
+    "es": "Lago glaciar",
+    "ru": "Ледниковое озеро"
+  },
+  "sample-gallery-116-v1": {
+    "en": "Desert Caravan",
+    "az": "Səhra karvanı",
+    "es": "Caravana del desierto",
+    "ru": "Караван в пустыне"
+  },
+  "sample-gallery-117-v1": {
+    "en": "After the Storm",
+    "az": "Fırtınadan sonra",
+    "es": "Después de la tormenta",
+    "ru": "После бури"
+  },
+  "sample-gallery-118-v1": {
+    "en": "Istanbul Morning",
+    "az": "İstanbul səhəri",
+    "es": "Mañana en Estambul",
+    "ru": "Утро в Стамбуле"
+  },
+  "sample-gallery-119-v1": {
+    "en": "Tokyo Rain",
+    "az": "Tokio yağışı",
+    "es": "Lluvia en Tokio",
+    "ru": "Токийский дождь"
+  },
+  "sample-gallery-120-v1": {
+    "en": "Florence Sunset",
+    "az": "Florensiya günbatımı",
+    "es": "Atardecer en Florencia",
+    "ru": "Закат во Флоренции"
+  },
+  "sample-gallery-121-v1": {
+    "en": "Dewy Ferns",
+    "az": "Şehli qıjılar",
+    "es": "Helechos con rocío",
+    "ru": "Папоротники в росе"
+  },
+  "sample-gallery-122-v1": {
+    "en": "Spring Branches",
+    "az": "Bahar budaqları",
+    "es": "Ramas de primavera",
+    "ru": "Весенние ветви"
+  },
+  "sample-gallery-123-v1": {
+    "en": "Chestnut Grove",
+    "az": "Şabalıd meşəliyi",
+    "es": "Bosquecillo de castaños",
+    "ru": "Каштановая роща"
+  },
+  "sample-gallery-124-v1": {
+    "en": "Rainforest",
+    "az": "Yağış meşəsi",
+    "es": "Selva tropical",
+    "ru": "Тропический лес"
+  },
+  "sample-gallery-125-v1": {
+    "en": "Red Maple",
+    "az": "Qırmızı ağcaqayın",
+    "es": "Arce rojo",
+    "ru": "Красный клён"
+  },
+  "sample-gallery-126-v1": {
+    "en": "Mountain Flowers",
+    "az": "Dağ çiçəkləri",
+    "es": "Flores de montaña",
+    "ru": "Горные цветы"
+  },
+  "sample-gallery-127-v1": {
+    "en": "Curious Raccoon",
+    "az": "Maraqlı yenot",
+    "es": "Mapache curioso",
+    "ru": "Любопытный енот"
+  },
+  "sample-gallery-128-v1": {
+    "en": "Heron in the Reeds",
+    "az": "Qamışlıqdakı vağ",
+    "es": "Garza entre juncos",
+    "ru": "Цапля в камышах"
+  },
+  "sample-gallery-129-v1": {
+    "en": "Bunting among Flowers",
+    "az": "Çiçəklərdə vələmirquşu",
+    "es": "Escribano entre flores",
+    "ru": "Овсянка среди цветов"
+  },
+  "sample-gallery-130-v1": {
+    "en": "Arctic Fox",
+    "az": "Qütb tülküsü",
+    "es": "Zorro ártico",
+    "ru": "Песец"
+  },
+  "sample-gallery-131-v1": {
+    "en": "Giraffe and Calf",
+    "az": "Zürafə və balası",
+    "es": "Jirafa y su cría",
+    "ru": "Жираф и детёныш"
+  },
+  "sample-gallery-132-v1": {
+    "en": "Underwater Otter",
+    "az": "Sualtı su samuru",
+    "es": "Nutria bajo el agua",
+    "ru": "Выдра под водой"
+  },
+  "sample-gallery-133-v1": {
+    "en": "Kite Festival",
+    "az": "Çərpələng şənliyi",
+    "es": "Festival de cometas",
+    "ru": "Праздник воздушных змеев"
+  },
+  "sample-gallery-134-v1": {
+    "en": "Flying Whale",
+    "az": "Uçan balina",
+    "es": "Ballena voladora",
+    "ru": "Летающий кит"
+  },
+  "sample-gallery-135-v1": {
+    "en": "Crystal Turtle",
+    "az": "Kristal tısbağa",
+    "es": "Tortuga de cristal",
+    "ru": "Хрустальная черепаха"
+  },
+  "sample-gallery-136-v1": {
+    "en": "Garden of Time",
+    "az": "Zaman bağı",
+    "es": "Jardín del tiempo",
+    "ru": "Сад времени"
+  },
+  "sample-gallery-137-v1": {
+    "en": "Ice Palace",
+    "az": "Buz sarayı",
+    "es": "Palacio de hielo",
+    "ru": "Ледяной дворец"
+  },
+  "sample-gallery-138-v1": {
+    "en": "Star Weaver",
+    "az": "Ulduz toxucusu",
+    "es": "Tejedor de estrellas",
+    "ru": "Ткач звёзд"
+  },
+  "sample-gallery-139-v1": {
+    "en": "Purple Horizon",
+    "az": "Bənövşəyi üfüq",
+    "es": "Horizonte violeta",
+    "ru": "Лиловый горизонт"
+  },
+  "sample-gallery-140-v1": {
+    "en": "Waves of Sand",
+    "az": "Qum dalğaları",
+    "es": "Olas de arena",
+    "ru": "Волны песка"
+  },
+  "sample-gallery-141-v1": {
+    "en": "Meadow Cottage",
+    "az": "Çəmənlikdəki daxma",
+    "es": "Cabaña en la pradera",
+    "ru": "Домик на лугу"
+  },
+  "sample-gallery-142-v1": {
+    "en": "Storm Lighthouse",
+    "az": "Fırtına mayakı",
+    "es": "Faro en la tormenta",
+    "ru": "Маяк в бурю"
+  },
+  "sample-gallery-143-v1": {
+    "en": "Winter Pass",
+    "az": "Qış keçidi",
+    "es": "Paso invernal",
+    "ru": "Зимний перевал"
+  },
+  "sample-gallery-144-v1": {
+    "en": "Dawn Fields",
+    "az": "Şəfəq tarlaları",
+    "es": "Campos al amanecer",
+    "ru": "Поля на рассвете"
+  },
+  "sample-gallery-145-v1": {
+    "en": "Coastal Street",
+    "az": "Sahil küçəsi",
+    "es": "Calle costera",
+    "ru": "Приморская улица"
+  },
+  "sample-gallery-146-v1": {
+    "en": "Old Bookshop",
+    "az": "Köhnə kitab mağazası",
+    "es": "Librería antigua",
+    "ru": "Старый книжный магазин"
+  },
+  "sample-gallery-147-v1": {
+    "en": "Stone Courtyard",
+    "az": "Daş həyət",
+    "es": "Patio de piedra",
+    "ru": "Каменный двор"
+  },
+  "sample-gallery-148-v1": {
+    "en": "Night Tram",
+    "az": "Gecə tramvayı",
+    "es": "Tranvía nocturno",
+    "ru": "Ночной трамвай"
+  },
+  "sample-gallery-149-v1": {
+    "en": "City of Canals",
+    "az": "Kanallar şəhəri",
+    "es": "Ciudad de canales",
+    "ru": "Город каналов"
+  },
+  "sample-gallery-150-v1": {
+    "en": "Blue Rooftops",
+    "az": "Mavi damlar",
+    "es": "Tejados azules",
+    "ru": "Синие крыши"
+  },
+  "sample-gallery-151-v1": {
+    "en": "Daisy Meadow",
+    "az": "Çobanyastığı çəmənliyi",
+    "es": "Pradera de margaritas",
+    "ru": "Ромашковый луг"
+  },
+  "sample-gallery-152-v1": {
+    "en": "Dewdrop Spiderweb",
+    "az": "Şehli hörümçək toru",
+    "es": "Telaraña con rocío",
+    "ru": "Паутина в каплях росы"
+  },
+  "sample-gallery-153-v1": {
+    "en": "Forest Bellflower",
+    "az": "Meşə zəngçiçəyi",
+    "es": "Campanilla del bosque",
+    "ru": "Лесной колокольчик"
+  },
+  "sample-gallery-154-v1": {
+    "en": "Leaves on the Water",
+    "az": "Su üzərində yarpaqlar",
+    "es": "Hojas sobre el agua",
+    "ru": "Листья на воде"
+  },
+  "sample-gallery-155-v1": {
+    "en": "Golden Birches",
+    "az": "Qızılı tozağacları",
+    "es": "Abedules dorados",
+    "ru": "Золотые берёзы"
+  },
+  "sample-gallery-156-v1": {
+    "en": "Beneath the Roots",
+    "az": "Köklərin altında",
+    "es": "Bajo las raíces",
+    "ru": "Под корнями"
+  },
+  "sample-gallery-157-v1": {
+    "en": "Sleepy Koala",
+    "az": "Yuxulu koala",
+    "es": "Koala dormilón",
+    "ru": "Сонная коала"
+  },
+  "sample-gallery-158-v1": {
+    "en": "Little Armadillo",
+    "az": "Balaca zirehli",
+    "es": "Pequeño armadillo",
+    "ru": "Маленький броненосец"
+  },
+  "sample-gallery-159-v1": {
+    "en": "Lake Duck",
+    "az": "Göl ördəyi",
+    "es": "Pato del lago",
+    "ru": "Озёрная утка"
+  },
+  "sample-gallery-160-v1": {
+    "en": "Bunny among Flowers",
+    "az": "Çiçəklərdə dovşan",
+    "es": "Conejo entre flores",
+    "ru": "Кролик среди цветов"
+  },
+  "sample-gallery-161-v1": {
+    "en": "Seal on a Rock",
+    "az": "Qayadakı suiti",
+    "es": "Foca en la roca",
+    "ru": "Тюлень на скале"
+  },
+  "sample-gallery-162-v1": {
+    "en": "Bat in the Moonlight",
+    "az": "Ay işığında yarasa",
+    "es": "Murciélago a la luz de la luna",
+    "ru": "Летучая мышь при луне"
+  },
+  "sample-gallery-163-v1": {
+    "en": "Star Cat",
+    "az": "Ulduz pişiyi",
+    "es": "Gato estelar",
+    "ru": "Звёздный кот"
+  },
+  "sample-gallery-164-v1": {
+    "en": "Fairy Lantern",
+    "az": "Pəri fənəri",
+    "es": "Farol de hada",
+    "ru": "Волшебный фонарь"
+  },
+  "sample-gallery-165-v1": {
+    "en": "Cloud House",
+    "az": "Bulud evi",
+    "es": "Casa de nubes",
+    "ru": "Облачный дом"
+  },
+  "sample-gallery-166-v1": {
+    "en": "Crystal Bridge",
+    "az": "Kristal körpü",
+    "es": "Puente de cristal",
+    "ru": "Хрустальный мост"
+  },
+  "sample-gallery-167-v1": {
+    "en": "Little Forest Spirit",
+    "az": "Balaca meşə ruhu",
+    "es": "Pequeño espíritu del bosque",
+    "ru": "Маленький лесной дух"
+  },
+  "sample-gallery-168-v1": {
+    "en": "Moon Boat",
+    "az": "Ay qayığı",
+    "es": "Barca lunar",
+    "ru": "Лунная лодка"
+  },
+  "sample-gallery-169-v1": {
+    "en": "Golden Beach",
+    "az": "Sarı qumlu sahil",
+    "es": "Playa dorada",
+    "ru": "Золотой пляж"
+  },
+  "sample-gallery-170-v1": {
+    "en": "Green Valley",
+    "az": "Yaşıl vadi",
+    "es": "Valle verde",
+    "ru": "Зелёная долина"
+  },
+  "sample-gallery-171-v1": {
+    "en": "Shaded Path",
+    "az": "Kölgəli cığır",
+    "es": "Sendero sombreado",
+    "ru": "Тенистая тропа"
+  },
+  "sample-gallery-172-v1": {
+    "en": "Ice Ring of the Lake",
+    "az": "Gölün buz halqası",
+    "es": "El anillo de hielo del lago",
+    "ru": "Ледяное кольцо озера"
+  },
+  "sample-gallery-173-v1": {
+    "en": "Quarry Steps",
+    "az": "Daş karxanasının pillələri",
+    "es": "Escalones de la cantera",
+    "ru": "Ступени карьера"
+  },
+  "sample-gallery-174-v1": {
+    "en": "Misty Lake",
+    "az": "Dumanlı göl",
+    "es": "Lago brumoso",
+    "ru": "Туманное озеро"
+  },
+  "sample-gallery-175-v1": {
+    "en": "Blue Door",
+    "az": "Mavi qapı",
+    "es": "Puerta azul",
+    "ru": "Синяя дверь"
+  },
+  "sample-gallery-176-v1": {
+    "en": "Red Roof",
+    "az": "Qırmızı dam",
+    "es": "Tejado rojo",
+    "ru": "Красная крыша"
+  },
+  "sample-gallery-177-v1": {
+    "en": "Watchmaker's Window",
+    "az": "Saatsazın vitrini",
+    "es": "Escaparate del relojero",
+    "ru": "Витрина часовщика"
+  },
+  "sample-gallery-178-v1": {
+    "en": "Village Square",
+    "az": "Kənd meydanı",
+    "es": "Plaza del pueblo",
+    "ru": "Деревенская площадь"
+  },
+  "sample-gallery-179-v1": {
+    "en": "Seaside Café",
+    "az": "Sahil qəhvəxanası",
+    "es": "Café junto al mar",
+    "ru": "Приморское кафе"
+  },
+  "sample-gallery-180-v1": {
+    "en": "Evening Window",
+    "az": "Axşam pəncərəsi",
+    "es": "Ventana al anochecer",
+    "ru": "Вечернее окно"
+  },
+  "sample-gallery-181-v1": {
+    "en": "Cheerful Sunflower",
+    "az": "Şən günəbaxan",
+    "es": "Girasol alegre",
+    "ru": "Весёлый подсолнух"
+  },
+  "sample-gallery-182-v1": {
+    "en": "Mushroom Garden",
+    "az": "Göbələk bağı",
+    "es": "Jardín de setas",
+    "ru": "Грибной сад"
+  },
+  "sample-gallery-183-v1": {
+    "en": "Little Cactus",
+    "az": "Balaca kaktus",
+    "es": "Pequeño cactus",
+    "ru": "Маленький кактус"
+  },
+  "sample-gallery-184-v1": {
+    "en": "Rain Garden",
+    "az": "Yağış bağı",
+    "es": "Jardín de lluvia",
+    "ru": "Дождевой сад"
+  },
+  "sample-gallery-185-v1": {
+    "en": "Beneath the Oak",
+    "az": "Palıdın altında",
+    "es": "Bajo el roble",
+    "ru": "Под дубом"
+  },
+  "sample-gallery-186-v1": {
+    "en": "Water Lily Pond",
+    "az": "Su zanbağı gölməçəsi",
+    "es": "Estanque de nenúfares",
+    "ru": "Пруд с кувшинками"
+  },
+  "sample-gallery-187-v1": {
+    "en": "Sleepy Cat",
+    "az": "Yuxulu pişik",
+    "es": "Gato dormilón",
+    "ru": "Сонный кот"
+  },
+  "sample-gallery-188-v1": {
+    "en": "Curious Penguin",
+    "az": "Maraqlı pinqvin",
+    "es": "Pingüino curioso",
+    "ru": "Любопытный пингвин"
+  },
+  "sample-gallery-189-v1": {
+    "en": "Little Turtle",
+    "az": "Balaca tısbağa",
+    "es": "Pequeña tortuga",
+    "ru": "Маленькая черепаха"
+  },
+  "sample-gallery-190-v1": {
+    "en": "Fox's Rest",
+    "az": "Tülkünün istirahəti",
+    "es": "El descanso del zorro",
+    "ru": "Отдых лисы"
+  },
+  "sample-gallery-191-v1": {
+    "en": "Duck Family",
+    "az": "Ördək ailəsi",
+    "es": "Familia de patos",
+    "ru": "Утиная семья"
+  },
+  "sample-gallery-192-v1": {
+    "en": "Panda Picnic",
+    "az": "Panda pikniki",
+    "es": "Pícnic de pandas",
+    "ru": "Пикник панд"
+  },
+  "sample-gallery-193-v1": {
+    "en": "Little Dragon",
+    "az": "Balaca əjdaha",
+    "es": "Pequeño dragón",
+    "ru": "Маленький дракон"
+  },
+  "sample-gallery-194-v1": {
+    "en": "Magic Potion",
+    "az": "Sehrli iksir",
+    "es": "Poción mágica",
+    "ru": "Волшебное зелье"
+  },
+  "sample-gallery-195-v1": {
+    "en": "Cloud Castle",
+    "az": "Bulud qalası",
+    "es": "Castillo de nubes",
+    "ru": "Облачный замок"
+  },
+  "sample-gallery-196-v1": {
+    "en": "Wizard's House",
+    "az": "Sehrbazın evi",
+    "es": "Casa del mago",
+    "ru": "Дом волшебника"
+  },
+  "sample-gallery-197-v1": {
+    "en": "Moon Rabbit",
+    "az": "Ay dovşanı",
+    "es": "Conejo lunar",
+    "ru": "Лунный кролик"
+  },
+  "sample-gallery-198-v1": {
+    "en": "Treasure Island",
+    "az": "Xəzinə adası",
+    "es": "Isla del tesoro",
+    "ru": "Остров сокровищ"
+  },
+  "sample-gallery-199-v1": {
+    "en": "The Field's Red Kite",
+    "az": "Tarlanın qırmızı çərpələngi",
+    "es": "La cometa roja del campo",
+    "ru": "Красный змей над полем"
+  },
+  "sample-gallery-200-v1": {
+    "en": "Snowy Summit",
+    "az": "Qarlı zirvə",
+    "es": "Cumbre nevada",
+    "ru": "Снежная вершина"
+  },
+  "sample-gallery-201-v1": {
+    "en": "Lighthouse",
+    "az": "Mayak",
+    "es": "Faro",
+    "ru": "Маяк"
+  },
+  "sample-gallery-202-v1": {
+    "en": "Camper Break",
+    "az": "Karavan fasiləsi",
+    "es": "Parada de caravana",
+    "ru": "Остановка автодома"
+  },
+  "sample-gallery-203-v1": {
+    "en": "Lake Cabin",
+    "az": "Göl daxması",
+    "es": "Cabaña del lago",
+    "ru": "Домик у озера"
+  },
+  "sample-gallery-204-v1": {
+    "en": "Beach Day",
+    "az": "Sahil günü",
+    "es": "Día de playa",
+    "ru": "День на пляже"
+  },
+  "sample-gallery-205-v1": {
+    "en": "Colorful House",
+    "az": "Rəngli ev",
+    "es": "Casa colorida",
+    "ru": "Разноцветный дом"
+  },
+  "sample-gallery-206-v1": {
+    "en": "Ice Cream Cart",
+    "az": "Dondurma arabası",
+    "es": "Carrito de helados",
+    "ru": "Тележка с мороженым"
+  },
+  "sample-gallery-207-v1": {
+    "en": "Red Tram",
+    "az": "Qırmızı tramvay",
+    "es": "Tranvía rojo",
+    "ru": "Красный трамвай"
+  },
+  "sample-gallery-208-v1": {
+    "en": "Corner Juice Stand",
+    "az": "Küncdəki meyvə şirəsi köşkü",
+    "es": "Puesto de zumos de la esquina",
+    "ru": "Соковый киоск на углу"
+  },
+  "sample-gallery-209-v1": {
+    "en": "Neighborhood Tailor",
+    "az": "Məhəllə dərzisi",
+    "es": "Sastre del barrio",
+    "ru": "Районный портной"
+  },
+  "sample-gallery-210-v1": {
+    "en": "Clock Tower",
+    "az": "Saat qülləsi",
+    "es": "Torre del reloj",
+    "ru": "Часовая башня"
+  },
+  "sample-gallery-211-v1": {
+    "en": "Heart of the Rainforest",
+    "az": "Yağış meşəsinin ürəyi",
+    "es": "Corazón de la selva",
+    "ru": "Сердце тропического леса"
+  },
+  "sample-gallery-212-v1": {
+    "en": "Snow Leopard's Summit",
+    "az": "Qar bəbirinin zirvəsi",
+    "es": "La cumbre del leopardo de las nieves",
+    "ru": "Вершина снежного барса"
+  },
+  "sample-gallery-213-v1": {
+    "en": "Sky Library",
+    "az": "Səma kitabxanası",
+    "es": "Biblioteca del cielo",
+    "ru": "Небесная библиотека"
+  },
+  "sample-gallery-214-v1": {
+    "en": "Northern Lights Valley",
+    "az": "Qütb işıqları vadisi",
+    "es": "Valle de las auroras",
+    "ru": "Долина северного сияния"
+  },
+  "sample-gallery-215-v1": {
+    "en": "Rainy Old Town",
+    "az": "Yağışlı köhnə şəhər",
+    "es": "Casco antiguo bajo la lluvia",
+    "ru": "Старый город под дождём"
+  },
+  "sample-turkiye-adana-01-v1": {
+    "en": "Adana — Sunset over the Seyhan",
+    "az": "Adana — Seyhan üzərində günbatımı",
+    "es": "Adana — Atardecer sobre el Seyhan",
+    "ru": "Адана — Закат над Сейханом"
+  },
+  "sample-turkiye-adiyaman-01-v1": {
+    "en": "Adıyaman — Sunrise on Mount Nemrut",
+    "az": "Adıyaman — Nemrutda günəşin doğuşu",
+    "es": "Adıyaman — Amanecer en Nemrut",
+    "ru": "Адыяман — Рассвет на Немруте"
+  },
+  "sample-turkiye-afyonkarahisar-01-v1": {
+    "en": "Afyonkarahisar",
+    "az": "Afyonkarahisar",
+    "es": "Afyonkarahisar",
+    "ru": "Afyonkarahisar"
+  },
+  "sample-turkiye-agri-01-v1": {
+    "en": "Ağrı",
+    "az": "Ağrı",
+    "es": "Ağrı",
+    "ru": "Ağrı"
+  },
+  "sample-turkiye-aksaray-01-v1": {
+    "en": "Aksaray",
+    "az": "Aksaray",
+    "es": "Aksaray",
+    "ru": "Aksaray"
+  },
+  "sample-turkiye-amasya-01-v1": {
+    "en": "Amasya",
+    "az": "Amasya",
+    "es": "Amasya",
+    "ru": "Amasya"
+  },
+  "sample-turkiye-ankara-01-v1": {
+    "en": "Ankara",
+    "az": "Ankara",
+    "es": "Ankara",
+    "ru": "Ankara"
+  },
+  "sample-turkiye-antalya-01-v1": {
+    "en": "Antalya",
+    "az": "Antalya",
+    "es": "Antalya",
+    "ru": "Antalya"
+  },
+  "sample-turkiye-ardahan-01-v1": {
+    "en": "Ardahan",
+    "az": "Ardahan",
+    "es": "Ardahan",
+    "ru": "Ardahan"
+  },
+  "sample-turkiye-artvin-01-v1": {
+    "en": "Artvin",
+    "az": "Artvin",
+    "es": "Artvin",
+    "ru": "Artvin"
+  },
+  "sample-turkiye-aydin-01-v1": {
+    "en": "Aydın",
+    "az": "Aydın",
+    "es": "Aydın",
+    "ru": "Aydın"
+  },
+  "sample-turkiye-balikesir-01-v1": {
+    "en": "Balıkesir",
+    "az": "Balıkesir",
+    "es": "Balıkesir",
+    "ru": "Balıkesir"
+  },
+  "sample-turkiye-bartin-01-v1": {
+    "en": "Bartın",
+    "az": "Bartın",
+    "es": "Bartın",
+    "ru": "Bartın"
+  },
+  "sample-turkiye-batman-01-v1": {
+    "en": "Batman",
+    "az": "Batman",
+    "es": "Batman",
+    "ru": "Batman"
+  },
+  "sample-turkiye-bayburt-01-v1": {
+    "en": "Bayburt",
+    "az": "Bayburt",
+    "es": "Bayburt",
+    "ru": "Bayburt"
+  },
+  "sample-turkiye-bilecik-01-v1": {
+    "en": "Bilecik",
+    "az": "Bilecik",
+    "es": "Bilecik",
+    "ru": "Bilecik"
+  },
+  "sample-turkiye-bingol-01-v1": {
+    "en": "Bingöl",
+    "az": "Bingöl",
+    "es": "Bingöl",
+    "ru": "Bingöl"
+  },
+  "sample-turkiye-bitlis-01-v1": {
+    "en": "Bitlis",
+    "az": "Bitlis",
+    "es": "Bitlis",
+    "ru": "Bitlis"
+  },
+  "sample-turkiye-bolu-01-v1": {
+    "en": "Bolu",
+    "az": "Bolu",
+    "es": "Bolu",
+    "ru": "Bolu"
+  },
+  "sample-turkiye-gumushane-01-v1": {
+    "en": "Gümüşhane",
+    "az": "Gümüşhane",
+    "es": "Gümüşhane",
+    "ru": "Gümüşhane"
+  },
+  "sample-turkiye-burdur-01-v1": {
+    "en": "Burdur",
+    "az": "Burdur",
+    "es": "Burdur",
+    "ru": "Burdur"
+  },
+  "sample-turkiye-bursa-01-v1": {
+    "en": "Bursa",
+    "az": "Bursa",
+    "es": "Bursa",
+    "ru": "Bursa"
+  },
+  "sample-turkiye-canakkale-01-v1": {
+    "en": "Çanakkale",
+    "az": "Çanakkale",
+    "es": "Çanakkale",
+    "ru": "Çanakkale"
+  },
+  "sample-turkiye-cankiri-01-v1": {
+    "en": "Çankırı",
+    "az": "Çankırı",
+    "es": "Çankırı",
+    "ru": "Çankırı"
+  },
+  "sample-turkiye-corum-01-v1": {
+    "en": "Çorum",
+    "az": "Çorum",
+    "es": "Çorum",
+    "ru": "Çorum"
+  },
+  "sample-turkiye-denizli-01-v1": {
+    "en": "Denizli",
+    "az": "Denizli",
+    "es": "Denizli",
+    "ru": "Denizli"
+  },
+  "sample-turkiye-diyarbakir-01-v1": {
+    "en": "Diyarbakır",
+    "az": "Diyarbakır",
+    "es": "Diyarbakır",
+    "ru": "Diyarbakır"
+  },
+  "sample-turkiye-duzce-01-v1": {
+    "en": "Düzce",
+    "az": "Düzce",
+    "es": "Düzce",
+    "ru": "Düzce"
+  },
+  "sample-turkiye-edirne-01-v1": {
+    "en": "Edirne",
+    "az": "Edirne",
+    "es": "Edirne",
+    "ru": "Edirne"
+  },
+  "sample-turkiye-elazig-01-v1": {
+    "en": "Elazığ",
+    "az": "Elazığ",
+    "es": "Elazığ",
+    "ru": "Elazığ"
+  },
+  "sample-turkiye-erzincan-01-v1": {
+    "en": "Erzincan",
+    "az": "Erzincan",
+    "es": "Erzincan",
+    "ru": "Erzincan"
+  },
+  "sample-turkiye-erzurum-01-v1": {
+    "en": "Erzurum",
+    "az": "Erzurum",
+    "es": "Erzurum",
+    "ru": "Erzurum"
+  },
+  "sample-turkiye-eskisehir-01-v1": {
+    "en": "Eskişehir",
+    "az": "Eskişehir",
+    "es": "Eskişehir",
+    "ru": "Eskişehir"
+  },
+  "sample-turkiye-gaziantep-01-v1": {
+    "en": "Gaziantep",
+    "az": "Gaziantep",
+    "es": "Gaziantep",
+    "ru": "Gaziantep"
+  },
+  "sample-turkiye-giresun-01-v1": {
+    "en": "Giresun",
+    "az": "Giresun",
+    "es": "Giresun",
+    "ru": "Giresun"
+  },
+  "sample-turkiye-hakkari-01-v1": {
+    "en": "Hakkâri",
+    "az": "Hakkâri",
+    "es": "Hakkâri",
+    "ru": "Hakkâri"
+  },
+  "sample-turkiye-hatay-01-v1": {
+    "en": "Hatay",
+    "az": "Hatay",
+    "es": "Hatay",
+    "ru": "Hatay"
+  },
+  "sample-turkiye-igdir-01-v1": {
+    "en": "Iğdır",
+    "az": "Iğdır",
+    "es": "Iğdır",
+    "ru": "Iğdır"
+  },
+  "sample-turkiye-isparta-01-v1": {
+    "en": "Isparta",
+    "az": "Isparta",
+    "es": "Isparta",
+    "ru": "Isparta"
+  },
+  "sample-turkiye-istanbul-01-v1": {
+    "en": "İstanbul",
+    "az": "İstanbul",
+    "es": "İstanbul",
+    "ru": "İstanbul"
+  },
+  "sample-turkiye-izmir-01-v1": {
+    "en": "İzmir",
+    "az": "İzmir",
+    "es": "İzmir",
+    "ru": "İzmir"
+  },
+  "sample-turkiye-kahramanmaras-01-v1": {
+    "en": "Kahramanmaraş",
+    "az": "Kahramanmaraş",
+    "es": "Kahramanmaraş",
+    "ru": "Kahramanmaraş"
+  },
+  "sample-turkiye-karabuk-01-v1": {
+    "en": "Karabük",
+    "az": "Karabük",
+    "es": "Karabük",
+    "ru": "Karabük"
+  },
+  "sample-turkiye-karaman-01-v1": {
+    "en": "Karaman",
+    "az": "Karaman",
+    "es": "Karaman",
+    "ru": "Karaman"
+  },
+  "sample-turkiye-kars-01-v1": {
+    "en": "Kars",
+    "az": "Kars",
+    "es": "Kars",
+    "ru": "Kars"
+  },
+  "sample-turkiye-kastamonu-01-v1": {
+    "en": "Kastamonu",
+    "az": "Kastamonu",
+    "es": "Kastamonu",
+    "ru": "Kastamonu"
+  },
+  "sample-turkiye-kayseri-01-v1": {
+    "en": "Kayseri",
+    "az": "Kayseri",
+    "es": "Kayseri",
+    "ru": "Kayseri"
+  },
+  "sample-turkiye-kilis-01-v1": {
+    "en": "Kilis",
+    "az": "Kilis",
+    "es": "Kilis",
+    "ru": "Kilis"
+  },
+  "sample-turkiye-kirikkale-01-v1": {
+    "en": "Kırıkkale",
+    "az": "Kırıkkale",
+    "es": "Kırıkkale",
+    "ru": "Kırıkkale"
+  },
+  "sample-turkiye-kirklareli-01-v1": {
+    "en": "Kırklareli",
+    "az": "Kırklareli",
+    "es": "Kırklareli",
+    "ru": "Kırklareli"
+  },
+  "sample-turkiye-kirsehir-01-v1": {
+    "en": "Kırşehir",
+    "az": "Kırşehir",
+    "es": "Kırşehir",
+    "ru": "Kırşehir"
+  },
+  "sample-turkiye-kocaeli-01-v1": {
+    "en": "Kocaeli",
+    "az": "Kocaeli",
+    "es": "Kocaeli",
+    "ru": "Kocaeli"
+  },
+  "sample-turkiye-konya-01-v1": {
+    "en": "Konya",
+    "az": "Konya",
+    "es": "Konya",
+    "ru": "Konya"
+  },
+  "sample-turkiye-kutahya-01-v1": {
+    "en": "Kütahya",
+    "az": "Kütahya",
+    "es": "Kütahya",
+    "ru": "Kütahya"
+  },
+  "sample-turkiye-malatya-01-v1": {
+    "en": "Malatya",
+    "az": "Malatya",
+    "es": "Malatya",
+    "ru": "Malatya"
+  },
+  "sample-turkiye-manisa-01-v1": {
+    "en": "Manisa",
+    "az": "Manisa",
+    "es": "Manisa",
+    "ru": "Manisa"
+  },
+  "sample-turkiye-mardin-01-v1": {
+    "en": "Mardin",
+    "az": "Mardin",
+    "es": "Mardin",
+    "ru": "Mardin"
+  },
+  "sample-turkiye-mersin-01-v1": {
+    "en": "Mersin",
+    "az": "Mersin",
+    "es": "Mersin",
+    "ru": "Mersin"
+  },
+  "sample-turkiye-mugla-01-v1": {
+    "en": "Muğla",
+    "az": "Muğla",
+    "es": "Muğla",
+    "ru": "Muğla"
+  },
+  "sample-turkiye-mus-01-v1": {
+    "en": "Muş",
+    "az": "Muş",
+    "es": "Muş",
+    "ru": "Muş"
+  },
+  "sample-turkiye-nevsehir-01-v1": {
+    "en": "Nevşehir",
+    "az": "Nevşehir",
+    "es": "Nevşehir",
+    "ru": "Nevşehir"
+  },
+  "sample-turkiye-nigde-01-v1": {
+    "en": "Niğde",
+    "az": "Niğde",
+    "es": "Niğde",
+    "ru": "Niğde"
+  },
+  "sample-turkiye-ordu-01-v1": {
+    "en": "Ordu",
+    "az": "Ordu",
+    "es": "Ordu",
+    "ru": "Ordu"
+  },
+  "sample-turkiye-osmaniye-01-v1": {
+    "en": "Osmaniye",
+    "az": "Osmaniye",
+    "es": "Osmaniye",
+    "ru": "Osmaniye"
+  },
+  "sample-turkiye-rize-01-v1": {
+    "en": "Rize",
+    "az": "Rize",
+    "es": "Rize",
+    "ru": "Rize"
+  },
+  "sample-turkiye-sakarya-01-v1": {
+    "en": "Sakarya",
+    "az": "Sakarya",
+    "es": "Sakarya",
+    "ru": "Sakarya"
+  },
+  "sample-turkiye-samsun-01-v1": {
+    "en": "Samsun",
+    "az": "Samsun",
+    "es": "Samsun",
+    "ru": "Samsun"
+  },
+  "sample-turkiye-sanliurfa-01-v1": {
+    "en": "Şanlıurfa",
+    "az": "Şanlıurfa",
+    "es": "Şanlıurfa",
+    "ru": "Şanlıurfa"
+  },
+  "sample-turkiye-siirt-01-v1": {
+    "en": "Siirt",
+    "az": "Siirt",
+    "es": "Siirt",
+    "ru": "Siirt"
+  },
+  "sample-turkiye-sinop-01-v1": {
+    "en": "Sinop",
+    "az": "Sinop",
+    "es": "Sinop",
+    "ru": "Sinop"
+  },
+  "sample-turkiye-sivas-01-v1": {
+    "en": "Sivas",
+    "az": "Sivas",
+    "es": "Sivas",
+    "ru": "Sivas"
+  },
+  "sample-turkiye-sirnak-01-v1": {
+    "en": "Şırnak",
+    "az": "Şırnak",
+    "es": "Şırnak",
+    "ru": "Şırnak"
+  },
+  "sample-turkiye-tekirdag-01-v1": {
+    "en": "Tekirdağ",
+    "az": "Tekirdağ",
+    "es": "Tekirdağ",
+    "ru": "Tekirdağ"
+  },
+  "sample-turkiye-tokat-01-v1": {
+    "en": "Tokat — Columns of the Cave",
+    "az": "Tokat — Mağaranın sütunları",
+    "es": "Tokat — Columnas de la cueva",
+    "ru": "Токат — Колонны пещеры"
+  },
+  "sample-turkiye-trabzon-01-v1": {
+    "en": "Trabzon",
+    "az": "Trabzon",
+    "es": "Trabzon",
+    "ru": "Trabzon"
+  },
+  "sample-turkiye-tunceli-01-v1": {
+    "en": "Tunceli",
+    "az": "Tunceli",
+    "es": "Tunceli",
+    "ru": "Tunceli"
+  },
+  "sample-turkiye-usak-01-v1": {
+    "en": "Uşak",
+    "az": "Uşak",
+    "es": "Uşak",
+    "ru": "Uşak"
+  },
+  "sample-turkiye-van-01-v1": {
+    "en": "Van",
+    "az": "Van",
+    "es": "Van",
+    "ru": "Van"
+  },
+  "sample-turkiye-yalova-01-v1": {
+    "en": "Yalova",
+    "az": "Yalova",
+    "es": "Yalova",
+    "ru": "Yalova"
+  },
+  "sample-turkiye-yozgat-01-v1": {
+    "en": "Yozgat",
+    "az": "Yozgat",
+    "es": "Yozgat",
+    "ru": "Yozgat"
+  },
+  "sample-turkiye-zonguldak-01-v1": {
+    "en": "Zonguldak",
+    "az": "Zonguldak",
+    "es": "Zonguldak",
+    "ru": "Zonguldak"
+  },
+  "sample-gallery-216-v1": {
+    "en": "Mossy Waterfall",
+    "az": "Mamırlı şəlalə",
+    "es": "Cascada entre musgo",
+    "ru": "Мшистый водопад"
+  },
+  "sample-gallery-217-v1": {
+    "en": "Bamboo Path",
+    "az": "Bambuk cığırı",
+    "es": "Sendero de bambú",
+    "ru": "Бамбуковая тропа"
+  },
+  "sample-gallery-218-v1": {
+    "en": "Autumn Grove",
+    "az": "Payız meşəliyi",
+    "es": "Arboleda otoñal",
+    "ru": "Осенняя роща"
+  },
+  "sample-gallery-219-v1": {
+    "en": "Water Lily Pond",
+    "az": "Su zanbağı gölməçəsi",
+    "es": "Estanque de nenúfares",
+    "ru": "Пруд с кувшинками"
+  },
+  "sample-gallery-220-v1": {
+    "en": "Coastal Pines",
+    "az": "Sahil şamları",
+    "es": "Pinos costeros",
+    "ru": "Прибрежные сосны"
+  },
+  "sample-gallery-221-v1": {
+    "en": "Cloud Mill",
+    "az": "Bulud dəyirmanı",
+    "es": "Molino de nubes",
+    "ru": "Облачная мельница"
+  },
+  "sample-gallery-222-v1": {
+    "en": "Crystal Cave",
+    "az": "Kristal mağara",
+    "es": "Cueva de cristal",
+    "ru": "Хрустальная пещера"
+  },
+  "sample-gallery-223-v1": {
+    "en": "Dragon Island",
+    "az": "Əjdaha adası",
+    "es": "Isla del dragón",
+    "ru": "Остров дракона"
+  },
+  "sample-gallery-224-v1": {
+    "en": "Moon Gate",
+    "az": "Ay qapısı",
+    "es": "Puerta lunar",
+    "ru": "Лунные врата"
+  },
+  "sample-gallery-225-v1": {
+    "en": "Flying Library",
+    "az": "Uçan kitabxana",
+    "es": "Biblioteca voladora",
+    "ru": "Летающая библиотека"
+  },
+  "sample-gallery-226-v1": {
+    "en": "Red Panda's Rest",
+    "az": "Qırmızı pandanın istirahəti",
+    "es": "El descanso del panda rojo",
+    "ru": "Отдых красной панды"
+  },
+  "sample-gallery-227-v1": {
+    "en": "Kingfisher's Hunt",
+    "az": "Balıqcılın ovu",
+    "es": "La caza del martín pescador",
+    "ru": "Охота зимородка"
+  },
+  "sample-gallery-228-v1": {
+    "en": "Lemur Family",
+    "az": "Lemur ailəsi",
+    "es": "Familia de lémures",
+    "ru": "Семья лемуров"
+  },
+  "sample-gallery-229-v1": {
+    "en": "Octopus Shelter",
+    "az": "Səkkizayağın sığınacağı",
+    "es": "Refugio del pulpo",
+    "ru": "Убежище осьминога"
+  },
+  "sample-gallery-230-v1": {
+    "en": "Owl's Night",
+    "az": "Bayquşun gecəsi",
+    "es": "La noche del búho",
+    "ru": "Ночь совы"
+  },
+  "sample-gallery-231-v1": {
+    "en": "Lavender Horizon",
+    "az": "Lavanda üfüqü",
+    "es": "Horizonte de lavanda",
+    "ru": "Лавандовый горизонт"
+  },
+  "sample-gallery-232-v1": {
+    "en": "Desert Oasis",
+    "az": "Səhra vahəsi",
+    "es": "Oasis del desierto",
+    "ru": "Оазис пустыни"
+  },
+  "sample-gallery-233-v1": {
+    "en": "Crater Lake",
+    "az": "Krater gölü",
+    "es": "Lago del cráter",
+    "ru": "Кратерное озеро"
+  },
+  "sample-gallery-234-v1": {
+    "en": "Red Canyon",
+    "az": "Qırmızı kanyon",
+    "es": "Cañón rojo",
+    "ru": "Красный каньон"
+  },
+  "sample-gallery-235-v1": {
+    "en": "Misty Vineyards",
+    "az": "Dumanlı üzümlüklər",
+    "es": "Viñedos entre niebla",
+    "ru": "Туманные виноградники"
+  },
+  "sample-gallery-236-v1": {
+    "en": "Rainy Square",
+    "az": "Yağışlı meydan",
+    "es": "Plaza bajo la lluvia",
+    "ru": "Площадь под дождём"
+  },
+  "sample-gallery-237-v1": {
+    "en": "Harbor Market",
+    "az": "Liman bazarı",
+    "es": "Mercado del puerto",
+    "ru": "Портовый рынок"
+  },
+  "sample-gallery-238-v1": {
+    "en": "Stone Bridge Street",
+    "az": "Daş körpü küçəsi",
+    "es": "Calle del puente de piedra",
+    "ru": "Улица каменного моста"
+  },
+  "sample-gallery-239-v1": {
+    "en": "Rooftop Gardens",
+    "az": "Dam bağları",
+    "es": "Jardines en los tejados",
+    "ru": "Сады на крышах"
+  },
+  "sample-gallery-240-v1": {
+    "en": "Station Morning",
+    "az": "Vağzal səhəri",
+    "es": "Mañana en la estación",
+    "ru": "Утро на вокзале"
+  },
+  "sample-gallery-241-v1": {
+    "en": "Fern Valley",
+    "az": "Qıjı vadisi",
+    "es": "Valle de helechos",
+    "ru": "Долина папоротников"
+  },
+  "sample-gallery-242-v1": {
+    "en": "Cactus Flowers",
+    "az": "Kaktus çiçəkləri",
+    "es": "Flores de cactus",
+    "ru": "Цветы кактуса"
+  },
+  "sample-gallery-243-v1": {
+    "en": "Mushroom Post Office",
+    "az": "Göbələk poçtu",
+    "es": "Oficina de correos de setas",
+    "ru": "Грибная почта"
+  },
+  "sample-gallery-244-v1": {
+    "en": "Underwater Palace",
+    "az": "Sualtı saray",
+    "es": "Palacio submarino",
+    "ru": "Подводный дворец"
+  },
+  "sample-gallery-245-v1": {
+    "en": "Flamingo Lagoon",
+    "az": "Flaminqo laqunu",
+    "es": "Laguna de flamencos",
+    "ru": "Лагуна фламинго"
+  },
+  "sample-gallery-246-v1": {
+    "en": "Squirrel's Treasure",
+    "az": "Dələnin xəzinəsi",
+    "es": "El tesoro de la ardilla",
+    "ru": "Сокровище белки"
+  },
+  "sample-gallery-247-v1": {
+    "en": "Sunset on the Salt Lake",
+    "az": "Duz gölündə günbatımı",
+    "es": "Atardecer en el lago salado",
+    "ru": "Закат на солёном озере"
+  },
+  "sample-gallery-248-v1": {
+    "en": "Rocky Coastal Road",
+    "az": "Qayalı sahil yolu",
+    "es": "Camino costero rocoso",
+    "ru": "Скалистая прибрежная дорога"
+  },
+  "sample-gallery-249-v1": {
+    "en": "Snowy Bookshop Street",
+    "az": "Qarlı kitab mağazası küçəsi",
+    "es": "Calle nevada de la librería",
+    "ru": "Заснеженная улица книжного магазина"
+  },
+  "sample-gallery-250-v1": {
+    "en": "Flowered Bicycle Street",
+    "az": "Çiçəkli velosiped küçəsi",
+    "es": "Calle de bicicletas y flores",
+    "ru": "Улица велосипедов и цветов"
+  },
+  "sample-middle-20260916-doga-4-1": {
+    "en": "Seed Awakening",
+    "az": "Toxumun oyanışı",
+    "es": "El despertar de la semilla",
+    "ru": "Пробуждение семени"
+  },
+  "sample-middle-20260916-doga-4-2": {
+    "en": "Dandelion in the Wind",
+    "az": "Küləkdə zəncirotu",
+    "es": "Diente de león al viento",
+    "ru": "Одуванчик на ветру"
+  },
+  "sample-middle-20260916-doga-4-3": {
+    "en": "Veins of a Rhubarb Leaf",
+    "az": "Rəvənd yarpağının damarları",
+    "es": "Nervios de una hoja de ruibarbo",
+    "ru": "Жилки листа ревеня"
+  },
+  "sample-middle-20260916-doga-4-4": {
+    "en": "Traces of the Volcano",
+    "az": "Vulkanın izləri",
+    "es": "Huellas del volcán",
+    "ru": "Следы вулкана"
+  },
+  "sample-middle-20260916-doga-5-1": {
+    "en": "Desert Stone Roses",
+    "az": "Səhranın daş gülləri",
+    "es": "Rosas de piedra del desierto",
+    "ru": "Каменные розы пустыни"
+  },
+  "sample-middle-20260916-doga-5-2": {
+    "en": "Light of the Storm",
+    "az": "Fırtınanın işığı",
+    "es": "La luz de la tormenta",
+    "ru": "Свет бури"
+  },
+  "sample-middle-20260916-doga-5-3": {
+    "en": "Tropical Oasis",
+    "az": "Tropik vahə",
+    "es": "Oasis tropical",
+    "ru": "Тропический оазис"
+  },
+  "sample-middle-20260916-doga-5-4": {
+    "en": "Roots of the Sea Daffodil",
+    "az": "Qum zanbağının kökləri",
+    "es": "Raíces del lirio de mar",
+    "ru": "Корни морской лилии"
+  },
+  "sample-middle-20260916-hayvanlar-4-1": {
+    "en": "Wombat in Its Burrow",
+    "az": "Yuvasındakı vombat",
+    "es": "Wombat en su madriguera",
+    "ru": "Вомбат в норе"
+  },
+  "sample-middle-20260916-hayvanlar-4-2": {
+    "en": "Tide Pool Crab",
+    "az": "Qabarma hovuzunun yengəci",
+    "es": "Cangrejo de la poza de marea",
+    "ru": "Краб приливного бассейна"
+  },
+  "sample-middle-20260916-hayvanlar-4-3": {
+    "en": "Scarlet Ibis and Reeds",
+    "az": "Qırmızı ibis və qamışlar",
+    "es": "Ibis rojo entre juncos",
+    "ru": "Алый ибис и камыши"
+  },
+  "sample-middle-20260916-hayvanlar-4-4": {
+    "en": "Hamster in the Wheat",
+    "az": "Buğdadakı hamster",
+    "es": "Hámster entre el trigo",
+    "ru": "Хомяк в пшенице"
+  },
+  "sample-middle-20260916-hayvanlar-5-1": {
+    "en": "Otters in the River",
+    "az": "Çaydakı su samurları",
+    "es": "Nutrias en el río",
+    "ru": "Выдры в реке"
+  },
+  "sample-middle-20260916-hayvanlar-5-2": {
+    "en": "Hornbill's Fruit",
+    "az": "Kərgədanquşunun meyvəsi",
+    "es": "La fruta del cálao",
+    "ru": "Плод птицы-носорога"
+  },
+  "sample-middle-20260916-hayvanlar-5-3": {
+    "en": "Polar Family",
+    "az": "Qütb ailəsi",
+    "es": "Familia polar",
+    "ru": "Полярная семья"
+  },
+  "sample-middle-20260916-hayvanlar-5-4": {
+    "en": "Valley of Deer",
+    "az": "Marallar vadisi",
+    "es": "Valle de los ciervos",
+    "ru": "Долина оленей"
+  },
+  "sample-middle-20260916-fantastik-4-1": {
+    "en": "Flying Carpet Tea Garden",
+    "az": "Uçan xalçanın çay bağı",
+    "es": "Jardín de té en la alfombra voladora",
+    "ru": "Чайный сад на ковре-самолёте"
+  },
+  "sample-middle-20260916-fantastik-4-2": {
+    "en": "Magical Bubble Maker",
+    "az": "Sehrli köpük ustası",
+    "es": "El mago de las burbujas",
+    "ru": "Волшебник мыльных пузырей"
+  },
+  "sample-middle-20260916-fantastik-4-3": {
+    "en": "Little Dragon",
+    "az": "Balaca əjdaha",
+    "es": "Pequeño dragón",
+    "ru": "Маленький дракон"
+  },
+  "sample-middle-20260916-fantastik-4-4": {
+    "en": "Living Chess",
+    "az": "Canlanan şahmat",
+    "es": "Ajedrez viviente",
+    "ru": "Ожившие шахматы"
+  },
+  "sample-middle-20260916-fantastik-5-1": {
+    "en": "Crystal Library",
+    "az": "Kristal kitabxana",
+    "es": "Biblioteca de cristal",
+    "ru": "Хрустальная библиотека"
+  },
+  "sample-middle-20260916-fantastik-5-2": {
+    "en": "Sky Harbor",
+    "az": "Səma limanı",
+    "es": "Puerto del cielo",
+    "ru": "Небесная гавань"
+  },
+  "sample-middle-20260916-fantastik-5-3": {
+    "en": "Forest Guardian",
+    "az": "Meşə mühafizəçisi",
+    "es": "Guardián del bosque",
+    "ru": "Страж леса"
+  },
+  "sample-middle-20260916-fantastik-5-4": {
+    "en": "Star Mill",
+    "az": "Ulduz dəyirmanı",
+    "es": "Molino de estrellas",
+    "ru": "Звёздная мельница"
+  },
+  "sample-middle-20260916-manzaralar-4-1": {
+    "en": "Basalt Columns",
+    "az": "Bazalt sütunları",
+    "es": "Columnas de basalto",
+    "ru": "Базальтовые колонны"
+  },
+  "sample-middle-20260916-manzaralar-4-2": {
+    "en": "Lake Pier",
+    "az": "Göl körpüsü",
+    "es": "Muelle del lago",
+    "ru": "Озёрный причал"
+  },
+  "sample-middle-20260916-manzaralar-4-3": {
+    "en": "Windmill on the Hill",
+    "az": "Təpədəki külək dəyirmanı",
+    "es": "Molino en la colina",
+    "ru": "Мельница на холме"
+  },
+  "sample-middle-20260916-manzaralar-4-4": {
+    "en": "Iceberg Arch",
+    "az": "Aysberqin tağı",
+    "es": "Arco del iceberg",
+    "ru": "Арка айсберга"
+  },
+  "sample-middle-20260916-manzaralar-5-1": {
+    "en": "Coral Island Ring",
+    "az": "Mərcan adasının halqası",
+    "es": "El anillo de la isla coralina",
+    "ru": "Кольцо кораллового острова"
+  },
+  "sample-middle-20260916-manzaralar-5-2": {
+    "en": "Silence of the Stone Circle",
+    "az": "Daş dairənin sükutu",
+    "es": "El silencio del círculo de piedras",
+    "ru": "Тишина каменного круга"
+  },
+  "sample-middle-20260916-manzaralar-5-3": {
+    "en": "Red Earth Layers",
+    "az": "Qırmızı torpaq qatları",
+    "es": "Capas de tierra roja",
+    "ru": "Слои красной земли"
+  },
+  "sample-middle-20260916-manzaralar-5-4": {
+    "en": "Mediterranean Bay",
+    "az": "Aralıq dənizi körfəzi",
+    "es": "Bahía mediterránea",
+    "ru": "Средиземноморская бухта"
+  },
+  "sample-middle-20260916-sehirler-4-1": {
+    "en": "Neighborhood Bakery",
+    "az": "Məhəllə çörəkxanası",
+    "es": "Panadería del barrio",
+    "ru": "Районная пекарня"
+  },
+  "sample-middle-20260916-sehirler-4-2": {
+    "en": "Courtyard Laundry Day",
+    "az": "Həyətdə paltar günü",
+    "es": "Día de colada en el patio",
+    "ru": "Стирка во дворе"
+  },
+  "sample-middle-20260916-sehirler-4-3": {
+    "en": "City Cable Car Stop",
+    "az": "Şəhər kanat yolu dayanacağı",
+    "es": "Parada del teleférico urbano",
+    "ru": "Станция городской канатной дороги"
+  },
+  "sample-middle-20260916-sehirler-4-4": {
+    "en": "Clock Square",
+    "az": "Saat meydanı",
+    "es": "Plaza del reloj",
+    "ru": "Часовая площадь"
+  },
+  "sample-middle-20260916-sehirler-5-1": {
+    "en": "City Greenhouse",
+    "az": "Şəhər istixanası",
+    "es": "Invernadero urbano",
+    "ru": "Городская оранжерея"
+  },
+  "sample-middle-20260916-sehirler-5-2": {
+    "en": "Rainy Street",
+    "az": "Yağışlı küçə",
+    "es": "Calle lluviosa",
+    "ru": "Дождливая улица"
+  },
+  "sample-middle-20260916-sehirler-5-3": {
+    "en": "Glowing Arcade",
+    "az": "İşıqlı oyun salonu",
+    "es": "Salón recreativo iluminado",
+    "ru": "Сияющий зал игровых автоматов"
+  },
+  "sample-middle-20260916-sehirler-5-4": {
+    "en": "Night Market",
+    "az": "Gecə bazarı",
+    "es": "Mercado nocturno",
+    "ru": "Ночной рынок"
+  },
+  "sample-middle2-20260916-doga-4-1": {
+    "en": "Pebble Mosaic",
+    "az": "Çınqıl mozaikası",
+    "es": "Mosaico de guijarros",
+    "ru": "Мозаика из гальки"
+  },
+  "sample-middle2-20260916-doga-4-2": {
+    "en": "Seashells on the Shore",
+    "az": "Sahildə dəniz qabıqları",
+    "es": "Conchas en la orilla",
+    "ru": "Ракушки на берегу"
+  },
+  "sample-middle2-20260916-doga-4-3": {
+    "en": "Autumn in the Apple Orchard",
+    "az": "Alma bağında payız",
+    "es": "Otoño en el manzanar",
+    "ru": "Осень в яблоневом саду"
+  },
+  "sample-middle2-20260916-doga-5-1": {
+    "en": "Mangrove Roots",
+    "az": "Manqrov kökləri",
+    "es": "Raíces de manglar",
+    "ru": "Корни мангров"
+  },
+  "sample-middle2-20260916-doga-5-2": {
+    "en": "Glacier Cave",
+    "az": "Buzlaq mağarası",
+    "es": "Cueva glaciar",
+    "ru": "Ледниковая пещера"
+  },
+  "sample-middle2-20260916-doga-5-3": {
+    "en": "Magnolia's Velvet Bud",
+    "az": "Maqnoliyanın məxməri tumurcuğu",
+    "es": "El capullo aterciopelado de la magnolia",
+    "ru": "Бархатный бутон магнолии"
+  },
+  "sample-middle2-20260916-hayvanlar-4-1": {
+    "en": "Bee on a Sunflower",
+    "az": "Günəbaxandakı arı",
+    "es": "Abeja en un girasol",
+    "ru": "Пчела на подсолнухе"
+  },
+  "sample-middle2-20260916-hayvanlar-4-2": {
+    "en": "Seagull on the Rocks",
+    "az": "Qayalıqdakı qağayı",
+    "es": "Gaviota en las rocas",
+    "ru": "Чайка на скалах"
+  },
+  "sample-middle2-20260916-hayvanlar-4-3": {
+    "en": "Anteater's Path",
+    "az": "Qarışqayeyənin yolu",
+    "es": "El camino del oso hormiguero",
+    "ru": "Путь муравьеда"
+  },
+  "sample-middle2-20260916-hayvanlar-5-1": {
+    "en": "Sloth's Rest",
+    "az": "Tənbəlin istirahəti",
+    "es": "El descanso del perezoso",
+    "ru": "Отдых ленивца"
+  },
+  "sample-middle2-20260916-hayvanlar-5-2": {
+    "en": "Seahorse Garden",
+    "az": "Dəniz atı bağı",
+    "es": "Jardín de caballitos de mar",
+    "ru": "Сад морских коньков"
+  },
+  "sample-middle2-20260916-hayvanlar-5-3": {
+    "en": "Puffin on the Cliffs",
+    "az": "Qayalıqdakı dəniz tutuquşusu",
+    "es": "Frailecillo en el acantilado",
+    "ru": "Тупик на утёсе"
+  },
+  "sample-middle2-20260916-fantastik-4-1": {
+    "en": "Teapot Cottage",
+    "az": "Çaydan daxması",
+    "es": "Cabaña tetera",
+    "ru": "Домик-чайник"
+  },
+  "sample-middle2-20260916-fantastik-4-2": {
+    "en": "Star Snail",
+    "az": "Ulduz ilbizi",
+    "es": "Caracol estelar",
+    "ru": "Звёздная улитка"
+  },
+  "sample-middle2-20260916-fantastik-4-3": {
+    "en": "Fairy Post Office",
+    "az": "Pəri poçtu",
+    "es": "Correo de las hadas",
+    "ru": "Почта фей"
+  },
+  "sample-middle2-20260916-fantastik-5-1": {
+    "en": "Moonlight Greenhouse",
+    "az": "Ay işığı istixanası",
+    "es": "Invernadero a la luz lunar",
+    "ru": "Оранжерея лунного света"
+  },
+  "sample-middle2-20260916-fantastik-5-2": {
+    "en": "Crystal Canyon Passage",
+    "az": "Kristal kanyon keçidi",
+    "es": "Paso del cañón de cristal",
+    "ru": "Проход хрустального каньона"
+  },
+  "sample-middle2-20260916-fantastik-5-3": {
+    "en": "Dragon Lantern Keeper",
+    "az": "Əjdaha fənərçisi",
+    "es": "El farolero dragón",
+    "ru": "Дракон-фонарщик"
+  },
+  "sample-middle2-20260916-manzaralar-4-1": {
+    "en": "Sunset Sail",
+    "az": "Günbatımı yelkəni",
+    "es": "Velero al atardecer",
+    "ru": "Парус на закате"
+  },
+  "sample-middle2-20260916-manzaralar-4-2": {
+    "en": "Highland Cottage",
+    "az": "Yaylaq daxması",
+    "es": "Cabaña de la montaña",
+    "ru": "Хижина на высокогорье"
+  },
+  "sample-middle2-20260916-manzaralar-4-3": {
+    "en": "Tracks in the Dunes",
+    "az": "Qum təpələrindəki iz",
+    "es": "Huellas en las dunas",
+    "ru": "Следы на дюнах"
+  },
+  "sample-middle2-20260916-manzaralar-5-1": {
+    "en": "Autumn Viaduct",
+    "az": "Payız viaduku",
+    "es": "Viaducto otoñal",
+    "ru": "Осенний виадук"
+  },
+  "sample-middle2-20260916-manzaralar-5-2": {
+    "en": "Boardwalk through the Reeds",
+    "az": "Qamışlıqda taxta yol",
+    "es": "Pasarela entre juncos",
+    "ru": "Деревянная тропа в камышах"
+  },
+  "sample-middle2-20260916-manzaralar-5-3": {
+    "en": "Cave Window",
+    "az": "Mağaranın pəncərəsi",
+    "es": "La ventana de la cueva",
+    "ru": "Окно пещеры"
+  },
+  "sample-middle2-20260916-sehirler-4-1": {
+    "en": "Street Florist",
+    "az": "Küçə çiçəkçisi",
+    "es": "Florista callejero",
+    "ru": "Уличный цветочник"
+  },
+  "sample-middle2-20260916-sehirler-4-2": {
+    "en": "Rooftop Basketball",
+    "az": "Damda basketbol",
+    "es": "Baloncesto en la azotea",
+    "ru": "Баскетбол на крыше"
+  },
+  "sample-middle2-20260916-sehirler-4-3": {
+    "en": "Potter's Courtyard",
+    "az": "Dulusçunun həyəti",
+    "es": "Patio del alfarero",
+    "ru": "Двор гончара"
+  },
+  "sample-middle2-20260916-sehirler-5-1": {
+    "en": "Harbor Morning",
+    "az": "Liman səhəri",
+    "es": "Mañana en el puerto",
+    "ru": "Утро в гавани"
+  },
+  "sample-middle2-20260916-sehirler-5-2": {
+    "en": "Square on a Winter Evening",
+    "az": "Qış axşamı meydanı",
+    "es": "Plaza en una tarde de invierno",
+    "ru": "Площадь зимним вечером"
+  },
+  "sample-middle2-20260916-sehirler-5-3": {
+    "en": "Art Nouveau Street",
+    "az": "Art Nuvo küçəsi",
+    "es": "Calle modernista",
+    "ru": "Улица в стиле модерн"
+  },
+  "sample-hard-20260916-doga-6-1": {
+    "en": "Rain Pool on a Giant Leaf",
+    "az": "Nəhəng yarpağın yağış hovuzu",
+    "es": "Charco de lluvia en una hoja gigante",
+    "ru": "Дождевой бассейн на гигантском листе"
+  },
+  "sample-hard-20260916-doga-6-2": {
+    "en": "Waves on the Basalt Coast",
+    "az": "Bazalt sahilində dalğalar",
+    "es": "Olas en la costa de basalto",
+    "ru": "Волны базальтового берега"
+  },
+  "sample-hard-20260916-hayvanlar-6-1": {
+    "en": "Jaguar's Hidden Path",
+    "az": "Yaquarın gizli cığırı",
+    "es": "La senda secreta del jaguar",
+    "ru": "Тайная тропа ягуара"
+  },
+  "sample-hard-20260916-hayvanlar-6-2": {
+    "en": "Penguins' Ice Harbor",
+    "az": "Pinqvinlərin buz limanı",
+    "es": "Puerto helado de pingüinos",
+    "ru": "Ледяная гавань пингвинов"
+  },
+  "sample-hard-20260916-fantastik-6-1": {
+    "en": "Coral Observatory",
+    "az": "Mərcan rəsədxanası",
+    "es": "Observatorio de coral",
+    "ru": "Коралловая обсерватория"
+  },
+  "sample-hard-20260916-fantastik-6-2": {
+    "en": "Celestial Clock Workshop",
+    "az": "Səma saat emalatxanası",
+    "es": "Taller de relojes celestes",
+    "ru": "Мастерская небесных часов"
+  },
+  "sample-hard-20260916-manzaralar-6-1": {
+    "en": "Dawn in the Valley of Arches",
+    "az": "Tağlar vadisində şəfəq",
+    "es": "Amanecer en el valle de los arcos",
+    "ru": "Рассвет в долине арок"
+  },
+  "sample-hard-20260916-manzaralar-6-2": {
+    "en": "Autumn Vineyard Road",
+    "az": "Üzümlüklərin payız yolu",
+    "es": "Camino otoñal entre viñedos",
+    "ru": "Осенняя дорога виноградников"
+  },
+  "sample-hard-20260916-sehirler-6-1": {
+    "en": "Seaside Neighborhood Steps",
+    "az": "Pilləli sahil məhəlləsi",
+    "es": "Barrio costero de escaleras",
+    "ru": "Прибрежный квартал с лестницами"
+  },
+  "sample-hard-20260916-sehirler-6-2": {
+    "en": "Lanterns on the Winter Canal",
+    "az": "Qış kanalında fənərlər",
+    "es": "Faroles en el canal invernal",
+    "ru": "Фонари зимнего канала"
+  },
+  "sample-extra-20260921-doga-1": {
+    "en": "Dewy Clover",
+    "az": "Şehli yonca",
+    "es": "Trébol con rocío",
+    "ru": "Клевер в росе"
+  },
+  "sample-extra-20260921-doga-2": {
+    "en": "Cotton Branches",
+    "az": "Pambıq budaqları",
+    "es": "Ramas de algodón",
+    "ru": "Ветви хлопка"
+  },
+  "sample-extra-20260921-doga-3": {
+    "en": "Patterns of Frost",
+    "az": "Qırov naxışları",
+    "es": "Dibujos de escarcha",
+    "ru": "Узоры инея"
+  },
+  "sample-extra-20260921-hayvanlar-1": {
+    "en": "Jumping Grasshopper",
+    "az": "Tullanan çəyirtkə",
+    "es": "Saltamontes saltarín",
+    "ru": "Прыгающий кузнечик"
+  },
+  "sample-extra-20260921-hayvanlar-2": {
+    "en": "Chameleon's Branch",
+    "az": "Buqələmunun budağı",
+    "es": "La rama del camaleón",
+    "ru": "Ветка хамелеона"
+  },
+  "sample-extra-20260921-hayvanlar-3": {
+    "en": "Pangolin's Walk",
+    "az": "Panqolinin gəzintisi",
+    "es": "El paseo del pangolín",
+    "ru": "Прогулка панголина"
+  },
+  "sample-extra-20260921-fantastik-1": {
+    "en": "Walking Alarm Clock",
+    "az": "Yeriyən zəngli saat",
+    "es": "Despertador caminante",
+    "ru": "Шагающий будильник"
+  },
+  "sample-extra-20260921-fantastik-2": {
+    "en": "Cloud Tailor",
+    "az": "Bulud dərzisi",
+    "es": "Sastre de nubes",
+    "ru": "Портной облаков"
+  },
+  "sample-extra-20260921-fantastik-3": {
+    "en": "Bakery of Dreams",
+    "az": "Yuxuların sobası",
+    "es": "Horno de los sueños",
+    "ru": "Пекарня сновидений"
+  },
+  "sample-extra-20260921-manzaralar-1": {
+    "en": "Footprints on the Beach",
+    "az": "Qumsaldakı ayaq izləri",
+    "es": "Huellas en la playa",
+    "ru": "Следы на пляже"
+  },
+  "sample-extra-20260921-manzaralar-2": {
+    "en": "Geothermal Colors",
+    "az": "Geotermal rənglər",
+    "es": "Colores geotérmicos",
+    "ru": "Геотермальные краски"
+  },
+  "sample-extra-20260921-manzaralar-3": {
+    "en": "Silent Lunar Valley",
+    "az": "Ayın səssiz vadisi",
+    "es": "El valle silencioso de la luna",
+    "ru": "Тихая лунная долина"
+  },
+  "sample-extra-20260921-sehirler-1": {
+    "en": "Street Telephone",
+    "az": "Küçə telefonu",
+    "es": "Teléfono callejero",
+    "ru": "Уличный телефон"
+  },
+  "sample-extra-20260921-sehirler-2": {
+    "en": "Rooftop Cinema",
+    "az": "Dam kinoteatrı",
+    "es": "Cine en la azotea",
+    "ru": "Кинотеатр на крыше"
+  },
+  "sample-extra-20260921-sehirler-3": {
+    "en": "Bicycle Repair Shop",
+    "az": "Velosiped təmirçisi",
+    "es": "Taller de bicicletas",
+    "ru": "Велосипедная мастерская"
+  },
+  "sample-expert-20260921-doga-1": {
+    "en": "Orchid's Hidden World",
+    "az": "Orxideyanın gizli dünyası",
+    "es": "El mundo secreto de la orquídea",
+    "ru": "Тайный мир орхидеи"
+  },
+  "sample-expert-20260921-doga-2": {
+    "en": "Secrets of the Tide Pool",
+    "az": "Qabarma hovuzunun sirləri",
+    "es": "Secretos de la poza de marea",
+    "ru": "Тайны приливного бассейна"
+  },
+  "sample-expert-20260921-doga-3": {
+    "en": "Autumn Leaf Map",
+    "az": "Payızın yarpaq xəritəsi",
+    "es": "Mapa de hojas otoñales",
+    "ru": "Карта осенних листьев"
+  },
+  "sample-expert-20260921-hayvanlar-1": {
+    "en": "Whales' Blue Journey",
+    "az": "Balinaların mavi səyahəti",
+    "es": "El viaje azul de las ballenas",
+    "ru": "Синее путешествие китов"
+  },
+  "sample-expert-20260921-hayvanlar-2": {
+    "en": "Wolves' Winter Trail",
+    "az": "Canavarların qış yolu",
+    "es": "El sendero invernal de los lobos",
+    "ru": "Зимняя тропа волков"
+  },
+  "sample-expert-20260921-hayvanlar-3": {
+    "en": "Bee-eaters' Colorful Branch",
+    "az": "Qızlarquşularının rəngli budağı",
+    "es": "La rama colorida de los abejarucos",
+    "ru": "Пёстрая ветка щурок"
+  },
+  "sample-expert-20260921-fantastik-1": {
+    "en": "City Inside the Hourglass",
+    "az": "Qum saatındakı şəhər",
+    "es": "La ciudad dentro del reloj de arena",
+    "ru": "Город внутри песочных часов"
+  },
+  "sample-expert-20260921-fantastik-2": {
+    "en": "Jellyfish Palace",
+    "az": "Meduza sarayı",
+    "es": "Palacio de las medusas",
+    "ru": "Дворец медуз"
+  },
+  "sample-expert-20260921-fantastik-3": {
+    "en": "Mechanical Fairytale Garden",
+    "az": "Nağılın mexaniki bağı",
+    "es": "Jardín mecánico de cuento",
+    "ru": "Механический сказочный сад"
+  },
+  "sample-expert-20260921-manzaralar-1": {
+    "en": "Veins of the Delta",
+    "az": "Deltanın damarları",
+    "es": "Venas del delta",
+    "ru": "Жилы дельты"
+  },
+  "sample-expert-20260921-manzaralar-2": {
+    "en": "Steppe Before the Storm",
+    "az": "Fırtınadan əvvəl bozqır",
+    "es": "Estepa antes de la tormenta",
+    "ru": "Степь перед бурей"
+  },
+  "sample-expert-20260921-manzaralar-3": {
+    "en": "White Cliff Coast",
+    "az": "Ağ qayalıqların sahili",
+    "es": "Costa de acantilados blancos",
+    "ru": "Берег белых скал"
+  },
+  "sample-expert-20260921-sehirler-1": {
+    "en": "Lights of the Opera House",
+    "az": "Opera zalının işıqları",
+    "es": "Luces de la ópera",
+    "ru": "Огни оперного театра"
+  },
+  "sample-expert-20260921-sehirler-2": {
+    "en": "Night Bus in the Rain",
+    "az": "Yağışda gecə avtobusu",
+    "es": "Autobús nocturno bajo la lluvia",
+    "ru": "Ночной автобус под дождём"
+  },
+  "sample-expert-20260921-sehirler-3": {
+    "en": "Glass-roofed Market",
+    "az": "Şüşə damlı bazar",
+    "es": "Mercado con techo de cristal",
+    "ru": "Рынок под стеклянной крышей"
+  },
+  "sample-expert2-20260921-doga-1": {
+    "en": "Tiny Moss Forest",
+    "az": "Mamırların balaca meşəsi",
+    "es": "El pequeño bosque de musgo",
+    "ru": "Маленький моховой лес"
+  },
+  "sample-expert2-20260921-doga-2": {
+    "en": "Jewels Inside a Pomegranate",
+    "az": "Narın içindəki daş-qaşlar",
+    "es": "Joyas dentro de una granada",
+    "ru": "Самоцветы внутри граната"
+  },
+  "sample-expert2-20260921-doga-3": {
+    "en": "Butterfly Wing Patterns",
+    "az": "Kəpənək qanadının naxışları",
+    "es": "Dibujos del ala de mariposa",
+    "ru": "Узоры крыла бабочки"
+  },
+  "sample-expert2-20260921-hayvanlar-1": {
+    "en": "Lynx on Forest Watch",
+    "az": "Vaşağın meşə növbəsi",
+    "es": "El lince vigila el bosque",
+    "ru": "Лесной дозор рыси"
+  },
+  "sample-expert2-20260921-hayvanlar-2": {
+    "en": "Walruses' Icy Shore",
+    "az": "Morjların buz sahili",
+    "es": "La costa helada de las morsas",
+    "ru": "Ледяной берег моржей"
+  },
+  "sample-expert2-20260921-hayvanlar-3": {
+    "en": "Cuttlefish Underwater",
+    "az": "Sualtı mürəkkəb balığı",
+    "es": "Sepia bajo el agua",
+    "ru": "Каракатица под водой"
+  },
+  "sample-expert2-20260921-fantastik-1": {
+    "en": "Potter of Planets",
+    "az": "Planetlərin dulusçusu",
+    "es": "Alfarero de planetas",
+    "ru": "Гончар планет"
+  },
+  "sample-expert2-20260921-fantastik-2": {
+    "en": "Dragon's Tea Time",
+    "az": "Əjdahanın çay saatı",
+    "es": "La hora del té del dragón",
+    "ru": "Чаепитие дракона"
+  },
+  "sample-expert2-20260921-fantastik-3": {
+    "en": "Storm in a Bottle",
+    "az": "Şüşədəki fırtına",
+    "es": "Tormenta en una botella",
+    "ru": "Буря в бутылке"
+  },
+  "sample-expert2-20260921-manzaralar-1": {
+    "en": "Purple Desert Horizon",
+    "az": "Bənövşəyi səhranın üfüqü",
+    "es": "Horizonte del desierto violeta",
+    "ru": "Горизонт лиловой пустыни"
+  },
+  "sample-expert2-20260921-manzaralar-2": {
+    "en": "Blue Glacier Crevasses",
+    "az": "Buzlağın mavi yarıqları",
+    "es": "Grietas azules del glaciar",
+    "ru": "Синие трещины ледника"
+  },
+  "sample-expert2-20260921-manzaralar-3": {
+    "en": "Rainbow After the Rain",
+    "az": "Yağışdan sonra göy qurşağı",
+    "es": "Arcoíris después de la lluvia",
+    "ru": "Радуга после дождя"
+  },
+  "sample-expert2-20260921-sehirler-1": {
+    "en": "Morning at the Old Print Shop",
+    "az": "Köhnə mətbəənin səhəri",
+    "es": "Mañana en la antigua imprenta",
+    "ru": "Утро в старой типографии"
+  },
+  "sample-expert2-20260921-sehirler-2": {
+    "en": "Fire Station Garage",
+    "az": "Yanğınsöndürmə qarajı",
+    "es": "Garaje de bomberos",
+    "ru": "Гараж пожарной части"
+  },
+  "sample-expert2-20260921-sehirler-3": {
+    "en": "Harbor Dry Dock",
+    "az": "Limanın quru doku",
+    "es": "Dique seco del puerto",
+    "ru": "Сухой док порта"
+  },
+  "sample-easymid-20260921-doga-1": {
+    "en": "Pea Pod",
+    "az": "Noxud qabığı",
+    "es": "Vaina de guisantes",
+    "ru": "Стручок гороха"
+  },
+  "sample-easymid-20260921-doga-2": {
+    "en": "Colors of the Hyacinth",
+    "az": "Sünbülün rəngləri",
+    "es": "Colores del jacinto",
+    "ru": "Краски гиацинта"
+  },
+  "sample-easymid-20260921-doga-3": {
+    "en": "Lichen on a Rock",
+    "az": "Qayadakı şibyə",
+    "es": "Liquen en la roca",
+    "ru": "Лишайник на камне"
+  },
+  "sample-easymid-20260921-hayvanlar-1": {
+    "en": "Cute Tapir",
+    "az": "Sevimli tapir",
+    "es": "Tapir adorable",
+    "ru": "Милый тапир"
+  },
+  "sample-easymid-20260921-hayvanlar-2": {
+    "en": "Little Pipefish",
+    "az": "Balaca dəniz iynəsi",
+    "es": "Pequeño pez aguja",
+    "ru": "Маленькая морская игла"
+  },
+  "sample-easymid-20260921-hayvanlar-3": {
+    "en": "Ladybird on a Flower",
+    "az": "Çiçəkdə parabüzən",
+    "es": "Mariquita en una flor",
+    "ru": "Божья коровка на цветке"
+  },
+  "sample-easymid-20260921-fantastik-1": {
+    "en": "Flying Umbrella",
+    "az": "Uçan çətir",
+    "es": "Paraguas volador",
+    "ru": "Летающий зонт"
+  },
+  "sample-easymid-20260921-fantastik-2": {
+    "en": "Sleepy Rock",
+    "az": "Yuxulu qaya",
+    "es": "Roca dormilona",
+    "ru": "Сонный камень"
+  },
+  "sample-easymid-20260921-fantastik-3": {
+    "en": "Starry Glove",
+    "az": "Ulduzlu əlcək",
+    "es": "Guante estrellado",
+    "ru": "Звёздная перчатка"
+  },
+  "sample-easymid-20260921-manzaralar-1": {
+    "en": "Lone Tree on a Hill",
+    "az": "Təpədə tək ağac",
+    "es": "Árbol solitario en la colina",
+    "ru": "Одинокое дерево на холме"
+  },
+  "sample-easymid-20260921-manzaralar-2": {
+    "en": "Red Sand Path",
+    "az": "Qırmızı qum yolu",
+    "es": "Camino de arena roja",
+    "ru": "Тропа красного песка"
+  },
+  "sample-easymid-20260921-manzaralar-3": {
+    "en": "Rock in the Water",
+    "az": "Suyun ortasındakı qaya",
+    "es": "Roca en medio del agua",
+    "ru": "Скала посреди воды"
+  },
+  "sample-easymid-20260921-sehirler-1": {
+    "en": "Neighborhood Greengrocer",
+    "az": "Məhəllə tərəvəzçisi",
+    "es": "Frutería del barrio",
+    "ru": "Районная овощная лавка"
+  },
+  "sample-easymid-20260921-sehirler-2": {
+    "en": "Yellow Mailbox",
+    "az": "Sarı poçt qutusu",
+    "es": "Buzón amarillo",
+    "ru": "Жёлтый почтовый ящик"
+  },
+  "sample-easymid-20260921-sehirler-3": {
+    "en": "Chess in the Park",
+    "az": "Parkda şahmat",
+    "es": "Ajedrez en el parque",
+    "ru": "Шахматы в парке"
+  },
+  "sample-easy-20260921-doga-1": {
+    "en": "Cherries on a Branch",
+    "az": "Budaqda albalı",
+    "es": "Cerezas en la rama",
+    "ru": "Вишни на ветке"
+  },
+  "sample-easy-20260921-hayvanlar-1": {
+    "en": "Little Mole",
+    "az": "Balaca köstəbək",
+    "es": "Pequeño topo",
+    "ru": "Маленький крот"
+  },
+  "sample-easy-20260921-fantastik-1": {
+    "en": "Magic Button",
+    "az": "Sehrli düymə",
+    "es": "Botón mágico",
+    "ru": "Волшебная пуговица"
+  },
+  "sample-easy-20260921-manzaralar-1": {
+    "en": "Little Stone Bridge",
+    "az": "Balaca daş körpü",
+    "es": "Pequeño puente de piedra",
+    "ru": "Маленький каменный мост"
+  },
+  "sample-easy-20260921-sehirler-1": {
+    "en": "Simit Cart",
+    "az": "Simit arabası",
+    "es": "Carrito de simit",
+    "ru": "Тележка с симитами"
+  },
+  "sample-easymid2-20260921-doga-1": {
+    "en": "Unfurling Fern",
+    "az": "Açılan qıjı",
+    "es": "Helecho desplegándose",
+    "ru": "Раскрывающийся папоротник"
+  },
+  "sample-easymid2-20260921-hayvanlar-1": {
+    "en": "Cheerful Pelican",
+    "az": "Şən qutan",
+    "es": "Pelícano alegre",
+    "ru": "Весёлый пеликан"
+  },
+  "sample-easymid2-20260921-fantastik-1": {
+    "en": "Shepherd of Clouds",
+    "az": "Buludların çobanı",
+    "es": "Pastor de nubes",
+    "ru": "Пастух облаков"
+  },
+  "sample-easymid2-20260921-manzaralar-1": {
+    "en": "Pink Lake Shore",
+    "az": "Çəhrayı gölün sahili",
+    "es": "La orilla del lago rosa",
+    "ru": "Берег розового озера"
+  },
+  "sample-easymid2-20260921-sehirler-1": {
+    "en": "Neighborhood Barber",
+    "az": "Məhəllə bərbəri",
+    "es": "Barbería del barrio",
+    "ru": "Районная парикмахерская"
+  },
+  "sample-mid20-20260923-doga-1": {
+    "en": "Purple Heart of the Fig",
+    "az": "Əncirin bənövşəyi ürəyi",
+    "es": "El corazón violeta del higo",
+    "ru": "Лиловое сердце инжира"
+  },
+  "sample-mid20-20260923-doga-2": {
+    "en": "Coral Blossom",
+    "az": "Mərcan çiçəyi",
+    "es": "Flor de coral",
+    "ru": "Коралловый цветок"
+  },
+  "sample-mid20-20260923-doga-3": {
+    "en": "Chestnut's Spiky Husk",
+    "az": "Şabalıdın tikanlı qabığı",
+    "es": "La cáscara espinosa de la castaña",
+    "ru": "Колючая оболочка каштана"
+  },
+  "sample-mid20-20260923-doga-4": {
+    "en": "World of the Mossy Log",
+    "az": "Mamırlı kötüyün dünyası",
+    "es": "El mundo del tronco musgoso",
+    "ru": "Мир мшистого бревна"
+  },
+  "sample-mid20-20260923-hayvanlar-1": {
+    "en": "Horned Frog's Rest",
+    "az": "Buynuzlu qurbağanın istirahəti",
+    "es": "El descanso de la rana cornuda",
+    "ru": "Отдых рогатой лягушки"
+  },
+  "sample-mid20-20260923-hayvanlar-2": {
+    "en": "Sleepy Wombat",
+    "az": "Yuxulu vombat",
+    "es": "Wombat dormilón",
+    "ru": "Сонный вомбат"
+  },
+  "sample-mid20-20260923-hayvanlar-3": {
+    "en": "Secretary Bird's Steps",
+    "az": "Katib quşunun addımları",
+    "es": "Los pasos del secretario",
+    "ru": "Шаги птицы-секретаря"
+  },
+  "sample-mid20-20260923-hayvanlar-4": {
+    "en": "Nautilus Spiral Journey",
+    "az": "Nautilusun spiral səyahəti",
+    "es": "El viaje espiral del nautilo",
+    "ru": "Спиральное путешествие наутилуса"
+  },
+  "sample-mid20-20260923-fantastik-1": {
+    "en": "Gardener in a Shoe",
+    "az": "Ayaqqabıdakı bağban",
+    "es": "El jardinero del zapato",
+    "ru": "Садовник в башмаке"
+  },
+  "sample-mid20-20260923-fantastik-2": {
+    "en": "Star Postman",
+    "az": "Ulduz poçtalyonu",
+    "es": "Cartero de estrellas",
+    "ru": "Звёздный почтальон"
+  },
+  "sample-mid20-20260923-fantastik-3": {
+    "en": "Amber Library",
+    "az": "Kəhrəba kitabxanası",
+    "es": "Biblioteca de ámbar",
+    "ru": "Янтарная библиотека"
+  },
+  "sample-hard5-20260923-doga-1": {
+    "en": "Blue Crown of the Agave",
+    "az": "Aqavanın mavi tacı",
+    "es": "La corona azul del agave",
+    "ru": "Синяя корона агавы"
+  },
+  "sample-hard5-20260923-hayvanlar-1": {
+    "en": "Okapi's Forest Path",
+    "az": "Okapinin meşə yolu",
+    "es": "El sendero del bosque del okapi",
+    "ru": "Лесная тропа окапи"
+  },
+  "sample-hard5-20260923-fantastik-1": {
+    "en": "Sky Jam Maker",
+    "az": "Səma mürəbbəçisi",
+    "es": "El fabricante de mermelada celeste",
+    "ru": "Варенье небесного мастера"
+  },
+  "sample-hard5-20260923-manzaralar-1": {
+    "en": "Silence of the Emerald Fjord",
+    "az": "Zümrüd fyordun sükutu",
+    "es": "El silencio del fiordo esmeralda",
+    "ru": "Тишина изумрудного фьорда"
+  },
+  "sample-hard5-20260923-sehirler-1": {
+    "en": "Evening at the Tram Depot",
+    "az": "Tramvay deposunda axşam",
+    "es": "Atardecer en el depósito de tranvías",
+    "ru": "Вечер в трамвайном депо"
+  },
+  "sample-easymid15-20260923-doga-1": {
+    "en": "Sundew's Crown of Droplets",
+    "az": "Günəşgülünün damcı tacı",
+    "es": "La corona de gotas de la drosera",
+    "ru": "Корона капель росянки"
+  },
+  "sample-easymid15-20260923-doga-2": {
+    "en": "Leaf Inside the Amber",
+    "az": "Kəhrəbadakı yarpaq",
+    "es": "La hoja dentro del ámbar",
+    "ru": "Лист внутри янтаря"
+  },
+  "sample-easymid15-20260923-doga-3": {
+    "en": "Golden Turmeric Root",
+    "az": "Zərdəçalın qızılı kökü",
+    "es": "La raíz dorada de la cúrcuma",
+    "ru": "Золотой корень куркумы"
+  },
+  "sample-easymid15-20260923-hayvanlar-1": {
+    "en": "Duck-billed Swimmer",
+    "az": "Ördəkdimdikli üzgüçü",
+    "es": "Nadador de pico de pato",
+    "ru": "Утконос-пловец"
+  },
+  "sample-easymid15-20260923-hayvanlar-2": {
+    "en": "Flying Fish Leap",
+    "az": "Uçan balığın sıçrayışı",
+    "es": "El salto del pez volador",
+    "ru": "Прыжок летучей рыбы"
+  },
+  "sample-easymid15-20260923-hayvanlar-3": {
+    "en": "Plump Quail",
+    "az": "Tombul bildirçin",
+    "es": "Codorniz regordeta",
+    "ru": "Пухлая перепёлка"
+  },
+  "sample-easymid15-20260923-fantastik-1": {
+    "en": "Accordion Caterpillar",
+    "az": "Akkordeon tırtılı",
+    "es": "Oruga acordeón",
+    "ru": "Гусеница-аккордеон"
+  },
+  "sample-easymid15-20260923-fantastik-2": {
+    "en": "Walnut Submarine",
+    "az": "Qoz sualtı qayığı",
+    "es": "Submarino de nuez",
+    "ru": "Подводная лодка из ореха"
+  },
+  "sample-easymid15-20260923-fantastik-3": {
+    "en": "Compass Beetle",
+    "az": "Kompas böcəyi",
+    "es": "Escarabajo brújula",
+    "ru": "Жук-компас"
+  },
+  "sample-easymid15-20260923-manzaralar-1": {
+    "en": "Golden Bales in the Field",
+    "az": "Tarladakı qızılı bağlamalar",
+    "es": "Balas doradas en el campo",
+    "ru": "Золотые тюки в поле"
+  },
+  "sample-easymid15-20260923-manzaralar-2": {
+    "en": "Erupting Geyser",
+    "az": "Püskürən qeyzer",
+    "es": "Géiser en erupción",
+    "ru": "Извергающийся гейзер"
+  },
+  "sample-easymid15-20260923-manzaralar-3": {
+    "en": "Windsock Plain",
+    "az": "Külək göstəricisinin düzənliyi",
+    "es": "La llanura de la manga de viento",
+    "ru": "Равнина ветрового конуса"
+  },
+  "sample-easymid15-20260923-sehirler-1": {
+    "en": "Neighborhood Laundromat",
+    "az": "Məhəllə camaşırxanası",
+    "es": "Lavandería del barrio",
+    "ru": "Районная прачечная"
+  },
+  "sample-easymid15-20260923-sehirler-2": {
+    "en": "Rooftop Water Tank",
+    "az": "Damdakı su çəni",
+    "es": "Depósito de agua en la azotea",
+    "ru": "Водяной бак на крыше"
+  },
+  "sample-easymid15-20260923-sehirler-3": {
+    "en": "Rain on the Crosswalk",
+    "az": "Piyada keçidində yağış",
+    "es": "Lluvia en el paso de peatones",
+    "ru": "Дождь на пешеходном переходе"
+  },
+  "sample-complete9-20260923-fantastik-1": {
+    "en": "Thunder Drummer",
+    "az": "Göy gurultusunun təbilçisi",
+    "es": "El tamborilero del trueno",
+    "ru": "Барабанщик грома"
+  },
+  "sample-complete9-20260923-manzaralar-2": {
+    "en": "Waves of Chalk Hills",
+    "az": "Təbaşir təpələrinin dalğası",
+    "es": "Olas de colinas de tiza",
+    "ru": "Волны меловых холмов"
+  },
+  "sample-complete9-20260923-manzaralar-3": {
+    "en": "Black Pearl of the Beach",
+    "az": "Qumsalın qara mirvarisi",
+    "es": "La perla negra de la playa",
+    "ru": "Чёрная жемчужина пляжа"
+  },
+  "sample-complete9-20260923-manzaralar-4": {
+    "en": "Rings of the Frozen Marsh",
+    "az": "Donmuş bataqlığın halqaları",
+    "es": "Anillos del pantano helado",
+    "ru": "Кольца замёрзшего болота"
+  },
+  "sample-complete9-20260923-manzaralar-5": {
+    "en": "Behind the Curtain of Rain",
+    "az": "Yağış pərdəsinin arxasında",
+    "es": "Tras la cortina de lluvia",
+    "ru": "За завесой дождя"
+  },
+  "sample-complete9-20260923-sehirler-6": {
+    "en": "Shoemaker's Workbench",
+    "az": "Çəkməçinin dəzgahı",
+    "es": "Banco de trabajo del zapatero",
+    "ru": "Верстак сапожника"
+  },
+  "sample-complete9-20260923-sehirler-7": {
+    "en": "Street Chestnut Brazier",
+    "az": "Küçədəki şabalıd ocağı",
+    "es": "Brasero de castañas callejero",
+    "ru": "Уличная жаровня с каштанами"
+  },
+  "sample-complete9-20260923-sehirler-8": {
+    "en": "Ceramic Mosaic Stop",
+    "az": "Keramika mozaikalı dayanacaq",
+    "es": "Parada de mosaicos cerámicos",
+    "ru": "Остановка с керамической мозаикой"
+  },
+  "sample-complete9-20260923-sehirler-9": {
+    "en": "Harbor Rope Workshop",
+    "az": "Limanın kəndir emalatxanası",
+    "es": "Taller de cuerdas del puerto",
+    "ru": "Канатная мастерская в порту"
+  },
+  "sample-em10-20260923-doga-1": {
+    "en": "Layers of the Artichoke",
+    "az": "Ənginarın qatları",
+    "es": "Capas de la alcachofa",
+    "ru": "Слои артишока"
+  },
+  "sample-em10-20260923-doga-2": {
+    "en": "Sea Grape Branches",
+    "az": "Dəniz üzümünün budaqları",
+    "es": "Ramas de uva de mar",
+    "ru": "Ветви морского винограда"
+  },
+  "sample-em10-20260923-hayvanlar-1": {
+    "en": "Hoopoe's Feather Crown",
+    "az": "Şanapipiyin lələk tacı",
+    "es": "La corona de plumas de la abubilla",
+    "ru": "Перьевая корона удода"
+  },
+  "sample-em10-20260923-hayvanlar-2": {
+    "en": "Gliding Manta Ray",
+    "az": "Manta skatının süzülüşü",
+    "es": "El planeo de la mantarraya",
+    "ru": "Парение манты"
+  },
+  "sample-em10-20260923-fantastik-1": {
+    "en": "Kite Fish Dream",
+    "az": "Çərpələng balığının yuxusu",
+    "es": "El sueño del pez cometa",
+    "ru": "Сон рыбы — воздушного змея"
+  },
+  "sample-em10-20260923-fantastik-2": {
+    "en": "Train Inside the Hat",
+    "az": "Şapkanın içindəki qatar",
+    "es": "El tren dentro del sombrero",
+    "ru": "Поезд внутри шляпы"
+  },
+  "sample-em10-20260923-manzaralar-1": {
+    "en": "Balance on Red Rock",
+    "az": "Qırmızı qayada tarazlıq",
+    "es": "Equilibrio sobre roca roja",
+    "ru": "Равновесие на красной скале"
+  },
+  "sample-em10-20260923-manzaralar-2": {
+    "en": "Mossy Stepping Stones",
+    "az": "Mamırlı daş pillələr",
+    "es": "Piedras de paso con musgo",
+    "ru": "Мшистые каменные ступени"
+  },
+  "sample-em10-20260923-sehirler-1": {
+    "en": "Neighborhood Record Shop",
+    "az": "Məhəllə val mağazası",
+    "es": "Tienda de discos del barrio",
+    "ru": "Районный магазин пластинок"
+  },
+  "sample-em10-20260923-sehirler-2": {
+    "en": "Street Water Pump",
+    "az": "Küçənin su nasosu",
+    "es": "Bomba de agua de la calle",
+    "ru": "Уличная водяная колонка"
+  },
+  "sample-max5-20260923-doga-1": {
+    "en": "Silk Map of the Cocoon",
+    "az": "Baramanın ipək xəritəsi",
+    "es": "El mapa de seda del capullo",
+    "ru": "Шёлковая карта кокона"
+  },
+  "sample-max5-20260923-hayvanlar-1": {
+    "en": "Mandrill Forest Family",
+    "az": "Mandrillərin meşə ailəsi",
+    "es": "La familia de mandriles del bosque",
+    "ru": "Лесная семья мандрилов"
+  },
+  "sample-max5-20260923-fantastik-1": {
+    "en": "Lighthouse Keeper of Colors",
+    "az": "Rənglərin mayakçısı",
+    "es": "El farero de los colores",
+    "ru": "Смотритель маяка красок"
+  },
+  "sample-max5-20260923-manzaralar-1": {
+    "en": "Valley of Gypsum Crystals",
+    "az": "Gips kristalları vadisi",
+    "es": "Valle de cristales de yeso",
+    "ru": "Долина гипсовых кристаллов"
+  },
+  "sample-max5-20260923-sehirler-1": {
+    "en": "Flower Auction at the Old Station",
+    "az": "Köhnə vağzalda çiçək hərracı",
+    "es": "Subasta de flores en la antigua estación",
+    "ru": "Цветочный аукцион на старом вокзале"
+  }
+}

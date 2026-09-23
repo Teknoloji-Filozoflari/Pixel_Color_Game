@@ -1,0 +1,5 @@
+# Versions used for the Windows x64 verification run (Python 3.13.7).
+PySide6-Essentials==6.11.2
+shiboken6==6.11.2
+numpy==2.5.3
+Pillow==12.3.0

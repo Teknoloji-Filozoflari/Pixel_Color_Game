@@ -1,0 +1,824 @@
+{
+  "Dil": {
+    "en": "Language",
+    "az": "Dil",
+    "es": "Idioma",
+    "ru": "Язык"
+  },
+  "Bir resim seç. Renklerle tamamla.": {
+    "en": "Choose a picture. Bring it to life with color.",
+    "az": "Bir şəkil seç. Rənglərlə tamamla.",
+    "es": "Elige una imagen. Llénala de color.",
+    "ru": "Выберите картинку и раскрасьте её."
+  },
+  "Resim ekle": {
+    "en": "Add picture",
+    "az": "Şəkil əlavə et",
+    "es": "Añadir imagen",
+    "ru": "Добавить картинку"
+  },
+  "Ayarlar": {
+    "en": "Settings",
+    "az": "Parametrlər",
+    "es": "Ajustes",
+    "ru": "Настройки"
+  },
+  "Çıkış": {
+    "en": "Exit",
+    "az": "Çıxış",
+    "es": "Salir",
+    "ru": "Выход"
+  },
+  "Tümü": {
+    "en": "All",
+    "az": "Hamısı",
+    "es": "Todas",
+    "ru": "Все"
+  },
+  "Tüm kategoriler": {
+    "en": "All categories",
+    "az": "Bütün kateqoriyalar",
+    "es": "Todas las categorías",
+    "ru": "Все категории"
+  },
+  "Doğa": {
+    "en": "Nature",
+    "az": "Təbiət",
+    "es": "Naturaleza",
+    "ru": "Природа"
+  },
+  "Fantastik": {
+    "en": "Fantasy",
+    "az": "Fantastika",
+    "es": "Fantasía",
+    "ru": "Фэнтези"
+  },
+  "Hayvanlar": {
+    "en": "Animals",
+    "az": "Heyvanlar",
+    "es": "Animales",
+    "ru": "Животные"
+  },
+  "Manzaralar": {
+    "en": "Landscapes",
+    "az": "Mənzərələr",
+    "es": "Paisajes",
+    "ru": "Пейзажи"
+  },
+  "Şehirler": {
+    "en": "Cities",
+    "az": "Şəhərlər",
+    "es": "Ciudades",
+    "ru": "Города"
+  },
+  "TÜRKİYE": {
+    "en": "TÜRKİYE",
+    "az": "TÜRKİYƏ",
+    "es": "TURQUÍA",
+    "ru": "ТУРЦИЯ"
+  },
+  "İçe aktarılan": {
+    "en": "Imported",
+    "az": "İdxal edilmiş",
+    "es": "Importadas",
+    "ru": "Импортированные"
+  },
+  "Çok Kolay": {
+    "en": "Very easy",
+    "az": "Çox asan",
+    "es": "Muy fácil",
+    "ru": "Очень легко"
+  },
+  "Kolay": {
+    "en": "Easy",
+    "az": "Asan",
+    "es": "Fácil",
+    "ru": "Легко"
+  },
+  "Kolay-Orta": {
+    "en": "Easy–medium",
+    "az": "Asan–orta",
+    "es": "Fácil–medio",
+    "ru": "Легко–средне"
+  },
+  "Orta": {
+    "en": "Medium",
+    "az": "Orta",
+    "es": "Medio",
+    "ru": "Средне"
+  },
+  "Orta-Zor": {
+    "en": "Medium–hard",
+    "az": "Orta–çətin",
+    "es": "Medio–difícil",
+    "ru": "Средне–сложно"
+  },
+  "Zor": {
+    "en": "Hard",
+    "az": "Çətin",
+    "es": "Difícil",
+    "ru": "Сложно"
+  },
+  "Uzman": {
+    "en": "Expert",
+    "az": "Ekspert",
+    "es": "Experto",
+    "ru": "Эксперт"
+  },
+  "Baştan başla": {
+    "en": "Start over",
+    "az": "Yenidən başla",
+    "es": "Empezar de nuevo",
+    "ru": "Начать заново"
+  },
+  "Devam et": {
+    "en": "Continue",
+    "az": "Davam et",
+    "es": "Continuar",
+    "ru": "Продолжить"
+  },
+  "Boyamaya başla": {
+    "en": "Start coloring",
+    "az": "Boyamağa başla",
+    "es": "Empezar a colorear",
+    "ru": "Начать раскрашивать"
+  },
+  "Önizle": {
+    "en": "Preview",
+    "az": "Önizləmə",
+    "es": "Vista previa",
+    "ru": "Предпросмотр"
+  },
+  "Resmi indir": {
+    "en": "Download picture",
+    "az": "Şəkli endir",
+    "es": "Descargar imagen",
+    "ru": "Скачать картинку"
+  },
+  "Resmi sil": {
+    "en": "Delete picture",
+    "az": "Şəkli sil",
+    "es": "Eliminar imagen",
+    "ru": "Удалить картинку"
+  },
+  "Bitti": {
+    "en": "Completed",
+    "az": "Tamamlandı",
+    "es": "Completada",
+    "ru": "Готово"
+  },
+  "Kapat": {
+    "en": "Close",
+    "az": "Bağla",
+    "es": "Cerrar",
+    "ru": "Закрыть"
+  },
+  "Koleksiyona dön": {
+    "en": "Back to collection",
+    "az": "Kolleksiyaya qayıt",
+    "es": "Volver a la colección",
+    "ru": "Вернуться к коллекции"
+  },
+  "Kaydet": {
+    "en": "Save",
+    "az": "Yadda saxla",
+    "es": "Guardar",
+    "ru": "Сохранить"
+  },
+  "Kaydet · Ctrl+S": {
+    "en": "Save · Ctrl+S",
+    "az": "Yadda saxla · Ctrl+S",
+    "es": "Guardar · Ctrl+S",
+    "ru": "Сохранить · Ctrl+S"
+  },
+  "Toplu boya": {
+    "en": "Fill areas",
+    "az": "Sahələri doldur",
+    "es": "Rellenar áreas",
+    "ru": "Заливка областей"
+  },
+  "Tekli boya": {
+    "en": "Paint cells",
+    "az": "Xanaları boya",
+    "es": "Colorear celdas",
+    "ru": "Раскраска клеток"
+  },
+  "Toplu boya açık; tekli boyaya geç": {
+    "en": "Area fill is on; switch to cells",
+    "az": "Sahə doldurma aktivdir; xana boyamasına keç",
+    "es": "Relleno activo; cambiar a celdas",
+    "ru": "Заливка включена; перейти к клеткам"
+  },
+  "Tekli boya açık; toplu boyaya geç": {
+    "en": "Cell painting is on; switch to area fill",
+    "az": "Xana boyaması aktivdir; sahə doldurmaya keç",
+    "es": "Celdas activas; cambiar a relleno",
+    "ru": "Раскраска клеток включена; перейти к заливке"
+  },
+  "Boyanmamış pikselleri göster": {
+    "en": "Show unpainted pixels",
+    "az": "Boyanmamış pikselləri göstər",
+    "es": "Mostrar píxeles sin colorear",
+    "ru": "Показать незакрашенные пиксели"
+  },
+  "Boyanmamış pikselleri mini haritada kırmızı göster / gizle": {
+    "en": "Show / hide unpainted pixels in red on the minimap",
+    "az": "Mini xəritədə boyanmamış pikselləri qırmızı göstər / gizlət",
+    "es": "Mostrar / ocultar en rojo los píxeles sin colorear en el minimapa",
+    "ru": "Показать / скрыть незакрашенные пиксели красным на мини-карте"
+  },
+  "Fare ve klavye kullanımı": {
+    "en": "Mouse and keyboard controls",
+    "az": "Siçan və klaviatura idarəetməsi",
+    "es": "Controles del ratón y teclado",
+    "ru": "Управление мышью и клавиатурой"
+  },
+  "Sol tuş: boya; sağ tuş: renk seç; orta tuş: taşı; tekerlek: yakınlaştır": {
+    "en": "Left: paint; right: pick color; middle: pan; wheel: zoom",
+    "az": "Sol: boya; sağ: rəng seç; orta: hərəkət etdir; çarx: miqyas",
+    "es": "Izquierdo: pintar; derecho: elegir color; central: mover; rueda: zoom",
+    "ru": "Левая: рисовать; правая: выбрать цвет; средняя: перемещение; колесо: масштаб"
+  },
+  "Kontroller": {
+    "en": "Controls",
+    "az": "İdarəetmə",
+    "es": "Controles",
+    "ru": "Управление"
+  },
+  "Sol tuş": {
+    "en": "Left mouse button",
+    "az": "Sol düymə",
+    "es": "Botón izquierdo",
+    "ru": "Левая кнопка"
+  },
+  "Tıkla veya basılı tutup sürükle: seçili renkte boya.": {
+    "en": "Click or drag to paint with the selected color.",
+    "az": "Seçilmiş rənglə boyamaq üçün kliklə və ya sürüklə.",
+    "es": "Haz clic o arrastra para pintar con el color seleccionado.",
+    "ru": "Нажмите или перетащите, чтобы рисовать выбранным цветом."
+  },
+  "Toplu boya açıkken": {
+    "en": "With area fill enabled",
+    "az": "Sahə doldurma aktiv olduqda",
+    "es": "Con el relleno activado",
+    "ru": "При включённой заливке"
+  },
+  "Sol tuşla tıkla veya sürükle: aynı renkteki bitişik alanları doldur.": {
+    "en": "Left-click or drag to fill connected areas of the same color.",
+    "az": "Eyni rəngli bitişik sahələri doldurmaq üçün sol düymə ilə kliklə və ya sürüklə.",
+    "es": "Haz clic izquierdo o arrastra para rellenar áreas contiguas del mismo color.",
+    "ru": "Нажмите левой кнопкой или перетащите для заливки смежных областей одного цвета."
+  },
+  "Sağ tuş": {
+    "en": "Right mouse button",
+    "az": "Sağ düymə",
+    "es": "Botón derecho",
+    "ru": "Правая кнопка"
+  },
+  "Tıkladığın pikselin rengini seç.": {
+    "en": "Pick the color of the pixel you click.",
+    "az": "Kliklədiyin pikselin rəngini seç.",
+    "es": "Elige el color del píxel pulsado.",
+    "ru": "Выберите цвет пикселя, на который нажали."
+  },
+  "Orta tuş": {
+    "en": "Middle mouse button",
+    "az": "Orta düymə",
+    "es": "Botón central",
+    "ru": "Средняя кнопка"
+  },
+  "Basılı tutup sürükle: resmi taşı.": {
+    "en": "Hold and drag to move the picture.",
+    "az": "Şəkli hərəkət etdirmək üçün basılı saxlayıb sürüklə.",
+    "es": "Mantén pulsado y arrastra para mover la imagen.",
+    "ru": "Удерживайте и перетаскивайте для перемещения картинки."
+  },
+  "Fare tekerleği": {
+    "en": "Mouse wheel",
+    "az": "Siçan çarxı",
+    "es": "Rueda del ratón",
+    "ru": "Колесо мыши"
+  },
+  "İmlecin olduğu yere yakınlaş veya uzaklaş.": {
+    "en": "Zoom in or out at the pointer.",
+    "az": "Kursorun olduğu yerdə yaxınlaşdır və ya uzaqlaşdır.",
+    "es": "Acerca o aleja en la posición del cursor.",
+    "ru": "Приближайте или отдаляйте в точке указателя."
+  },
+  "Mini harita": {
+    "en": "Minimap",
+    "az": "Mini xəritə",
+    "es": "Minimapa",
+    "ru": "Мини-карта"
+  },
+  "Gitmek istediğin yere tıkla. Ampul, kalan pikselleri kırmızı gösterir.": {
+    "en": "Click where you want to go. The bulb marks remaining pixels in red.",
+    "az": "Getmək istədiyin yerə kliklə. Lampa qalan pikselləri qırmızı göstərir.",
+    "es": "Haz clic adonde quieras ir. La bombilla marca en rojo los píxeles restantes.",
+    "ru": "Нажмите на нужное место. Лампочка отмечает оставшиеся пиксели красным."
+  },
+  "Fare": {
+    "en": "Mouse",
+    "az": "Siçan",
+    "es": "Ratón",
+    "ru": "Мышь"
+  },
+  "Klavye": {
+    "en": "Keyboard",
+    "az": "Klaviatura",
+    "es": "Teclado",
+    "ru": "Клавиатура"
+  },
+  "Ok tuşları": {
+    "en": "Arrow keys",
+    "az": "Ox düymələri",
+    "es": "Flechas",
+    "ru": "Клавиши со стрелками"
+  },
+  "Resimde gezin; basılı tutarak devam et.": {
+    "en": "Move around the picture; hold to keep moving.",
+    "az": "Şəkildə hərəkət et; davam etmək üçün basılı saxla.",
+    "es": "Desplázate por la imagen; mantén pulsado para continuar.",
+    "ru": "Перемещайтесь по картинке; удерживайте для продолжения."
+  },
+  "Boyama ilerlemesini kaydet.": {
+    "en": "Save coloring progress.",
+    "az": "Boyama irəliləyişini yadda saxla.",
+    "es": "Guarda el progreso.",
+    "ru": "Сохраните прогресс раскрашивания."
+  },
+  "Resmi ekrana sığdır.": {
+    "en": "Fit the picture to the screen.",
+    "az": "Şəkli ekrana sığdır.",
+    "es": "Ajusta la imagen a la pantalla.",
+    "ru": "Впишите картинку в экран."
+  },
+  "Izgarayı aç / kapat.": {
+    "en": "Show / hide the grid.",
+    "az": "Tor xətlərini göstər / gizlət.",
+    "es": "Muestra / oculta la cuadrícula.",
+    "ru": "Покажите / скройте сетку."
+  },
+  "Mini haritayı aç / kapat.": {
+    "en": "Show / hide the minimap.",
+    "az": "Mini xəritəni göstər / gizlət.",
+    "es": "Muestra / oculta el minimapa.",
+    "ru": "Покажите / скройте мини-карту."
+  },
+  "Yalnızca resim / normal görünüm.": {
+    "en": "Picture only / normal view.",
+    "az": "Yalnız şəkil / adi görünüş.",
+    "es": "Solo imagen / vista normal.",
+    "ru": "Только картинка / обычный вид."
+  },
+  "Tam ekrandan çık; boyama veya taşımayı bitir.": {
+    "en": "Exit fullscreen; finish painting or panning.",
+    "az": "Tam ekrandan çıx; boyama və ya hərəkəti bitir.",
+    "es": "Sal de pantalla completa; termina de pintar o mover.",
+    "ru": "Выйдите из полноэкранного режима; завершите рисование или перемещение."
+  },
+  "Seçili rengin boyanan / toplam piksel sayısı": {
+    "en": "Painted / total pixels for the selected color",
+    "az": "Seçilmiş rəngin boyanmış / ümumi piksel sayı",
+    "es": "Píxeles coloreados / totales del color seleccionado",
+    "ru": "Закрашенные / все пиксели выбранного цвета"
+  },
+  "Boyanan / kalan piksel oranını seç": {
+    "en": "Choose painted / remaining percentage",
+    "az": "Boyanmış / qalan piksel faizini seç",
+    "es": "Elige el porcentaje coloreado / restante",
+    "ru": "Выберите процент закрашенных / оставшихся пикселей"
+  },
+  "Gösterilecek piksel oranı": {
+    "en": "Pixel percentage to display",
+    "az": "Göstəriləcək piksel faizi",
+    "es": "Porcentaje de píxeles a mostrar",
+    "ru": "Отображаемый процент пикселей"
+  },
+  "Boyanan pikseller": {
+    "en": "Painted pixels",
+    "az": "Boyanmış piksellər",
+    "es": "Píxeles coloreados",
+    "ru": "Закрашенные пиксели"
+  },
+  "Kalan pikseller": {
+    "en": "Remaining pixels",
+    "az": "Qalan piksellər",
+    "es": "Píxeles restantes",
+    "ru": "Оставшиеся пиксели"
+  },
+  "BOYAMA DURUMU": {
+    "en": "COLORING PROGRESS",
+    "az": "BOYAMA VƏZİYYƏTİ",
+    "es": "PROGRESO",
+    "ru": "ПРОГРЕСС"
+  },
+  "RENK PALETİ": {
+    "en": "COLOR PALETTE",
+    "az": "RƏNG PALETRASI",
+    "es": "PALETA DE COLORES",
+    "ru": "ПАЛИТРА"
+  },
+  "Bir numara seç, eşleşen hücreleri boya.": {
+    "en": "Choose a number and paint matching cells.",
+    "az": "Nömrə seç, uyğun xanaları boya.",
+    "es": "Elige un número y colorea las celdas correspondientes.",
+    "ru": "Выберите номер и раскрасьте соответствующие клетки."
+  },
+  "Izgara · G": {
+    "en": "Grid · G",
+    "az": "Tor xətləri · G",
+    "es": "Cuadrícula · G",
+    "ru": "Сетка · G"
+  },
+  "Boyanacak alanların rengi": {
+    "en": "Highlight color for unpainted areas",
+    "az": "Boyanacaq sahələrin vurğu rəngi",
+    "es": "Color de resaltado de áreas sin pintar",
+    "ru": "Цвет подсветки незакрашенных областей"
+  },
+  "Yalnızca resim · F11 (çıkış: Esc)": {
+    "en": "Picture only · F11 (exit: Esc)",
+    "az": "Yalnız şəkil · F11 (çıxış: Esc)",
+    "es": "Solo imagen · F11 (salir: Esc)",
+    "ru": "Только картинка · F11 (выход: Esc)"
+  },
+  "Bir resim, binlerce küçük an.": {
+    "en": "One picture, thousands of little moments.",
+    "az": "Bir şəkil, minlərlə kiçik an.",
+    "es": "Una imagen, miles de pequeños momentos.",
+    "ru": "Одна картинка, тысячи маленьких мгновений."
+  },
+  "Hazır · Kayıtlar bu cihazda saklanır": {
+    "en": "Ready · Progress is saved on this device",
+    "az": "Hazır · İrəliləyiş bu cihazda saxlanılır",
+    "es": "Listo · El progreso se guarda en este dispositivo",
+    "ru": "Готово · Прогресс хранится на этом устройстве"
+  },
+  "Son kayıt tamamlanamadı": {
+    "en": "The last save could not be completed",
+    "az": "Son yadda saxlama tamamlanmadı",
+    "es": "No se pudo completar el último guardado",
+    "ru": "Не удалось завершить сохранение"
+  },
+  "ANA SAYFA": {
+    "en": "HOME",
+    "az": "ANA SƏHİFƏ",
+    "es": "INICIO",
+    "ru": "ГЛАВНАЯ"
+  },
+  "KOLEKSİYON": {
+    "en": "COLLECTION",
+    "az": "KOLLEKSİYA",
+    "es": "COLECCIÓN",
+    "ru": "КОЛЛЕКЦИЯ"
+  },
+  "AYARLAR": {
+    "en": "SETTINGS",
+    "az": "PARAMETRLƏR",
+    "es": "AJUSTES",
+    "ru": "НАСТРОЙКИ"
+  },
+  " — Önizleme": {
+    "en": " — Preview",
+    "az": " — Önizləmə",
+    "es": " — Vista previa",
+    "ru": " — Предпросмотр"
+  },
+  "Önizleme açılamadı": {
+    "en": "Could not open preview",
+    "az": "Önizləmə açılmadı",
+    "es": "No se pudo abrir la vista previa",
+    "ru": "Не удалось открыть предпросмотр"
+  },
+  "Bu resmin boyama ilerlemesi sıfırlanacak. Baştan başlamak istiyor musun?": {
+    "en": "This picture's progress will be reset. Start over?",
+    "az": "Bu şəklin boyama irəliləyişi sıfırlanacaq. Yenidən başlamaq istəyirsən?",
+    "es": "Se restablecerá el progreso de esta imagen. ¿Empezar de nuevo?",
+    "ru": "Прогресс этой картинки будет сброшен. Начать заново?"
+  },
+  "Resim yeniden başlatılamadı": {
+    "en": "Could not restart picture",
+    "az": "Şəkil yenidən başladılmadı",
+    "es": "No se pudo reiniciar la imagen",
+    "ru": "Не удалось начать картинку заново"
+  },
+  "Yalnızca boyaması tamamlanan resimler indirilebilir.": {
+    "en": "Only completed pictures can be downloaded.",
+    "az": "Yalnız tamamlanmış şəkillər endirilə bilər.",
+    "es": "Solo se pueden descargar imágenes completadas.",
+    "ru": "Можно скачать только полностью раскрашенные картинки."
+  },
+  "Resim": {
+    "en": "Picture",
+    "az": "Şəkil",
+    "es": "Imagen",
+    "ru": "Картинка"
+  },
+  "Tamamlanan resmi indir": {
+    "en": "Download completed picture",
+    "az": "Tamamlanmış şəkli endir",
+    "es": "Descargar imagen completada",
+    "ru": "Скачать готовую картинку"
+  },
+  "PNG resim (*.png)": {
+    "en": "PNG image (*.png)",
+    "az": "PNG şəkli (*.png)",
+    "es": "Imagen PNG (*.png)",
+    "ru": "Изображение PNG (*.png)"
+  },
+  "PNG oluşturulamadı": {
+    "en": "Could not create PNG",
+    "az": "PNG yaradılmadı",
+    "es": "No se pudo crear el PNG",
+    "ru": "Не удалось создать PNG"
+  },
+  "Resim PNG olarak kaydedildi.": {
+    "en": "Picture saved as PNG.",
+    "az": "Şəkil PNG formatında saxlanıldı.",
+    "es": "Imagen guardada como PNG.",
+    "ru": "Картинка сохранена в формате PNG."
+  },
+  "Resim indirilemedi": {
+    "en": "Could not download picture",
+    "az": "Şəkil endirilmədi",
+    "es": "No se pudo descargar la imagen",
+    "ru": "Не удалось скачать картинку"
+  },
+  "Resim yükleniyor…": {
+    "en": "Loading picture…",
+    "az": "Şəkil yüklənir…",
+    "es": "Cargando imagen…",
+    "ru": "Загрузка картинки…"
+  },
+  "Boyamaya hazır · Ctrl+S: kaydet · Orta fare: taşı": {
+    "en": "Ready to color · Ctrl+S: save · Middle mouse: pan",
+    "az": "Boyamağa hazır · Ctrl+S: yadda saxla · Orta düymə: hərəkət etdir",
+    "es": "Listo para colorear · Ctrl+S: guardar · Botón central: mover",
+    "ru": "Можно раскрашивать · Ctrl+S: сохранить · Средняя кнопка: перемещение"
+  },
+  "Silmeden önce resim işleminin tamamlanmasını bekleyin.": {
+    "en": "Wait for the picture operation to finish before deleting.",
+    "az": "Silməzdən əvvəl şəkil əməliyyatının bitməsini gözləyin.",
+    "es": "Espera a que termine la operación antes de eliminar.",
+    "ru": "Дождитесь завершения обработки картинки перед удалением."
+  },
+  "Resim ve boyama ilerlemesi silindi.": {
+    "en": "Picture and progress deleted.",
+    "az": "Şəkil və boyama irəliləyişi silindi.",
+    "es": "Imagen y progreso eliminados.",
+    "ru": "Картинка и прогресс удалены."
+  },
+  "Resim silinemedi": {
+    "en": "Could not delete picture",
+    "az": "Şəkil silinmədi",
+    "es": "No se pudo eliminar la imagen",
+    "ru": "Не удалось удалить картинку"
+  },
+  "Kaydediliyor…": {
+    "en": "Saving…",
+    "az": "Yadda saxlanılır…",
+    "es": "Guardando…",
+    "ru": "Сохранение…"
+  },
+  "✓ İlerlemen bu cihaza kaydedildi": {
+    "en": "✓ Progress saved on this device",
+    "az": "✓ İrəliləyiş bu cihazda saxlanıldı",
+    "es": "✓ Progreso guardado en este dispositivo",
+    "ru": "✓ Прогресс сохранён на этом устройстве"
+  },
+  "İlerleme kaydedilemedi": {
+    "en": "Could not save progress",
+    "az": "İrəliləyiş saxlanılmadı",
+    "es": "No se pudo guardar el progreso",
+    "ru": "Не удалось сохранить прогресс"
+  },
+  "✓ Resim koleksiyonuna eklendi": {
+    "en": "✓ Picture added to collection",
+    "az": "✓ Şəkil kolleksiyaya əlavə edildi",
+    "es": "✓ Imagen añadida a la colección",
+    "ru": "✓ Картинка добавлена в коллекцию"
+  },
+  "Resim açılamadı": {
+    "en": "Could not open picture",
+    "az": "Şəkil açılmadı",
+    "es": "No se pudo abrir la imagen",
+    "ru": "Не удалось открыть картинку"
+  },
+  "Resim içe aktarılamadı": {
+    "en": "Could not import picture",
+    "az": "Şəkil idxal edilmədi",
+    "es": "No se pudo importar la imagen",
+    "ru": "Не удалось импортировать картинку"
+  },
+  "Resmini seç": {
+    "en": "Choose your picture",
+    "az": "Şəklini seç",
+    "es": "Elige tu imagen",
+    "ru": "Выберите картинку"
+  },
+  "Resimler (*.png *.jpg *.jpeg *.webp);;Piksel seviyesi (*.pcolor)": {
+    "en": "Images (*.png *.jpg *.jpeg *.webp);;Pixel level (*.pcolor)",
+    "az": "Şəkillər (*.png *.jpg *.jpeg *.webp);;Piksel səviyyəsi (*.pcolor)",
+    "es": "Imágenes (*.png *.jpg *.jpeg *.webp);;Nivel de píxeles (*.pcolor)",
+    "ru": "Изображения (*.png *.jpg *.jpeg *.webp);;Пиксельный уровень (*.pcolor)"
+  },
+  "Resim dönüştürülüyor; renk paleti otomatik ayarlanıyor…": {
+    "en": "Converting picture; adjusting the palette automatically…",
+    "az": "Şəkil çevrilir; rəng palitrası avtomatik tənzimlənir…",
+    "es": "Convirtiendo imagen; ajustando la paleta automáticamente…",
+    "ru": "Преобразование картинки; автоматическая настройка палитры…"
+  },
+  "Senin ritmin, senin atölyen.": {
+    "en": "Your pace, your studio.",
+    "az": "Sənin ritmin, sənin emalatxanan.",
+    "es": "Tu ritmo, tu taller.",
+    "ru": "Ваш ритм, ваша мастерская."
+  },
+  "Tercihlerin bu cihazda saklanır.": {
+    "en": "Your preferences are saved on this device.",
+    "az": "Seçimlərin bu cihazda saxlanılır.",
+    "es": "Tus preferencias se guardan en este dispositivo.",
+    "ru": "Настройки хранятся на этом устройстве."
+  },
+  "Hücre ızgarası": {
+    "en": "Cell grid",
+    "az": "Xana toru",
+    "es": "Cuadrícula",
+    "ru": "Сетка клеток"
+  },
+  "Yakından bakarken numaralar": {
+    "en": "Numbers when zoomed in",
+    "az": "Yaxından baxarkən nömrələr",
+    "es": "Números al acercar",
+    "ru": "Номера при увеличении"
+  },
+  "Yanlış renkte kırmızı geri bildirim": {
+    "en": "Red feedback for the wrong color",
+    "az": "Yanlış rəng üçün qırmızı bildiriş",
+    "es": "Aviso rojo al usar un color incorrecto",
+    "ru": "Красный сигнал при неверном цвете"
+  },
+  "Tamamlandığında sistem sesi": {
+    "en": "System sound on completion",
+    "az": "Tamamlandıqda sistem səsi",
+    "es": "Sonido del sistema al completar",
+    "ru": "Системный звук при завершении"
+  },
+  " dk": {
+    "en": " min",
+    "az": " dəq",
+    "es": " min",
+    "ru": " мин"
+  },
+  " saniye": {
+    "en": " seconds",
+    "az": " saniyə",
+    "es": " segundos",
+    "ru": " секунд"
+  },
+  "Otomatik kayıt aralığı": {
+    "en": "Autosave interval",
+    "az": "Avtomatik saxlama intervalı",
+    "es": "Intervalo de guardado automático",
+    "ru": "Интервал автосохранения"
+  },
+  "Seçili renk vurgusu": {
+    "en": "Selected color highlight",
+    "az": "Seçilmiş rəngin vurğusu",
+    "es": "Resaltado del color seleccionado",
+    "ru": "Подсветка выбранного цвета"
+  },
+  "Izgara yoğunluğu": {
+    "en": "Grid opacity",
+    "az": "Torun qeyri-şəffaflığı",
+    "es": "Opacidad de la cuadrícula",
+    "ru": "Непрозрачность сетки"
+  },
+  "✓ Ayarlar kaydedildi": {
+    "en": "✓ Settings saved",
+    "az": "✓ Parametrlər saxlanıldı",
+    "es": "✓ Ajustes guardados",
+    "ru": "✓ Настройки сохранены"
+  },
+  "Ayarlar kaydedilemedi": {
+    "en": "Could not save settings",
+    "az": "Parametrlər saxlanılmadı",
+    "es": "No se pudieron guardar los ajustes",
+    "ru": "Не удалось сохранить настройки"
+  },
+  "Tercihleri kaydet": {
+    "en": "Save preferences",
+    "az": "Seçimləri yadda saxla",
+    "es": "Guardar preferencias",
+    "ru": "Сохранить настройки"
+  },
+  "Kayıt hatası": {
+    "en": "Save error",
+    "az": "Saxlama xətası",
+    "es": "Error al guardar",
+    "ru": "Ошибка сохранения"
+  },
+  "Dil kaydedilemedi": {
+    "en": "Could not save language",
+    "az": "Dil saxlanılmadı",
+    "es": "No se pudo guardar el idioma",
+    "ru": "Не удалось сохранить язык"
+  },
+  "%{percent} boyandı": {
+    "en": "{percent}% painted",
+    "az": "{percent}% boyanıb",
+    "es": "{percent}% coloreado",
+    "ru": "Закрашено {percent}%"
+  },
+  "Renk {number} · {remaining} hücre kaldı": {
+    "en": "Color {number} · {remaining} cells left",
+    "az": "Rəng {number} · {remaining} xana qalıb",
+    "es": "Color {number} · Quedan {remaining} celdas",
+    "ru": "Цвет {number} · Осталось клеток: {remaining}"
+  },
+  "Gri: boyanmamış · Renkli: boyanmış · Çerçeve: baktığınız alan\nGitmek için tıklayın.": {
+    "en": "Gray: unpainted · Color: painted · Frame: your view\nClick to navigate.",
+    "az": "Boz: boyanmamış · Rəngli: boyanmış · Çərçivə: baxdığınız sahə\nKeçmək üçün klikləyin.",
+    "es": "Gris: sin colorear · Color: coloreado · Marco: vista actual\nHaz clic para desplazarte.",
+    "ru": "Серый: не закрашено · Цвет: закрашено · Рамка: видимая область\nНажмите для перехода."
+  },
+  "Tebrikler! {title} tamamlandı.\n\n{cells} hücreye renk verdiniz.\nİlerlemeniz kaydediliyor. Yeni bir resim için koleksiyona dönebilirsiniz.": {
+    "en": "Congratulations! {title} is complete.\n\nYou colored {cells} cells.\nYour progress is being saved. Return to the collection for a new picture.",
+    "az": "Təbriklər! {title} tamamlandı.\n\n{cells} xananı boyadınız.\nİrəliləyişiniz saxlanılır. Yeni şəkil üçün kolleksiyaya qayıda bilərsiniz.",
+    "es": "¡Enhorabuena! Completaste {title}.\n\nHas coloreado {cells} celdas.\nSe está guardando tu progreso. Vuelve a la colección para elegir otra imagen.",
+    "ru": "Поздравляем! Картинка «{title}» завершена.\n\nВы раскрасили {cells} клеток.\nПрогресс сохраняется. Вернитесь к коллекции за новой картинкой."
+  },
+  "“{title}” ve boyama ilerlemesi silinsin mi?\nBilgisayarınızdaki özgün resim dosyası korunur.": {
+    "en": "Delete “{title}” and its coloring progress?\nThe original picture file on your computer will be kept.",
+    "az": "“{title}” və boyama irəliləyişi silinsin?\nKompüterinizdəki orijinal şəkil faylı saxlanılacaq.",
+    "es": "¿Eliminar «{title}» y su progreso?\nSe conservará el archivo original en tu ordenador.",
+    "ru": "Удалить «{title}» и прогресс раскрашивания?\nИсходный файл на компьютере сохранится."
+  },
+  "Son kayıt tamamlanamadı:\n{error}\nDisk erişimini kontrol edip tekrar deneyin. Oyun açık tutuldu.": {
+    "en": "The last save failed:\n{error}\nCheck disk access and try again. The game remains open.",
+    "az": "Son yadda saxlama alınmadı:\n{error}\nDiskə girişi yoxlayıb yenidən cəhd edin. Oyun açıq saxlanıldı.",
+    "es": "Falló el último guardado:\n{error}\nComprueba el acceso al disco e inténtalo de nuevo. El juego sigue abierto.",
+    "ru": "Не удалось сохранить:\n{error}\nПроверьте доступ к диску и повторите попытку. Игра остаётся открытой."
+  },
+  "Kısayollar: Ctrl+S kaydet\nF sığdır · G ızgara · M mini harita · Ok tuşları: resimde gezin\nSağ tık: hücrenin rengini seç · Toplu boya: bitişik alanı doldur\nOrta fare: taşı · Tekerlek: yakınlaştır": {
+    "en": "Shortcuts: Ctrl+S save\nF fit · G grid · M minimap · Arrow keys: navigate\nRight-click: pick cell color · Fill: connected area\nMiddle mouse: pan · Wheel: zoom",
+    "az": "Qısayollar: Ctrl+S yadda saxla\nF sığdır · G tor · M mini xəritə · Oxlar: hərəkət\nSağ klik: xananın rəngini seç · Doldur: bitişik sahə\nOrta düymə: hərəkət etdir · Çarx: miqyas",
+    "es": "Atajos: Ctrl+S guardar\nF ajustar · G cuadrícula · M minimapa · Flechas: mover\nClic derecho: elegir color · Relleno: área contigua\nBotón central: mover · Rueda: zoom",
+    "ru": "Клавиши: Ctrl+S сохранить\nF вписать · G сетка · M мини-карта · Стрелки: перемещение\nПравая кнопка: выбрать цвет · Заливка: смежная область\nСредняя кнопка: перемещение · Колесо: масштаб"
+  },
+  "Resim en fazla 1920 × 1080 piksel olabilir. Seçilen resim: {width} × {height}.": {
+    "en": "Pictures must not exceed 1920 × 1080 pixels. Selected: {width} × {height}.",
+    "az": "Şəkil ən çox 1920 × 1080 piksel ola bilər. Seçilmiş: {width} × {height}.",
+    "es": "La imagen no puede superar 1920 × 1080 píxeles. Seleccionada: {width} × {height}.",
+    "ru": "Размер картинки не должен превышать 1920 × 1080 пикселей. Выбрано: {width} × {height}."
+  },
+  "Yüklenenler": {
+    "en": "Uploads",
+    "az": "Yüklənənlər",
+    "es": "Subidas",
+    "ru": "Загруженные"
+  },
+  "Bu kategoride henüz resim yok.": {
+    "en": "No pictures in this category yet.",
+    "az": "Bu kateqoriyada hələ şəkil yoxdur.",
+    "es": "Todavía no hay imágenes en esta categoría.",
+    "ru": "В этой категории пока нет изображений."
+  },
+  "Kendi resmini ekle": {
+    "en": "Add your own picture",
+    "az": "Öz şəklini əlavə et",
+    "es": "Añade tu propia imagen",
+    "ru": "Добавьте своё изображение"
+  },
+  "Ana sayfadaki resim ekle simgesini kullan. PNG, JPG, JPEG, WEBP ve .pcolor dosyaları desteklenir.": {
+    "en": "Use the add-picture icon on the home screen. PNG, JPG, JPEG, WEBP and .pcolor files are supported.",
+    "az": "Ana səhifədəki şəkil əlavə etmə işarəsindən istifadə et. PNG, JPG, JPEG, WEBP və .pcolor faylları dəstəklənir.",
+    "es": "Usa el icono para añadir imágenes en la pantalla principal. Se admiten PNG, JPG, JPEG, WEBP y .pcolor.",
+    "ru": "Нажмите значок добавления изображения на главном экране. Поддерживаются PNG, JPG, JPEG, WEBP и .pcolor."
+  },
+  "En fazla 1920 piksel genişlik ve 1080 piksel yükseklik: toplam üst sınır 2.073.600 pikseldir. Daha büyük resimleri eklemeden önce küçültmelisin.": {
+    "en": "Maximum width: 1920 pixels; maximum height: 1080 pixels, up to 2,073,600 pixels in total. Resize larger pictures before adding them.",
+    "az": "Ən çox 1920 piksel en və 1080 piksel hündürlük: ümumi hədd 2.073.600 pikseldir. Daha böyük şəkilləri əlavə etməzdən əvvəl kiçilt.",
+    "es": "Ancho máximo: 1920 píxeles; alto máximo: 1080 píxeles, hasta 2.073.600 píxeles en total. Reduce las imágenes más grandes antes de añadirlas.",
+    "ru": "Максимум 1920 пикселей в ширину и 1080 в высоту: всего до 2 073 600 пикселей. Перед добавлением уменьшите более крупные изображения."
+  },
+  "Resmin özgün boyutları korunur; her piksel bir boyama hücresi olur. Küçük ve belirgin şekilli resimler daha kolay tamamlanır.": {
+    "en": "Original dimensions are preserved; each pixel becomes a coloring cell. Small pictures with clear shapes are easier to complete.",
+    "az": "Şəklin ilkin ölçüləri qorunur; hər piksel bir boyama xanasına çevrilir. Kiçik və aydın formalı şəkilləri tamamlamaq daha asandır.",
+    "es": "Se conservan las dimensiones originales; cada píxel se convierte en una casilla para colorear. Las imágenes pequeñas con formas claras son más fáciles de completar.",
+    "ru": "Исходные размеры сохраняются: каждый пиксель становится клеткой для раскрашивания. Небольшие изображения с чёткими формами легче завершить."
+  },
+  "Normal resimlerde renk paleti boyuta göre otomatik belirlenir; hedef 10–60 renktir. Kaynak resimde daha az renk varsa daha az kullanılabilir. Şeffaf alanlar beyaz olur. .pcolor dosyalarının hazır paleti korunur.": {
+    "en": "For regular images, the palette is chosen automatically by size, targeting 10–60 colors. Fewer may be used if the source has fewer colors. Transparent areas become white. Existing .pcolor palettes are preserved.",
+    "az": "Adi şəkillərdə rəng palitrası ölçüyə görə avtomatik seçilir; hədəf 10–60 rəngdir. Mənbədə daha az rəng varsa, daha az istifadə oluna bilər. Şəffaf sahələr ağ olur. .pcolor fayllarının hazır palitrası qorunur.",
+    "es": "En imágenes normales, la paleta se elige automáticamente según el tamaño, con un objetivo de 10–60 colores. Pueden usarse menos si el original tiene menos colores. Las zonas transparentes se vuelven blancas. Se conservan las paletas de los archivos .pcolor.",
+    "ru": "Для обычных изображений палитра выбирается автоматически по размеру: от 10 до 60 цветов. Если в исходнике цветов меньше, их может быть меньше и в игре. Прозрачные области становятся белыми. Готовые палитры .pcolor сохраняются."
+  },
+  "Resmin Yüklenenler sekmesine eklenir. Buradan resmi ve boyama kaydını silebilirsin; bilgisayarındaki özgün dosya silinmez.": {
+    "en": "Your picture appears in Uploads. You can delete it and its coloring progress there; the original file on your computer is not deleted.",
+    "az": "Şəklin Yüklənənlər bölməsinə əlavə olunur. Buradan şəkli və boyama qeydini silə bilərsən; kompüterindəki ilkin fayl silinmir.",
+    "es": "Tu imagen aparece en Subidas. Allí puedes eliminarla junto con su progreso; el archivo original de tu ordenador no se borra.",
+    "ru": "Изображение появится во вкладке «Загруженные». Там можно удалить его и прогресс раскрашивания; исходный файл на компьютере не удаляется."
+  }
+}
