@@ -123,13 +123,27 @@ Bağımlılık sürüm aralıklarının güncel kaynağı [`pyproject.toml`](pyp
 Python **3.13 veya üzeri** ve çalışan bir grafik masaüstü oturumu gerekir.
 
 ```bash
-git clone <depo-adresi>
-cd Piksel-Atolyesi-Linux
+git clone https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game.git
+cd Pixel_Color_Game
 sh install.sh
 sh start.sh
 ```
 
-Kurulum betiği proje içinde `.venv` oluşturur ve bağımlılıkları buraya kurar. İlk kurulum internet gerektirir; sonraki açılışlarda oyun çevrim dışı çalışır.
+Kurulum betiği proje içinde `.venv` oluşturur ve bağımlılıkları buraya kurar. Ayrıca kullanıcı hesabına bir uygulama menüsü başlatıcısı ve ikon yükler; oyun **Piksel Atölyesi** adıyla aramada ve **Oyunlar** kategorisinde görünür. Yönetici (`sudo`) yetkisi gerekmez. İlk kurulum internet gerektirir; sonraki açılışlarda oyun çevrim dışı çalışır.
+
+Kurulumdan sonra oyunu uygulama menüsünden veya terminalden açabilirsin:
+
+```bash
+piksel-atolyesi
+```
+
+Oyunu kaldırmak için:
+
+```bash
+sh uninstall.sh
+```
+
+Bu komut ilerlemeyi korur. Oyunu yerel kayıtlarıyla birlikte tamamen kaldırmak için `sh uninstall.sh --purge-data` kullan.
 
 Elle kurmak istersen:
 
@@ -235,6 +249,7 @@ Proje, 536 gömülü `.pcolor` dosyasının katalog ve metadata bütünlüğün�
 .
 ├── docs/                         # Mimari, GitHub rehberi ve ekran görüntüleri
 ├── LICENSES/                     # Üçüncü taraf lisans metinleri
+├── packaging/linux/              # Linux uygulama menüsü girdisi
 ├── src/pixel_coloring/
 │   ├── core/                     # Oyun modeli ve boyama kuralları
 │   ├── importer/                 # Görsel ve .pcolor içe aktarma
@@ -246,6 +261,7 @@ Proje, 536 gömülü `.pcolor` dosyasının katalog ve metadata bütünlüğün�
 ├── tests/                        # Çekirdek ve koleksiyon testleri
 ├── install.sh                    # Linux ilk kurulum betiği
 ├── start.sh                      # Linux başlatıcısı
+├── uninstall.sh                  # Linux kaldırma betiği
 ├── run.py                        # Kaynak kod başlatıcısı
 └── pyproject.toml                # Paket ve bağımlılık tanımı
 ```
