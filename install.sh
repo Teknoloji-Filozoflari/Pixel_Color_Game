@@ -20,6 +20,7 @@ DATA_HOME=${XDG_DATA_HOME:-"$HOME/.local/share"}
 BIN_HOME="$HOME/.local/bin"
 APPLICATIONS_DIR="$DATA_HOME/applications"
 ICON_DIR="$DATA_HOME/icons/hicolor/512x512/apps"
+ICON_FILE="$ICON_DIR/piksel-atolyesi.png"
 LAUNCHER="$BIN_HOME/piksel-atolyesi"
 DESKTOP_FILE="$APPLICATIONS_DIR/piksel-atolyesi.desktop"
 
@@ -35,8 +36,9 @@ esac
 mkdir -p "$BIN_HOME" "$APPLICATIONS_DIR" "$ICON_DIR"
 ln -sfn "$PROJECT_DIR/.venv/bin/pixel-coloring" "$LAUNCHER"
 install -m 0644 src/pixel_coloring/resources/icons/piksel-atolyesi.png \
-    "$ICON_DIR/piksel-atolyesi.png"
-sed "s|@EXEC@|$LAUNCHER|" packaging/linux/piksel-atolyesi.desktop.in > "$DESKTOP_FILE"
+    "$ICON_FILE"
+sed -e "s|@EXEC@|$LAUNCHER|" -e "s|@ICON@|$ICON_FILE|" \
+    packaging/linux/piksel-atolyesi.desktop.in > "$DESKTOP_FILE"
 chmod 0644 "$DESKTOP_FILE"
 
 if command -v update-desktop-database >/dev/null 2>&1; then

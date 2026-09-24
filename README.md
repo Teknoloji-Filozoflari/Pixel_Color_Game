@@ -108,6 +108,20 @@ Desteklenen biçimler: **PNG, JPEG, WEBP ve `.pcolor`**. Görseller en fazla 192
 
 ## Kurulum
 
+### AppImage (önerilen Linux kurulumu)
+
+[GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases) sayfasından
+`Piksel-Atolyesi-*-x86_64.AppImage` dosyasını indir. Ardından dosyaya çalıştırma izni verip aç:
+
+```bash
+chmod +x Piksel-Atolyesi-*.AppImage
+./Piksel-Atolyesi-*.AppImage
+```
+
+AppImage; Python, PySide6, NumPy ve Pillow bağımlılıklarını içinde taşır. Kurulum veya `sudo`
+gerekmez. İndirdiğin dosyayı silmek uygulamayı kaldırmak için yeterlidir; kayıtların ise aşağıda
+belirtilen kullanıcı veri klasöründe kalır.
+
 ### Teknik gereksinimler
 
 - Python 3.13 veya üzeri
@@ -239,6 +253,16 @@ python -m pytest -q
 python -m ruff check src tests run.py
 QT_QPA_PLATFORM=offscreen python run.py --smoke-test --data-dir /tmp/piksel-atolyesi-smoke
 ```
+
+AppImage üretmek için PyInstaller ve `appimagetool` kurulduktan sonra:
+
+```bash
+APPIMAGETOOL=/path/to/appimagetool packaging/appimage/build-appimage.sh
+```
+
+`v0.15.0` biçiminde bir Git etiketi gönderildiğinde GitHub Actions, x86_64 AppImage'i ve SHA-256
+özetini otomatik olarak GitHub Releases'a ekler. İş akışı Actions sayfasından elle de çalıştırılabilir;
+elle çalıştırılan derleme bir workflow artifact'i olarak indirilir.
 
 Proje, 536 gömülü `.pcolor` dosyasının katalog ve metadata bütünlüğünü doğrulayan testler içerir. Katkıda bulunmadan önce [katkı rehberini](CONTRIBUTING.md) okuyabilirsin.
 

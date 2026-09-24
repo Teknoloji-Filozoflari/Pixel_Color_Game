@@ -12,6 +12,9 @@ venv/
 build/
 dist/
 *.whl
+*.AppImage
+*.AppImage.zsync
+SHA256SUMS
 
 # Local game data
 local-data/
