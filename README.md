@@ -122,6 +122,22 @@ AppImage; Python, PySide6, NumPy ve Pillow bağımlılıklarını içinde taşı
 gerekmez. İndirdiğin dosyayı silmek uygulamayı kaldırmak için yeterlidir; kayıtların ise aşağıda
 belirtilen kullanıcı veri klasöründe kalır.
 
+### Pardus / Debian `.deb` paketi
+
+Pardus 25 üzerinde denemek için [GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.15.0)
+sayfasından `piksel-atolyesi_0.15.0-1_amd64.deb` dosyasını indirip Pardus Paket Kurucu ile aç.
+Terminalden kurmak istersen indirdiğin dosyanın bulunduğu klasörde şunu çalıştır:
+
+```bash
+sudo apt install ./piksel-atolyesi_0.15.0-1_amd64.deb
+```
+
+Pardus 25 üzerinde paket üretmek için Python 3.13 sanal ortamında projeyi ve PyInstaller'ı
+kurduktan sonra `packaging/deb/build-deb.sh` betiğini çalıştır. Çıktı
+`dist/piksel-atolyesi_0.15.0-1_amd64.deb` yoluna yazılır. Paket Python ve uygulama
+bağımlılıklarını içinde taşır; masaüstü başlatıcısını, simgeyi ve lisans dosyalarını yükler.
+Kurulum ve grafik arayüz testi gerçek Pardus masaüstünde yapılmalıdır.
+
 ### Teknik gereksinimler
 
 - Python 3.13 veya üzeri
