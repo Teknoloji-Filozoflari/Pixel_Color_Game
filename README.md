@@ -135,19 +135,20 @@ belirtilen kullanıcı veri klasöründe kalır.
 
 ### Pardus / Debian `.deb` paketi
 
-Pardus 25 üzerinde denemek için [GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases)
-sayfasından `piksel-atolyesi_0.16.0-1_amd64.deb` dosyasını indirip Pardus Paket Kurucu ile aç.
-Terminalden kurmak istersen indirdiğin dosyanın bulunduğu klasörde şunu çalıştır:
-
-```bash
-sudo apt install ./piksel-atolyesi_0.16.0-1_amd64.deb
-```
+`v0.16.0` sürümünde hazır `.deb` dosyası yayımlanmadı. Pardus 25 üzerinde denemek için
+aşağıdaki adımlarla paketi yerel olarak oluşturabilirsin.
 
 Pardus 25 üzerinde paket üretmek için Python 3.13 sanal ortamında projeyi ve PyInstaller'ı
 kurduktan sonra `packaging/deb/build-deb.sh` betiğini çalıştır. Çıktı
 `dist/piksel-atolyesi_0.16.0-1_amd64.deb` yoluna yazılır. Paket Python ve uygulama
 bağımlılıklarını içinde taşır; masaüstü başlatıcısını, simgeyi ve lisans dosyalarını yükler.
 Kurulum ve grafik arayüz testi gerçek Pardus masaüstünde yapılmalıdır.
+
+Oluşturduğun paketi Pardus Paket Kurucu ile açabilir veya terminalde şu komutu çalıştırabilirsin:
+
+```bash
+sudo apt install ./dist/piksel-atolyesi_0.16.0-1_amd64.deb
+```
 
 ### Teknik gereksinimler
 
