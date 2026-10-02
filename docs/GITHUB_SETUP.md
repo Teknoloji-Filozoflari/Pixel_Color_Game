@@ -8,8 +8,9 @@ resimler sıfır boyama ilerlemesiyle açılır. Güncelleme mevcut oyuncunun il
 2. GitHub Desktop ile hedef depoyu klonla. Paketin içindeki dosyaları depo köküne kopyala;
    src, pyproject.toml ve .github doğrudan kökte bulunmalı. RAR dosyasını depoya ekleme.
 3. Değişiklikleri commit edip push yap. Actions bölümündeki testlerin sonucunu kontrol et.
-4. v0.16.0 etiketiyle bir GitHub Release oluştur. AppImage iş akışı Linux paketini derleyip
-   Release'e ekler. Başarıyla tamamlandığını Actions üzerinden doğrula.
+4. v0.16.0 etiketiyle bir GitHub Release oluştur. AppImage ve Debian iş akışları paketleri
+   derleyip Release'e ekler. Debian işi temiz Debian 12 ve 13 kurulumlarını da sınar.
+   Başarıyla tamamlandıklarını Actions üzerinden doğrula.
 
 Kaynak kodu çalıştırmak için Python 3.13 veya üstünü kurup paket klasöründe:
 
