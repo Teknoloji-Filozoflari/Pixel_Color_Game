@@ -16,7 +16,7 @@ replacing those libraries or debugging modifications permitted by their licenses
 source is included. QML, development headers and unused tooling are omitted from the portable runtime.
 The sample service installs the bundled collection and contains legacy procedural sample code.
 
-The 536 gallery paintings in `resources/paintings` were created with OpenAI image generation
+The 900 gallery paintings in `resources/paintings` were created with OpenAI image generation
 for this project and converted to indexed color-by-number level data. They do not use the user's
 reference screenshot as a distributed game asset. Titles and dimensions are listed in `catalog.json`.
 

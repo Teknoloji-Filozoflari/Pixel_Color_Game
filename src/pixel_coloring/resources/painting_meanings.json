@@ -1,0 +1,548 @@
+{
+  "sample-turk-motif-001-v1": {
+    "en": "Womanhood, Motherhood, Fertility, Abundance",
+    "az": "Qadınlıq, Analıq, Doğum qabiliyyəti, Bərəkət",
+    "es": "Feminidad, Maternidad, Fertilidad, Abundancia",
+    "ru": "Женственность, Материнство, Плодородие, Изобилие"
+  },
+  "sample-turk-motif-002-v1": {
+    "en": "Strength, Valor, Manhood, Abundance",
+    "az": "Güc, İgidlik, Kişilik, Bərəkət",
+    "es": "Fuerza, Valentía, Masculinidad, Abundancia",
+    "ru": "Сила, Доблесть, Мужественность, Изобилие"
+  },
+  "sample-turk-motif-003-v1": {
+    "en": "Plenty, Productivity, Multiplication",
+    "az": "Bolluq, Məhsuldarlıq, Çoxalma",
+    "es": "Prosperidad, Productividad, Multiplicación",
+    "ru": "Достаток, Продуктивность, Приумножение"
+  },
+  "sample-turk-motif-004-v1": {
+    "en": "Life, Continuity, Immortality",
+    "az": "Həyat, Davamlılıq, Ölümsüzlük",
+    "es": "Vida, Continuidad, Inmortalidad",
+    "ru": "Жизнь, Непрерывность, Бессмертие"
+  },
+  "sample-turk-motif-005-v1": {
+    "en": "Protection from the evil eye and ill wishes",
+    "az": "Nəzərdən və pis baxışlardan qorunma",
+    "es": "Protección contra el mal de ojo y las malas miradas",
+    "ru": "Защита от сглаза и недобрых взглядов"
+  },
+  "sample-turk-motif-006-v1": {
+    "en": "Protection from negative energy",
+    "az": "Pis enerjidən qorunma",
+    "es": "Protección contra la energía negativa",
+    "ru": "Защита от негативной энергии"
+  },
+  "sample-turk-motif-007-v1": {
+    "en": "Protection, Good fortune, Charm",
+    "az": "Qorunma, Uğur, Tilsim",
+    "es": "Protección, Buena suerte, Talismán",
+    "ru": "Защита, Удача, Талисман"
+  },
+  "sample-turk-motif-008-v1": {
+    "en": "Protection from the evil eye, Plenty",
+    "az": "Nəzərdən qorunma, Bolluq",
+    "es": "Protección contra el mal de ojo, Prosperidad",
+    "ru": "Защита от сглаза, Достаток"
+  },
+  "sample-turk-motif-009-v1": {
+    "en": "Protection, Forming bonds, Defense",
+    "az": "Qoruma, Bağ qurmaq, Müdafiə",
+    "es": "Protección, Creación de vínculos, Defensa",
+    "ru": "Защита, Создание связей, Оборона"
+  },
+  "sample-turk-motif-010-v1": {
+    "en": "Protection from danger and evil",
+    "az": "Təhlükədən və şərdən qorunma",
+    "es": "Protección contra el peligro y el mal",
+    "ru": "Защита от опасности и зла"
+  },
+  "sample-turk-motif-011-v1": {
+    "en": "Strength, Transformation, Life, Sometimes danger",
+    "az": "Güc, Çevrilmə, Həyat, Bəzən təhlükə",
+    "es": "Fuerza, Transformación, Vida, A veces peligro",
+    "ru": "Сила, Преображение, Жизнь, Иногда опасность"
+  },
+  "sample-turk-motif-012-v1": {
+    "en": "Strength, Guardianship, Forces of nature",
+    "az": "Güc, Qoruyuculuq, Təbiət qüvvələri",
+    "es": "Fuerza, Amparo, Fuerzas de la naturaleza",
+    "ru": "Сила, Покровительство, Силы природы"
+  },
+  "sample-turk-motif-013-v1": {
+    "en": "Protection from danger, Courage",
+    "az": "Təhlükədən qorunma, Cəsarət",
+    "es": "Protección contra el peligro, Coraje",
+    "ru": "Защита от опасности, Смелость"
+  },
+  "sample-turk-motif-014-v1": {
+    "en": "Protection, Power of the wilderness",
+    "az": "Qorunma, Vəhşi təbiətin gücü",
+    "es": "Protección, Poder de la naturaleza salvaje",
+    "ru": "Защита, Сила дикой природы"
+  },
+  "sample-turk-motif-015-v1": {
+    "en": "Protection from evil forces",
+    "az": "Şər qüvvələrdən qorunma",
+    "es": "Protección contra las fuerzas malignas",
+    "ru": "Защита от злых сил"
+  },
+  "sample-turk-motif-016-v1": {
+    "en": "Protection, Good fortune, Strength",
+    "az": "Qoruma, Uğur, Güc",
+    "es": "Protección, Buena suerte, Fuerza",
+    "ru": "Защита, Удача, Сила"
+  },
+  "sample-turk-motif-017-v1": {
+    "en": "Protection, Vigilance, Defense",
+    "az": "Qoruma, Diqqət, Müdafiə",
+    "es": "Protección, Vigilancia, Defensa",
+    "ru": "Защита, Бдительность, Оборона"
+  },
+  "sample-turk-motif-018-v1": {
+    "en": "Marriage, Womanhood, Fertility",
+    "az": "Evlilik, Qadınlıq, Doğum qabiliyyəti",
+    "es": "Matrimonio, Feminidad, Fertilidad",
+    "ru": "Брак, Женственность, Плодородие"
+  },
+  "sample-turk-motif-019-v1": {
+    "en": "Desire to marry, Maidenhood",
+    "az": "Evlənmək arzusu, Gənc qızlıq",
+    "es": "Deseo de casarse, Juventud femenina",
+    "ru": "Желание вступить в брак, Девичество"
+  },
+  "sample-turk-motif-020-v1": {
+    "en": "Desire to marry, Adornment, Womanhood",
+    "az": "Evlənmək arzusu, Bəzənmə, Qadınlıq",
+    "es": "Deseo de casarse, Adorno, Feminidad",
+    "ru": "Желание вступить в брак, Украшение, Женственность"
+  },
+  "sample-turk-motif-021-v1": {
+    "en": "Devotion, Family unity, Loyalty",
+    "az": "Bağlılıq, Ailə birliyi, Sədaqət",
+    "es": "Compromiso, Unidad familiar, Fidelidad",
+    "ru": "Преданность, Единство семьи, Верность"
+  },
+  "sample-turk-motif-022-v1": {
+    "en": "Dowry, Marriage, Building a home",
+    "az": "Cehiz, Evlilik, Yuva qurmaq",
+    "es": "Dote, Matrimonio, Formación de un hogar",
+    "ru": "Приданое, Брак, Создание домашнего очага"
+  },
+  "sample-turk-motif-023-v1": {
+    "en": "Love, Togetherness, Marriage",
+    "az": "Sevgi, Birlikdəlik, Evlilik",
+    "es": "Amor, Unión, Matrimonio",
+    "ru": "Любовь, Близость, Брак"
+  },
+  "sample-turk-motif-024-v1": {
+    "en": "Human existence, Family, Community",
+    "az": "İnsan varlığı, Ailə, İcma",
+    "es": "Existencia humana, Familia, Comunidad",
+    "ru": "Человеческое существование, Семья, Община"
+  },
+  "sample-turk-motif-025-v1": {
+    "en": "Continuation of the lineage, Family, Hope",
+    "az": "Nəslin davamı, Ailə, Ümid",
+    "es": "Continuidad del linaje, Familia, Esperanza",
+    "ru": "Продолжение рода, Семья, Надежда"
+  },
+  "sample-turk-motif-026-v1": {
+    "en": "News, Freedom, Joy",
+    "az": "Xəbər, Azadlıq, Sevinc",
+    "es": "Noticias, Libertad, Alegría",
+    "ru": "Весть, Свобода, Радость"
+  },
+  "sample-turk-motif-027-v1": {
+    "en": "Love, Companionship, Loyalty",
+    "az": "Eşq, Yoldaşlıq, Sədaqət",
+    "es": "Amor, Compañerismo, Fidelidad",
+    "ru": "Любовь, Партнёрство, Верность"
+  },
+  "sample-turk-motif-028-v1": {
+    "en": "Strength, Dominion, Protection",
+    "az": "Güc, Hakimiyyət, Qoruma",
+    "es": "Fuerza, Dominio, Protección",
+    "ru": "Сила, Власть, Защита"
+  },
+  "sample-turk-motif-029-v1": {
+    "en": "Grace, Abundance, Sacredness",
+    "az": "Zəriflik, Bərəkət, Müqəddəslik",
+    "es": "Elegancia, Abundancia, Sacralidad",
+    "ru": "Изящество, Изобилие, Святость"
+  },
+  "sample-turk-motif-030-v1": {
+    "en": "Strength, Productivity, Abundance",
+    "az": "Güc, Məhsuldarlıq, Bərəkət",
+    "es": "Fuerza, Productividad, Abundancia",
+    "ru": "Сила, Продуктивность, Изобилие"
+  },
+  "sample-turk-motif-031-v1": {
+    "en": "Strength, Efficiency, Resilience",
+    "az": "Güc, Səmərəlilik, Dözümlülük",
+    "es": "Fuerza, Rendimiento, Resistencia",
+    "ru": "Сила, Эффективность, Стойкость"
+  },
+  "sample-turk-motif-032-v1": {
+    "en": "Abundance, Life, Plenty",
+    "az": "Bərəkət, Həyat, Bolluq",
+    "es": "Abundancia, Vida, Prosperidad",
+    "ru": "Изобилие, Жизнь, Достаток"
+  },
+  "sample-turk-motif-033-v1": {
+    "en": "Change, Grace, Happiness",
+    "az": "Dəyişiklik, Zəriflik, Xoşbəxtlik",
+    "es": "Cambio, Elegancia, Felicidad",
+    "ru": "Перемены, Изящество, Счастье"
+  },
+  "sample-turk-motif-034-v1": {
+    "en": "Diligence, Productivity",
+    "az": "Çalışqanlıq, Məhsuldarlıq",
+    "es": "Laboriosidad, Productividad",
+    "ru": "Трудолюбие, Продуктивность"
+  },
+  "sample-turk-motif-035-v1": {
+    "en": "Abundance, Trace, Direction, Protection",
+    "az": "Bərəkət, İz, İstiqamət, Qoruma",
+    "es": "Abundancia, Huella, Dirección, Protección",
+    "ru": "Изобилие, След, Направление, Защита"
+  },
+  "sample-turk-motif-036-v1": {
+    "en": "Good fortune, Movement, Spring",
+    "az": "Uğur, Hərəkət, Bahar",
+    "es": "Buena suerte, Movimiento, Primavera",
+    "ru": "Удача, Движение, Весна"
+  },
+  "sample-turk-motif-037-v1": {
+    "en": "Vital force, Rural productivity",
+    "az": "Həyat gücü, Kənd məhsuldarlığı",
+    "es": "Fuerza vital, Productividad rural",
+    "ru": "Жизненная сила, Сельская продуктивность"
+  },
+  "sample-turk-motif-038-v1": {
+    "en": "Abundance, Multiplicity, Fertility",
+    "az": "Bərəkət, Çoxluq, Doğum qabiliyyəti",
+    "es": "Abundancia, Multiplicidad, Fertilidad",
+    "ru": "Изобилие, Множество, Плодородие"
+  },
+  "sample-turk-motif-039-v1": {
+    "en": "Plenty, Prosperity, Yield",
+    "az": "Bolluq, Rifah, Məhsul",
+    "es": "Prosperidad, Bienestar, Rendimiento",
+    "ru": "Достаток, Благополучие, Урожайность"
+  },
+  "sample-turk-motif-040-v1": {
+    "en": "Abundance, Multiplication, Life",
+    "az": "Bərəkət, Çoxalma, Həyat",
+    "es": "Abundancia, Multiplicación, Vida",
+    "ru": "Изобилие, Приумножение, Жизнь"
+  },
+  "sample-turk-motif-041-v1": {
+    "en": "Plenty, Rural life, Production",
+    "az": "Bolluq, Kənd həyatı, İstehsal",
+    "es": "Prosperidad, Vida rural, Producción",
+    "ru": "Достаток, Сельская жизнь, Производство"
+  },
+  "sample-turk-motif-042-v1": {
+    "en": "Plenty, Summer abundance",
+    "az": "Bolluq, Yay bərəkəti",
+    "es": "Prosperidad, Abundancia estival",
+    "ru": "Достаток, Летнее изобилие"
+  },
+  "sample-turk-motif-043-v1": {
+    "en": "Abundance, Sharing, Plenty",
+    "az": "Bərəkət, Paylaşma, Bolluq",
+    "es": "Abundancia, Generosidad, Prosperidad",
+    "ru": "Изобилие, Обмен, Достаток"
+  },
+  "sample-turk-motif-044-v1": {
+    "en": "Renewal, Life, Purity",
+    "az": "Yenilənmə, Həyat, Saflıq",
+    "es": "Renovación, Vida, Pureza",
+    "ru": "Обновление, Жизнь, Чистота"
+  },
+  "sample-turk-motif-045-v1": {
+    "en": "Beauty, Grace",
+    "az": "Gözəllik, Zəriflik",
+    "es": "Belleza, Elegancia",
+    "ru": "Красота, Изящество"
+  },
+  "sample-turk-motif-046-v1": {
+    "en": "Love, Beauty, Grace",
+    "az": "Sevgi, Gözəllik, Zəriflik",
+    "es": "Amor, Belleza, Elegancia",
+    "ru": "Любовь, Красота, Изящество"
+  },
+  "sample-turk-motif-047-v1": {
+    "en": "Purity, Cheerfulness, Nature",
+    "az": "Saflıq, Şənlik, Təbiət",
+    "es": "Pureza, Alegría, Naturaleza",
+    "ru": "Чистота, Веселье, Природа"
+  },
+  "sample-turk-motif-048-v1": {
+    "en": "Youth, Growth, Potential",
+    "az": "Gənclik, İnkişaf, Potensial",
+    "es": "Juventud, Desarrollo, Potencial",
+    "ru": "Молодость, Развитие, Потенциал"
+  },
+  "sample-turk-motif-049-v1": {
+    "en": "Nature, Renewal, Life",
+    "az": "Təbiət, Yenilənmə, Həyat",
+    "es": "Naturaleza, Renovación, Vida",
+    "ru": "Природа, Обновление, Жизнь"
+  },
+  "sample-turk-motif-050-v1": {
+    "en": "Life, Roots, Continuity",
+    "az": "Həyat, Kök, Davamlılıq",
+    "es": "Vida, Raíces, Continuidad",
+    "ru": "Жизнь, Корни, Непрерывность"
+  },
+  "sample-turk-motif-051-v1": {
+    "en": "Infinity, Resilience, Spirituality",
+    "az": "Sonsuzluq, Dözümlülük, Mənəviyyat",
+    "es": "Infinito, Resistencia, Espiritualidad",
+    "ru": "Бесконечность, Стойкость, Духовность"
+  },
+  "sample-turk-motif-052-v1": {
+    "en": "Ornamentation, Vitality, Aesthetic balance",
+    "az": "Bəzək, Canlılıq, Estetik tarazlıq",
+    "es": "Decoración, Vitalidad, Equilibrio estético",
+    "ru": "Орнамент, Жизненность, Эстетическое равновесие"
+  },
+  "sample-turk-motif-053-v1": {
+    "en": "Flow of life, Abundance, Continuity",
+    "az": "Həyat axını, Bərəkət, Davamlılıq",
+    "es": "Flujo de la vida, Abundancia, Continuidad",
+    "ru": "Течение жизни, Изобилие, Непрерывность"
+  },
+  "sample-turk-motif-054-v1": {
+    "en": "Movement, Water, Change",
+    "az": "Hərəkət, Su, Dəyişiklik",
+    "es": "Movimiento, Agua, Cambio",
+    "ru": "Движение, Вода, Перемены"
+  },
+  "sample-turk-motif-055-v1": {
+    "en": "Strength, Homeland, Nature",
+    "az": "Güc, Yurd, Təbiət",
+    "es": "Fuerza, Patria, Naturaleza",
+    "ru": "Сила, Родина, Природа"
+  },
+  "sample-turk-motif-056-v1": {
+    "en": "Roots, Abundance, Source of life",
+    "az": "Kök, Bərəkət, Həyat mənbəyi",
+    "es": "Raíces, Abundancia, Fuente de vida",
+    "ru": "Корни, Изобилие, Источник жизни"
+  },
+  "sample-turk-motif-057-v1": {
+    "en": "Light, Hope, Happiness",
+    "az": "İşıq, Ümid, Xoşbəxtlik",
+    "es": "Luz, Esperanza, Felicidad",
+    "ru": "Свет, Надежда, Счастье"
+  },
+  "sample-turk-motif-058-v1": {
+    "en": "Balance, Order, Directions",
+    "az": "Tarazlıq, Nizam, İstiqamətlər",
+    "es": "Equilibrio, Orden, Direcciones",
+    "ru": "Равновесие, Порядок, Направления"
+  },
+  "sample-turk-motif-059-v1": {
+    "en": "Life, Energy, Brightness",
+    "az": "Həyat, Enerji, Aydınlıq",
+    "es": "Vida, Energía, Claridad",
+    "ru": "Жизнь, Энергия, Сияние"
+  },
+  "sample-turk-motif-060-v1": {
+    "en": "Time, Cycle, Sky",
+    "az": "Zaman, Dövr, Göy üzü",
+    "es": "Tiempo, Ciclo, Cielo",
+    "ru": "Время, Цикл, Небо"
+  },
+  "sample-turk-motif-061-v1": {
+    "en": "Faith, Sky, Time",
+    "az": "İnanc, Göy üzü, Zaman",
+    "es": "Creencia, Cielo, Tiempo",
+    "ru": "Вера, Небо, Время"
+  },
+  "sample-turk-motif-062-v1": {
+    "en": "Fertility, Order, Protective geometry",
+    "az": "Doğum qabiliyyəti, Nizam, Qoruyucu həndəsə",
+    "es": "Fertilidad, Orden, Geometría protectora",
+    "ru": "Плодородие, Порядок, Защитная геометрия"
+  },
+  "sample-turk-motif-063-v1": {
+    "en": "Balance, Center, Productivity",
+    "az": "Tarazlıq, Mərkəz, Məhsuldarlıq",
+    "es": "Equilibrio, Centro, Productividad",
+    "ru": "Равновесие, Центр, Продуктивность"
+  },
+  "sample-turk-motif-064-v1": {
+    "en": "Amulet, Protection, Direction",
+    "az": "Muska, Qoruma, İstiqamət",
+    "es": "Amuleto, Protección, Dirección",
+    "ru": "Амулет, Защита, Направление"
+  },
+  "sample-turk-motif-065-v1": {
+    "en": "Four directions, Guardianship",
+    "az": "Dörd istiqamət, Qoruyuculuq",
+    "es": "Cuatro direcciones, Amparo",
+    "ru": "Четыре направления, Покровительство"
+  },
+  "sample-turk-motif-066-v1": {
+    "en": "Luck, Hope, Good fortune",
+    "az": "Şans, Ümid, Uğur",
+    "es": "Suerte, Esperanza, Buena suerte",
+    "ru": "Удача, Надежда, Удача"
+  },
+  "sample-turk-motif-067-v1": {
+    "en": "Order, Wholeness, Cosmic balance",
+    "az": "Nizam, Bütövlük, Kosmik tarazlıq",
+    "es": "Orden, Integridad, Equilibrio cósmico",
+    "ru": "Порядок, Целостность, Космическое равновесие"
+  },
+  "sample-turk-motif-068-v1": {
+    "en": "Center, Wholeness, Compositional focus",
+    "az": "Mərkəz, Bütövlük, Kompozisiya mərkəzi",
+    "es": "Centro, Integridad, Foco de la composición",
+    "ru": "Центр, Целостность, Центр композиции"
+  },
+  "sample-turk-motif-069-v1": {
+    "en": "Ornamentation, Floral center, Balance",
+    "az": "Bəzək, Çiçəkli mərkəz, Tarazlıq",
+    "es": "Decoración, Centro floral, Equilibrio",
+    "ru": "Орнамент, Цветочный центр, Равновесие"
+  },
+  "sample-turk-motif-070-v1": {
+    "en": "Cycle, Time, Movement",
+    "az": "Dövr, Zaman, Hərəkət",
+    "es": "Ciclo, Tiempo, Movimiento",
+    "ru": "Цикл, Время, Движение"
+  },
+  "sample-turk-motif-071-v1": {
+    "en": "Energy, Spark, Vitality",
+    "az": "Enerji, Qığılcım, Canlılıq",
+    "es": "Energía, Chispa, Vitalidad",
+    "ru": "Энергия, Искра, Жизненность"
+  },
+  "sample-turk-motif-072-v1": {
+    "en": "Protection, Vigilance, Strength against the evil eye",
+    "az": "Qoruma, Diqqət, Nəzərə qarşı güc",
+    "es": "Protección, Vigilancia, Fuerza contra el mal de ojo",
+    "ru": "Защита, Бдительность, Сила против сглаза"
+  },
+  "sample-turk-motif-073-v1": {
+    "en": "Migration, Resilience, Journey",
+    "az": "Köç, Dözümlülük, Səyahət",
+    "es": "Migración, Resistencia, Viaje",
+    "ru": "Переселение, Стойкость, Путешествие"
+  },
+  "sample-turk-motif-074-v1": {
+    "en": "Migration, Seasonal life, Movement",
+    "az": "Köç, Mövsümi həyat, Hərəkət",
+    "es": "Migración, Vida estacional, Movimiento",
+    "ru": "Переселение, Сезонная жизнь, Движение"
+  },
+  "sample-turk-motif-075-v1": {
+    "en": "Ascent, Transition, Growth",
+    "az": "Yüksəliş, Keçid, İnkişaf",
+    "es": "Ascenso, Transición, Desarrollo",
+    "ru": "Восхождение, Переход, Развитие"
+  },
+  "sample-turk-motif-076-v1": {
+    "en": "Sacredness, Direction, Spirituality",
+    "az": "Müqəddəslik, İstiqamət, Mənəviyyat",
+    "es": "Sacralidad, Dirección, Espiritualidad",
+    "ru": "Святость, Направление, Духовность"
+  },
+  "sample-turk-motif-077-v1": {
+    "en": "Light, Faith, Sacredness",
+    "az": "İşıq, İman, Müqəddəslik",
+    "es": "Luz, Fe, Sacralidad",
+    "ru": "Свет, Вера, Святость"
+  },
+  "sample-turk-motif-078-v1": {
+    "en": "Identity, Belonging, Clan mark",
+    "az": "Kimlik, Mənsubiyyət, Tayfa nişanı",
+    "es": "Identidad, Pertenencia, Marca de clan",
+    "ru": "Идентичность, Принадлежность, Родовой знак"
+  },
+  "sample-turk-motif-079-v1": {
+    "en": "Sign, Trace, Community symbol",
+    "az": "İşarə, İz, İcma rəmzi",
+    "es": "Signo, Huella, Símbolo comunitario",
+    "ru": "Знак, След, Символ общины"
+  },
+  "sample-turk-motif-080-v1": {
+    "en": "Connection, Continuity, Unity",
+    "az": "Əlaqə, Davamlılıq, Birlik",
+    "es": "Conexión, Continuidad, Unidad",
+    "ru": "Связь, Непрерывность, Единство"
+  },
+  "sample-turk-motif-081-v1": {
+    "en": "Boundary, Protection, Movement",
+    "az": "Sərhəd, Qoruma, Hərəkət",
+    "es": "Límite, Protección, Movimiento",
+    "ru": "Граница, Защита, Движение"
+  },
+  "sample-turk-motif-082-v1": {
+    "en": "Strength, Defense, Predatory energy",
+    "az": "Güc, Müdafiə, Ovçu enerjisi",
+    "es": "Fuerza, Defensa, Energía cazadora",
+    "ru": "Сила, Оборона, Энергия хищника"
+  },
+  "sample-turk-motif-083-v1": {
+    "en": "Direction, Strength, Determination",
+    "az": "İstiqamət, Güc, Qətiyyət",
+    "es": "Dirección, Fuerza, Determinación",
+    "ru": "Направление, Сила, Решимость"
+  },
+  "sample-turk-motif-084-v1": {
+    "en": "Defense, Sharpness, Protection",
+    "az": "Müdafiə, İtilik, Qorunma",
+    "es": "Defensa, Agudeza, Protección",
+    "ru": "Оборона, Острота, Защита"
+  },
+  "sample-turk-motif-085-v1": {
+    "en": "Beauty, Celebration, Joy of life",
+    "az": "Gözəllik, Bayram, Həyat sevinci",
+    "es": "Belleza, Celebración, Alegría de vivir",
+    "ru": "Красота, Праздник, Радость жизни"
+  },
+  "sample-turk-motif-086-v1": {
+    "en": "Abundance, Growth, Continuation of life",
+    "az": "Bərəkət, Böyümə, Həyatın davamı",
+    "es": "Abundancia, Crecimiento, Continuidad de la vida",
+    "ru": "Изобилие, Рост, Продолжение жизни"
+  },
+  "sample-turk-motif-087-v1": {
+    "en": "Beginning, Hope, Growth",
+    "az": "Başlanğıc, Ümid, İnkişaf",
+    "es": "Comienzo, Esperanza, Desarrollo",
+    "ru": "Начало, Надежда, Развитие"
+  },
+  "sample-turk-motif-088-v1": {
+    "en": "Abundance, Harvest, Labor",
+    "az": "Bərəkət, Məhsul yığımı, Əmək",
+    "es": "Abundancia, Cosecha, Trabajo",
+    "ru": "Изобилие, Урожай, Труд"
+  },
+  "sample-turk-motif-089-v1": {
+    "en": "Journey, Trade, Connection",
+    "az": "Səyahət, Ticarət, Əlaqə",
+    "es": "Viaje, Comercio, Conexión",
+    "ru": "Путешествие, Торговля, Связь"
+  },
+  "sample-turk-motif-090-v1": {
+    "en": "Life, Purification, Abundance",
+    "az": "Həyat, Təmizlənmə, Bərəkət",
+    "es": "Vida, Purificación, Abundancia",
+    "ru": "Жизнь, Очищение, Изобилие"
+  },
+  "sample-turk-motif-091-v1": {
+    "en": "Devotion, Solidarity, Unity",
+    "az": "Bağlılıq, Həmrəylik, Birlik",
+    "es": "Compromiso, Solidaridad, Unidad",
+    "ru": "Преданность, Солидарность, Единство"
+  }
+}

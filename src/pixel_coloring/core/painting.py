@@ -11,6 +11,7 @@ class Painting:
     target_map: np.ndarray
     category: str = "Diğer"
     author: str = "Piksel Atölyesi"
+    meaning: str = ""
     painted_mask: np.ndarray = field(init=False)
     totals: np.ndarray = field(init=False)
     counts: np.ndarray = field(init=False)

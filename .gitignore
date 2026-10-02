@@ -8,6 +8,7 @@ __pycache__/
 
 # Virtual environments and builds
 .venv/
+.tools/
 venv/
 build/
 dist/

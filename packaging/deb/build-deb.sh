@@ -5,7 +5,7 @@ set -eu
 ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/../.." && pwd)
 cd "$ROOT"
 PYTHON=${PYTHON:-python3}
-MAINTAINER=${MAINTAINER:-Teknoloji Filozofları <teknolojifilozoflari@users.noreply.github.com>}
+MAINTAINER=${MAINTAINER:-Pixel Coloring contributors <maintainer@example.invalid>}
 
 for program in "$PYTHON" dpkg dpkg-deb; do
     if ! command -v "$program" >/dev/null 2>&1; then

@@ -9,6 +9,7 @@ from PySide6.QtWidgets import QApplication
 LANGUAGES = {'tr': 'Türkçe', 'az': 'Azərbaycanca', 'es': 'Español', 'ru': 'Русский', 'en': 'English'}
 TRANSLATIONS = json.loads((Path(__file__).resolve().parents[1] / 'resources/translations.json').read_text(encoding='utf-8'))
 TITLE_TRANSLATIONS = json.loads((Path(__file__).resolve().parents[1] / 'resources/painting_titles.json').read_text(encoding='utf-8'))
+MEANING_TRANSLATIONS = json.loads((Path(__file__).resolve().parents[1] / 'resources/painting_meanings.json').read_text(encoding='utf-8'))
 _language = 'tr'
 _qt_translator = None
 
@@ -25,6 +26,11 @@ def painting_title(painting_id, original):
 
 def number(value, decimals=0):
     return QLocale(_language).toString(float(value), 'f', decimals)
+
+
+def painting_meaning(painting_id, original):
+    """Display translated bundled meanings while preserving their original metadata."""
+    return MEANING_TRANSLATIONS.get(painting_id, {}).get(_language, original) if _language != 'tr' else original
 
 
 def percentage(value):

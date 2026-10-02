@@ -9,13 +9,13 @@ Başvuru formu: https://apps.pardus.org.tr/suggestapp
 ## Gerekçe alanı için metin
 
 Piksel Atölyesi, Türkçe ve çevrim dışı çalışan, numaraya göre piksel boyama oyunudur.
-536 hazır resim, yedi zorluk seviyesi, kendi görselini içe aktarma ve otomatik ilerleme
+900 hazır resim, yedi zorluk seviyesi, kendi görselini içe aktarma ve otomatik ilerleme
 kaydı sunar. Hesap, reklam veya telemetri gerektirmez. Kaynak kodu açıktır; kod MIT
 lisanslıdır. Görsellerin ve üçüncü taraf bileşenlerin lisans bilgileri kaynak depodadır.
 
 Pardus 25 üzerinde amd64 `.deb` paketi kuruldu; uygulama açılışı ve boyama ilerlemesinin
 yeniden açılışta korunması test edildi. Pakete ve SHA-256 özetine şu sürüm sayfasından
-ulaşılabilir: https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.15.0
+ulaşılabilir: https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.16.0
 
 Pardus Yazılım Merkezi'nde değerlendirilmesini rica ediyoruz. Depoya alınması için farklı
 bir Debian kaynak paketlemesi gerekiyorsa sağlayabiliriz.

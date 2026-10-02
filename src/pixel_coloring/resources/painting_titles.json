@@ -3214,5 +3214,2189 @@
     "az": "Köhnə vağzalda çiçək hərracı",
     "es": "Subasta de flores en la antigua estación",
     "ru": "Цветочный аукцион на старом вокзале"
+  },
+  "sample-turk-motif-001-v1": {
+    "en": "Hands on Hips (Elibelinde)",
+    "az": "Əli belində",
+    "es": "Manos en la cintura (Elibelinde)",
+    "ru": "Руки на поясе (Элибелинде)"
+  },
+  "sample-turk-motif-002-v1": {
+    "en": "Ram's Horn (Koçboynuzu)",
+    "az": "Qoç buynuzu",
+    "es": "Cuerno de carnero",
+    "ru": "Рог барана"
+  },
+  "sample-turk-motif-003-v1": {
+    "en": "Abundance",
+    "az": "Bərəkət",
+    "es": "Abundancia",
+    "ru": "Изобилие"
+  },
+  "sample-turk-motif-004-v1": {
+    "en": "Tree of Life",
+    "az": "Həyat ağacı",
+    "es": "Árbol de la vida",
+    "ru": "Древо жизни"
+  },
+  "sample-turk-motif-005-v1": {
+    "en": "Eye",
+    "az": "Göz",
+    "es": "Ojo",
+    "ru": "Глаз"
+  },
+  "sample-turk-motif-006-v1": {
+    "en": "Evil Eye Charm",
+    "az": "Nəzərlik",
+    "es": "Amuleto contra el mal de ojo",
+    "ru": "Оберег от сглаза"
+  },
+  "sample-turk-motif-007-v1": {
+    "en": "Amulet",
+    "az": "Muska",
+    "es": "Amuleto",
+    "ru": "Амулет"
+  },
+  "sample-turk-motif-008-v1": {
+    "en": "Burdock",
+    "az": "Pıtraq",
+    "es": "Bardana",
+    "ru": "Репейник"
+  },
+  "sample-turk-motif-009-v1": {
+    "en": "Hook",
+    "az": "Qarmaq",
+    "es": "Gancho",
+    "ru": "Крючок"
+  },
+  "sample-turk-motif-010-v1": {
+    "en": "Scorpion",
+    "az": "Əqrəb",
+    "es": "Escorpión",
+    "ru": "Скорпион"
+  },
+  "sample-turk-motif-011-v1": {
+    "en": "Snake",
+    "az": "İlan",
+    "es": "Serpiente",
+    "ru": "Змея"
+  },
+  "sample-turk-motif-012-v1": {
+    "en": "Dragon",
+    "az": "Əjdaha",
+    "es": "Dragón",
+    "ru": "Дракон"
+  },
+  "sample-turk-motif-013-v1": {
+    "en": "Wolf's Mouth",
+    "az": "Qurd ağzı",
+    "es": "Boca de lobo",
+    "ru": "Пасть волка"
+  },
+  "sample-turk-motif-014-v1": {
+    "en": "Wolf's Track",
+    "az": "Qurd izi",
+    "es": "Huella de lobo",
+    "ru": "След волка"
+  },
+  "sample-turk-motif-015-v1": {
+    "en": "Monster's Foot",
+    "az": "Canavar ayağı",
+    "es": "Pie de monstruo",
+    "ru": "Лапа чудовища"
+  },
+  "sample-turk-motif-016-v1": {
+    "en": "Hand",
+    "az": "Əl",
+    "es": "Mano",
+    "ru": "Рука"
+  },
+  "sample-turk-motif-017-v1": {
+    "en": "Finger",
+    "az": "Barmaq",
+    "es": "Dedo",
+    "ru": "Палец"
+  },
+  "sample-turk-motif-018-v1": {
+    "en": "Comb",
+    "az": "Daraq",
+    "es": "Peine",
+    "ru": "Гребень"
+  },
+  "sample-turk-motif-019-v1": {
+    "en": "Hair Tie",
+    "az": "Saç bağı",
+    "es": "Lazo para el cabello",
+    "ru": "Лента для волос"
+  },
+  "sample-turk-motif-020-v1": {
+    "en": "Earring",
+    "az": "Sırğa",
+    "es": "Pendiente",
+    "ru": "Серьга"
+  },
+  "sample-turk-motif-021-v1": {
+    "en": "Fetter (Bukağı)",
+    "az": "Buxov",
+    "es": "Traba (Bukağı)",
+    "ru": "Путы (Букагы)"
+  },
+  "sample-turk-motif-022-v1": {
+    "en": "Chest",
+    "az": "Sandıq",
+    "es": "Arcón",
+    "ru": "Сундук"
+  },
+  "sample-turk-motif-023-v1": {
+    "en": "Love and Union",
+    "az": "Sevgi və birlik",
+    "es": "Amor y unión",
+    "ru": "Любовь и единение"
+  },
+  "sample-turk-motif-024-v1": {
+    "en": "Human",
+    "az": "İnsan",
+    "es": "Ser humano",
+    "ru": "Человек"
+  },
+  "sample-turk-motif-025-v1": {
+    "en": "Child",
+    "az": "Uşaq",
+    "es": "Niño",
+    "ru": "Ребёнок"
+  },
+  "sample-turk-motif-026-v1": {
+    "en": "Bird",
+    "az": "Quş",
+    "es": "Ave",
+    "ru": "Птица"
+  },
+  "sample-turk-motif-027-v1": {
+    "en": "Pair of Birds",
+    "az": "Qoşa quş",
+    "es": "Pareja de aves",
+    "ru": "Пара птиц"
+  },
+  "sample-turk-motif-028-v1": {
+    "en": "Eagle",
+    "az": "Qartal",
+    "es": "Águila",
+    "ru": "Орёл"
+  },
+  "sample-turk-motif-029-v1": {
+    "en": "Deer",
+    "az": "Maral",
+    "es": "Ciervo",
+    "ru": "Олень"
+  },
+  "sample-turk-motif-030-v1": {
+    "en": "Ram",
+    "az": "Qoç",
+    "es": "Carnero",
+    "ru": "Баран"
+  },
+  "sample-turk-motif-031-v1": {
+    "en": "Bull",
+    "az": "Buğa",
+    "es": "Toro",
+    "ru": "Бык"
+  },
+  "sample-turk-motif-032-v1": {
+    "en": "Fish",
+    "az": "Balıq",
+    "es": "Pez",
+    "ru": "Рыба"
+  },
+  "sample-turk-motif-033-v1": {
+    "en": "Butterfly",
+    "az": "Kəpənək",
+    "es": "Mariposa",
+    "ru": "Бабочка"
+  },
+  "sample-turk-motif-034-v1": {
+    "en": "Bee",
+    "az": "Arı",
+    "es": "Abeja",
+    "ru": "Пчела"
+  },
+  "sample-turk-motif-035-v1": {
+    "en": "Goose Foot",
+    "az": "Qaz ayağı",
+    "es": "Pata de ganso",
+    "ru": "Гусиная лапка"
+  },
+  "sample-turk-motif-036-v1": {
+    "en": "Swallow",
+    "az": "Qaranquş",
+    "es": "Golondrina",
+    "ru": "Ласточка"
+  },
+  "sample-turk-motif-037-v1": {
+    "en": "Goat",
+    "az": "Keçi",
+    "es": "Cabra",
+    "ru": "Коза"
+  },
+  "sample-turk-motif-038-v1": {
+    "en": "Pomegranate",
+    "az": "Nar",
+    "es": "Granada",
+    "ru": "Гранат"
+  },
+  "sample-turk-motif-039-v1": {
+    "en": "Grapes",
+    "az": "Üzüm",
+    "es": "Uvas",
+    "ru": "Виноград"
+  },
+  "sample-turk-motif-040-v1": {
+    "en": "Fig",
+    "az": "Əncir",
+    "es": "Higo",
+    "ru": "Инжир"
+  },
+  "sample-turk-motif-041-v1": {
+    "en": "Mulberry",
+    "az": "Tut",
+    "es": "Mora",
+    "ru": "Шелковица"
+  },
+  "sample-turk-motif-042-v1": {
+    "en": "Melon",
+    "az": "Yemiş",
+    "es": "Melón",
+    "ru": "Дыня"
+  },
+  "sample-turk-motif-043-v1": {
+    "en": "Watermelon",
+    "az": "Qarpız",
+    "es": "Sandía",
+    "ru": "Арбуз"
+  },
+  "sample-turk-motif-044-v1": {
+    "en": "Lotus",
+    "az": "Lotus",
+    "es": "Loto",
+    "ru": "Лотос"
+  },
+  "sample-turk-motif-045-v1": {
+    "en": "Tulip",
+    "az": "Lalə",
+    "es": "Tulipán",
+    "ru": "Тюльпан"
+  },
+  "sample-turk-motif-046-v1": {
+    "en": "Rose",
+    "az": "Qızılgül",
+    "es": "Rosa",
+    "ru": "Роза"
+  },
+  "sample-turk-motif-047-v1": {
+    "en": "Daisy",
+    "az": "Çobanyastığı",
+    "es": "Margarita",
+    "ru": "Ромашка"
+  },
+  "sample-turk-motif-048-v1": {
+    "en": "Rosebud",
+    "az": "Qönçə",
+    "es": "Capullo de rosa",
+    "ru": "Бутон розы"
+  },
+  "sample-turk-motif-049-v1": {
+    "en": "Leaf",
+    "az": "Yarpaq",
+    "es": "Hoja",
+    "ru": "Лист"
+  },
+  "sample-turk-motif-050-v1": {
+    "en": "Tree",
+    "az": "Ağac",
+    "es": "Árbol",
+    "ru": "Дерево"
+  },
+  "sample-turk-motif-051-v1": {
+    "en": "Cypress",
+    "az": "Sərv",
+    "es": "Ciprés",
+    "ru": "Кипарис"
+  },
+  "sample-turk-motif-052-v1": {
+    "en": "Palmette",
+    "az": "Palmet",
+    "es": "Palmeta",
+    "ru": "Пальметта"
+  },
+  "sample-turk-motif-053-v1": {
+    "en": "Waterway",
+    "az": "Su yolu",
+    "es": "Curso de agua",
+    "ru": "Водный путь"
+  },
+  "sample-turk-motif-054-v1": {
+    "en": "Wave",
+    "az": "Dalğa",
+    "es": "Ola",
+    "ru": "Волна"
+  },
+  "sample-turk-motif-055-v1": {
+    "en": "Mountain",
+    "az": "Dağ",
+    "es": "Montaña",
+    "ru": "Гора"
+  },
+  "sample-turk-motif-056-v1": {
+    "en": "Earth",
+    "az": "Torpaq",
+    "es": "Tierra",
+    "ru": "Земля"
+  },
+  "sample-turk-motif-057-v1": {
+    "en": "Star",
+    "az": "Ulduz",
+    "es": "Estrella",
+    "ru": "Звезда"
+  },
+  "sample-turk-motif-058-v1": {
+    "en": "Eight-Pointed Star",
+    "az": "Səkkizguşəli ulduz",
+    "es": "Estrella de ocho puntas",
+    "ru": "Восьмиконечная звезда"
+  },
+  "sample-turk-motif-059-v1": {
+    "en": "Sun",
+    "az": "Günəş",
+    "es": "Sol",
+    "ru": "Солнце"
+  },
+  "sample-turk-motif-060-v1": {
+    "en": "Moon",
+    "az": "Ay",
+    "es": "Luna",
+    "ru": "Луна"
+  },
+  "sample-turk-motif-061-v1": {
+    "en": "Crescent",
+    "az": "Hilal",
+    "es": "Luna creciente",
+    "ru": "Полумесяц"
+  },
+  "sample-turk-motif-062-v1": {
+    "en": "Diamond Motif (Baklava)",
+    "az": "Paxlava motivi",
+    "es": "Rombo (Baklava)",
+    "ru": "Ромб (Баклава)"
+  },
+  "sample-turk-motif-063-v1": {
+    "en": "Rhombus",
+    "az": "Romb",
+    "es": "Rombo equilátero",
+    "ru": "Равносторонний ромб"
+  },
+  "sample-turk-motif-064-v1": {
+    "en": "Triangle",
+    "az": "Üçbucaq",
+    "es": "Triángulo",
+    "ru": "Треугольник"
+  },
+  "sample-turk-motif-065-v1": {
+    "en": "Cross",
+    "az": "Xaç",
+    "es": "Cruz",
+    "ru": "Крест"
+  },
+  "sample-turk-motif-066-v1": {
+    "en": "Four-Leaf Clover",
+    "az": "Dördyarpaqlı yonca",
+    "es": "Trébol de cuatro hojas",
+    "ru": "Четырёхлистный клевер"
+  },
+  "sample-turk-motif-067-v1": {
+    "en": "Octagon",
+    "az": "Səkkizbucaq",
+    "es": "Octógono",
+    "ru": "Восьмиугольник"
+  },
+  "sample-turk-motif-068-v1": {
+    "en": "Medallion",
+    "az": "Medalyon",
+    "es": "Medallón",
+    "ru": "Медальон"
+  },
+  "sample-turk-motif-069-v1": {
+    "en": "Rosette",
+    "az": "Rozet",
+    "es": "Roseta",
+    "ru": "Розетка"
+  },
+  "sample-turk-motif-070-v1": {
+    "en": "Wheel of Fortune",
+    "az": "Çərxi-fələk",
+    "es": "Rueda de la fortuna",
+    "ru": "Колесо судьбы"
+  },
+  "sample-turk-motif-071-v1": {
+    "en": "Flint",
+    "az": "Çaxmaq",
+    "es": "Pedernal",
+    "ru": "Кремень"
+  },
+  "sample-turk-motif-072-v1": {
+    "en": "Ox Eye",
+    "az": "Öküz gözü",
+    "es": "Ojo de buey",
+    "ru": "Бычий глаз"
+  },
+  "sample-turk-motif-073-v1": {
+    "en": "Camel's Neck",
+    "az": "Dəvə boynu",
+    "es": "Cuello de camello",
+    "ru": "Шея верблюда"
+  },
+  "sample-turk-motif-074-v1": {
+    "en": "Highland Trail",
+    "az": "Yaylaq yolu",
+    "es": "Camino de montaña",
+    "ru": "Путь на горное пастбище"
+  },
+  "sample-turk-motif-075-v1": {
+    "en": "Stairway",
+    "az": "Pilləkən",
+    "es": "Escalera",
+    "ru": "Лестница"
+  },
+  "sample-turk-motif-076-v1": {
+    "en": "Mihrab",
+    "az": "Mehrab",
+    "es": "Mihrab",
+    "ru": "Михраб"
+  },
+  "sample-turk-motif-077-v1": {
+    "en": "Oil Lamp",
+    "az": "Qəndil",
+    "es": "Lámpara de aceite",
+    "ru": "Светильник"
+  },
+  "sample-turk-motif-078-v1": {
+    "en": "Tamga",
+    "az": "Damğa",
+    "es": "Tamga",
+    "ru": "Тамга"
+  },
+  "sample-turk-motif-079-v1": {
+    "en": "Mark (İm)",
+    "az": "İm",
+    "es": "Marca (İm)",
+    "ru": "Знак (Им)"
+  },
+  "sample-turk-motif-080-v1": {
+    "en": "Chain",
+    "az": "Zəncir",
+    "es": "Cadena",
+    "ru": "Цепь"
+  },
+  "sample-turk-motif-081-v1": {
+    "en": "Sawtooth",
+    "az": "Mişar dişi",
+    "es": "Diente de sierra",
+    "ru": "Зуб пилы"
+  },
+  "sample-turk-motif-082-v1": {
+    "en": "Claw",
+    "az": "Pəncə",
+    "es": "Garra",
+    "ru": "Коготь"
+  },
+  "sample-turk-motif-083-v1": {
+    "en": "Arrowhead",
+    "az": "Ox ucu",
+    "es": "Punta de flecha",
+    "ru": "Наконечник стрелы"
+  },
+  "sample-turk-motif-084-v1": {
+    "en": "Talon",
+    "az": "Dırnaq",
+    "es": "Uña",
+    "ru": "Острый коготь"
+  },
+  "sample-turk-motif-085-v1": {
+    "en": "Flower Bouquet",
+    "az": "Çiçək dəstəsi",
+    "es": "Ramo de flores",
+    "ru": "Букет цветов"
+  },
+  "sample-turk-motif-086-v1": {
+    "en": "Vine Branch",
+    "az": "Üzüm budağı",
+    "es": "Rama de vid",
+    "ru": "Виноградная лоза"
+  },
+  "sample-turk-motif-087-v1": {
+    "en": "Bud",
+    "az": "Tumurcuq",
+    "es": "Brote",
+    "ru": "Почка"
+  },
+  "sample-turk-motif-088-v1": {
+    "en": "Ear of Grain",
+    "az": "Sünbül",
+    "es": "Espiga",
+    "ru": "Колос"
+  },
+  "sample-turk-motif-089-v1": {
+    "en": "Caravan Route",
+    "az": "Karvan yolu",
+    "es": "Ruta de caravanas",
+    "ru": "Караванный путь"
+  },
+  "sample-turk-motif-090-v1": {
+    "en": "Water Drop",
+    "az": "Su damlası",
+    "es": "Gota de agua",
+    "ru": "Капля воды"
+  },
+  "sample-turk-motif-091-v1": {
+    "en": "Knot",
+    "az": "Düyün",
+    "es": "Nudo",
+    "ru": "Узел"
+  },
+  "sample-harikalar-001": {
+    "en": "Great Pyramid of Giza",
+    "az": "Xeops piramidası",
+    "es": "Gran Pirámide de Guiza",
+    "ru": "Пирамида Хеопса"
+  },
+  "sample-harikalar-002": {
+    "en": "Stonehenge",
+    "az": "Stounhenc",
+    "es": "Stonehenge",
+    "ru": "Стоунхендж"
+  },
+  "sample-harikalar-003": {
+    "en": "Uluru",
+    "az": "Uluru",
+    "es": "Uluru",
+    "ru": "Улуру"
+  },
+  "sample-harikalar-004": {
+    "en": "Mount Fuji",
+    "az": "Fudzi dağı",
+    "es": "Monte Fuji",
+    "ru": "Гора Фудзи"
+  },
+  "sample-harikalar-005": {
+    "en": "Easter Island Moai",
+    "az": "Pasxa adasının moailəri",
+    "es": "Moái de la Isla de Pascua",
+    "ru": "Моаи острова Пасхи"
+  },
+  "sample-harikalar-006": {
+    "en": "Delicate Arch",
+    "az": "Delicate Arch",
+    "es": "Arco Delicado",
+    "ru": "Изящная арка"
+  },
+  "sample-harikalar-007": {
+    "en": "Matterhorn",
+    "az": "Matterhorn",
+    "es": "Cervino",
+    "ru": "Маттерхорн"
+  },
+  "sample-harikalar-008": {
+    "en": "Kata Tjuta",
+    "az": "Kata Tjuta",
+    "es": "Kata Tjuta",
+    "ru": "Ката-Тьюта"
+  },
+  "sample-harikalar-009": {
+    "en": "Dead Sea",
+    "az": "Ölü dəniz",
+    "es": "Mar Muerto",
+    "ru": "Мёртвое море"
+  },
+  "sample-harikalar-010": {
+    "en": "Fairy Chimney",
+    "az": "Pəri bacası",
+    "es": "Chimenea de hadas",
+    "ru": "Скала «Дымоход феи»"
+  },
+  "sample-harikalar-011": {
+    "en": "Moraine Lake",
+    "az": "Moreyn gölü",
+    "es": "Lago Moraine",
+    "ru": "Озеро Морейн"
+  },
+  "sample-harikalar-012": {
+    "en": "Great Sphinx",
+    "az": "Böyük Sfinks",
+    "es": "Gran Esfinge",
+    "ru": "Большой сфинкс"
+  },
+  "sample-harikalar-013": {
+    "en": "Mesa Arch",
+    "az": "Mesa Arch",
+    "es": "Arco Mesa",
+    "ru": "Арка Меса"
+  },
+  "sample-harikalar-014": {
+    "en": "Chichén Itzá",
+    "az": "Çiçen İtsa",
+    "es": "Chichén Itzá",
+    "ru": "Чичен-Ица"
+  },
+  "sample-harikalar-015": {
+    "en": "Leaning Tower of Pisa",
+    "az": "Piza qülləsi",
+    "es": "Torre de Pisa",
+    "ru": "Пизанская башня"
+  },
+  "sample-harikalar-016": {
+    "en": "Christ the Redeemer",
+    "az": "Xilaskar İsa",
+    "es": "Cristo Redentor",
+    "ru": "Христос-Искупитель"
+  },
+  "sample-harikalar-017": {
+    "en": "Eiffel Tower",
+    "az": "Eyfel qülləsi",
+    "es": "Torre Eiffel",
+    "ru": "Эйфелева башня"
+  },
+  "sample-harikalar-018": {
+    "en": "Statue of Liberty",
+    "az": "Azadlıq heykəli",
+    "es": "Estatua de la Libertad",
+    "ru": "Статуя Свободы"
+  },
+  "sample-harikalar-019": {
+    "en": "Cappadocia Balloons",
+    "az": "Kapadokya hava şarları",
+    "es": "Globos de Capadocia",
+    "ru": "Воздушные шары Каппадокии"
+  },
+  "sample-harikalar-020": {
+    "en": "Pamukkale",
+    "az": "Pamukkale",
+    "es": "Pamukkale",
+    "ru": "Памуккале"
+  },
+  "sample-harikalar-021": {
+    "en": "Giant's Causeway",
+    "az": "Nəhənglər yolu",
+    "es": "Calzada del Gigante",
+    "ru": "Дорога гигантов"
+  },
+  "sample-harikalar-022": {
+    "en": "Twelve Apostles",
+    "az": "On iki həvari",
+    "es": "Doce Apóstoles",
+    "ru": "Двенадцать апостолов"
+  },
+  "sample-harikalar-023": {
+    "en": "Victoria Falls",
+    "az": "Viktoriya şəlaləsi",
+    "es": "Cataratas Victoria",
+    "ru": "Водопад Виктория"
+  },
+  "sample-harikalar-024": {
+    "en": "Niagara Falls",
+    "az": "Niaqara şəlaləsi",
+    "es": "Cataratas del Niágara",
+    "ru": "Ниагарский водопад"
+  },
+  "sample-harikalar-025": {
+    "en": "Rainbow Mountain",
+    "az": "Göy qurşağı dağı",
+    "es": "Montaña de Colores",
+    "ru": "Радужная гора"
+  },
+  "sample-harikalar-026": {
+    "en": "White Sands",
+    "az": "Ağ qum təpələri",
+    "es": "Dunas de arena blanca",
+    "ru": "Белые пески"
+  },
+  "sample-harikalar-027": {
+    "en": "Petra Treasury",
+    "az": "Petra xəzinəsi",
+    "es": "Tesoro de Petra",
+    "ru": "Сокровищница Петры"
+  },
+  "sample-harikalar-028": {
+    "en": "Colosseum",
+    "az": "Kolizey",
+    "es": "Coliseo",
+    "ru": "Колизей"
+  },
+  "sample-harikalar-029": {
+    "en": "Great Wall of China",
+    "az": "Böyük Çin səddi",
+    "es": "Gran Muralla China",
+    "ru": "Великая Китайская стена"
+  },
+  "sample-harikalar-030": {
+    "en": "Machu Picchu",
+    "az": "Maçu Pikçu",
+    "es": "Machu Picchu",
+    "ru": "Мачу-Пикчу"
+  },
+  "sample-harikalar-031": {
+    "en": "Parthenon",
+    "az": "Parfenon",
+    "es": "Partenón",
+    "ru": "Парфенон"
+  },
+  "sample-harikalar-032": {
+    "en": "Sydney Opera House",
+    "az": "Sidney opera binası",
+    "es": "Ópera de Sídney",
+    "ru": "Сиднейский оперный театр"
+  },
+  "sample-harikalar-033": {
+    "en": "Mont Saint-Michel",
+    "az": "Mon Sen Mişel",
+    "es": "Mont Saint-Michel",
+    "ru": "Мон-Сен-Мишель"
+  },
+  "sample-harikalar-034": {
+    "en": "Bled Island",
+    "az": "Bled adası",
+    "es": "Isla de Bled",
+    "ru": "Остров Блед"
+  },
+  "sample-harikalar-035": {
+    "en": "Neuschwanstein",
+    "az": "Noyşvanştayn",
+    "es": "Neuschwanstein",
+    "ru": "Нойшванштайн"
+  },
+  "sample-harikalar-036": {
+    "en": "Grand Canyon",
+    "az": "Böyük Kanyon",
+    "es": "Gran Cañón",
+    "ru": "Большой каньон"
+  },
+  "sample-harikalar-037": {
+    "en": "Plitvice Lakes",
+    "az": "Plitvitse gölləri",
+    "es": "Lagos de Plitvice",
+    "ru": "Плитвицкие озёра"
+  },
+  "sample-harikalar-038": {
+    "en": "Bora Bora",
+    "az": "Bora Bora",
+    "es": "Bora Bora",
+    "ru": "Бора-Бора"
+  },
+  "sample-harikalar-039": {
+    "en": "Salar de Uyuni",
+    "az": "Uyuni duz gölü",
+    "es": "Salar de Uyuni",
+    "ru": "Солончак Уюни"
+  },
+  "sample-harikalar-040": {
+    "en": "Taj Mahal",
+    "az": "Tac Mahal",
+    "es": "Taj Mahal",
+    "ru": "Тадж-Махал"
+  },
+  "sample-harikalar-041": {
+    "en": "Hagia Sophia",
+    "az": "Ayasofya",
+    "es": "Santa Sofía",
+    "ru": "Айя-София"
+  },
+  "sample-harikalar-042": {
+    "en": "Blue Mosque",
+    "az": "Sultanəhməd məscidi",
+    "es": "Mezquita Azul",
+    "ru": "Голубая мечеть"
+  },
+  "sample-harikalar-043": {
+    "en": "Selimiye Mosque",
+    "az": "Səlimiyyə məscidi",
+    "es": "Mezquita de Selim",
+    "ru": "Мечеть Селимие"
+  },
+  "sample-harikalar-044": {
+    "en": "Alhambra",
+    "az": "Əlhəmra",
+    "es": "Alhambra",
+    "ru": "Альгамбра"
+  },
+  "sample-harikalar-045": {
+    "en": "Angkor Wat",
+    "az": "Anqkor Vat",
+    "es": "Angkor Wat",
+    "ru": "Ангкор-Ват"
+  },
+  "sample-harikalar-046": {
+    "en": "Borobudur",
+    "az": "Borobudur",
+    "es": "Borobudur",
+    "ru": "Боробудур"
+  },
+  "sample-harikalar-047": {
+    "en": "Itsukushima Gate",
+    "az": "İtsukuşima qapısı",
+    "es": "Puerta de Itsukushima",
+    "ru": "Ворота Ицукусимы"
+  },
+  "sample-harikalar-048": {
+    "en": "Himeji Castle",
+    "az": "Himeci qalası",
+    "es": "Castillo de Himeji",
+    "ru": "Замок Химэдзи"
+  },
+  "sample-harikalar-049": {
+    "en": "Golden Temple",
+    "az": "Qızıl məbəd",
+    "es": "Templo Dorado",
+    "ru": "Золотой храм"
+  },
+  "sample-harikalar-050": {
+    "en": "Abu Simbel",
+    "az": "Əbu Simbel",
+    "es": "Abu Simbel",
+    "ru": "Абу-Симбел"
+  },
+  "sample-harikalar-051": {
+    "en": "Mount Nemrut",
+    "az": "Nemrut dağı",
+    "es": "Monte Nemrut",
+    "ru": "Гора Немрут"
+  },
+  "sample-harikalar-052": {
+    "en": "Library of Celsus, Ephesus",
+    "az": "Efesdə Selsus kitabxanası",
+    "es": "Biblioteca de Celso en Éfeso",
+    "ru": "Библиотека Цельса в Эфесе"
+  },
+  "sample-harikalar-053": {
+    "en": "Sagrada Família",
+    "az": "Sagrada Família",
+    "es": "Sagrada Familia",
+    "ru": "Саграда-Фамилия"
+  },
+  "sample-harikalar-054": {
+    "en": "Alcázar Gardens",
+    "az": "Alkazar bağları",
+    "es": "Jardines del Alcázar",
+    "ru": "Сады Алькасара"
+  },
+  "sample-harikalar-055": {
+    "en": "Gardens of Versailles",
+    "az": "Versal bağları",
+    "es": "Jardines de Versalles",
+    "ru": "Сады Версаля"
+  },
+  "sample-harikalar-056": {
+    "en": "Schönbrunn Palace",
+    "az": "Şönbrunn sarayı",
+    "es": "Palacio de Schönbrunn",
+    "ru": "Дворец Шёнбрунн"
+  },
+  "sample-harikalar-057": {
+    "en": "Prague Bridge",
+    "az": "Praqa körpüsü",
+    "es": "Puente de Praga",
+    "ru": "Пражский мост"
+  },
+  "sample-harikalar-058": {
+    "en": "Dubrovnik Walls",
+    "az": "Dubrovnik qala divarları",
+    "es": "Murallas de Dubrovnik",
+    "ru": "Стены Дубровника"
+  },
+  "sample-harikalar-059": {
+    "en": "Santorini",
+    "az": "Santorini",
+    "es": "Santorini",
+    "ru": "Санторини"
+  },
+  "sample-harikalar-060": {
+    "en": "Cinque Terre",
+    "az": "Çinkve Terre",
+    "es": "Cinque Terre",
+    "ru": "Чинкве-Терре"
+  },
+  "sample-harikalar-061": {
+    "en": "Venice Grand Canal",
+    "az": "Venesiyanın Böyük kanalı",
+    "es": "Gran Canal de Venecia",
+    "ru": "Гранд-канал в Венеции"
+  },
+  "sample-harikalar-062": {
+    "en": "Avenue of the Baobabs",
+    "az": "Baobablar yolu",
+    "es": "Avenida de los Baobabs",
+    "ru": "Аллея баобабов"
+  },
+  "sample-harikalar-063": {
+    "en": "Zhangjiajie",
+    "az": "Çjantszyatsze",
+    "es": "Zhangjiajie",
+    "ru": "Чжанцзяцзе"
+  },
+  "sample-harikalar-064": {
+    "en": "Ha Long Bay",
+    "az": "Halong körfəzi",
+    "es": "Bahía de Ha Long",
+    "ru": "Бухта Халонг"
+  },
+  "sample-harikalar-065": {
+    "en": "Iguazú Falls",
+    "az": "İquasu şəlalələri",
+    "es": "Cataratas del Iguazú",
+    "ru": "Водопады Игуасу"
+  },
+  "sample-harikalar-066": {
+    "en": "Rani ki Vav",
+    "az": "Rani ki Vav",
+    "es": "Rani ki Vav",
+    "ru": "Рани-ки-Вав"
+  },
+  "sample-harikalar-067": {
+    "en": "Fatehpur Sikri",
+    "az": "Fatehpur Sikri",
+    "es": "Fatehpur Sikri",
+    "ru": "Фатехпур-Сикри"
+  },
+  "sample-harikalar-068": {
+    "en": "Samarkand Registan",
+    "az": "Səmərqənd Registanı",
+    "es": "Registán de Samarcanda",
+    "ru": "Регистан в Самарканде"
+  },
+  "sample-harikalar-069": {
+    "en": "Isfahan Square",
+    "az": "İsfahan meydanı",
+    "es": "Plaza de Isfahán",
+    "ru": "Площадь Исфахана"
+  },
+  "sample-harikalar-070": {
+    "en": "Sheikh Zayed Mosque",
+    "az": "Şeyx Zayed məscidi",
+    "es": "Mezquita del Jeque Zayed",
+    "ru": "Мечеть шейха Зайда"
+  },
+  "sample-harikalar-071": {
+    "en": "Potala Palace",
+    "az": "Potala sarayı",
+    "es": "Palacio de Potala",
+    "ru": "Дворец Потала"
+  },
+  "sample-harikalar-072": {
+    "en": "Sigiriya",
+    "az": "Sigiriya",
+    "es": "Sigiriya",
+    "ru": "Сигирия"
+  },
+  "sample-harikalar-073": {
+    "en": "Bagan Temples",
+    "az": "Baqan məbədləri",
+    "es": "Templos de Bagan",
+    "ru": "Храмы Багана"
+  },
+  "sample-harikalar-074": {
+    "en": "Prambanan",
+    "az": "Prambanan",
+    "es": "Prambanan",
+    "ru": "Прамбанан"
+  },
+  "sample-harikalar-075": {
+    "en": "Meteora",
+    "az": "Meteora",
+    "es": "Meteora",
+    "ru": "Метеоры"
+  },
+  "sample-harikalar-076": {
+    "en": "Göbeklitepe",
+    "az": "Göbeklitepe",
+    "es": "Göbekli Tepe",
+    "ru": "Гёбекли-Тепе"
+  },
+  "sample-harikalar-077": {
+    "en": "Kayaköy",
+    "az": "Kayaköy",
+    "es": "Kayaköy",
+    "ru": "Каякёй"
+  },
+  "sample-harikalar-078": {
+    "en": "Antelope Canyon",
+    "az": "Antilop kanyonu",
+    "es": "Cañón del Antílope",
+    "ru": "Каньон Антилопы"
+  },
+  "sample-harikalar-079": {
+    "en": "Rajasthan Palace",
+    "az": "Racastan sarayı",
+    "es": "Palacio de Rajastán",
+    "ru": "Дворец Раджастхана"
+  },
+  "sample-harikalar-080": {
+    "en": "Forbidden City",
+    "az": "Qadağan olunmuş şəhər",
+    "es": "Ciudad Prohibida",
+    "ru": "Запретный город"
+  },
+  "sample-harikalar-081": {
+    "en": "Summer Palace",
+    "az": "Yay sarayı",
+    "es": "Palacio de Verano",
+    "ru": "Летний дворец"
+  },
+  "sample-harikalar-082": {
+    "en": "Gyeongbokgung",
+    "az": "Gyonbokqun",
+    "es": "Gyeongbokgung",
+    "ru": "Кёнбоккун"
+  },
+  "sample-harikalar-083": {
+    "en": "Kyoto Golden Pavilion",
+    "az": "Kyotonun Qızıl köşkü",
+    "es": "Pabellón Dorado de Kioto",
+    "ru": "Золотой павильон Киото"
+  },
+  "sample-harikalar-084": {
+    "en": "Great Barrier Reef",
+    "az": "Böyük Sədd rifi",
+    "es": "Gran Barrera de Coral",
+    "ru": "Большой Барьерный риф"
+  },
+  "sample-harikalar-085": {
+    "en": "Galápagos Coast",
+    "az": "Qalapaqos sahili",
+    "es": "Costa de las Galápagos",
+    "ru": "Побережье Галапагосов"
+  },
+  "sample-harikalar-086": {
+    "en": "Torres del Paine",
+    "az": "Torres del Paine",
+    "es": "Torres del Paine",
+    "ru": "Торрес-дель-Пайне"
+  },
+  "sample-harikalar-087": {
+    "en": "Milford Sound",
+    "az": "Milford Saund",
+    "es": "Milford Sound",
+    "ru": "Милфорд-Саунд"
+  },
+  "sample-harikalar-088": {
+    "en": "Yosemite Valley",
+    "az": "Yosemiti vadisi",
+    "es": "Valle de Yosemite",
+    "ru": "Долина Йосемити"
+  },
+  "sample-harikalar-089": {
+    "en": "Banff Mountains",
+    "az": "Banf dağları",
+    "es": "Montañas de Banff",
+    "ru": "Горы Банфа"
+  },
+  "sample-harikalar-090": {
+    "en": "Lençóis Maranhenses",
+    "az": "Lençóis Maranhenses",
+    "es": "Lençóis Maranhenses",
+    "ru": "Ленсойс-Мараньенсис"
+  },
+  "sample-harikalar-091": {
+    "en": "Antarctic Glaciers",
+    "az": "Antarktika buzlaqları",
+    "es": "Glaciares de la Antártida",
+    "ru": "Ледники Антарктиды"
+  },
+  "sample-teknoloji-20260927-001": {
+    "en": "Crystal Oscillator",
+    "az": "Kristal osillyator",
+    "es": "Oscilador de cristal",
+    "ru": "Кварцевый генератор"
+  },
+  "sample-teknoloji-20260927-002": {
+    "en": "Game Controller",
+    "az": "Oyun pultu",
+    "es": "Mando de videojuegos",
+    "ru": "Игровой контроллер"
+  },
+  "sample-teknoloji-20260927-003": {
+    "en": "Smartwatch",
+    "az": "Ağıllı saat",
+    "es": "Reloj inteligente",
+    "ru": "Умные часы"
+  },
+  "sample-teknoloji-20260927-004": {
+    "en": "Wireless Headphones",
+    "az": "Simsiz qulaqlıq",
+    "es": "Auriculares inalámbricos",
+    "ru": "Беспроводные наушники"
+  },
+  "sample-teknoloji-20260927-005": {
+    "en": "Barcode Scanner",
+    "az": "Barkod oxuyucu",
+    "es": "Lector de códigos de barras",
+    "ru": "Сканер штрихкодов"
+  },
+  "sample-teknoloji-20260927-006": {
+    "en": "Mini Rocket",
+    "az": "Mini raket",
+    "es": "Minicohete",
+    "ru": "Мини-ракета"
+  },
+  "sample-teknoloji-20260927-007": {
+    "en": "Wireless Router",
+    "az": "Simsiz modem",
+    "es": "Router inalámbrico",
+    "ru": "Беспроводной роутер"
+  },
+  "sample-teknoloji-20260927-008": {
+    "en": "Floppy Disk",
+    "az": "Disket",
+    "es": "Disquete",
+    "ru": "Дискета"
+  },
+  "sample-teknoloji-20260927-009": {
+    "en": "Electric Motor",
+    "az": "Elektrik mühərriki",
+    "es": "Motor eléctrico",
+    "ru": "Электродвигатель"
+  },
+  "sample-teknoloji-20260927-010": {
+    "en": "Mini Satellite Dish",
+    "az": "Mini peyk antenası",
+    "es": "Miniantena parabólica",
+    "ru": "Мини-спутниковая антенна"
+  },
+  "sample-teknoloji-20260927-011": {
+    "en": "Electric Toothbrush",
+    "az": "Elektrikli diş fırçası",
+    "es": "Cepillo de dientes eléctrico",
+    "ru": "Электрическая зубная щётка"
+  },
+  "sample-teknoloji-20260927-012": {
+    "en": "Charging Station",
+    "az": "Şarj stansiyası",
+    "es": "Estación de carga",
+    "ru": "Зарядная станция"
+  },
+  "sample-teknoloji-20260927-013": {
+    "en": "Walkie-Talkie",
+    "az": "Əl radiostansiyası",
+    "es": "Radio portátil",
+    "ru": "Рация"
+  },
+  "sample-teknoloji-20260927-014": {
+    "en": "Friendly Robot",
+    "az": "Sevimli robot",
+    "es": "Robot simpático",
+    "ru": "Милый робот"
+  },
+  "sample-teknoloji-20260927-015": {
+    "en": "Drone Garden",
+    "az": "Dron bağı",
+    "es": "Jardín de drones",
+    "ru": "Сад дронов"
+  },
+  "sample-teknoloji-20260927-016": {
+    "en": "Mini Printer",
+    "az": "Mini printer",
+    "es": "Miniimpresora",
+    "ru": "Мини-принтер"
+  },
+  "sample-teknoloji-20260927-017": {
+    "en": "Soldering Station",
+    "az": "Lehimləmə stansiyası",
+    "es": "Estación de soldadura",
+    "ru": "Паяльная станция"
+  },
+  "sample-teknoloji-20260927-018": {
+    "en": "Handheld Game Console",
+    "az": "Əl oyun konsolu",
+    "es": "Consola portátil",
+    "ru": "Портативная игровая консоль"
+  },
+  "sample-teknoloji-20260927-019": {
+    "en": "Sewing Machine",
+    "az": "Tikiş maşını",
+    "es": "Máquina de coser",
+    "ru": "Швейная машина"
+  },
+  "sample-teknoloji-20260927-020": {
+    "en": "Robot Vacuum",
+    "az": "Robot tozsoran",
+    "es": "Robot aspirador",
+    "ru": "Робот-пылесос"
+  },
+  "sample-teknoloji-20260927-021": {
+    "en": "Instant Photography",
+    "az": "Ani fotoqrafiya",
+    "es": "Fotografía instantánea",
+    "ru": "Моментальная фотография"
+  },
+  "sample-teknoloji-20260927-022": {
+    "en": "Smart Planter",
+    "az": "Ağıllı dibçək",
+    "es": "Maceta inteligente",
+    "ru": "Умный цветочный горшок"
+  },
+  "sample-teknoloji-20260927-023": {
+    "en": "Electric Scooter",
+    "az": "Elektrikli skuter",
+    "es": "Patinete eléctrico",
+    "ru": "Электросамокат"
+  },
+  "sample-teknoloji-20260927-024": {
+    "en": "Robot Penguin",
+    "az": "Robot pinqvin",
+    "es": "Pingüino robot",
+    "ru": "Робот-пингвин"
+  },
+  "sample-teknoloji-20260927-025": {
+    "en": "Satellite Companion",
+    "az": "Peyk dostu",
+    "es": "Compañero satélite",
+    "ru": "Спутник-друг"
+  },
+  "sample-teknoloji-20260927-026": {
+    "en": "Digital Compass",
+    "az": "Rəqəmsal kompas",
+    "es": "Brújula digital",
+    "ru": "Цифровой компас"
+  },
+  "sample-teknoloji-20260927-027": {
+    "en": "Smart Door Lock",
+    "az": "Ağıllı qapı kilidi",
+    "es": "Cerradura inteligente",
+    "ru": "Умный дверной замок"
+  },
+  "sample-teknoloji-20260927-028": {
+    "en": "Photography Corner",
+    "az": "Fotoqrafiya guşəsi",
+    "es": "Rincón de fotografía",
+    "ru": "Фото-уголок"
+  },
+  "sample-teknoloji-20260927-029": {
+    "en": "Electronic Chess",
+    "az": "Elektron şahmat",
+    "es": "Ajedrez electrónico",
+    "ru": "Электронные шахматы"
+  },
+  "sample-teknoloji-20260927-030": {
+    "en": "Smart Bicycle",
+    "az": "Ağıllı velosiped",
+    "es": "Bicicleta inteligente",
+    "ru": "Умный велосипед"
+  },
+  "sample-teknoloji-20260927-031": {
+    "en": "Electronics Experiment",
+    "az": "Elektronika təcrübəsi",
+    "es": "Experimento de electrónica",
+    "ru": "Опыт по электронике"
+  },
+  "sample-teknoloji-20260927-032": {
+    "en": "3D Printer",
+    "az": "Üçölçülü printer",
+    "es": "Impresora 3D",
+    "ru": "3D-принтер"
+  },
+  "sample-teknoloji-20260927-033": {
+    "en": "Coding Train",
+    "az": "Kodlaşdırma qatarı",
+    "es": "Tren de programación",
+    "ru": "Поезд программирования"
+  },
+  "sample-teknoloji-20260927-034": {
+    "en": "Weather Station",
+    "az": "Hava stansiyası",
+    "es": "Estación meteorológica",
+    "ru": "Метеостанция"
+  },
+  "sample-teknoloji-20260927-035": {
+    "en": "Home Cinema",
+    "az": "Ev kinoteatrı",
+    "es": "Cine en casa",
+    "ru": "Домашний кинотеатр"
+  },
+  "sample-teknoloji-20260927-036": {
+    "en": "Robot Fish",
+    "az": "Robot balıq",
+    "es": "Pez robot",
+    "ru": "Робот-рыба"
+  },
+  "sample-teknoloji-20260927-037": {
+    "en": "Robot Painting Arm",
+    "az": "Robot rəssam qolu",
+    "es": "Brazo robótico pintor",
+    "ru": "Роботизированная рука художника"
+  },
+  "sample-teknoloji-20260927-038": {
+    "en": "Film Scanner",
+    "az": "Fotoplyonka skaneri",
+    "es": "Escáner de película",
+    "ru": "Сканер фотоплёнки"
+  },
+  "sample-teknoloji-20260927-039": {
+    "en": "Repair Workbench",
+    "az": "Təmir masası",
+    "es": "Mesa de reparación",
+    "ru": "Ремонтный верстак"
+  },
+  "sample-teknoloji-20260927-040": {
+    "en": "Retro Computer",
+    "az": "Retro kompüter",
+    "es": "Ordenador retro",
+    "ru": "Ретро-компьютер"
+  },
+  "sample-teknoloji-20260927-041": {
+    "en": "Holographic Design Desk",
+    "az": "Holoqrafik dizayn masası",
+    "es": "Mesa de diseño holográfico",
+    "ru": "Голографический стол проектирования"
+  },
+  "sample-teknoloji-20260927-042": {
+    "en": "Robot Librarian",
+    "az": "Robot kitabxanaçı",
+    "es": "Bibliotecario robot",
+    "ru": "Робот-библиотекарь"
+  },
+  "sample-teknoloji-20260927-043": {
+    "en": "Solar-Powered Home",
+    "az": "Günəş enerjili ev",
+    "es": "Casa con energía solar",
+    "ru": "Дом на солнечной энергии"
+  },
+  "sample-teknoloji-20260927-044": {
+    "en": "Digital Artist",
+    "az": "Rəqəmsal rəssam",
+    "es": "Artista digital",
+    "ru": "Цифровой художник"
+  },
+  "sample-teknoloji-20260927-045": {
+    "en": "Underwater Robot",
+    "az": "Sualtı robot",
+    "es": "Robot submarino",
+    "ru": "Подводный робот"
+  },
+  "sample-teknoloji-20260927-046": {
+    "en": "Laser Cutting Workshop",
+    "az": "Lazer kəsmə emalatxanası",
+    "es": "Taller de corte láser",
+    "ru": "Мастерская лазерной резки"
+  },
+  "sample-teknoloji-20260927-047": {
+    "en": "Automatic Book Scanner",
+    "az": "Avtomatik kitab skaneri",
+    "es": "Escáner automático de libros",
+    "ru": "Автоматический сканер книг"
+  },
+  "sample-teknoloji-20260927-048": {
+    "en": "Wind Tunnel Experiment",
+    "az": "Külək tuneli təcrübəsi",
+    "es": "Experimento en túnel de viento",
+    "ru": "Опыт в аэродинамической трубе"
+  },
+  "sample-teknoloji-20260927-049": {
+    "en": "Package Delivery Robot",
+    "az": "Bağlama daşıyan robot",
+    "es": "Robot repartidor de paquetes",
+    "ru": "Робот-доставщик"
+  },
+  "sample-teknoloji-20260927-050": {
+    "en": "Electric Bus",
+    "az": "Elektrikli avtobus",
+    "es": "Autobús eléctrico",
+    "ru": "Электробус"
+  },
+  "sample-teknoloji-20260927-051": {
+    "en": "Virtual Reality Desk",
+    "az": "Virtual reallıq masası",
+    "es": "Mesa de realidad virtual",
+    "ru": "Стол виртуальной реальности"
+  },
+  "sample-teknoloji-20260927-052": {
+    "en": "Robot Dog",
+    "az": "Robot it",
+    "es": "Perro robot",
+    "ru": "Робот-собака"
+  },
+  "sample-teknoloji-20260927-053": {
+    "en": "Chip Fabrication Room",
+    "az": "Çip istehsalı otağı",
+    "es": "Sala de fabricación de chips",
+    "ru": "Помещение производства микросхем"
+  },
+  "sample-teknoloji-20260927-054": {
+    "en": "Smart Port",
+    "az": "Ağıllı liman",
+    "es": "Puerto inteligente",
+    "ru": "Умный порт"
+  },
+  "sample-teknoloji-20260927-055": {
+    "en": "Wind Farm",
+    "az": "Külək ferması",
+    "es": "Parque eólico",
+    "ru": "Ветряная электростанция"
+  },
+  "sample-teknoloji-20260927-056": {
+    "en": "Rail Exploration Lab",
+    "az": "Relsli kəşfiyyat laboratoriyası",
+    "es": "Laboratorio de exploración ferroviaria",
+    "ru": "Лаборатория рельсовых исследований"
+  },
+  "sample-teknoloji-20260927-057": {
+    "en": "Digital Loom",
+    "az": "Rəqəmsal toxuculuq dəzgahı",
+    "es": "Telar digital",
+    "ru": "Цифровой ткацкий станок"
+  },
+  "sample-teknoloji-20260927-058": {
+    "en": "Robot Orchestra",
+    "az": "Robot orkestri",
+    "es": "Orquesta de robots",
+    "ru": "Оркестр роботов"
+  },
+  "sample-teknoloji-20260927-059": {
+    "en": "Magnetic Accelerator",
+    "az": "Maqnit sürətləndiricisi",
+    "es": "Acelerador magnético",
+    "ru": "Магнитный ускоритель"
+  },
+  "sample-teknoloji-20260927-060": {
+    "en": "Electric Aircraft Hangar",
+    "az": "Elektrikli təyyarə anqarı",
+    "es": "Hangar de aviones eléctricos",
+    "ru": "Ангар электросамолётов"
+  },
+  "sample-teknoloji-20260927-061": {
+    "en": "Hologram Workshop",
+    "az": "Holoqram emalatxanası",
+    "es": "Taller de hologramas",
+    "ru": "Мастерская голограмм"
+  },
+  "sample-teknoloji-20260927-062": {
+    "en": "Vertical Farming Tower",
+    "az": "Şaquli əkinçilik qülləsi",
+    "es": "Torre de agricultura vertical",
+    "ru": "Башня вертикального земледелия"
+  },
+  "sample-teknoloji-20260927-063": {
+    "en": "Communication Valley",
+    "az": "Rabitə vadisi",
+    "es": "Valle de las comunicaciones",
+    "ru": "Долина связи"
+  },
+  "sample-teknoloji-20260927-064": {
+    "en": "Smart Train Station",
+    "az": "Ağıllı qatar stansiyası",
+    "es": "Estación de tren inteligente",
+    "ru": "Умный железнодорожный вокзал"
+  },
+  "sample-teknoloji-20260927-065": {
+    "en": "Microscope Lab",
+    "az": "Mikroskop laboratoriyası",
+    "es": "Laboratorio de microscopía",
+    "ru": "Лаборатория микроскопии"
+  },
+  "sample-teknoloji-20260927-066": {
+    "en": "Cable Car Maintenance Center",
+    "az": "Kanat yolu texniki xidmət mərkəzi",
+    "es": "Centro de mantenimiento de teleféricos",
+    "ru": "Центр обслуживания канатной дороги"
+  },
+  "sample-teknoloji-20260927-067": {
+    "en": "Atomic Clock Lab",
+    "az": "Atom saatı laboratoriyası",
+    "es": "Laboratorio de relojes atómicos",
+    "ru": "Лаборатория атомных часов"
+  },
+  "sample-teknoloji-20260927-068": {
+    "en": "Robot Factory",
+    "az": "Robot fabriki",
+    "es": "Fábrica de robots",
+    "ru": "Фабрика роботов"
+  },
+  "sample-teknoloji-20260927-069": {
+    "en": "Deep Sea Station",
+    "az": "Dərin dəniz stansiyası",
+    "es": "Estación de aguas profundas",
+    "ru": "Глубоководная станция"
+  },
+  "sample-teknoloji-20260927-070": {
+    "en": "Chip Design Center",
+    "az": "Çip dizayn mərkəzi",
+    "es": "Centro de diseño de chips",
+    "ru": "Центр проектирования микросхем"
+  },
+  "sample-teknoloji-20260927-071": {
+    "en": "Future Energy Center",
+    "az": "Gələcəyin enerji mərkəzi",
+    "es": "Centro energético del futuro",
+    "ru": "Энергетический центр будущего"
+  },
+  "sample-teknoloji-20260927-072": {
+    "en": "Digital Planetarium",
+    "az": "Rəqəmsal planetarium",
+    "es": "Planetario digital",
+    "ru": "Цифровой планетарий"
+  },
+  "sample-teknoloji-20260927-073": {
+    "en": "Polar Research Base",
+    "az": "Qütb tədqiqat bazası",
+    "es": "Base de investigación polar",
+    "ru": "Полярная исследовательская база"
+  },
+  "sample-teknoloji-20260927-074": {
+    "en": "Mars Greenhouse",
+    "az": "Mars istixanası",
+    "es": "Invernadero de Marte",
+    "ru": "Марсианская теплица"
+  },
+  "sample-teknoloji-20260927-075": {
+    "en": "Space Elevator Terminal",
+    "az": "Kosmik lift terminalı",
+    "es": "Terminal del ascensor espacial",
+    "ru": "Терминал космического лифта"
+  },
+  "sample-teknoloji-20260927-076": {
+    "en": "Robotic Recycling",
+    "az": "Robotik təkrar emal",
+    "es": "Reciclaje robótico",
+    "ru": "Роботизированная переработка"
+  },
+  "sample-teknoloji-20260927-077": {
+    "en": "Research Ship",
+    "az": "Elmi gəmi",
+    "es": "Buque científico",
+    "ru": "Научное судно"
+  },
+  "sample-teknoloji-20260927-078": {
+    "en": "Quantum Lab",
+    "az": "Kvant laboratoriyası",
+    "es": "Laboratorio cuántico",
+    "ru": "Квантовая лаборатория"
+  },
+  "sample-teknoloji-20260927-079": {
+    "en": "Orbital City",
+    "az": "Orbital şəhər",
+    "es": "Ciudad orbital",
+    "ru": "Орбитальный город"
+  },
+  "sample-teknoloji-20260927-080": {
+    "en": "Future Metropolis",
+    "az": "Gələcəyin metropolu",
+    "es": "Metrópolis del futuro",
+    "ru": "Мегаполис будущего"
+  },
+  "sample-teknoloji-20260927-081": {
+    "en": "Space Telescope Maintenance",
+    "az": "Kosmik teleskopa texniki xidmət",
+    "es": "Mantenimiento de telescopios espaciales",
+    "ru": "Обслуживание космического телескопа"
+  },
+  "sample-teknoloji-20260927-082": {
+    "en": "Autonomous Exploration Fleet",
+    "az": "Avtonom kəşfiyyat donanması",
+    "es": "Flota de exploración autónoma",
+    "ru": "Автономный исследовательский флот"
+  },
+  "sample-teknoloji-20260927-083": {
+    "en": "Digital Library Tower",
+    "az": "Rəqəmsal kitabxana qülləsi",
+    "es": "Torre de la biblioteca digital",
+    "ru": "Башня цифровой библиотеки"
+  },
+  "sample-teknoloji-20260927-084": {
+    "en": "Ocean Energy City",
+    "az": "Okean enerjisi şəhəri",
+    "es": "Ciudad de energía oceánica",
+    "ru": "Город океанской энергии"
+  },
+  "sample-teknoloji-20260927-085": {
+    "en": "Interplanetary Station",
+    "az": "Planetlərarası stansiya",
+    "es": "Estación interplanetaria",
+    "ru": "Межпланетная станция"
+  },
+  "sample-teknoloji-20260927-086": {
+    "en": "Microchip World",
+    "az": "Mikroçip dünyası",
+    "es": "Mundo de microchips",
+    "ru": "Мир микрочипов"
+  },
+  "sample-teknoloji-20260927-087": {
+    "en": "Robotic Exploration Museum",
+    "az": "Robotik kəşfiyyat muzeyi",
+    "es": "Museo de exploración robótica",
+    "ru": "Музей роботизированных исследований"
+  },
+  "sample-teknoloji-20260927-088": {
+    "en": "Lunar Mining Lab",
+    "az": "Ay mədənçilik laboratoriyası",
+    "es": "Laboratorio de minería lunar",
+    "ru": "Лаборатория лунной добычи"
+  },
+  "sample-teknoloji-20260927-089": {
+    "en": "Starship Bridge",
+    "az": "Ulduz gəmisinin körpüsü",
+    "es": "Puente de la nave estelar",
+    "ru": "Мостик звездолёта"
+  },
+  "sample-teknoloji-20260927-090": {
+    "en": "Smart Mountain Observatory",
+    "az": "Ağıllı dağ rəsədxanası",
+    "es": "Observatorio de montaña inteligente",
+    "ru": "Умная горная обсерватория"
+  },
+  "sample-teknoloji-20260927-091": {
+    "en": "Technology Island",
+    "az": "Texnologiya adası",
+    "es": "Isla de la tecnología",
+    "ru": "Остров технологий"
+  },
+  "sample-arabalar-001": {
+    "en": "Orange Motorcycle",
+    "az": "Narıncı motosiklet",
+    "es": "Moto naranja",
+    "ru": "Оранжевый мотоцикл"
+  },
+  "sample-arabalar-002": {
+    "en": "Blue Cube",
+    "az": "Mavi kub",
+    "es": "Cubo azul",
+    "ru": "Синий куб"
+  },
+  "sample-arabalar-003": {
+    "en": "Mint Microcar",
+    "az": "Nanə rəngli mikroavtomobil",
+    "es": "Microcoche menta",
+    "ru": "Мятный микроавтомобиль"
+  },
+  "sample-arabalar-004": {
+    "en": "Mountain Cable Car",
+    "az": "Dağ kanat yolu",
+    "es": "Teleférico de montaña",
+    "ru": "Горная канатная дорога"
+  },
+  "sample-arabalar-005": {
+    "en": "Red Scooter",
+    "az": "Qırmızı skuter",
+    "es": "Escúter rojo",
+    "ru": "Красный скутер"
+  },
+  "sample-arabalar-006": {
+    "en": "Propeller Plane",
+    "az": "Pərvanəli təyyarə",
+    "es": "Avión de hélice",
+    "ru": "Винтовой самолёт"
+  },
+  "sample-arabalar-007": {
+    "en": "Field Tractor",
+    "az": "Tarla traktoru",
+    "es": "Tractor de campo",
+    "ru": "Полевой трактор"
+  },
+  "sample-arabalar-008": {
+    "en": "Passenger Boat",
+    "az": "Sərnişin qayığı",
+    "es": "Barco de pasajeros",
+    "ru": "Пассажирский катер"
+  },
+  "sample-arabalar-009": {
+    "en": "Cream Classic",
+    "az": "Krem rəngli klassik",
+    "es": "Clásico crema",
+    "ru": "Кремовая классика"
+  },
+  "sample-arabalar-010": {
+    "en": "Horseback Journey",
+    "az": "Atlı səyahət",
+    "es": "Viaje a caballo",
+    "ru": "Путешествие верхом"
+  },
+  "sample-arabalar-011": {
+    "en": "Motor Yacht",
+    "az": "Motorlu yaxta",
+    "es": "Yate a motor",
+    "ru": "Моторная яхта"
+  },
+  "sample-arabalar-012": {
+    "en": "Red Convertible",
+    "az": "Qırmızı kabriolet",
+    "es": "Descapotable rojo",
+    "ru": "Красный кабриолет"
+  },
+  "sample-arabalar-013": {
+    "en": "Cable Car Station",
+    "az": "Kanat yolu stansiyası",
+    "es": "Estación de teleférico",
+    "ru": "Станция канатной дороги"
+  },
+  "sample-arabalar-014": {
+    "en": "Cycling Tour",
+    "az": "Velosiped turu",
+    "es": "Paseo en bicicleta",
+    "ru": "Велопрогулка"
+  },
+  "sample-arabalar-015": {
+    "en": "Forest Explorer",
+    "az": "Meşə səyyahı",
+    "es": "Explorador del bosque",
+    "ru": "Лесной путешественник"
+  },
+  "sample-arabalar-016": {
+    "en": "Farm Pickup",
+    "az": "Ferma pikapı",
+    "es": "Camioneta de granja",
+    "ru": "Фермерский пикап"
+  },
+  "sample-arabalar-017": {
+    "en": "City Bus",
+    "az": "Şəhər avtobusu",
+    "es": "Autobús urbano",
+    "ru": "Городской автобус"
+  },
+  "sample-arabalar-018": {
+    "en": "Canyon Buggy",
+    "az": "Kanyon baqqisi",
+    "es": "Buggy del cañón",
+    "ru": "Багги в каньоне"
+  },
+  "sample-arabalar-019": {
+    "en": "Electric Bicycle",
+    "az": "Elektrikli velosiped",
+    "es": "Bicicleta eléctrica",
+    "ru": "Электровелосипед"
+  },
+  "sample-arabalar-020": {
+    "en": "Seaplane",
+    "az": "Hidroplan",
+    "es": "Hidroavión",
+    "ru": "Гидросамолёт"
+  },
+  "sample-arabalar-021": {
+    "en": "Windsurfing",
+    "az": "Vindserfinq",
+    "es": "Windsurf",
+    "ru": "Виндсёрфинг"
+  },
+  "sample-arabalar-022": {
+    "en": "Classic in the Garage",
+    "az": "Qarajdakı klassik",
+    "es": "Clásico en el garaje",
+    "ru": "Классика в гараже"
+  },
+  "sample-arabalar-023": {
+    "en": "Train at a Snowy Station",
+    "az": "Qarlı stansiyada qatar",
+    "es": "Tren en estación nevada",
+    "ru": "Поезд на заснеженной станции"
+  },
+  "sample-arabalar-024": {
+    "en": "River Kayak",
+    "az": "Çay kayağı",
+    "es": "Kayak de río",
+    "ru": "Речной каяк"
+  },
+  "sample-arabalar-025": {
+    "en": "Small Airport",
+    "az": "Kiçik hava limanı",
+    "es": "Pequeño aeropuerto",
+    "ru": "Маленький аэропорт"
+  },
+  "sample-arabalar-026": {
+    "en": "Moonlight",
+    "az": "Ay işığı",
+    "es": "Luz de luna",
+    "ru": "Лунный свет"
+  },
+  "sample-arabalar-027": {
+    "en": "Touring Motorcycle",
+    "az": "Tur motosikleti",
+    "es": "Moto de turismo",
+    "ru": "Туристический мотоцикл"
+  },
+  "sample-arabalar-028": {
+    "en": "Old Train Station",
+    "az": "Köhnə qatar stansiyası",
+    "es": "Antigua estación de tren",
+    "ru": "Старый вокзал"
+  },
+  "sample-arabalar-029": {
+    "en": "Rescue Helicopter",
+    "az": "Xilasetmə helikopteri",
+    "es": "Helicóptero de rescate",
+    "ru": "Спасательный вертолёт"
+  },
+  "sample-arabalar-030": {
+    "en": "Sunflower Route",
+    "az": "Günəbaxan marşrutu",
+    "es": "Ruta de girasoles",
+    "ru": "Маршрут среди подсолнухов"
+  },
+  "sample-arabalar-031": {
+    "en": "Stone Bridge",
+    "az": "Daş körpü",
+    "es": "Puente de piedra",
+    "ru": "Каменный мост"
+  },
+  "sample-arabalar-032": {
+    "en": "City Parking",
+    "az": "Şəhər dayanacağı",
+    "es": "Aparcamiento urbano",
+    "ru": "Городская парковка"
+  },
+  "sample-arabalar-033": {
+    "en": "Steam Train",
+    "az": "Buxar qatarı",
+    "es": "Tren de vapor",
+    "ru": "Паровоз"
+  },
+  "sample-arabalar-034": {
+    "en": "Hot Air Balloons",
+    "az": "Hava şarları",
+    "es": "Globos aerostáticos",
+    "ru": "Воздушные шары"
+  },
+  "sample-arabalar-035": {
+    "en": "Lavender Trip",
+    "az": "Lavanda gəzintisi",
+    "es": "Viaje entre lavanda",
+    "ru": "Лавандовая прогулка"
+  },
+  "sample-arabalar-036": {
+    "en": "Library Street",
+    "az": "Kitabxana küçəsi",
+    "es": "Calle de la biblioteca",
+    "ru": "Библиотечная улица"
+  },
+  "sample-arabalar-037": {
+    "en": "Historic Tram",
+    "az": "Tarixi tramvay",
+    "es": "Tranvía histórico",
+    "ru": "Исторический трамвай"
+  },
+  "sample-arabalar-038": {
+    "en": "Passenger Plane",
+    "az": "Sərnişin təyyarəsi",
+    "es": "Avión de pasajeros",
+    "ru": "Пассажирский самолёт"
+  },
+  "sample-arabalar-039": {
+    "en": "Red Earth",
+    "az": "Qırmızı torpaq",
+    "es": "Tierra roja",
+    "ru": "Красная земля"
+  },
+  "sample-arabalar-040": {
+    "en": "Turquoise Coastal Convertible",
+    "az": "Sahildə firuzəyi kabriolet",
+    "es": "Descapotable turquesa en la costa",
+    "ru": "Бирюзовый кабриолет на побережье"
+  },
+  "sample-arabalar-041": {
+    "en": "Fire Engine",
+    "az": "Yanğınsöndürən maşın",
+    "es": "Camión de bomberos",
+    "ru": "Пожарная машина"
+  },
+  "sample-arabalar-042": {
+    "en": "Mountain Bend",
+    "az": "Dağ döngəsi",
+    "es": "Curva de montaña",
+    "ru": "Горный поворот"
+  },
+  "sample-arabalar-043": {
+    "en": "Wind Farm",
+    "az": "Külək elektrik stansiyası",
+    "es": "Parque eólico",
+    "ru": "Ветряная электростанция"
+  },
+  "sample-arabalar-044": {
+    "en": "Industrial Garage",
+    "az": "Sənaye qarajı",
+    "es": "Garaje industrial",
+    "ru": "Промышленный гараж"
+  },
+  "sample-arabalar-045": {
+    "en": "Cherry Blossoms",
+    "az": "Albalı çiçəkləri",
+    "es": "Flores de cerezo",
+    "ru": "Цветущая вишня"
+  },
+  "sample-arabalar-046": {
+    "en": "Icy Pass",
+    "az": "Buzlu keçid",
+    "es": "Paso helado",
+    "ru": "Ледяной перевал"
+  },
+  "sample-arabalar-047": {
+    "en": "Desert Night",
+    "az": "Səhra gecəsi",
+    "es": "Noche en el desierto",
+    "ru": "Ночь в пустыне"
+  },
+  "sample-arabalar-048": {
+    "en": "Forest Rally",
+    "az": "Meşə rallisi",
+    "es": "Rally del bosque",
+    "ru": "Лесное ралли"
+  },
+  "sample-arabalar-049": {
+    "en": "Camper at a Forest Camp",
+    "az": "Meşə düşərgəsində karavan",
+    "es": "Autocaravana en el bosque",
+    "ru": "Автодом в лесном лагере"
+  },
+  "sample-arabalar-050": {
+    "en": "Volcano Road",
+    "az": "Vulkan yolu",
+    "es": "Camino del volcán",
+    "ru": "Вулканическая дорога"
+  },
+  "sample-arabalar-051": {
+    "en": "Race Preparation",
+    "az": "Yarış hazırlığı",
+    "es": "Preparación de carrera",
+    "ru": "Подготовка к гонке"
+  },
+  "sample-arabalar-052": {
+    "en": "Vineyard",
+    "az": "Üzüm bağı",
+    "es": "Viñedo",
+    "ru": "Виноградник"
+  },
+  "sample-arabalar-053": {
+    "en": "Cargo Truck",
+    "az": "Yük maşını",
+    "es": "Camión de carga",
+    "ru": "Грузовик"
+  },
+  "sample-arabalar-054": {
+    "en": "Alpine Cable Car",
+    "az": "Alp kanat yolu",
+    "es": "Teleférico alpino",
+    "ru": "Альпийская канатная дорога"
+  },
+  "sample-arabalar-055": {
+    "en": "Night Workshop",
+    "az": "Gecə emalatxanası",
+    "es": "Taller nocturno",
+    "ru": "Ночная мастерская"
+  },
+  "sample-arabalar-056": {
+    "en": "Aircraft Hangar",
+    "az": "Təyyarə anqarı",
+    "es": "Hangar de aviones",
+    "ru": "Авиационный ангар"
+  },
+  "sample-arabalar-057": {
+    "en": "Train on a Snowy Viaduct",
+    "az": "Qarlı viadukda qatar",
+    "es": "Tren en viaducto nevado",
+    "ru": "Поезд на заснеженном виадуке"
+  },
+  "sample-arabalar-058": {
+    "en": "Tracked Snow Vehicle",
+    "az": "Tırtıllı qar maşını",
+    "es": "Vehículo de nieve con orugas",
+    "ru": "Гусеничный снегоход"
+  },
+  "sample-arabalar-059": {
+    "en": "Rally Service",
+    "az": "Ralli servisi",
+    "es": "Servicio de rally",
+    "ru": "Раллийный сервис"
+  },
+  "sample-arabalar-060": {
+    "en": "Autumn Manor",
+    "az": "Payız malikanəsi",
+    "es": "Mansión otoñal",
+    "ru": "Осенняя усадьба"
+  },
+  "sample-arabalar-061": {
+    "en": "Underground Parking",
+    "az": "Yeraltı dayanacaq",
+    "es": "Aparcamiento subterráneo",
+    "ru": "Подземная парковка"
+  },
+  "sample-arabalar-062": {
+    "en": "Sailboat",
+    "az": "Yelkənli qayıq",
+    "es": "Velero",
+    "ru": "Парусник"
+  },
+  "sample-arabalar-063": {
+    "en": "Airport Apron",
+    "az": "Hava limanı perronu",
+    "es": "Plataforma del aeropuerto",
+    "ru": "Аэродромный перрон"
+  },
+  "sample-arabalar-064": {
+    "en": "Roof Gardens",
+    "az": "Dam bağları",
+    "es": "Jardines en azoteas",
+    "ru": "Сады на крышах"
+  },
+  "sample-arabalar-065": {
+    "en": "Aircraft Hangar",
+    "az": "Təyyarə anqarı",
+    "es": "Hangar de aviones",
+    "ru": "Авиационный ангар"
+  },
+  "sample-arabalar-066": {
+    "en": "Purple Track Coupe",
+    "az": "Bənövşəyi yarış kupesi",
+    "es": "Cupé morado en pista",
+    "ru": "Фиолетовое купе на трассе"
+  },
+  "sample-arabalar-067": {
+    "en": "Sidecar Motorcycle",
+    "az": "Yan qoşqulu motosiklet",
+    "es": "Moto con sidecar",
+    "ru": "Мотоцикл с коляской"
+  },
+  "sample-arabalar-068": {
+    "en": "Misty Forest",
+    "az": "Dumanlı meşə",
+    "es": "Bosque brumoso",
+    "ru": "Туманный лес"
+  },
+  "sample-arabalar-069": {
+    "en": "High-Speed Train",
+    "az": "Sürətli qatar",
+    "es": "Tren de alta velocidad",
+    "ru": "Скоростной поезд"
+  },
+  "sample-arabalar-070": {
+    "en": "Evening Railway Station",
+    "az": "Axşam qatar vağzalı",
+    "es": "Estación al atardecer",
+    "ru": "Вечерний вокзал"
+  },
+  "sample-arabalar-071": {
+    "en": "Airport",
+    "az": "Hava limanı",
+    "es": "Aeropuerto",
+    "ru": "Аэропорт"
+  },
+  "sample-arabalar-072": {
+    "en": "Classic Restoration",
+    "az": "Klassik bərpa",
+    "es": "Restauración de un clásico",
+    "ru": "Реставрация классики"
+  },
+  "sample-arabalar-073": {
+    "en": "Rainy Stone Street",
+    "az": "Yağışlı daş küçə",
+    "es": "Calle de piedra bajo la lluvia",
+    "ru": "Дождливая каменная улица"
+  },
+  "sample-arabalar-074": {
+    "en": "Metro Station",
+    "az": "Metro stansiyası",
+    "es": "Estación de metro",
+    "ru": "Станция метро"
+  },
+  "sample-arabalar-075": {
+    "en": "Bamboo Temple",
+    "az": "Bambuk məbədi",
+    "es": "Templo de bambú",
+    "ru": "Бамбуковый храм"
+  },
+  "sample-arabalar-076": {
+    "en": "Car Ferry",
+    "az": "Avtomobil bərəsi",
+    "es": "Transbordador de coches",
+    "ru": "Автомобильный паром"
+  },
+  "sample-arabalar-077": {
+    "en": "Snowmobile",
+    "az": "Qar motosikleti",
+    "es": "Moto de nieve",
+    "ru": "Снегоход"
+  },
+  "sample-arabalar-078": {
+    "en": "Sunny Pit Lane",
+    "az": "Günəşli pit sahəsi",
+    "es": "Zona de boxes soleada",
+    "ru": "Солнечная пит-зона"
+  },
+  "sample-arabalar-079": {
+    "en": "Service Workshop",
+    "az": "Servis emalatxanası",
+    "es": "Taller de servicio",
+    "ru": "Сервисная мастерская"
+  },
+  "sample-arabalar-080": {
+    "en": "Desert City",
+    "az": "Səhra şəhəri",
+    "es": "Ciudad del desierto",
+    "ru": "Город в пустыне"
+  },
+  "sample-arabalar-081": {
+    "en": "Night Mountain Rally",
+    "az": "Gecə dağ rallisi",
+    "es": "Rally nocturno de montaña",
+    "ru": "Ночное горное ралли"
+  },
+  "sample-arabalar-082": {
+    "en": "Container Ship",
+    "az": "Konteyner gəmisi",
+    "es": "Buque portacontenedores",
+    "ru": "Контейнеровоз"
+  },
+  "sample-arabalar-083": {
+    "en": "Glider",
+    "az": "Planer",
+    "es": "Planeador",
+    "ru": "Планер"
+  },
+  "sample-arabalar-084": {
+    "en": "Winter Research Vehicle",
+    "az": "Qış tədqiqat maşını",
+    "es": "Vehículo de investigación invernal",
+    "ru": "Зимний исследовательский автомобиль"
+  },
+  "sample-arabalar-085": {
+    "en": "Classic Car Garage",
+    "az": "Klassik avtomobil qarajı",
+    "es": "Garaje de coches clásicos",
+    "ru": "Гараж классических автомобилей"
+  },
+  "sample-arabalar-086": {
+    "en": "Airport Tug",
+    "az": "Hava limanı yedəkləyicisi",
+    "es": "Remolcador aeroportuario",
+    "ru": "Аэродромный тягач"
+  },
+  "sample-arabalar-087": {
+    "en": "Cargo Plane",
+    "az": "Yük təyyarəsi",
+    "es": "Avión de carga",
+    "ru": "Грузовой самолёт"
+  },
+  "sample-arabalar-088": {
+    "en": "River Ferry",
+    "az": "Çay bərəsi",
+    "es": "Transbordador fluvial",
+    "ru": "Речной паром"
+  },
+  "sample-arabalar-089": {
+    "en": "Freight Train",
+    "az": "Yük qatarı",
+    "es": "Tren de mercancías",
+    "ru": "Грузовой поезд"
+  },
+  "sample-arabalar-090": {
+    "en": "Sleeper Train",
+    "az": "Yataqlı qatar",
+    "es": "Tren con coches cama",
+    "ru": "Спальный поезд"
+  },
+  "sample-arabalar-091": {
+    "en": "Locomotive Depot",
+    "az": "Lokomotiv deposu",
+    "es": "Depósito de locomotoras",
+    "ru": "Локомотивное депо"
   }
 }

@@ -7,10 +7,10 @@
 
   Türkçe, çevrim dışı ve rahatlatıcı bir numaraya göre piksel boyama oyunu.
 
-  [![Sürüm](https://img.shields.io/badge/sürüm-0.15.0-ff7043?style=flat-square)](pyproject.toml)
+  [![Sürüm](https://img.shields.io/badge/sürüm-0.16.0-ff7043?style=flat-square)](pyproject.toml)
   [![Python](https://img.shields.io/badge/Python-3.13%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
   [![PySide6](https://img.shields.io/badge/arayüz-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
-  [![Koleksiyon](https://img.shields.io/badge/koleksiyon-536_resim-f39c5a?style=flat-square)](KOLEKSIYON.md)
+  [![Koleksiyon](https://img.shields.io/badge/koleksiyon-900_resim-f39c5a?style=flat-square)](KOLEKSIYON.md)
   [![Lisans](https://img.shields.io/badge/kod_lisansı-MIT-8bd3c7?style=flat-square)](LICENSE)
 
   [Özellikler](#öne-çıkanlar) · [Kurulum](#kurulum) · [Nasıl oynanır?](#nasıl-oynanır) · [Geliştirme](#geliştirme) · [Lisans](#lisans-ve-görsel-hakları)
@@ -26,7 +26,7 @@ Piksel Atölyesi, küçük çizgi film sahnelerinden iki milyondan fazla hücre 
 
 | | |
 |---|---|
-| 🎨 **536 hazır resim** | Doğa, Fantastik, Hayvanlar, Manzaralar, Şehirler ve TÜRKİYE koleksiyonları |
+| 🎨 **900 hazır resim** | Doğa, Hayvanlar, Fantastik, Manzaralar, Şehirler, TÜRKİYE, TÜRK MOTİFLERİ, Harikalar, Teknoloji ve Arabalar |
 | 📈 **Yedi zorluk seviyesi** | Çok Kolay'dan Uzman'a, 2.880 hücreden 2.073.600 hücreye uzanan dengeli ilerleme |
 | 🖌️ **İki boyama aracı** | Tek hücre boya veya aynı renkteki bitişik bölgeyi tek dokunuşla doldur |
 | 💡 **Akıllı yardım** | Mini harita, kalan hücre vurgusu, renk başına ilerleme ve sağ tıkla renk seçimi |
@@ -57,15 +57,15 @@ Kısa bir mola için küçük ve neşeli bir sahne seçebilir ya da uzun soluklu
 
 | Zorluk | Resim | Genel ölçek |
 |---|---:|---|
-| Çok Kolay | 30 | Belirgin şekiller, 10–15 renk |
-| Kolay | 35 | Küçük sahneler, 15–20 renk |
-| Kolay-Orta | 80 | Daha zengin kompozisyonlar |
-| Orta | 80 | Orta boyutlu ayrıntılı resimler |
-| Orta-Zor | 80 | Daha yoğun alanlar ve geniş paletler |
-| Zor | 80 | 70.000–120.000 hücrelik çalışmalar |
-| Uzman | 151 | 2.073.600 hücreye ve 60 renge kadar |
+| Çok Kolay | 69 | Belirgin şekiller, 10–15 renk |
+| Kolay | 74 | Küçük sahneler, 15–20 renk |
+| Kolay-Orta | 119 | Daha zengin kompozisyonlar |
+| Orta | 119 | Orta boyutlu ayrıntılı resimler |
+| Orta-Zor | 119 | Daha yoğun alanlar ve geniş paletler |
+| Zor | 119 | 70.000–120.000 hücrelik çalışmalar |
+| Uzman | 281 | 2.073.600 hücreye ve 60 renge kadar |
 
-Beş ana kategoride 91'er, **TÜRKİYE** koleksiyonunda 81 resim bulunur. Ayrıntılı dağılım için [koleksiyon özetine](KOLEKSIYON.md) bakabilirsin.
+Dokuz kategoride 91'er, **TÜRKİYE** koleksiyonunda 81 resim bulunur. Ayrıntılı dağılım için [koleksiyon özetine](KOLEKSIYON.md) bakabilirsin.
 
 ## Nasıl oynanır?
 
@@ -108,6 +108,17 @@ Desteklenen biçimler: **PNG, JPEG, WEBP ve `.pcolor`**. Görseller en fazla 192
 
 ## Kurulum
 
+### Windows — kaynak koddan çalıştırma
+
+Kaynak paketini tamamen çıkar. Python 3.13 veya üzerini kur; kurulumda Python başlatıcısını da etkinleştir. Paket klasöründe:
+
+```powershell
+py -3.13 -m pip install .
+py -3.13 run.py
+```
+
+Bağımlılıklar kurulduktan sonra start.bat ile de açabilirsin. Kaynak RAR paketi hazır EXE içermez. İlk açılışta 900 resim sıfır boyama ilerlemesiyle başlar; kayıtlar yalnızca kendi kullanıcı profilinde tutulur. Mevcut oyuncuların ilerlemesi güncellemede korunur.
+
 ### AppImage (önerilen Linux kurulumu)
 
 [GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases) sayfasından
@@ -124,17 +135,17 @@ belirtilen kullanıcı veri klasöründe kalır.
 
 ### Pardus / Debian `.deb` paketi
 
-Pardus 25 üzerinde denemek için [GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.15.0)
-sayfasından `piksel-atolyesi_0.15.0-1_amd64.deb` dosyasını indirip Pardus Paket Kurucu ile aç.
+Pardus 25 üzerinde denemek için [GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases)
+sayfasından `piksel-atolyesi_0.16.0-1_amd64.deb` dosyasını indirip Pardus Paket Kurucu ile aç.
 Terminalden kurmak istersen indirdiğin dosyanın bulunduğu klasörde şunu çalıştır:
 
 ```bash
-sudo apt install ./piksel-atolyesi_0.15.0-1_amd64.deb
+sudo apt install ./piksel-atolyesi_0.16.0-1_amd64.deb
 ```
 
 Pardus 25 üzerinde paket üretmek için Python 3.13 sanal ortamında projeyi ve PyInstaller'ı
 kurduktan sonra `packaging/deb/build-deb.sh` betiğini çalıştır. Çıktı
-`dist/piksel-atolyesi_0.15.0-1_amd64.deb` yoluna yazılır. Paket Python ve uygulama
+`dist/piksel-atolyesi_0.16.0-1_amd64.deb` yoluna yazılır. Paket Python ve uygulama
 bağımlılıklarını içinde taşır; masaüstü başlatıcısını, simgeyi ve lisans dosyalarını yükler.
 Kurulum ve grafik arayüz testi gerçek Pardus masaüstünde yapılmalıdır.
 
@@ -276,11 +287,11 @@ AppImage üretmek için PyInstaller ve `appimagetool` kurulduktan sonra:
 APPIMAGETOOL=/path/to/appimagetool packaging/appimage/build-appimage.sh
 ```
 
-`v0.15.0` biçiminde bir Git etiketi gönderildiğinde GitHub Actions, x86_64 AppImage'i ve SHA-256
+`v0.16.0` biçiminde bir Git etiketi gönderildiğinde GitHub Actions, x86_64 AppImage'i ve SHA-256
 özetini otomatik olarak GitHub Releases'a ekler. İş akışı Actions sayfasından elle de çalıştırılabilir;
 elle çalıştırılan derleme bir workflow artifact'i olarak indirilir.
 
-Proje, 536 gömülü `.pcolor` dosyasının katalog ve metadata bütünlüğünü doğrulayan testler içerir. Katkıda bulunmadan önce [katkı rehberini](CONTRIBUTING.md) okuyabilirsin.
+Proje, 900 gömülü `.pcolor` dosyasının katalog ve metadata bütünlüğünü doğrulayan testler içerir. Katkıda bulunmadan önce [katkı rehberini](CONTRIBUTING.md) okuyabilirsin.
 
 <details>
 <summary><strong>Proje yapısını göster</strong></summary>

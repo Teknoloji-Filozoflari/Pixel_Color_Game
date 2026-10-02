@@ -1,0 +1,11 @@
+{
+  "id": "sample-harikalar-018",
+  "title": "Özgürlük Heykeli",
+  "category": "Harikalar",
+  "file": "018-statue-of-liberty.png",
+  "source_width": 1448,
+  "source_height": 1086,
+  "generation_tool": "builtin-imagegen",
+  "prompt": "Use case: stylized-concept. Asset type: one missing full-color landscape 4:3 artwork for the Harikalar (Wonders) pixel color-by-number game, EASY tier, intended for later conversion to 120x90 and 20 colors. Input images already shown in conversation: the Eiffel Tower and Christ the Redeemer artworks are STYLE REFERENCES ONLY, not edit targets. Match their polished retro pixel-art storybook style, saturated blue sky, warm natural daylight, crisp stepped pixel-cluster contours, connected color areas and welcoming scenic composition. Create ONE standalone NEW illustration of the Statue of Liberty: recognizable patinated green copper robed figure on its tan stone pedestal, seven-point crown, right arm raised holding a gold flame torch, left arm holding an unlettered tablet. Full statue and pedestal entirely within the frame with breathing space above torch. Simple blue New York harbor and a restrained distant skyline, a few stepped white clouds, small greenery at the base. Keep the statue large and dominant so crown, torch and tablet remain readable after reduction to 120x90. Landscape 4:3 aspect ratio, approximately 1448x1086 source resolution. Broad flat 20-color visual palette, limited detail, pixelated angular silhouettes rather than smooth vector edges. No writing, letters, numerals, logos, watermark, border, UI, collage, coloring grid, dithering, grain, photographic textures, smooth gradients or unrelated landmarks. Fully opaque finished colored artwork.",
+  "sha256": "5f3749902f4a353a2143e39120c04b0b27dc2d5060f37d044a0b3a40a1fb99ac"
+}

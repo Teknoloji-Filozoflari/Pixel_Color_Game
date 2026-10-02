@@ -15,7 +15,7 @@ from PySide6.QtWidgets import (
 
 from ..rendering.canvas import Canvas
 from .controls_help import ControlsButton, ControlsDialog
-from .i18n import number, percentage, tr, painting_title
+from .i18n import number, painting_meaning, painting_title, percentage, tr
 from .view_actions import HIGHLIGHTS, ViewButton
 from .widgets import FillButton, GameActionButton, HintButton, Minimap, Palette, label
 
@@ -43,27 +43,44 @@ class GameScreen(QWidget):
         title.setMinimumWidth(40)
         title.setSizePolicy(QSizePolicy.Policy.Ignored, QSizePolicy.Policy.Preferred)
         title.setToolTip(display_title)
-        top.addWidget(title, 1)
-        self.remaining_label = label("", "statusValue")
-        self.remaining_label.setWordWrap(False)
-        self.remaining_label.setToolTip(tr("Seçili rengin boyanan / toplam piksel sayısı"))
-        top.addWidget(self.remaining_label)
-        top.addSpacing(12)
-        self.progress_label = QPushButton()
-        self.progress_label.setToolTip(tr("Boyanan / kalan piksel oranını seç"))
-        self.progress_label.setAccessibleName(tr("Gösterilecek piksel oranı"))
-        menu = QMenu(self.progress_label)
+        title_box = QVBoxLayout()
+        title_box.setSpacing(3)
+        title_box.addWidget(title)
+        if session.painting.meaning:
+            meaning = label(painting_meaning(session.painting.id, session.painting.meaning), 'muted')
+            meaning.setObjectName('gamePaintingMeaning')
+            meaning.setWordWrap(True)
+            meaning.setMinimumWidth(40)
+            policy = meaning.sizePolicy()
+            policy.setHorizontalPolicy(QSizePolicy.Policy.Ignored)
+            policy.setHeightForWidth(True)
+            meaning.setSizePolicy(policy)
+            title_box.addWidget(meaning)
+        top.addLayout(title_box, 1)
+        self.pixel_count_label = QPushButton()
+        self.pixel_count_label.setObjectName('pixelCountSelector')
+        self.pixel_count_label.setAccessibleName(tr("Gösterilecek piksel sayısını seç"))
+        menu = QMenu(self.pixel_count_label)
         group = QActionGroup(menu)
         group.setExclusive(True)
-        self.progress_actions = {}
-        for mode, caption in [('painted', tr('Boyanan pikseller')), ('remaining', tr('Kalan pikseller'))]:
+        self.pixel_count_actions = {}
+        if settings.get('pixel_count_mode') not in ('selected', 'image'):
+            settings['pixel_count_mode'] = 'selected'
+        for mode, caption in [('selected', tr('Seçili renk: boyanan / toplam piksel')),
+                              ('image', tr('Tüm resim: boyanan / toplam piksel'))]:
             action = menu.addAction(caption)
             action.setCheckable(True)
-            action.setChecked(settings.get('progress_mode', 'painted') == mode)
+            action.setChecked(settings['pixel_count_mode'] == mode)
             group.addAction(action)
-            action.triggered.connect(lambda checked=False, selected=mode: self.set_progress_mode(selected))
-            self.progress_actions[mode] = action
-        self.progress_label.setMenu(menu)
+            action.triggered.connect(lambda checked=False, selected=mode: self.set_pixel_count_mode(selected))
+            self.pixel_count_actions[mode] = action
+        self.pixel_count_label.setMenu(menu)
+        top.addWidget(self.pixel_count_label)
+        top.addSpacing(12)
+        self.progress_label = label('', 'statusValue')
+        self.progress_label.setWordWrap(False)
+        self.progress_label.setToolTip(tr('Boyanan alan yüzdesi'))
+        self.progress_label.setAccessibleName(tr('Boyanan alan yüzdesi'))
         top.addWidget(self.progress_label)
         root.addWidget(self.status_header)
         body = QHBoxLayout()
@@ -164,15 +181,23 @@ class GameScreen(QWidget):
 
     def refresh(self):
         p = self.session.painting
-        ratio = 1 - p.progress if self.settings.get('progress_mode') == 'remaining' else p.progress
-        self.progress_label.setText(percentage(ratio * 100))
-        painted = int(p.counts[self.session.selected])
-        total = int(p.totals[self.session.selected])
-        self.remaining_label.setText(f'{number(painted)} / {number(total)}')
+        self.progress_label.setText(percentage(p.progress * 100))
+        if self.settings['pixel_count_mode'] == 'image':
+            painted, total = p.painted_count, p.target_map.size
+            caption = tr('Tüm resim: boyanan / toplam piksel')
+        else:
+            painted = int(p.counts[self.session.selected])
+            total = int(p.totals[self.session.selected])
+            caption = tr('Seçili renk: boyanan / toplam piksel')
+        self.pixel_count_label.setText(f'{number(painted)} / {number(total)}')
+        self.pixel_count_label.setToolTip(caption)
         self.palette.update()
 
-    def set_progress_mode(self, mode):
-        self.settings['progress_mode'] = mode
+    def set_pixel_count_mode(self, mode):
+        if mode not in self.pixel_count_actions:
+            return
+        self.settings['pixel_count_mode'] = mode
+        self.pixel_count_actions[mode].setChecked(True)
         self.refresh()
 
     def stroke_done(self):

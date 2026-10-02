@@ -16,6 +16,7 @@ def write_level(painting, path):
         title=painting.title,
         category=painting.category,
         author=painting.author,
+        meaning=painting.meaning,
         width=painting.width,
         height=painting.height,
     )
@@ -61,6 +62,7 @@ def read_level(path):
             target,
             str(meta.get("category", "Diğer")),
             str(meta.get("author", "")),
+            str(meta.get("meaning", "")),
         )
         if (p.width, p.height) != (meta["width"], meta["height"]):
             raise ValueError("Seviye boyutları tutarsız")

@@ -2,7 +2,6 @@ import json
 import zipfile
 from pathlib import Path
 
-
 PAINTINGS = Path(__file__).parents[1] / "src/pixel_coloring/resources/paintings"
 
 
@@ -10,7 +9,7 @@ def test_catalog_matches_bundled_files():
     catalog = json.loads((PAINTINGS / "catalog.json").read_text(encoding="utf-8"))
     ids = [item["id"] for item in catalog]
 
-    assert len(catalog) == 536
+    assert len(catalog) == 900
     assert len(ids) == len(set(ids))
     assert {path.stem for path in PAINTINGS.glob("*.pcolor")} == set(ids)
 

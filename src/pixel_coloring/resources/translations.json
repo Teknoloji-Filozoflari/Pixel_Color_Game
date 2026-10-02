@@ -383,6 +383,30 @@
     "es": "Píxeles coloreados / totales del color seleccionado",
     "ru": "Закрашенные / все пиксели выбранного цвета"
   },
+  "Gösterilecek piksel sayısını seç": {
+    "en": "Choose which pixel counts to display",
+    "az": "Göstəriləcək piksel sayını seç",
+    "es": "Elige qué recuento de píxeles mostrar",
+    "ru": "Выберите отображаемое количество пикселей"
+  },
+  "Seçili renk: boyanan / toplam piksel": {
+    "en": "Selected color: painted / total pixels",
+    "az": "Seçilmiş rəng: boyanmış / ümumi piksellər",
+    "es": "Color seleccionado: píxeles coloreados / totales",
+    "ru": "Выбранный цвет: закрашенные / все пиксели"
+  },
+  "Tüm resim: boyanan / toplam piksel": {
+    "en": "Entire image: painted / total pixels",
+    "az": "Bütün şəkil: boyanmış / ümumi piksellər",
+    "es": "Imagen completa: píxeles coloreados / totales",
+    "ru": "Всё изображение: закрашенные / все пиксели"
+  },
+  "Boyanan alan yüzdesi": {
+    "en": "Percentage of the image painted",
+    "az": "Boyanmış sahənin faizi",
+    "es": "Porcentaje de la imagen coloreada",
+    "ru": "Процент закрашенной области"
+  },
   "Boyanan / kalan piksel oranını seç": {
     "en": "Choose painted / remaining percentage",
     "az": "Boyanmış / qalan piksel faizini seç",
@@ -820,5 +844,29 @@
     "az": "Şəklin Yüklənənlər bölməsinə əlavə olunur. Buradan şəkli və boyama qeydini silə bilərsən; kompüterindəki ilkin fayl silinmir.",
     "es": "Tu imagen aparece en Subidas. Allí puedes eliminarla junto con su progreso; el archivo original de tu ordenador no se borra.",
     "ru": "Изображение появится во вкладке «Загруженные». Там можно удалить его и прогресс раскрашивания; исходный файл на компьютере не удаляется."
+  },
+  "TÜRK MOTİFLERİ": {
+    "en": "TURKISH MOTIFS",
+    "az": "TÜRK MOTİVLƏRİ",
+    "es": "MOTIVOS TURCOS",
+    "ru": "ТУРЕЦКИЕ МОТИВЫ"
+  },
+  "Harikalar": {
+    "en": "Wonders",
+    "az": "Möcüzələr",
+    "es": "Maravillas",
+    "ru": "Чудеса света"
+  },
+  "Teknoloji": {
+    "en": "Technology",
+    "az": "Texnologiya",
+    "es": "Tecnología",
+    "ru": "Технологии"
+  },
+  "Arabalar": {
+    "en": "Cars",
+    "az": "Avtomobillər",
+    "es": "Coches",
+    "ru": "Автомобили"
   }
 }

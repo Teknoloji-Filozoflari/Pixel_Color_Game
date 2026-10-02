@@ -17,9 +17,17 @@ from PySide6.QtWidgets import (
 from ..importer.level_writer import read_level
 from ..rendering.tile_cache import rgb_image
 from .home_actions import HomeAction
-from .i18n import LANGUAGES, number, tr, painting_title
+from .i18n import LANGUAGES, number, painting_meaning, painting_title, tr
 from .progress_tile import ProgressTile
 from .widgets import ResponsiveGrid, button, label
+
+
+class CategoryBar(QFrame):
+    resized = Signal()
+
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+        self.resized.emit()
 
 
 class LanguageSelector(QComboBox):
@@ -99,10 +107,10 @@ def build_collection(window, root):
     head.addWidget(HomeAction('exit', tr('Çıkış'), window.close))
     root.addWidget(hero)
     categories = ['Tüm kategoriler', 'Doğa', 'Hayvanlar', 'Fantastik', 'Manzaralar',
-                  'Şehirler', 'TÜRKİYE', 'İçe aktarılan']
+                  'Şehirler', 'TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Arabalar', 'İçe aktarılan']
     if window.collection_category not in categories:
         window.collection_category = categories[0]
-    category_bar = QFrame()
+    category_bar = CategoryBar()
     category_bar.setObjectName('categoryBar')
     category_bar.setStyleSheet('''
         QFrame#categoryBar {background:#1C2229; border:1px solid #39424A; border-radius:12px;}
@@ -112,7 +120,7 @@ def build_collection(window, root):
         QPushButton#categoryTab:checked {background:#315B51; color:#DCFFF0; border:1px solid #639789;}
         QPushButton#categoryTab:focus {border:1px solid #F0784F;}
     ''')
-    category_row = QHBoxLayout(category_bar)
+    category_row = QGridLayout(category_bar)
     category_row.setContentsMargins(6, 6, 6, 6)
     category_row.setSpacing(5)
     group = QButtonGroup(category_bar)
@@ -129,7 +137,26 @@ def build_collection(window, root):
         tab.setCursor(Qt.CursorShape.PointingHandCursor)
         group.addButton(tab)
         window.category_buttons[name] = tab
-        category_row.addWidget(tab)
+        category_row.addWidget(tab, 0, len(window.category_buttons) - 1)
+    category_columns = None
+    tabs = list(window.category_buttons.values())
+
+    def arrange_categories():
+        nonlocal category_columns
+        required = sum(tab.sizeHint().width() for tab in tabs) + 5 * (len(tabs) - 1) + 12
+        columns = len(tabs) if category_bar.width() >= required else (len(tabs) + 1) // 2
+        if columns == category_columns:
+            return
+        category_columns = columns
+        for tab in tabs:
+            category_row.removeWidget(tab)
+        for column in range(len(tabs)):
+            category_row.setColumnStretch(column, 1 if column < columns else 0)
+        for index, tab in enumerate(tabs):
+            category_row.addWidget(tab, index // columns, index % columns)
+
+    category_bar.resized.connect(arrange_categories)
+    arrange_categories()
     root.addWidget(category_bar)
     content = QHBoxLayout()
     content.setSpacing(22)
@@ -185,6 +212,11 @@ def build_collection(window, root):
         heading.setObjectName('paintingTitle')
         detail_box.addWidget(heading)
         p = read_level(window.paths[chosen])
+        if p.meaning:
+            meaning = label(painting_meaning(p.id, p.meaning), 'muted')
+            meaning.setObjectName('paintingMeaning')
+            meaning.setWordWrap(True)
+            detail_box.addWidget(meaning)
         window.database.load(p)
         rgb = p.palette[p.target_map].copy()
         gray = (rgb.mean(axis=2) * .2 + 155).astype('uint8')
