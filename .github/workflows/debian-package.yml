@@ -1,0 +1,88 @@
+name: Debian package
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-deb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read package version
+        id: package
+        run: |
+          version=$(python3 -c 'import pathlib, tomllib; print(tomllib.loads(pathlib.Path("pyproject.toml").read_text())["project"]["version"])')
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "name=piksel-atolyesi_${version}-1_amd64.deb" >> "$GITHUB_OUTPUT"
+      - name: Check release asset
+        id: asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.package.outputs.version }}
+          PACKAGE_NAME: ${{ steps.package.outputs.name }}
+        run: |
+          tag="v$VERSION"
+          if [ "$GITHUB_REF_TYPE" = tag ] && [ "$GITHUB_REF_NAME" != "$tag" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match package version $VERSION" >&2
+            exit 1
+          fi
+          if [ "$GITHUB_REF_TYPE" != tag ] && ! gh release view "$tag" >/dev/null 2>&1; then
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          elif gh release view "$tag" --json assets --jq '.assets[].name' 2>/dev/null | grep -Fx "$PACKAGE_NAME"; then
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build and smoke test on Debian 12
+        if: steps.asset.outputs.build == 'true'
+        run: |
+          docker build -f packaging/deb/Dockerfile -t piksel-atolyesi-deb .
+          mkdir -p dist
+          docker run --rm -v "$PWD/dist:/output" piksel-atolyesi-deb /bin/sh -c 'cp /src/dist/*.deb /output/'
+      - name: Test installation on clean Debian 12 and 13
+        if: steps.asset.outputs.build == 'true'
+        env:
+          PACKAGE_NAME: ${{ steps.package.outputs.name }}
+        run: |
+          for debian_version in 12 13; do
+            docker run --rm -e DEBIAN_FRONTEND=noninteractive -e PACKAGE_NAME \
+              -v "$PWD/dist:/packages:ro" "debian:$debian_version" /bin/sh -ec '
+                apt-get update -qq
+                apt-get install -y -qq --no-install-recommends "/packages/$PACKAGE_NAME"
+                QT_QPA_PLATFORM=offscreen piksel-atolyesi --smoke-test --data-dir /tmp/piksel-atolyesi-smoke
+              '
+          done
+      - name: Create checksum
+        if: steps.asset.outputs.build == 'true'
+        env:
+          PACKAGE_NAME: ${{ steps.package.outputs.name }}
+        run: |
+          cd dist
+          sha256sum "$PACKAGE_NAME" > "$PACKAGE_NAME.sha256"
+      - uses: actions/upload-artifact@v4
+        if: steps.asset.outputs.build == 'true'
+        with:
+          name: piksel-atolyesi-debian-amd64
+          path: |
+            dist/*.deb
+            dist/*.deb.sha256
+          if-no-files-found: error
+      - name: Add package to GitHub Release
+        if: steps.asset.outputs.build == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.package.outputs.version }}
+          PACKAGE_NAME: ${{ steps.package.outputs.name }}
+        run: |
+          tag="v$VERSION"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --verify-tag --title "Piksel Atölyesi $VERSION" --generate-notes || gh release view "$tag"
+          fi
+          gh release upload "$tag" "dist/$PACKAGE_NAME" "dist/$PACKAGE_NAME.sha256"
