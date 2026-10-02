@@ -22,6 +22,21 @@ jobs:
       - name: Install dependencies
         run: python -m pip install ".[dev]"
       - name: Test
-        run: python -m pytest -q
+        shell: bash
+        run: |
+          set +e
+          python -m pytest -q --tb=short > pytest-output.txt 2>&1
+          result=$?
+          cat pytest-output.txt
+          if [ "$result" -ne 0 ]; then
+            python - <<'PY'
+          from pathlib import Path
+
+          output = Path('pytest-output.txt').read_text(encoding='utf-8', errors='replace')
+          summary = output[-3000:].replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+          print(f'::error title=Python test failure::{summary}')
+          PY
+          fi
+          exit "$result"
       - name: Verify release sources
         run: python packaging/build_release.py
