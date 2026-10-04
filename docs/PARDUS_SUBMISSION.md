@@ -10,7 +10,7 @@ Başvuru formu: https://apps.pardus.org.tr/suggestapp
 
 Piksel Atölyesi, Türkçe ve çevrim dışı çalışan, numaraya göre piksel boyama oyunudur.
 900 hazır resim, yedi zorluk seviyesi, kendi görselini içe aktarma ve otomatik ilerleme
-kaydı sunar. Hesap, reklam veya telemetri gerektirmez. Kaynak kodu açıktır; kod MIT
+kaydı sunar. Hesap, reklam veya telemetri gerektirmez. Kaynak kodu açıktır; kod GNU GPL 3.0 veya sonraki sürümleri
 lisanslıdır. Görsellerin ve üçüncü taraf bileşenlerin lisans bilgileri kaynak depodadır.
 
 Debian 12 ve 13 üzerinde amd64 `.deb` paketinin kurulumu ve çevrim dışı açılışı doğrulandı.

@@ -26,5 +26,5 @@ gerektirmeyen Windows sürümü dağıtmak için ayrıca taşınabilir Windows p
 Yerel paket oluşturma: python packaging/build_release.py
 Yerel Python çalışma ortamıyla taşınabilir ZIP: python packaging/build_release.py --runtime .tools/python
 
-Kod MIT lisanslıdır; görseller için ASSETS_LICENSE.md ve üçüncü taraf bileşenler için
+Kod GNU GPL 3.0 veya sonraki sürümleri lisanslıdır; görseller için ASSETS_LICENSE.md ve üçüncü taraf bileşenler için
 THIRD_PARTY.md ile LICENSES dizinini koru.

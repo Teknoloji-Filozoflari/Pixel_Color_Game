@@ -20,4 +20,4 @@ QT_QPA_PLATFORM=offscreen python run.py --smoke-test --data-dir /tmp/piksel-atol
 
 Yeni koleksiyon dosyalarında `catalog.json` kaydı ile `.pcolor` metadata bilgileri aynı olmalıdır. Mevcut resim kimlikleri kullanıcı ilerlemesiyle eşleştiği için değiştirilmemelidir.
 
-Katkı göndererek değişikliklerinin projenin MIT lisansı altında yayımlanmasını kabul etmiş olursun. Üçüncü taraf içerikleri yalnızca dağıtım hakkı açıkça doğrulanmışsa ekle.
+Katkı göndererek değişikliklerinin projenin GNU GPL 3.0 veya sonraki sürümleri lisansı altında yayımlanmasını kabul etmiş olursun. Üçüncü taraf içerikleri yalnızca dağıtım hakkı açıkça doğrulanmışsa ekle.

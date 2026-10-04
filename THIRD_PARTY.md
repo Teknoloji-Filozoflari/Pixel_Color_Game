@@ -1,6 +1,6 @@
 # Third-party components
 
-The application's MIT license does not replace third-party licenses.
+The application's GPL-3.0-or-later license does not replace third-party licenses.
 
 - CPython 3.13 veya üzeri: PSF lisansı. Kaynak: https://www.python.org/downloads/
 - PySide6 Essentials / Qt 6.11.2 and Shiboken6: LGPL/GPL/commercial licensing as detailed

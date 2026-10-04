@@ -11,7 +11,7 @@
   [![Python](https://img.shields.io/badge/Python-3.13%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
   [![PySide6](https://img.shields.io/badge/arayüz-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
   [![Koleksiyon](https://img.shields.io/badge/koleksiyon-900_resim-f39c5a?style=flat-square)](KOLEKSIYON.md)
-  [![Lisans](https://img.shields.io/badge/kod_lisansı-MIT-8bd3c7?style=flat-square)](LICENSE)
+  [![Lisans](https://img.shields.io/badge/kod_lisansı-GPL--3.0--or--later-8bd3c7?style=flat-square)](LICENSE)
 
   [Özellikler](#öne-çıkanlar) · [Kurulum](#kurulum) · [Nasıl oynanır?](#nasıl-oynanır) · [Geliştirme](#geliştirme) · [Lisans](#lisans-ve-görsel-hakları)
 </div>
@@ -355,7 +355,9 @@ Proje, 900 gömülü `.pcolor` dosyasının katalog ve metadata bütünlüğün�
 
 ## Lisans ve görsel hakları
 
-Kaynak kod [MIT Lisansı](LICENSE) altında sunulur.
+Copyright (c) 2026 Pixel Coloring contributors.
+
+Kaynak kod [GNU GPL 3.0 veya sonraki sürümleri Lisansı](LICENSE) altında sunulur.
 
 - Koleksiyon, logo ve ekran görüntülerinin kapsamı: [ASSETS_LICENSE.md](ASSETS_LICENSE.md)
 - Bağımlılıklar ve atıflar: [THIRD_PARTY.md](THIRD_PARTY.md)
