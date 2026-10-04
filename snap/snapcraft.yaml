@@ -26,7 +26,8 @@ parts:
     plugin: dump
     source: build/bundle/piksel-atolyesi
     organize:
-      '*': usr/lib/piksel-atolyesi/
+      _internal: usr/lib/piksel-atolyesi/_internal
+      piksel-atolyesi: usr/lib/piksel-atolyesi/piksel-atolyesi
     stage-packages:
       - libegl1
       - libgl1
