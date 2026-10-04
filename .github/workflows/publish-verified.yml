@@ -1,0 +1,113 @@
+name: Publish verified Linux packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      appimage_run:
+        description: Successful AppImage build and install run ID
+        required: true
+        type: string
+      deb_run:
+        description: Successful DEB build and install run ID
+        required: true
+        type: string
+      rpm_run:
+        description: Successful RPM build and install run ID
+        required: true
+        type: string
+      snap_run:
+        description: Successful Snap build and install run ID
+        required: true
+        type: string
+      nix_run:
+        description: Successful Nix build and smoke run ID
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-verified-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Require successful package checks
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_IDS: ${{ inputs.appimage_run }} ${{ inputs.deb_run }} ${{ inputs.rpm_run }} ${{ inputs.snap_run }} ${{ inputs.nix_run }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for run_id in $RUN_IDS; do
+            [[ "$run_id" =~ ^[0-9]+$ ]]
+            test "$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run_id" --jq .conclusion)" = success
+          done
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ inputs.appimage_run }}
+          name: piksel-atolyesi-appimage-x86_64
+          github-token: ${{ github.token }}
+          path: release-assets
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ inputs.deb_run }}
+          name: piksel-atolyesi-debian-amd64
+          github-token: ${{ github.token }}
+          path: release-assets
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ inputs.rpm_run }}
+          name: piksel-atolyesi-rpm-x86_64
+          github-token: ${{ github.token }}
+          path: release-assets
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ inputs.snap_run }}
+          name: piksel-atolyesi-snap-amd64
+          github-token: ${{ github.token }}
+          path: release-assets
+      - name: Build clean Python and source packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install build
+          python -m build --outdir release-assets
+          python packaging/build_release.py
+          cp dist/*-source.zip release-assets/
+          version=$(python -c 'import tomllib; print(tomllib.load(open("pyproject.toml", "rb"))["project"]["version"])')
+          test -f "docs/release-notes/v$version.md"
+          test -f "release-assets/Piksel-Atolyesi-$version-x86_64.AppImage"
+          test -f "release-assets/piksel-atolyesi_${version}-1_amd64.deb"
+          test -f "release-assets/piksel-atolyesi-$version-1.fc43.x86_64.rpm"
+          test -f "release-assets/piksel-atolyesi_${version}_amd64.snap"
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          wheel = next(Path("release-assets").glob("*.whl"))
+          with zipfile.ZipFile(wheel) as archive:
+              assert len([name for name in archive.namelist() if name.endswith(".pcolor")]) == 900
+          PY
+          cd release-assets
+          sha256sum --check SHA256SUMS
+          find . -maxdepth 1 -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS
+      - name: Publish verified release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          version=$(python -c 'import tomllib; print(tomllib.load(open("pyproject.toml", "rb"))["project"]["version"])')
+          gh release create "v$version" --target "$GITHUB_SHA" --draft \
+            --title "Piksel Atölyesi v$version" --notes-file "docs/release-notes/v$version.md" \
+            release-assets/*
+          gh release edit "v$version" --draft=false --latest

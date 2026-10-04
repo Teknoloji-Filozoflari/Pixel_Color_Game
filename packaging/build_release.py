@@ -40,8 +40,10 @@ def main():
         candidates.extend(file for file in (ROOT / directory).rglob('*') if file.is_file())
     for file in candidates:
         relative = file.relative_to(ROOT)
-        if EXCLUDED.intersection(relative.parts) or file.name.endswith(
-                ('.pyc', '.log', '.sqlite3', '.sqlite3-wal', '.sqlite3-shm')):
+        if (EXCLUDED.intersection(relative.parts)
+                or any(part.endswith(".egg-info") for part in relative.parts)
+                or file.name.endswith(
+                ('.pyc', '.log', '.sqlite3', '.sqlite3-wal', '.sqlite3-shm'))):
             continue
         if file.name in {'.env', 'credentials.json'}:
             continue

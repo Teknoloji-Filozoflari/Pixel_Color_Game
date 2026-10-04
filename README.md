@@ -7,7 +7,7 @@
 
   Türkçe, çevrim dışı ve rahatlatıcı bir numaraya göre piksel boyama oyunu.
 
-  [![Sürüm](https://img.shields.io/badge/sürüm-0.16.0-ff7043?style=flat-square)](pyproject.toml)
+  [![Sürüm](https://img.shields.io/badge/sürüm-0.16.1-ff7043?style=flat-square)](pyproject.toml)
   [![Python](https://img.shields.io/badge/Python-3.13%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
   [![PySide6](https://img.shields.io/badge/arayüz-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
   [![Koleksiyon](https://img.shields.io/badge/koleksiyon-900_resim-f39c5a?style=flat-square)](KOLEKSIYON.md)
@@ -108,6 +108,26 @@ Desteklenen biçimler: **PNG, JPEG, WEBP ve `.pcolor`**. Görseller en fazla 192
 
 ## Kurulum
 
+**[v0.16.1 Linux paketlerini indir](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.16.1).**
+
+| Biçim | Hedef | Kurulum |
+|---|---|---|
+| AppImage | x86_64 Linux, glibc 2.35+ | Dosyaya çalıştırma izni verip aç |
+| DEB | Debian 12/13, amd64 | `sudo apt install ./piksel-atolyesi_0.16.1-1_amd64.deb` |
+| RPM | Fedora 43, x86_64 | `sudo dnf install ./piksel-atolyesi-0.16.1-1.fc43.x86_64.rpm` |
+| Snap | snapd bulunan amd64 Linux | `sudo snap install --dangerous ./piksel-atolyesi_0.16.1_amd64.snap` |
+| Nix / NixOS | x86_64 Linux | `nix run github:Teknoloji-Filozoflari/Pixel_Color_Game/v0.16.1` |
+| Wheel / kaynak ZIP | Python 3.13+ | Sürüm sayfasından indir |
+
+Paketlerin yanında `SHA256SUMS` dosyası bulunur. AppImage, DEB, RPM ve Snap
+kurulum ve sanal X11 pencere testlerinden geçirilir; Nix için build, testler ve
+kurulu paketin offscreen açılışı kontrol edilir. Ayrıntılar ve hedef sınırlamaları:
+[Linux paketleme rehberi](docs/LINUX_PACKAGES.md).
+
+Snap Store, AUR ve resmî Nixpkgs yayını yapılmamıştır. Snap dosyası GitHub'dan
+indirilerek kurulur; sistem kurulumundan ayrı bir oyun kayıt dizini kullanır.
+
+
 ### Windows — kaynak koddan çalıştırma
 
 Kaynak paketini tamamen çıkar. Python 3.13 veya üzerini kur; kurulumda Python başlatıcısını da etkinleştir. Paket klasöründe:
@@ -129,19 +149,22 @@ chmod +x Piksel-Atolyesi-*.AppImage
 ./Piksel-Atolyesi-*.AppImage
 ```
 
+AppImage glibc 2.35 veya üzerini ve sistemin EGL/OpenGL sürücü kitaplıklarını gerektirir.
+FUSE yoksa `APPIMAGE_EXTRACT_AND_RUN=1 ./Piksel-Atolyesi-*.AppImage` kullanılabilir.
+
 AppImage; Python, PySide6, NumPy ve Pillow bağımlılıklarını içinde taşır. Kurulum veya `sudo`
 gerekmez. İndirdiğin dosyayı silmek uygulamayı kaldırmak için yeterlidir; kayıtların ise aşağıda
 belirtilen kullanıcı veri klasöründe kalır.
 
 ### Pardus / Debian `.deb` paketi
 
-Debian 12/13 amd64 için [GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.16.0)
-sayfasından `piksel-atolyesi_0.16.0-1_amd64.deb` ve aynı adlı `.sha256` dosyasını indir.
+Debian 12/13 amd64 için [GitHub Releases](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.16.1)
+sayfasından `piksel-atolyesi_0.16.1-1_amd64.deb` ve aynı adlı `.sha256` dosyasını indir.
 İndirdiğin klasörde:
 
 ```bash
-sha256sum -c piksel-atolyesi_0.16.0-1_amd64.deb.sha256
-sudo apt install ./piksel-atolyesi_0.16.0-1_amd64.deb
+sha256sum -c piksel-atolyesi_0.16.1-1_amd64.deb.sha256
+sudo apt install ./piksel-atolyesi_0.16.1-1_amd64.deb
 ```
 
 Paket Python, PySide6, NumPy ve Pillow'ı içerir; gerekli sistem kitaplıklarını `apt` kurar.
@@ -151,12 +174,12 @@ arayüz ayrıca doğrulanmalıdır.
 
 Pardus 25 üzerinde paketi yerel olarak üretmek için Python 3.13 sanal ortamında projeyi ve PyInstaller'ı
 kurduktan sonra `packaging/deb/build-deb.sh` betiğini çalıştır. Çıktı
-`dist/piksel-atolyesi_0.16.0-1_amd64.deb` yoluna yazılır. Paket Python ve uygulama
+`dist/piksel-atolyesi_0.16.1-1_amd64.deb` yoluna yazılır. Paket Python ve uygulama
 bağımlılıklarını içinde taşır; masaüstü başlatıcısını, simgeyi ve lisans dosyalarını yükler.
 Oluşturduğun paketi Pardus Paket Kurucu ile açabilir veya terminalde şu komutu çalıştırabilirsin:
 
 ```bash
-sudo apt install ./dist/piksel-atolyesi_0.16.0-1_amd64.deb
+sudo apt install ./dist/piksel-atolyesi_0.16.1-1_amd64.deb
 ```
 
 ### Teknik gereksinimler
@@ -297,9 +320,10 @@ AppImage üretmek için PyInstaller ve `appimagetool` kurulduktan sonra:
 APPIMAGETOOL=/path/to/appimagetool packaging/appimage/build-appimage.sh
 ```
 
-`v0.16.0` biçiminde bir Git etiketi gönderildiğinde GitHub Actions, x86_64 AppImage'i ve SHA-256
-özetini otomatik olarak GitHub Releases'a ekler. İş akışı Actions sayfasından elle de çalıştırılabilir;
-elle çalıştırılan derleme bir workflow artifact'i olarak indirilir.
+AppImage, DEB, RPM ve Snap iş akışları Actions sayfasından elle başlatılır;
+çıktılar workflow artifact'i olarak alınır. Tüm build ve kurulum kontrolleri
+başarılı olduğunda **Publish verified Linux packages** iş akışı paketleri,
+kaynak arşivlerini ve ortak SHA-256 listesini sürüm sayfasında yayımlar.
 
 Proje, 900 gömülü `.pcolor` dosyasının katalog ve metadata bütünlüğünü doğrulayan testler içerir. Katkıda bulunmadan önce [katkı rehberini](CONTRIBUTING.md) okuyabilirsin.
 
