@@ -1,0 +1,49 @@
+name: Nix package
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'flake.nix'
+      - 'flake.lock'
+      - 'default.nix'
+      - 'packaging/nix/**'
+      - 'src/**'
+      - 'tests/**'
+      - 'scripts/**'
+      - 'pyproject.toml'
+      - '.github/workflows/nix.yml'
+  pull_request:
+    paths:
+      - 'flake.nix'
+      - 'flake.lock'
+      - 'default.nix'
+      - 'packaging/nix/**'
+      - 'src/**'
+      - 'tests/**'
+      - 'scripts/**'
+      - 'pyproject.toml'
+      - '.github/workflows/nix.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - name: Resolve inputs and check package
+        run: |
+          nix flake lock
+          nix flake check --print-build-logs
+          nix build --print-build-logs
+      - name: Save dependency lock
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: piksel-nix-lock
+          path: flake.lock
+          if-no-files-found: warn

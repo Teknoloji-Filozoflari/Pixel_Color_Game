@@ -1,0 +1,6 @@
+# Shared PyInstaller bundle baseline: Ubuntu 22.04 / glibc 2.35.
+PySide6-Essentials==6.8.2.1
+shiboken6==6.8.2.1
+numpy==2.5.3
+Pillow==12.3.0
+PyInstaller==6.22.3

@@ -34,3 +34,14 @@ work/
 .DS_Store
 Thumbs.db
 *~
+
+# Linux package output
+*.rpm
+*.snap
+parts/
+stage/
+prime/
+.snapcraft/
+result
+result-*
+bundle.tar.gz

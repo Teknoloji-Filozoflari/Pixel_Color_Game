@@ -100,9 +100,8 @@ def ensure_samples(folder, database, progress=None):
     remove_retired_samples(database, folder)
     # Detailed bundled paintings are installed without replacing progress or user files.
     import shutil
-    from pathlib import Path
-
     import zipfile
+    from pathlib import Path
     from types import SimpleNamespace
 
     gallery = Path(__file__).resolve().parents[1] / "resources/paintings"

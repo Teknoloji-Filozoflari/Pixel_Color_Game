@@ -1,0 +1,10 @@
+include flake.nix flake.lock default.nix requirements-tested.txt
+include ASSETS_LICENSE.md THIRD_PARTY.md TELIF-VE-YAYIN-NOTU.md KOLEKSIYON.md
+include run.py install.sh uninstall.sh start.sh start.bat
+recursive-include packaging *
+recursive-include snap *.yaml piksel-atolyesi *.md
+recursive-include tests *.py
+recursive-include docs *.md *.png *.jpg
+recursive-include LICENSES *
+recursive-include .github *.yml *.md
+global-exclude __pycache__ *.py[cod]

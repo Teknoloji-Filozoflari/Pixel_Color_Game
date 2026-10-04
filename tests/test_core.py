@@ -1,6 +1,6 @@
 import numpy as np
 
-from pixel_coloring.core.paint_engine import PaintResult, PaintingEngine
+from pixel_coloring.core.paint_engine import PaintingEngine, PaintResult
 from pixel_coloring.core.painting import Painting
 
 

@@ -37,20 +37,36 @@ jobs:
           # Qt loads the host's EGL/OpenGL driver interface at runtime. AppImages
           # intentionally do not bundle hardware-specific graphics drivers.
           sudo apt-get update
-          sudo apt-get install --yes libegl1
+          sudo apt-get install --yes libegl1 libgl1 libglib2.0-0 libdbus-1-3 libfontconfig1 libx11-6 libx11-xcb1 libxcb1 libxkbcommon0 libxkbcommon-x11-0 libxcb-cursor0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-shape0 libxcb-randr0 libxcb-render0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xkb1
           python -m pip install --upgrade pip
-          python -m pip install . "PyInstaller>=6.16,<7"
+          python -m pip install -c packaging/constraints-linux.txt ".[dev]" PyInstaller
+          python -m ruff check src tests run.py packaging/build_bundle.py packaging/build_rpm.py
+          python -m pytest -q
 
-      - name: Download appimagetool
+      - name: Download and verify versioned AppImage tools
+        shell: bash
         run: |
-          curl --fail --location --retry 3 \
-            --output "$RUNNER_TEMP/appimagetool-x86_64.AppImage" \
-            https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage
-          curl --fail --location --retry 3 \
-            --output "$RUNNER_TEMP/runtime-x86_64" \
-            https://github.com/AppImage/type2-runtime/releases/download/continuous/runtime-x86_64
-          chmod +x "$RUNNER_TEMP/appimagetool-x86_64.AppImage"
-
+          set -euo pipefail
+          download_asset() {
+            local repository=$1 tag=$2 asset=$3 output=$4 metadata url digest
+            metadata=$(curl --fail --location --retry 3 \
+              "https://api.github.com/repos/$repository/releases/tags/$tag")
+            url=$(jq -r --arg asset "$asset" \
+              '.assets[] | select(.name == $asset) | .browser_download_url' \
+              <<<"$metadata")
+            digest=$(jq -r --arg asset "$asset" \
+              '.assets[] | select(.name == $asset) | .digest' \
+              <<<"$metadata")
+            test -n "$url" && test "$url" != null
+            test "${digest#sha256:}" != "$digest"
+            curl --fail --location --retry 3 --output "$output" "$url"
+            echo "${digest#sha256:}  $output" | sha256sum --check --strict
+          }
+          download_asset AppImage/appimagetool 1.9.1 \
+            appimagetool-x86_64.AppImage $RUNNER_TEMP/appimagetool-x86_64.AppImage
+          download_asset AppImage/type2-runtime 20251108 \
+            runtime-x86_64 $RUNNER_TEMP/runtime-x86_64
+          chmod +x $RUNNER_TEMP/appimagetool-x86_64.AppImage
       - name: Build AppImage
         env:
           APPIMAGETOOL: ${{ runner.temp }}/appimagetool-x86_64.AppImage
@@ -87,3 +103,31 @@ jobs:
           files: |
             dist/*.AppImage
             dist/SHA256SUMS
+
+  install:
+    needs: build-appimage
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: piksel-atolyesi-appimage-x86_64
+          path: packages
+      - name: Open packaged Qt X11 window with complete collection
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install --yes xvfb libegl1 libgl1 libfontconfig1 libxkbcommon-x11-0
+          package=$(find "$PWD/packages" -name '*.AppImage' -print -quit)
+          chmod +x "$package"
+          Xvfb :99 -screen 0 1440x1000x24 -ac -nolisten tcp &
+          display_pid=$!
+          trap 'kill "$display_pid"' EXIT
+          sleep 2
+          APPIMAGE_EXTRACT_AND_RUN=1 DISPLAY=:99 QT_QPA_PLATFORM=xcb QT_DEBUG_PLUGINS=1 timeout 120s "$package" --smoke-test --data-dir /tmp/piksel-x11
+          python3 -c 'import sqlite3; c=sqlite3.connect("/tmp/piksel-x11/progress.sqlite3"); assert c.execute("SELECT COUNT(*) FROM paintings").fetchone()[0] == 900'

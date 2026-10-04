@@ -1,9 +1,9 @@
 import argparse
 import logging
 import sys
-from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from queue import SimpleQueue, Empty
+from pathlib import Path
+from queue import Empty, SimpleQueue
 from time import perf_counter
 
 from PySide6.QtCore import QStandardPaths, QTimer

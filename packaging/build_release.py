@@ -8,10 +8,10 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DIRECTORIES = ('src', 'tests', 'docs', 'LICENSES', 'packaging', '.github')
+DIRECTORIES = ('src', 'tests', 'docs', 'LICENSES', 'packaging', 'snap', '.github')
 FILES = ('pyproject.toml', 'README.md', 'LICENSE', 'ASSETS_LICENSE.md', 'KOLEKSIYON.md',
          'THIRD_PARTY.md', 'TELIF-VE-YAYIN-NOTU.md', 'CONTRIBUTING.md', 'requirements-tested.txt',
-         '.gitignore', '.dockerignore', 'run.py', 'start.bat', 'start.sh', 'install.sh', 'uninstall.sh')
+         '.gitignore', '.dockerignore', 'flake.nix', 'flake.lock', 'default.nix', 'MANIFEST.in', 'run.py', 'start.bat', 'start.sh', 'install.sh', 'uninstall.sh')
 EXCLUDED = {'__pycache__', '.git', '.tools', 'work', 'local-data', 'runtime',
             '.pytest_cache', '.ruff_cache', '.venv', 'venv'}
 

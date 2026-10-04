@@ -1,0 +1,62 @@
+name: RPM package
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    container: fedora:43
+    timeout-minutes: 35
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Fedora build and Qt runtime dependencies
+        run: >-
+          dnf install -y python3 python3-pip gcc binutils rpm-build
+          mesa-libEGL mesa-libGL fontconfig dbus-libs libX11 libX11-xcb
+          libxcb libxkbcommon libxkbcommon-x11 xcb-util-cursor xcb-util-image
+          xcb-util-keysyms xcb-util-renderutil xcb-util-wm
+      - name: Install project and tools
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -c packaging/constraints-linux.txt '.[dev]' PyInstaller
+      - name: Quality and bundle checks
+        run: |
+          .venv/bin/python -m ruff check src tests run.py packaging/build_bundle.py packaging/build_rpm.py
+          .venv/bin/python -m pytest -q
+          .venv/bin/python packaging/build_bundle.py
+          .venv/bin/python packaging/build_rpm.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: piksel-atolyesi-rpm-x86_64
+          path: dist/*.rpm
+          if-no-files-found: error
+  install:
+    needs: build
+    runs-on: ubuntu-24.04
+    container: fedora:43
+    timeout-minutes: 15
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: piksel-atolyesi-rpm-x86_64
+          path: packages
+      - name: Clean install, offscreen and X11 window checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          dnf install -y python3 xorg-x11-server-Xvfb ./packages/*.rpm
+          QT_QPA_PLATFORM=offscreen timeout 120s piksel-atolyesi --smoke-test --data-dir /tmp/piksel-offscreen
+          Xvfb :99 -screen 0 1440x1000x24 -ac -nolisten tcp &
+          display_pid=$!
+          trap 'kill "$display_pid"' EXIT
+          sleep 2
+          DISPLAY=:99 QT_QPA_PLATFORM=xcb QT_DEBUG_PLUGINS=1 timeout 120s piksel-atolyesi --smoke-test --data-dir /tmp/piksel-x11
+          python3 -c 'import sqlite3; c=sqlite3.connect("/tmp/piksel-x11/progress.sqlite3"); assert c.execute("SELECT COUNT(*) FROM paintings").fetchone()[0] == 900'
+          dnf remove -y piksel-atolyesi
+          test -f /tmp/piksel-x11/progress.sqlite3

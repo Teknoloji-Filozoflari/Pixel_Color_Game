@@ -1,8 +1,8 @@
 """Lightweight loading window: safe to import before NumPy and game modules."""
 from pathlib import Path
 
-from PySide6.QtCore import Qt, QTimer, QRectF
-from PySide6.QtGui import QColor, QPainter, QPixmap, QFont, QFontDatabase
+from PySide6.QtCore import QRectF, Qt, QTimer
+from PySide6.QtGui import QColor, QFont, QFontDatabase, QPainter, QPixmap
 from PySide6.QtWidgets import QWidget
 
 

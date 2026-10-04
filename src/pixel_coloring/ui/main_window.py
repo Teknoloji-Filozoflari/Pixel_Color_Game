@@ -28,7 +28,7 @@ from ..persistence.save_manager import SaveManager
 from ..services.library import delete_imported
 from .game import GameScreen
 from .home_actions import HomeAction
-from .i18n import LANGUAGES, set_language, tr, translate_error, painting_title
+from .i18n import LANGUAGES, painting_title, set_language, tr, translate_error
 from .widgets import button, label
 
 log = logging.getLogger(__name__)
