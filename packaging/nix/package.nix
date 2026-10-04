@@ -20,6 +20,11 @@ python3.pkgs.buildPythonApplication {
         && !(lib.hasSuffix ".pyc" name)
         && !(lib.hasSuffix ".sqlite3" name);
   };
+  # Nixpkgs provides the complete PySide6 distribution, including Essentials.
+  postPatch = ''
+    substituteInPlace pyproject.toml \
+      --replace-fail 'PySide6-Essentials>=6.8,<7' 'PySide6>=6.8,<7'
+  '';
   build-system = [ python3.pkgs.setuptools ];
   dependencies = with python3.pkgs; [ pyside6 numpy pillow ];
   nativeBuildInputs = [ qt6.wrapQtAppsHook ];

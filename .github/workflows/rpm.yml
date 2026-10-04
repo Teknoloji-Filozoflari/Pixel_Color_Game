@@ -24,7 +24,7 @@ jobs:
       - name: Install project and tools
         run: |
           python3 -m venv .venv
-          .venv/bin/python -m pip install -c packaging/constraints-linux.txt '.[dev]' PyInstaller
+          .venv/bin/python -m pip install -c requirements-tested.txt '.[dev]' 'PyInstaller==6.22.3'
       - name: Quality and bundle checks
         run: |
           .venv/bin/python -m ruff check src tests run.py packaging/build_bundle.py packaging/build_rpm.py
