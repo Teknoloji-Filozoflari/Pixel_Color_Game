@@ -36,7 +36,9 @@ jobs:
           from pathlib import Path
 
           output = Path('pytest-output.txt').read_text(encoding='utf-8', errors='replace')
-          summary = output[-3000:].replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+          failures = [line for line in output.splitlines() if line.startswith(('FAILED ', 'ERROR '))]
+          summary = ('\n'.join(failures) or output[-3000:])[:3000]
+          summary = summary.replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
           print(f'::error title=Python test failure::{summary}')
           PY
           fi

@@ -34,7 +34,7 @@ def stage_payload(stage: Path, bundle: Path) -> None:
 
 
 def main() -> None:
-    version = tomllib.loads((ROOT / "pyproject.toml").read_text())["project"]["version"]
+    version = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
     with TemporaryDirectory(prefix="piksel-rpm-") as temporary:
         top = Path(temporary)
         for name in ("BUILD", "BUILDROOT", "RPMS", "SOURCES", "SPECS", "SRPMS"):

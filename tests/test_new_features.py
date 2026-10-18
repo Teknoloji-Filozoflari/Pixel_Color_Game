@@ -375,7 +375,7 @@ def test_curated_facts_cover_both_categories_and_keep_existing_translations():
     from pixel_coloring.ui.artwork_info import FACTS, RESOURCE
     from pixel_coloring.ui.i18n import TRANSLATIONS
 
-    catalog = json.loads((RESOURCE.parent / 'paintings/catalog.json').read_text())
+    catalog = json.loads((RESOURCE.parent / 'paintings/catalog.json').read_text(encoding='utf-8'))
     ids = {entry['id'] for entry in catalog if entry['category'] in ('TÜRKİYE', 'Harikalar')}
     aliases = [id for fact in FACTS for id in fact['paintings']]
     assert len(aliases) == len(set(aliases))
