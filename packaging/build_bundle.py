@@ -6,6 +6,7 @@ import os
 import sqlite3
 import subprocess
 import sys
+from contextlib import closing
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -49,7 +50,7 @@ def main() -> int:
             [str(bundle / executable), "--smoke-test", "--data-dir", str(data)],
             env=environment, check=True, timeout=120,
         )
-        with sqlite3.connect(data / "progress.sqlite3") as database:
+        with closing(sqlite3.connect(data / "progress.sqlite3")) as database:
             if database.execute("SELECT COUNT(*) FROM paintings").fetchone()[0] != 900:
                 raise RuntimeError("Installed collection is incomplete")
     print(f"Verified bundle: {bundle}")
