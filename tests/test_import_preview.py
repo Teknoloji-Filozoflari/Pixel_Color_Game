@@ -17,13 +17,17 @@ def source(tmp_path):
 
 
 def wait_preview(app, dialog):
-    from PySide6.QtTest import QTest
-
     deadline = time.monotonic() + 8
     while dialog.painting is None and time.monotonic() < deadline:
         app.processEvents()
-        QTest.qWait(20)
-    assert dialog.painting is not None, dialog.status.text()
+        # qWait holds the GIL: a test can starve the Python conversion worker.
+        # Process Qt events, then yield to the worker as the real event loop does.
+        time.sleep(.01)
+    job = dialog.job
+    assert dialog.painting is not None, (
+        f'{dialog.status.text()} (revision={dialog.revision}, job_revision={dialog.job_revision}, '
+        f'job_done={job.done() if job is not None else None})'
+    )
 
 
 def test_preview_updates_size_colors_and_uses_exact_accepted_result(app, source):
