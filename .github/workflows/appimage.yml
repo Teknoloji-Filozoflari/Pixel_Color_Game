@@ -42,12 +42,14 @@ jobs:
 
       - name: Download and verify versioned AppImage tools
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           download_asset() {
             local repository=$1 tag=$2 asset=$3 output=$4 metadata url digest
-            metadata=$(curl --fail --location --retry 3 \
-              "https://api.github.com/repos/$repository/releases/tags/$tag")
+            metadata=$(gh api --hostname github.com \
+              "repos/$repository/releases/tags/$tag")
             url=$(jq -r --arg asset "$asset" \
               '.assets[] | select(.name == $asset) | .browser_download_url' \
               <<<"$metadata")
@@ -60,10 +62,10 @@ jobs:
             echo "${digest#sha256:}  $output" | sha256sum --check --strict
           }
           download_asset AppImage/appimagetool 1.9.1 \
-            appimagetool-x86_64.AppImage $RUNNER_TEMP/appimagetool-x86_64.AppImage
+            appimagetool-x86_64.AppImage "$RUNNER_TEMP/appimagetool-x86_64.AppImage"
           download_asset AppImage/type2-runtime 20251108 \
-            runtime-x86_64 $RUNNER_TEMP/runtime-x86_64
-          chmod +x $RUNNER_TEMP/appimagetool-x86_64.AppImage
+            runtime-x86_64 "$RUNNER_TEMP/runtime-x86_64"
+          chmod +x "$RUNNER_TEMP/appimagetool-x86_64.AppImage"
       - name: Build AppImage
         env:
           APPIMAGETOOL: ${{ runner.temp }}/appimagetool-x86_64.AppImage
