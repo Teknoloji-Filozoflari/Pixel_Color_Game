@@ -12,9 +12,9 @@ The application's GPL-3.0-or-later license does not replace third-party licenses
   Source: https://github.com/google/fonts/tree/main/ofl/notosans
 
 The portable distribution uses replaceable dynamic Qt libraries. No restriction is imposed on
-replacing those libraries or debugging modifications permitted by their licenses. Full application
-source is included. QML, development headers and unused tooling are omitted from the portable runtime.
-The sample service installs the bundled collection and contains legacy procedural sample code.
+replacing those libraries or debugging modifications permitted by their licenses. Matching application source is distributed as a source ZIP in the same GitHub Release.
+QML, development headers and unused tooling are omitted from the portable runtime.
+The sample service installs the bundled collection without changing saved progress.
 
 The 900 gallery paintings in `resources/paintings` were created with OpenAI image generation
 for this project and converted to indexed color-by-number level data. They do not use the user's

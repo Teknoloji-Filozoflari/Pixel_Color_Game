@@ -1,5 +1,5 @@
 name: piksel-atolyesi
-version: '0.16.1'
+version: '0.17.0'
 base: core24
 summary: Çevrim dışı piksel boyama oyunu
 description: |
@@ -7,7 +7,7 @@ description: |
   otomatik kayıt ile Türkçe numaraya göre boyama oyunu.
 grade: devel
 confinement: strict
-license: MIT
+license: GPL-3.0-or-later
 platforms:
   amd64:
 

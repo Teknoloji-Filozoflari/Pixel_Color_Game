@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pixel-coloring"
-version = "0.16.1"
+version = "0.17.0"
 description = "Piksel Atolyesi — a desktop color-by-number game"
 readme = "README.md"
 license = "GPL-3.0-or-later"
@@ -22,7 +22,7 @@ pixel-coloring = "pixel_coloring.app:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-pixel_coloring = ["resources/fonts/*", "resources/paintings/*.pcolor", "resources/paintings/*.json", "resources/icons/*", "resources/translations.json", "resources/painting_titles.json", "resources/painting_meanings.json"]
+pixel_coloring = ["resources/fonts/*", "resources/paintings/*.pcolor", "resources/paintings/*.json", "resources/icons/*", "resources/translations.json", "resources/painting_titles.json", "resources/painting_meanings.json", "resources/artwork_facts.json"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

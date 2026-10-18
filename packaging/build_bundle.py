@@ -1,4 +1,4 @@
-"""Build and verify the Python/Qt bundle used by RPM and Snap packages."""
+"""Build and verify the Python/Qt bundle used by Windows, RPM and Snap."""
 
 import argparse
 import json
@@ -37,14 +37,16 @@ def main() -> int:
          str(ROOT / "packaging/appimage/piksel-atolyesi.spec")],
         cwd=ROOT, check=True,
     )
-    bundle = args.dist_dir.resolve() / "piksel-atolyesi"
+    name = "Piksel-Atolyesi" if sys.platform == "win32" else "piksel-atolyesi"
+    executable = name + (".exe" if sys.platform == "win32" else "")
+    bundle = args.dist_dir.resolve() / name
     validate_resources(bundle)
     with TemporaryDirectory(prefix="piksel-bundle-smoke-") as temporary:
         data = Path(temporary)
         environment = os.environ.copy()
         environment["QT_QPA_PLATFORM"] = "offscreen"
         subprocess.run(
-            [str(bundle / "piksel-atolyesi"), "--smoke-test", "--data-dir", str(data)],
+            [str(bundle / executable), "--smoke-test", "--data-dir", str(data)],
             env=environment, check=True, timeout=120,
         )
         with sqlite3.connect(data / "progress.sqlite3") as database:

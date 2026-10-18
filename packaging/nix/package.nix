@@ -60,7 +60,7 @@ python3.pkgs.buildPythonApplication {
   meta = {
     description = "Offline pixel painting game with 900 bundled paintings";
     homepage = "https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game";
-    license = lib.licenses.mit;
+    license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;
     mainProgram = "piksel-atolyesi";
   };

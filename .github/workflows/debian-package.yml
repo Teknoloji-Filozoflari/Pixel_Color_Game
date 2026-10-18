@@ -17,10 +17,15 @@ jobs:
           docker build -f packaging/deb/Dockerfile -t piksel-atolyesi-deb .
           mkdir -p dist
           docker run --rm -v "$PWD/dist:/output" piksel-atolyesi-deb /bin/sh -c 'cp /src/dist/*.deb /output/'
+      - name: Create checksums
+        working-directory: dist
+        run: sha256sum ./*.deb > SHA256SUMS
       - uses: actions/upload-artifact@v4
         with:
           name: piksel-atolyesi-debian-amd64
-          path: dist/*.deb
+          path: |
+            dist/*.deb
+            dist/SHA256SUMS
           if-no-files-found: error
   install:
     needs: build

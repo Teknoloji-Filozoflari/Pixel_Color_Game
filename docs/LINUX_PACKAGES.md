@@ -1,6 +1,6 @@
 # Linux paketleri
 
-[v0.16.1 sürümünü indir](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.16.1).
+[v0.17.0 sürümünü indir](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/tag/v0.17.0).
 900 resim, fontlar, ikonlar ve lisans belgeleri paketlere dahil edilir.
 Paketler kişisel boyama ilerlemesi içermez; kayıtlar kullanıcı veri dizinine yazılır.
 
@@ -11,14 +11,14 @@ glibc 2.35 veya üzeri gerekir. Python, NumPy, Pillow ve Qt paketin içindedir.
 Sistemin EGL/OpenGL sürücü kitaplıkları kullanılır.
 
 ```bash
-chmod +x Piksel-Atolyesi-0.16.1-x86_64.AppImage
-./Piksel-Atolyesi-0.16.1-x86_64.AppImage
+chmod +x Piksel-Atolyesi-0.17.0-x86_64.AppImage
+./Piksel-Atolyesi-0.17.0-x86_64.AppImage
 ```
 
 FUSE bulunmuyorsa:
 
 ```bash
-APPIMAGE_EXTRACT_AND_RUN=1 ./Piksel-Atolyesi-0.16.1-x86_64.AppImage
+APPIMAGE_EXTRACT_AND_RUN=1 ./Piksel-Atolyesi-0.17.0-x86_64.AppImage
 ```
 
 Ubuntu'da Qt sürücü kitaplıkları gerektiğinde `sudo apt install libegl1 libgl1
@@ -32,7 +32,7 @@ amd64 üzerinde temiz kurulum, offscreen ve X11 açılışı kontrol edilir.
 glibc 2.36+ gerekir. Pardus masaüstü ayrıca doğrulanmalıdır.
 
 ```bash
-sudo apt install ./piksel-atolyesi_0.16.1-1_amd64.deb
+sudo apt install ./piksel-atolyesi_0.17.0-1_amd64.deb
 ```
 
 `apt` sistem bağımlılıklarını kurar. Paket kaldırıldığında oyun kayıtları korunur.
@@ -46,7 +46,7 @@ glibc 2.42+ gerekir. Eski Fedora veya openSUSE üzerinde aynı dosyanın
 uyumlu olduğu varsayılmaz.
 
 ```bash
-sudo dnf install ./piksel-atolyesi-0.16.1-1.fc43.x86_64.rpm
+sudo dnf install ./piksel-atolyesi-0.17.0-1.fc43.x86_64.rpm
 ```
 
 Python/Qt özel `/usr/lib/piksel-atolyesi` bundle'ında bulunur; bu kütüphaneler
@@ -70,7 +70,7 @@ core24 tabanlı amd64 paket strict confinement kullanır. GitHub dosyası
 Snap Store imzası taşımadığı için yerel kurulum komutu şöyledir:
 
 ```bash
-sudo snap install --dangerous ./piksel-atolyesi_0.16.1_amd64.snap
+sudo snap install --dangerous ./piksel-atolyesi_0.17.0_amd64.snap
 piksel-atolyesi
 ```
 
@@ -92,13 +92,13 @@ Yerel üretimde de bundle hazırlandıktan sonra `snapcraft` çalıştırılmal�
 Flake desteği etkin Nix ile:
 
 ```bash
-nix run github:Teknoloji-Filozoflari/Pixel_Color_Game/v0.16.1
-nix profile install github:Teknoloji-Filozoflari/Pixel_Color_Game/v0.16.1
+nix run github:Teknoloji-Filozoflari/Pixel_Color_Game/v0.17.0
+nix profile install github:Teknoloji-Filozoflari/Pixel_Color_Game/v0.17.0
 ```
 
 Flake komutları kapalıysa NixOS yapılandırmasında
 `nix.settings.experimental-features = [ "nix-command" "flakes" ];` etkinleştirilir.
-Sistem flake'ine `inputs.piksel.url = "github:Teknoloji-Filozoflari/Pixel_Color_Game/v0.16.1";`
+Sistem flake'ine `inputs.piksel.url = "github:Teknoloji-Filozoflari/Pixel_Color_Game/v0.17.0";`
 eklenip `piksel.packages.x86_64-linux.default` sistem paketlerine veya Home Manager
 `home.packages` listesine dahil edilebilir.
 
@@ -126,4 +126,4 @@ Her paket üretiminde Ruff, pytest ve açılış kontrolleri çalışır.
 Build ve bütün temiz kurulum job'ları başarıyla tamamlanmadan paket yayımlanmaz.
 Yayın workflow'u başarılı koşuların artifact'lerini, temiz kaynak ZIP'ini,
 Python wheel/sdist dosyalarını ve tüm dosyalar için SHA256SUMS'u aynı sürüme ekler.
-Mevcut v0.16.0 sürümü korunur; AUR işlemi yapılmaz.
+Önceki sürümler korunur. Windows dahil aynı commit’te doğrulanan paketler birlikte yayınlanır; ayrıntılar [yayın rehberinde](GITHUB_SETUP.md).

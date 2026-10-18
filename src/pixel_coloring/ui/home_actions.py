@@ -11,7 +11,8 @@ class HomeAction(QPushButton):
         self.setToolTip(caption)
         self.setAccessibleName(caption)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
-        self.clicked.connect(callback)
+        if callback is not None:
+            self.clicked.connect(callback)
 
     def paintEvent(self, event):
         super().paintEvent(event)

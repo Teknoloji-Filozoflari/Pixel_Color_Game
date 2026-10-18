@@ -148,39 +148,43 @@ class Palette(QWidget):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         p = self.session.painting
-        for i, rgb in enumerate(p.palette):
-            x, y = i % self.columns * self.cell, i // self.columns * self.cell
+        for slot, i in enumerate(self.session.palette_order):
+            rgb = p.palette[i]
+            x, y = slot % self.columns * self.cell, slot // self.columns * self.cell
             color = QColor(*[int(v) for v in rgb])
             painter.setBrush(color)
-            painter.setPen(
-                QPen(
-                    QColor("#F6F1E9") if i == self.session.selected else QColor("#505965"),
-                    3 if i == self.session.selected else 1,
-                )
-            )
+            painter.setPen(QPen(QColor('#F6F1E9') if i == self.session.selected else QColor('#505965'),
+                                3 if i == self.session.selected else 1))
             painter.drawRoundedRect(QRectF(x + 4, y + 4, 36, 36), 8, 8)
-            painter.setPen(QColor("#161B23") if color.lightness() > 145 else QColor("#FFFFFF"))
+            painter.setPen(QColor('#161B23') if color.lightness() > 145 else QColor('#FFFFFF'))
             if p.counts[i] == p.totals[i]:
                 painter.drawLine(x + 13, y + 22, x + 20, y + 29)
                 painter.drawLine(x + 20, y + 29, x + 31, y + 15)
             else:
-                painter.drawText(QRectF(x + 4, y + 4, 36, 36), Qt.AlignmentFlag.AlignCenter, str(i + 1))
+                painter.drawText(QRectF(x + 4, y + 4, 36, 36), Qt.AlignmentFlag.AlignCenter, str(slot + 1))
         painter.end()
 
     def index_at(self, pos):
-        return int(pos.y()) // self.cell * self.columns + int(pos.x()) // self.cell
+        if not (0 <= pos.x() < self.width() and 0 <= pos.y() < self.height()):
+            return None
+        slot = int(pos.y()) // self.cell * self.columns + int(pos.x()) // self.cell
+        if slot < len(self.session.palette_order):
+            return self.session.palette_order[slot]
+        return None
 
     def mousePressEvent(self, event):
         i = self.index_at(event.position())
-        if event.button() == Qt.MouseButton.LeftButton and i < len(self.session.painting.palette):
+        if event.button() == Qt.MouseButton.LeftButton and i is not None:
             self.selected.emit(i)
 
     def mouseMoveEvent(self, event):
         i = self.index_at(event.position())
         p = self.session.painting
-        if i < len(p.palette):
-            self.setToolTip(tr('Renk {number} · {remaining} hücre kaldı', number=i+1,
+        if i is not None:
+            self.setToolTip(tr('Renk {number} · {remaining} hücre kaldı', number=self.session.color_numbers[i],
                                remaining=number(int(p.totals[i] - p.counts[i]))))
+        else:
+            self.setToolTip('')
 
 
 class Minimap(QWidget):

@@ -1,6 +1,5 @@
 import io
 import json
-import os
 import zipfile
 from pathlib import Path
 
@@ -94,16 +93,6 @@ def test_bundle_install_preserves_saved_progress_and_exports(tmp_path):
         saver.close()
 
 
-@pytest.fixture(scope='module')
-def app():
-    os.environ.setdefault('QT_QPA_PLATFORM', 'offscreen')
-    from PySide6.QtWidgets import QApplication
-
-    from pixel_coloring.ui.theme import apply_theme
-    application = QApplication.instance() or QApplication([])
-    apply_theme(application)
-    yield application
-
 
 def test_five_languages_and_user_titles(app):
     from pixel_coloring.ui.i18n import LANGUAGES, painting_meaning, painting_title, set_language, tr
@@ -173,7 +162,7 @@ def test_pixel_count_selector_and_painted_percentage(app, tmp_path):
 
     p = Painting('status-test', 'Status', np.array([[10, 20, 30], [40, 50, 60]]),
                  np.array([[0, 0], [1, 1]]))
-    session = GameSession(p)
+    session = GameSession(p, selected=0)
     session.engine.paint_cell(0, 0, 0)
     session.engine.paint_cell(0, 1, 1)
     settings = {'progress_mode': 'remaining'}

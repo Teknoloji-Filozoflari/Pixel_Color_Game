@@ -27,6 +27,19 @@ class ViewButton(QPushButton):
             for p in (15, 27):
                 q.drawLine(p, 9, p, 31)
                 q.drawLine(10, p-1, 32, p-1)
+        elif self.kind == 'appearance':
+            for y, x in ((12, 18), (20, 27), (28, 15)):
+                q.drawLine(10, y, 32, y)
+                q.setBrush(self.palette().button())
+                q.drawEllipse(QRectF(x - 3, y - 3, 6, 6))
+                q.setBrush(Qt.BrushStyle.NoBrush)
+        elif self.kind == 'info':
+            q.drawEllipse(QRectF(11, 10, 20, 20))
+            q.drawPoint(21, 15)
+            q.drawLine(21, 19, 21, 26)
+        elif self.kind == 'recording':
+            q.drawRoundedRect(QRectF(10, 11, 22, 18), 3, 3)
+            q.drawEllipse(QRectF(17, 16, 8, 8))
         elif self.kind == 'highlight':
             q.drawRect(QRectF(11, 10, 20, 20))
             for offset in (0, 6, 12):

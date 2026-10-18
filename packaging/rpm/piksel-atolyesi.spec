@@ -7,7 +7,7 @@ Name: piksel-atolyesi
 Version: %{app_version}
 Release: 1%{?dist}
 Summary: Offline color-by-number desktop game
-License: MIT
+License: GPL-3.0-or-later
 URL: https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game
 Source0: payload.tar.gz
 Requires: glibc >= 2.42

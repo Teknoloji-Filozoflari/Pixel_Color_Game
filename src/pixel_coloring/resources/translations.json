@@ -335,11 +335,11 @@
     "es": "Flechas",
     "ru": "Клавиши со стрелками"
   },
-  "Resimde gezin; basılı tutarak devam et.": {
-    "en": "Move around the picture; hold to keep moving.",
-    "az": "Şəkildə hərəkət et; davam etmək üçün basılı saxla.",
-    "es": "Desplázate por la imagen; mantén pulsado para continuar.",
-    "ru": "Перемещайтесь по картинке; удерживайте для продолжения."
+  "Her basışta bir kare ilerle; basılı tutarak devam et.": {
+    "en": "Move one cell per press; hold to keep moving.",
+    "az": "Hər basışda bir xana irəlilə; davam etmək üçün basılı saxla.",
+    "es": "Avanza una celda por pulsación; mantén pulsado para continuar.",
+    "ru": "Одна клетка за нажатие; удерживайте для продолжения."
   },
   "Boyama ilerlemesini kaydet.": {
     "en": "Save coloring progress.",
@@ -785,11 +785,11 @@
     "es": "Falló el último guardado:\n{error}\nComprueba el acceso al disco e inténtalo de nuevo. El juego sigue abierto.",
     "ru": "Не удалось сохранить:\n{error}\nПроверьте доступ к диску и повторите попытку. Игра остаётся открытой."
   },
-  "Kısayollar: Ctrl+S kaydet\nF sığdır · G ızgara · M mini harita · Ok tuşları: resimde gezin\nSağ tık: hücrenin rengini seç · Toplu boya: bitişik alanı doldur\nOrta fare: taşı · Tekerlek: yakınlaştır": {
-    "en": "Shortcuts: Ctrl+S save\nF fit · G grid · M minimap · Arrow keys: navigate\nRight-click: pick cell color · Fill: connected area\nMiddle mouse: pan · Wheel: zoom",
-    "az": "Qısayollar: Ctrl+S yadda saxla\nF sığdır · G tor · M mini xəritə · Oxlar: hərəkət\nSağ klik: xananın rəngini seç · Doldur: bitişik sahə\nOrta düymə: hərəkət etdir · Çarx: miqyas",
-    "es": "Atajos: Ctrl+S guardar\nF ajustar · G cuadrícula · M minimapa · Flechas: mover\nClic derecho: elegir color · Relleno: área contigua\nBotón central: mover · Rueda: zoom",
-    "ru": "Клавиши: Ctrl+S сохранить\nF вписать · G сетка · M мини-карта · Стрелки: перемещение\nПравая кнопка: выбрать цвет · Заливка: смежная область\nСредняя кнопка: перемещение · Колесо: масштаб"
+  "Kısayollar: Ctrl+S kaydet\nF sığdır · G ızgara · M mini harita · Ok tuşları: bir kare ilerle\nSağ tık: hücrenin rengini seç · Toplu boya: bitişik alanı doldur\nOrta fare: taşı · Tekerlek: yakınlaştır": {
+    "en": "Shortcuts: Ctrl+S save\nF fit · G grid · M minimap · Arrow keys: move one cell\nRight-click: pick cell color · Fill: connected area\nMiddle mouse: pan · Wheel: zoom",
+    "az": "Qısayollar: Ctrl+S yadda saxla\nF sığdır · G tor · M mini xəritə · Oxlar: bir xana irəlilə\nSağ klik: xananın rəngini seç · Doldur: bitişik sahə\nOrta düymə: hərəkət etdir · Çarx: miqyas",
+    "es": "Atajos: Ctrl+S guardar\nF ajustar · G cuadrícula · M minimapa · Flechas: mover una celda\nClic derecho: elegir color · Relleno: área contigua\nBotón central: mover · Rueda: zoom",
+    "ru": "Клавиши: Ctrl+S сохранить\nF вписать · G сетка · M мини-карта · Стрелки: одна клетка\nПравая кнопка: выбрать цвет · Заливка: смежная область\nСредняя кнопка: перемещение · Колесо: масштаб"
   },
   "Resim en fazla 1920 × 1080 piksel olabilir. Seçilen resim: {width} × {height}.": {
     "en": "Pictures must not exceed 1920 × 1080 pixels. Selected: {width} × {height}.",
@@ -868,5 +868,569 @@
     "az": "Avtomobillər",
     "es": "Coches",
     "ru": "Автомобили"
+  },
+  "İptal": {
+    "en": "Cancel",
+    "az": "Ləğv et",
+    "es": "Cancelar",
+    "ru": "Отмена"
+  },
+  "Resmini hazırla": {
+    "en": "Prepare your picture",
+    "az": "Şəklini hazırla",
+    "es": "Prepara tu imagen",
+    "ru": "Подготовьте картинку"
+  },
+  "Renk ve piksel ayarlarını önizle": {
+    "en": "Preview color and pixel settings",
+    "az": "Rəng və piksel ayarlarına önbaxış",
+    "es": "Vista previa de colores y píxeles",
+    "ru": "Предпросмотр цветов и размера"
+  },
+  "Özgün boyut: {width} × {height}": {
+    "en": "Original size: {width} × {height}",
+    "az": "İlkin ölçü: {width} × {height}",
+    "es": "Tamaño original: {width} × {height}",
+    "ru": "Исходный размер: {width} × {height}"
+  },
+  "Genişlik": {
+    "en": "Width",
+    "az": "En",
+    "es": "Ancho",
+    "ru": "Ширина"
+  },
+  "Yükseklik": {
+    "en": "Height",
+    "az": "Hündürlük",
+    "es": "Alto",
+    "ru": "Высота"
+  },
+  "Renk sayısı": {
+    "en": "Color count",
+    "az": "Rəng sayı",
+    "es": "Número de colores",
+    "ru": "Число цветов"
+  },
+  "En boy oranını koru": {
+    "en": "Keep aspect ratio",
+    "az": "Tərəf nisbətini saxla",
+    "es": "Mantener proporciones",
+    "ru": "Сохранять пропорции"
+  },
+  "Renk sayısını otomatik seç": {
+    "en": "Choose color count automatically",
+    "az": "Rəng sayını avtomatik seç",
+    "es": "Elegir colores automáticamente",
+    "ru": "Автоматическое число цветов"
+  },
+  "Özgün resim": {
+    "en": "Original picture",
+    "az": "İlkin şəkil",
+    "es": "Imagen original",
+    "ru": "Исходная картинка"
+  },
+  "Boyama önizlemesi": {
+    "en": "Painting preview",
+    "az": "Boyama önbaxışı",
+    "es": "Vista previa para colorear",
+    "ru": "Предпросмотр раскраски"
+  },
+  "Koleksiyona ekle": {
+    "en": "Add to collection",
+    "az": "Kolleksiyaya əlavə et",
+    "es": "Añadir a la colección",
+    "ru": "Добавить в коллекцию"
+  },
+  "Önizleme hazırlanıyor…": {
+    "en": "Preparing preview…",
+    "az": "Önbaxış hazırlanır…",
+    "es": "Preparando vista previa…",
+    "ru": "Подготовка предпросмотра…"
+  },
+  "Önizleme hazırlanamadı: {error}": {
+    "en": "Could not prepare preview: {error}",
+    "az": "Önbaxış hazırlana bilmədi: {error}",
+    "es": "No se pudo preparar la vista previa: {error}",
+    "ru": "Не удалось подготовить предпросмотр: {error}"
+  },
+  "Önizleme: {width} × {height} · {colors} renk · {cells} hücre": {
+    "en": "Preview: {width} × {height} · {colors} colors · {cells} cells",
+    "az": "Önbaxış: {width} × {height} · {colors} rəng · {cells} xana",
+    "es": "Vista previa: {width} × {height} · {colors} colores · {cells} celdas",
+    "ru": "Предпросмотр: {width} × {height} · {colors} цветов · {cells} клеток"
+  },
+  "Resim boyutları sıfırdan büyük olmalı.": {
+    "en": "Picture dimensions must be positive.",
+    "az": "Şəklin ölçüləri sıfırdan böyük olmalıdır.",
+    "es": "Las dimensiones deben ser mayores que cero.",
+    "ru": "Размеры картинки должны быть положительными."
+  },
+  "Önizlemede piksel boyutunu ve renk sayısını ayarlayabilirsin. Her piksel bir boyama hücresi olur; küçük resimler daha kolay tamamlanır.": {
+    "en": "Adjust pixel dimensions and color count in the preview. Each pixel becomes one cell; smaller pictures are easier to complete.",
+    "az": "Önbaxışda piksel ölçüsünü və rəng sayını dəyişə bilərsən. Hər piksel bir xana olur; kiçik şəkillər daha asan tamamlanır.",
+    "es": "Ajusta el tamaño y los colores en la vista previa. Cada píxel será una celda; las imágenes pequeñas son más fáciles de terminar.",
+    "ru": "Настройте размер и число цветов в предпросмотре. Каждый пиксель станет клеткой; маленькие картинки проще завершить."
+  },
+  "Renk sayısını otomatik seçebilir veya 2–256 arasında ayarlayabilirsin. Özgün resim ve boyama önizlemesi yan yana gösterilir. Şeffaf alanlar beyaz olur. .pcolor dosyalarının hazır paleti korunur.": {
+    "en": "Choose colors automatically or set 2–256 colors. Original and converted previews appear side by side. Transparency becomes white. Existing .pcolor palettes are preserved.",
+    "az": "Rəng sayını avtomatik və ya 2–256 aralığında seç. İlkin şəkil və boyama önbaxışı yan-yana göstərilir. Şəffaf sahələr ağ olur. .pcolor palitraları saxlanılır.",
+    "es": "Elige los colores automáticamente o entre 2 y 256. Las vistas original y convertida aparecen juntas. La transparencia se vuelve blanca. Se conserva la paleta de archivos .pcolor.",
+    "ru": "Выберите число цветов автоматически или от 2 до 256. Исходник и результат показаны рядом. Прозрачность заменяется белым. Палитра файлов .pcolor сохраняется."
+  },
+  "Boyama boyutu en fazla 1920 × 1080 piksel olabilir. Daha büyük resimleri önizlemede küçültebilirsin.": {
+    "en": "The painting can be up to 1920 × 1080 pixels. Resize larger pictures in the preview.",
+    "az": "Boyama ölçüsü ən çox 1920 × 1080 piksel ola bilər. Böyük şəkilləri önbaxışda kiçildə bilərsən.",
+    "es": "La imagen para colorear puede tener hasta 1920 × 1080 píxeles. Reduce las imágenes grandes en la vista previa.",
+    "ru": "Размер раскраски — до 1920 × 1080 пикселей. Большие картинки можно уменьшить в предпросмотре."
+  },
+  "Resim koleksiyona ekleniyor…": {
+    "en": "Adding picture to collection…",
+    "az": "Şəkil kolleksiyaya əlavə olunur…",
+    "es": "Añadiendo imagen a la colección…",
+    "ru": "Добавление картинки в коллекцию…"
+  },
+  "Ayasofya, İstanbul’da 6. yüzyılda inşa edildi. Tarihî yarımada, Bizans ve Osmanlı mimarisinin eserlerini bir arada barındırır.": {
+    "en": "Hagia Sophia was built in Istanbul in the sixth century. The historic peninsula brings together Byzantine and Ottoman architecture.",
+    "az": "Ayasofya İstanbulda VI əsrdə inşa edilib. Tarixi yarımada Bizans və Osmanlı memarlığının əsərlərini birləşdirir.",
+    "es": "Santa Sofía se construyó en Estambul en el siglo VI. La península histórica reúne arquitectura bizantina y otomana.",
+    "ru": "Айя-София построена в Стамбуле в VI веке. Исторический полуостров объединяет памятники византийской и османской архитектуры."
+  },
+  "Sultanahmet Camii, 17. yüzyıl Osmanlı mimarisinin İstanbul’un tarihî silüetini oluşturan örneklerindendir.": {
+    "en": "The Blue Mosque is a seventeenth-century Ottoman monument in Istanbul’s historic skyline.",
+    "az": "Sultanahmet məscidi İstanbulun tarixi siluetində XVII əsr Osmanlı memarlığının nümunəsidir.",
+    "es": "La Mezquita Azul es un monumento otomano del siglo XVII en el perfil histórico de Estambul.",
+    "ru": "Голубая мечеть — османский памятник XVII века, формирующий исторический силуэт Стамбула."
+  },
+  "Kapadokya’nın peribacaları erozyonla şekillendi. Göreme çevresinde kayaya oyulmuş yapılar ve yeraltı yerleşimleri bulunur.": {
+    "en": "Cappadocia’s fairy chimneys were shaped by erosion. Around Göreme are rock-cut buildings and underground settlements.",
+    "az": "Kapadokiyanın pəri bacaları eroziya ilə formalaşıb. Görəmə ətrafında qayaya oyulmuş tikililər və yeraltı yaşayış məntəqələri var.",
+    "es": "La erosión modeló las chimeneas de hadas de Capadocia. Alrededor de Göreme hay edificios excavados y asentamientos subterráneos.",
+    "ru": "Эрозия сформировала скальные столбы Каппадокии. Вокруг Гёреме находятся высеченные в скалах здания и подземные поселения."
+  },
+  "Pamukkale’nin basamaklı travertenleri, kalsit taşıyan kaynak sularının birikimleriyle oluştu. Yanındaki Hierapolis antik bir kaplıca kentiydi.": {
+    "en": "Pamukkale’s terraces formed from calcite deposits carried by spring water. Nearby Hierapolis was an ancient spa town.",
+    "az": "Pamukkalənin terrasları bulaq sularının gətirdiyi kalsit çöküntülərindən yaranıb. Yaxınlıqdakı Hierapolis qədim kurort şəhəri idi.",
+    "es": "Las terrazas de Pamukkale se formaron por depósitos de calcita de los manantiales. Hierápolis fue una antigua ciudad termal.",
+    "ru": "Террасы Памуккале образованы отложениями кальцита из родниковой воды. Соседний Иераполис был древним курортным городом."
+  },
+  "Nemrut Dağı’ndaki anıt mezar, Kommagene Kralı I. Antiochos’a aittir. Anıtlar, Yunan ve Pers kültürlerinin birleşimini yansıtır.": {
+    "en": "The mausoleum on Mount Nemrut belongs to Antiochus I of Commagene. Its monuments combine Greek and Persian cultural traditions.",
+    "az": "Nəmrud dağındakı məqbərə Kommagena kralı I Antioxosa aiddir. Abidələr Yunan və fars mədəniyyətlərini birləşdirir.",
+    "es": "El mausoleo del monte Nemrut pertenece a Antíoco I de Comagene. Sus monumentos combinan tradiciones griegas y persas.",
+    "ru": "Мавзолей на горе Немрут принадлежит Антиоху I Коммагенскому. Памятники объединяют греческие и персидские культурные традиции."
+  },
+  "Edirne’deki Selimiye Külliyesi, Mimar Sinan’ın eseridir. Tek büyük kubbesi, dört minaresi ve İznik çinileriyle tanınır.": {
+    "en": "The Selimiye complex in Edirne was designed by Sinan. It has one great dome, four minarets and Iznik tiles.",
+    "az": "Ədirnədəki Səlimiyə kompleksi Memar Sinanın əsəridir. Böyük günbəzi, dörd minarəsi və İznik kaşıları ilə tanınır.",
+    "es": "El conjunto de Selimiye, en Edirne, es obra de Sinan. Tiene una gran cúpula, cuatro minaretes y azulejos de İznik.",
+    "ru": "Комплекс Селимие в Эдирне создан Синаном. Он отличается большим куполом, четырьмя минаретами и изникскими изразцами."
+  },
+  "Efes, Roma döneminin liman kentlerinden biriydi. Celsus Kütüphanesi ve Büyük Tiyatro, kentteki önemli Roma anıtları arasındadır.": {
+    "en": "Ephesus was a Roman port city. The Library of Celsus and the Great Theatre are among its major Roman monuments.",
+    "az": "Efes Roma dövrünün liman şəhərlərindən idi. Sels kitabxanası və Böyük Teatr şəhərin mühüm Roma abidələrindəndir.",
+    "es": "Éfeso fue una ciudad portuaria romana. La Biblioteca de Celso y el Gran Teatro destacan entre sus monumentos romanos.",
+    "ru": "Эфес был римским портовым городом. Библиотека Цельса и Большой театр относятся к его главным римским памятникам."
+  },
+  "Göbeklitepe’nin anıtsal yapıları MÖ 9600–8200 dönemine tarihlenir. T biçimli dikilitaşların üzerinde yabani hayvan betimleri bulunur.": {
+    "en": "Göbekli Tepe’s monumental structures date to 9600–8200 BCE. Its T-shaped pillars feature carvings of wild animals.",
+    "az": "Göbəklitəpənin monumental tikililəri e.ə. 9600–8200-cü illərə aiddir. T formalı sütunlarında vəhşi heyvan təsvirləri var.",
+    "es": "Las estructuras monumentales de Göbekli Tepe datan de 9600–8200 a. C. Sus pilares en T muestran animales salvajes tallados.",
+    "ru": "Монументальные сооружения Гёбекли-Тепе датируются 9600–8200 годами до н. э. На Т-образных столбах вырезаны дикие животные."
+  },
+  "Tac Mahal, Agra’da Şah Cihan’ın eşinin anısına yaptırdığı beyaz mermer bir anıt mezardır. İnşası 1631–1648 arasında gerçekleşti.": {
+    "en": "The Taj Mahal is a white-marble mausoleum in Agra, commissioned by Shah Jahan in memory of his wife, built in 1631–1648.",
+    "az": "Tac Mahal Aqrada Şah Cahanın həyat yoldaşının xatirəsinə tikdirdiyi ağ mərmər məqbərədir. 1631–1648-ci illərdə inşa edilib.",
+    "es": "El Taj Mahal es un mausoleo de mármol blanco en Agra, encargado por Shah Jahan en memoria de su esposa entre 1631 y 1648.",
+    "ru": "Тадж-Махал — беломраморный мавзолей в Агре, построенный в 1631–1648 годах по заказу Шах-Джахана в память о жене."
+  },
+  "Machu Picchu, And Dağları’nda deniz seviyesinden 2430 metre yüksekte bir İnka yerleşimidir. Taş yapıları ve terasları dağlık araziyle bütünleşir.": {
+    "en": "Machu Picchu is an Inca settlement 2,430 metres above sea level in the Andes. Its stone buildings and terraces follow the mountain terrain.",
+    "az": "Maçu Pikçu And dağlarında dəniz səviyyəsindən 2430 metr yüksəklikdə İnka məskənidir. Daş tikililəri və terrasları dağlıq əraziyə uyğunlaşır.",
+    "es": "Machu Picchu es un asentamiento inca a 2430 metros de altitud en los Andes. Sus edificios y terrazas se integran en el terreno montañoso.",
+    "ru": "Мачу-Пикчу — поселение инков в Андах на высоте 2430 метров. Каменные здания и террасы вписаны в горный рельеф."
+  },
+  "Petra, kayaya oyulmuş yapılarıyla tanınan bir Nebati kentidir. Antik dönemde farklı bölgeleri birbirine bağlayan kervan yollarının kavşağındaydı.": {
+    "en": "Petra is a Nabataean city known for its rock-cut buildings. In antiquity it stood at a crossroads of regional caravan routes.",
+    "az": "Petra qayaya oyulmuş tikililəri ilə tanınan Nəbati şəhəridir. Qədimdə müxtəlif bölgələrin karvan yollarının qovşağında yerləşirdi.",
+    "es": "Petra es una ciudad nabatea conocida por sus edificios excavados en roca. Fue un cruce de rutas de caravanas en la Antigüedad.",
+    "ru": "Петра — набатейский город со зданиями, высеченными в скалах. В древности здесь пересекались караванные пути разных регионов."
+  },
+  "Çin Seddi, farklı dönemlerde inşa edilen savunma yapılarından oluşur. Eski duvarların birleştirilmesiyle başlayan çalışmalar Ming dönemine kadar sürdü.": {
+    "en": "The Great Wall combines defences built in different periods. Construction that joined earlier walls continued through the Ming dynasty.",
+    "az": "Böyük Çin səddi müxtəlif dövrlərdə tikilmiş müdafiə qurğularından ibarətdir. Əvvəlki divarları birləşdirən tikinti Min sülaləsinədək davam edib.",
+    "es": "La Gran Muralla reúne defensas de distintas épocas. La construcción que unió muros anteriores continuó hasta la dinastía Ming.",
+    "ru": "Великая Китайская стена объединяет укрепления разных эпох. Работы по соединению ранних стен продолжались до династии Мин."
+  },
+  "Hücre numaraları": {
+    "en": "Cell numbers",
+    "az": "Hüceyrə nömrələri",
+    "es": "Números de celdas",
+    "ru": "Номера ячеек"
+  },
+  "Tamamlanma animasyonu": {
+    "en": "Completion animation",
+    "az": "Tamamlanma animasiyası",
+    "es": "Animación al completar",
+    "ru": "Анимация завершения"
+  },
+  "Numara boyutu": {
+    "en": "Number size",
+    "az": "Nömrə ölçüsü",
+    "es": "Tamaño de números",
+    "ru": "Размер номеров"
+  },
+  "Izgara kalınlığı": {
+    "en": "Grid thickness",
+    "az": "Tor qalınlığı",
+    "es": "Grosor de cuadrícula",
+    "ru": "Толщина сетки"
+  },
+  "Varsayılan görünüm": {
+    "en": "Default appearance",
+    "az": "Standart görünüş",
+    "es": "Aspecto predeterminado",
+    "ru": "Вид по умолчанию"
+  },
+  "Görünüm ayarları": {
+    "en": "Appearance settings",
+    "az": "Görünüş ayarları",
+    "es": "Ajustes de aspecto",
+    "ru": "Настройки вида"
+  },
+  "Boyama kaydı · GIF": {
+    "en": "Painting recording · GIF",
+    "az": "Boyama qeydi · GIF",
+    "es": "Grabación de pintura · GIF",
+    "ru": "Запись раскрашивания · GIF"
+  },
+  "Kaydı başlat / sürdür": {
+    "en": "Start / resume recording",
+    "az": "Qeydə başla / davam et",
+    "es": "Iniciar / reanudar grabación",
+    "ru": "Начать / продолжить запись"
+  },
+  "Kaydı duraklat": {
+    "en": "Pause recording",
+    "az": "Qeydi dayandır",
+    "es": "Pausar grabación",
+    "ru": "Приостановить запись"
+  },
+  "GIF olarak kaydet": {
+    "en": "Save as GIF",
+    "az": "GIF olaraq saxla",
+    "es": "Guardar como GIF",
+    "ru": "Сохранить как GIF"
+  },
+  "Kayıt bu resim açıkken tutulur. Çıkmadan GIF kaydet.": {
+    "en": "Recording is kept while this picture is open. Save the GIF before leaving.",
+    "az": "Qeyd bu şəkil açıq olarkən saxlanır. Çıxmazdan əvvəl GIF-i saxla.",
+    "es": "La grabación se conserva mientras esta imagen esté abierta. Guarda el GIF antes de salir.",
+    "ru": "Запись хранится, пока открыта эта картинка. Сохраните GIF перед выходом."
+  },
+  "Kaydedilecek kare yok.": {
+    "en": "There are no frames to save.",
+    "az": "Saxlanacaq kadr yoxdur.",
+    "es": "No hay fotogramas para guardar.",
+    "ru": "Нет кадров для сохранения."
+  },
+  "GIF hazırlanıyor…": {
+    "en": "Preparing GIF…",
+    "az": "GIF hazırlanır…",
+    "es": "Preparando GIF…",
+    "ru": "Подготовка GIF…"
+  },
+  "GIF kaydedildi: {path}": {
+    "en": "GIF saved: {path}",
+    "az": "GIF saxlandı: {path}",
+    "es": "GIF guardado: {path}",
+    "ru": "GIF сохранён: {path}"
+  },
+  "GIF kaydedilemedi": {
+    "en": "Could not save GIF",
+    "az": "GIF saxlanmadı",
+    "es": "No se pudo guardar el GIF",
+    "ru": "Не удалось сохранить GIF"
+  },
+  "Toplu resim ekle": {
+    "en": "Add multiple pictures",
+    "az": "Bir neçə şəkil əlavə et",
+    "es": "Añadir varias imágenes",
+    "ru": "Добавить несколько картинок"
+  },
+  "Klasörden ekle": {
+    "en": "Add from folder",
+    "az": "Qovluqdan əlavə et",
+    "es": "Añadir desde carpeta",
+    "ru": "Добавить из папки"
+  },
+  "Resim seç": {
+    "en": "Choose a picture",
+    "az": "Şəkil seç",
+    "es": "Elegir imagen",
+    "ru": "Выбрать картинку"
+  },
+  "Resimler (*.png *.jpg *.jpeg *.webp *.pcolor)": {
+    "en": "Pictures (*.png *.jpg *.jpeg *.webp *.pcolor)",
+    "az": "Şəkillər (*.png *.jpg *.jpeg *.webp *.pcolor)",
+    "es": "Imágenes (*.png *.jpg *.jpeg *.webp *.pcolor)",
+    "ru": "Картинки (*.png *.jpg *.jpeg *.webp *.pcolor)"
+  },
+  "{count} dosya için ortak ayarlar": {
+    "en": "Shared settings for {count} files",
+    "az": "{count} fayl üçün ümumi ayarlar",
+    "es": "Ajustes comunes para {count} archivos",
+    "ru": "Общие настройки для {count} файлов"
+  },
+  "Resimler orantılı küçültülür, büyütülmez. .pcolor dosyalarının hazır boyutu ve paleti korunur.": {
+    "en": "Pictures shrink proportionally without upscaling. Existing .pcolor dimensions and palettes are preserved.",
+    "az": "Şəkillər mütənasib kiçildilir, böyüdülmür. .pcolor ölçüləri və palitrası qorunur.",
+    "es": "Las imágenes se reducen proporcionalmente, sin ampliarse. Se conservan el tamaño y la paleta de los archivos .pcolor.",
+    "ru": "Картинки пропорционально уменьшаются без увеличения. Размеры и палитра файлов .pcolor сохраняются."
+  },
+  "En fazla genişlik": {
+    "en": "Maximum width",
+    "az": "Maksimum en",
+    "es": "Anchura máxima",
+    "ru": "Максимальная ширина"
+  },
+  "En fazla yükseklik": {
+    "en": "Maximum height",
+    "az": "Maksimum hündürlük",
+    "es": "Altura máxima",
+    "ru": "Максимальная высота"
+  },
+  "Bu klasörde desteklenen resim bulunamadı.": {
+    "en": "No supported pictures were found in this folder.",
+    "az": "Bu qovluqda dəstəklənən şəkil tapılmadı.",
+    "es": "No se encontraron imágenes compatibles en esta carpeta.",
+    "ru": "В этой папке нет поддерживаемых картинок."
+  },
+  "Resimler hazırlanıyor…": {
+    "en": "Preparing pictures…",
+    "az": "Şəkillər hazırlanır…",
+    "es": "Preparando imágenes…",
+    "ru": "Подготовка картинок…"
+  },
+  "Ekleniyor: {name}": {
+    "en": "Adding: {name}",
+    "az": "Əlavə edilir: {name}",
+    "es": "Añadiendo: {name}",
+    "ru": "Добавление: {name}"
+  },
+  "{count} resim eklendi.": {
+    "en": "Added {count} pictures.",
+    "az": "{count} şəkil əlavə edildi.",
+    "es": "Se añadieron {count} imágenes.",
+    "ru": "Добавлено картинок: {count}."
+  },
+  "İşlem iptal edildi; eklenen resimler korundu.": {
+    "en": "Cancelled; already added pictures were kept.",
+    "az": "Əməliyyat ləğv edildi; əlavə edilən şəkillər saxlandı.",
+    "es": "Operación cancelada; se conservaron las imágenes añadidas.",
+    "ru": "Операция отменена; добавленные картинки сохранены."
+  },
+  "Eklenemeyen dosyalar": {
+    "en": "Files that could not be added",
+    "az": "Əlavə edilə bilməyən fayllar",
+    "es": "Archivos que no se pudieron añadir",
+    "ru": "Файлы, которые не удалось добавить"
+  },
+  "Resim hakkında": {
+    "en": "About this picture",
+    "az": "Şəkil haqqında",
+    "es": "Acerca de esta imagen",
+    "ru": "Об этой картинке"
+  },
+  "Boyut: {width} × {height} · {cells} hücre": {
+    "en": "Size: {width} × {height} · {cells} cells",
+    "az": "Ölçü: {width} × {height} · {cells} hüceyrə",
+    "es": "Tamaño: {width} × {height} · {cells} celdas",
+    "ru": "Размер: {width} × {height} · {cells} ячеек"
+  },
+  "Kullanılan renk: {colors} · Tamamlanma: {progress}": {
+    "en": "Colors used: {colors} · Completed: {progress}",
+    "az": "Rəng sayı: {colors} · Tamamlanma: {progress}",
+    "es": "Colores usados: {colors} · Completado: {progress}",
+    "ru": "Цветов: {colors} · Завершено: {progress}"
+  },
+  "Hazırlayan: {author}": {
+    "en": "Created by: {author}",
+    "az": "Hazırlayan: {author}",
+    "es": "Creado por: {author}",
+    "ru": "Автор: {author}"
+  },
+  "Kısa bilgi": {
+    "en": "Quick fact",
+    "az": "Qısa məlumat",
+    "es": "Dato breve",
+    "ru": "Краткая справка"
+  },
+  "Kaynak: UNESCO Dünya Mirası Merkezi": {
+    "en": "Source: UNESCO World Heritage Centre",
+    "az": "Mənbə: UNESCO Dünya İrsi Mərkəzi",
+    "es": "Fuente: Centro del Patrimonio Mundial de la UNESCO",
+    "ru": "Источник: Центр всемирного наследия ЮНЕСКО"
+  },
+  "Bu resim için ek açıklama bulunmuyor.": {
+    "en": "No additional description is available for this picture.",
+    "az": "Bu şəkil üçün əlavə təsvir yoxdur.",
+    "es": "No hay descripción adicional para esta imagen.",
+    "ru": "Для этой картинки нет дополнительного описания."
+  },
+  "Görsel, konunun sanatsal yorumudur.": {
+    "en": "The image is an artistic interpretation of the subject.",
+    "az": "Şəkil mövzunun bədii şərhidir.",
+    "es": "La imagen es una interpretación artística del tema.",
+    "ru": "Изображение является художественной интерпретацией темы."
+  },
+  "Tamamlandı!": {
+    "en": "Completed!",
+    "az": "Tamamlandı!",
+    "es": "¡Completado!",
+    "ru": "Готово!"
+  },
+  "Her kareye renk kattın.": {
+    "en": "You brought every cell to life.",
+    "az": "Hər xanaya rəng qatdın.",
+    "es": "Has dado color a cada casilla.",
+    "ru": "Вы раскрасили каждую клетку."
+  },
+  "Resimde kal": {
+    "en": "Stay on picture",
+    "az": "Şəkildə qal",
+    "es": "Seguir en la imagen",
+    "ru": "Остаться на картинке"
+  },
+  "Nemrut Dağı’nın zirvesindeki anıt alanı, Kommagene Kralı I. Antiochos için yapılmıştır. Büyük heykeller ve taş tümülüs, krallığın Yunan ve Pers geleneklerini bir araya getiren kültürünü yansıtır. Zirve, özellikle gün doğumu ve gün batımı manzaralarıyla tanınır.": {
+    "en": "The mausoleum on Mount Nemrut belongs to Antiochus I of Commagene. Its monuments combine Greek and Persian cultural traditions.",
+    "az": "Nəmrud dağındakı məqbərə Kommagena kralı I Antioxosa aiddir. Abidələr Yunan və fars mədəniyyətlərini birləşdirir.",
+    "es": "El mausoleo del monte Nemrut pertenece a Antíoco I de Comagene. Sus monumentos combinan tradiciones griegas y persas.",
+    "ru": "Мавзолей на горе Немрут принадлежит Антиоху I Коммагенскому. Памятники объединяют греческие и персидские культурные традиции."
+  },
+  "Pamukkale’nin beyaz travertenleri, mineral taşıyan kaynak sularının bıraktığı birikimlerle oluşur. Basamaklı havuzların üzerinde yer alan Hierapolis, antik dönemin önemli kaplıca kentlerinden biridir. Doğal teraslarla tarihî kalıntılar, burada aynı peyzajın parçalarıdır.": {
+    "en": "Pamukkale’s terraces formed from calcite deposits carried by spring water. Nearby Hierapolis was an ancient spa town.",
+    "az": "Pamukkalənin terrasları bulaq sularının gətirdiyi kalsit çöküntülərindən yaranıb. Yaxınlıqdakı Hierapolis qədim kurort şəhəri idi.",
+    "es": "Las terrazas de Pamukkale se formaron por depósitos de calcita de los manantiales. Hierápolis fue una antigua ciudad termal.",
+    "ru": "Террасы Памуккале образованы отложениями кальцита из родниковой воды. Соседний Иераполис был древним курортным городом."
+  },
+  "Edirne’deki Selimiye Camii, Mimar Sinan’ın en tanınan eserlerinden biridir. Büyük merkezî kubbesi ve dört ince minaresi, şehrin siluetini belirler. Cami, eğitim, ticaret ve sosyal yaşam yapılarıyla birlikte tasarlanmış bir külliyenin merkezindedir.": {
+    "en": "The Selimiye complex in Edirne was designed by Sinan. It has one great dome, four minarets and Iznik tiles.",
+    "az": "Ədirnədəki Səlimiyə kompleksi Memar Sinanın əsəridir. Böyük günbəzi, dörd minarəsi və İznik kaşıları ilə tanınır.",
+    "es": "El conjunto de Selimiye, en Edirne, es obra de Sinan. Tiene una gran cúpula, cuatro minaretes y azulejos de İznik.",
+    "ru": "Комплекс Селимие в Эдирне создан Синаном. Он отличается большим куполом, четырьмя минаретами и изникскими изразцами."
+  },
+  "Nevşehir’in Kapadokya çevresinde, erozyonla biçimlenmiş peribacaları ve kaya duvarları bulunur. Kayaya oyulmuş yapılar, bölgedeki uzun yerleşim geçmişini gösterir. Vadilerin üzerinde görülen sıcak hava balonları, günümüzde bu doğal peyzajın tanınan görüntülerinden biridir.": {
+    "en": "Cappadocia’s fairy chimneys were shaped by erosion. Around Göreme are rock-cut buildings and underground settlements.",
+    "az": "Kapadokiyanın pəri bacaları eroziya ilə formalaşıb. Görəmə ətrafında qayaya oyulmuş tikililər və yeraltı yaşayış məntəqələri var.",
+    "es": "La erosión modeló las chimeneas de hadas de Capadocia. Alrededor de Göreme hay edificios excavados y asentamientos subterráneos.",
+    "ru": "Эрозия сформировала скальные столбы Каппадокии. Вокруг Гёреме находятся высеченные в скалах здания и подземные поселения."
+  },
+  "Kapadokya’nın peribacaları, volkanik kökenli tabakaların farklı hızlarda aşınmasıyla oluşmuştur. Daha dayanıklı üst katmanlar, altlarındaki yumuşak kayayı koruyarak şapkalı biçimler yaratır. Bu doğal yapılar, bölgedeki kaya yerleşimleri ve vadilerle birlikte özgün bir peyzaj oluşturur.": {
+    "en": "Cappadocia’s fairy chimneys were shaped by erosion. Around Göreme are rock-cut buildings and underground settlements.",
+    "az": "Kapadokiyanın pəri bacaları eroziya ilə formalaşıb. Görəmə ətrafında qayaya oyulmuş tikililər və yeraltı yaşayış məntəqələri var.",
+    "es": "La erosión modeló las chimeneas de hadas de Capadocia. Alrededor de Göreme hay edificios excavados y asentamientos subterráneos.",
+    "ru": "Эрозия сформировала скальные столбы Каппадокии. Вокруг Гёреме находятся высеченные в скалах здания и подземные поселения."
+  },
+  "Kapadokya vadileri, peribacaları ve kayaya oyulmuş yapılarıyla tanınır. Sıcak hava balonları, bu arazinin geniş bir açıyla izlenmesine olanak veren güncel turizm etkinliklerindendir. Görsel, doğal oluşumlarla tarihî kaya yerleşimlerini gün doğumundaki balon manzarasıyla birleştirir.": {
+    "en": "Cappadocia’s fairy chimneys were shaped by erosion. Around Göreme are rock-cut buildings and underground settlements.",
+    "az": "Kapadokiyanın pəri bacaları eroziya ilə formalaşıb. Görəmə ətrafında qayaya oyulmuş tikililər və yeraltı yaşayış məntəqələri var.",
+    "es": "La erosión modeló las chimeneas de hadas de Capadocia. Alrededor de Göreme hay edificios excavados y asentamientos subterráneos.",
+    "ru": "Эрозия сформировала скальные столбы Каппадокии. Вокруг Гёреме находятся высеченные в скалах здания и подземные поселения."
+  },
+  "Pamukkale’nin basamaklı beyaz terasları, kalsit taşıyan kaynak sularının bıraktığı birikimlerden oluşmuştur. Terasların hemen yakınındaki Hierapolis, antik dönemin kaplıca kentlerinden biridir. Doğal travertenler ile tarihî kalıntılar, aynı kültür ve doğa alanında bir araya gelir.": {
+    "en": "Pamukkale’s terraces formed from calcite deposits carried by spring water. Nearby Hierapolis was an ancient spa town.",
+    "az": "Pamukkalənin terrasları bulaq sularının gətirdiyi kalsit çöküntülərindən yaranıb. Yaxınlıqdakı Hierapolis qədim kurort şəhəri idi.",
+    "es": "Las terrazas de Pamukkale se formaron por depósitos de calcita de los manantiales. Hierápolis fue una antigua ciudad termal.",
+    "ru": "Террасы Памуккале образованы отложениями кальцита из родниковой воды. Соседний Иераполис был древним курортным городом."
+  },
+  "Petra’daki El-Hazne, kayalık bir cephenin içine oyulmuş anıtsal bir yapıdır. Nebati kentinin önemli simgelerinden olan cephe, sütunları ve bezemeleriyle Helenistik mimari etkiler taşır. Dar kaya geçitleri arasından görünmesi, yapının etkileyici algısını güçlendirir.": {
+    "en": "Petra is a Nabataean city known for its rock-cut buildings. In antiquity it stood at a crossroads of regional caravan routes.",
+    "az": "Petra qayaya oyulmuş tikililəri ilə tanınan Nəbati şəhəridir. Qədimdə müxtəlif bölgələrin karvan yollarının qovşağında yerləşirdi.",
+    "es": "Petra es una ciudad nabatea conocida por sus edificios excavados en roca. Fue un cruce de rutas de caravanas en la Antigüedad.",
+    "ru": "Петра — набатейский город со зданиями, высеченными в скалах. В древности здесь пересекались караванные пути разных регионов."
+  },
+  "Çin Seddi, farklı dönemlerde yapılmış duvarlar, kuleler ve geçitlerden oluşan büyük bir savunma sistemidir. Eski tahkimatların birleştirilmesiyle gelişmiş, daha sonraki hanedanlıklar tarafından genişletilmiştir. Dağ sırtlarını izleyen hat, savunma mimarisinin araziye uyumunu gösterir.": {
+    "en": "The Great Wall combines defences built in different periods. Construction that joined earlier walls continued through the Ming dynasty.",
+    "az": "Böyük Çin səddi müxtəlif dövrlərdə tikilmiş müdafiə qurğularından ibarətdir. Əvvəlki divarları birləşdirən tikinti Min sülaləsinədək davam edib.",
+    "es": "La Gran Muralla reúne defensas de distintas épocas. La construcción que unió muros anteriores continuó hasta la dinastía Ming.",
+    "ru": "Великая Китайская стена объединяет укрепления разных эпох. Работы по соединению ранних стен продолжались до династии Мин."
+  },
+  "Machu Picchu, And Dağları’nda yüksek bir sırt üzerinde kurulmuş bir İnka yerleşimidir. Taş yapılar ve tarım terasları, dağlık araziyle uyumlu biçimde düzenlenmiştir. Çevresindeki ormanlık vadiler, yerleşimin doğal ve kültürel önemini birlikte ortaya koyar.": {
+    "en": "Machu Picchu is an Inca settlement 2,430 metres above sea level in the Andes. Its stone buildings and terraces follow the mountain terrain.",
+    "az": "Maçu Pikçu And dağlarında dəniz səviyyəsindən 2430 metr yüksəklikdə İnka məskənidir. Daş tikililəri və terrasları dağlıq əraziyə uyğunlaşır.",
+    "es": "Machu Picchu es un asentamiento inca a 2430 metros de altitud en los Andes. Sus edificios y terrazas se integran en el terreno montañoso.",
+    "ru": "Мачу-Пикчу — поселение инков в Андах на высоте 2430 метров. Каменные здания и террасы вписаны в горный рельеф."
+  },
+  "Tac Mahal, Babür İmparatoru Şah Cihan’ın eşinin anısına yaptırdığı beyaz mermer anıt mezardır. Simetrik bahçe düzeni, havuzlar ve minareler yapının bütüncül tasarımını tamamlar. Mermerin ışıkla değişen görünümü, anıtın tanınan özelliklerindendir.": {
+    "en": "The Taj Mahal is a white-marble mausoleum in Agra, commissioned by Shah Jahan in memory of his wife, built in 1631–1648.",
+    "az": "Tac Mahal Aqrada Şah Cahanın həyat yoldaşının xatirəsinə tikdirdiyi ağ mərmər məqbərədir. 1631–1648-ci illərdə inşa edilib.",
+    "es": "El Taj Mahal es un mausoleo de mármol blanco en Agra, encargado por Shah Jahan en memoria de su esposa entre 1631 y 1648.",
+    "ru": "Тадж-Махал — беломраморный мавзолей в Агре, построенный в 1631–1648 годах по заказу Шах-Джахана в память о жене."
+  },
+  "Ayasofya, İstanbul’da 6. yüzyılda inşa edilmiş anıtsal bir yapıdır. Büyük kubbesi ve iç mekân düzeni, Bizans mimarisinin önemli mühendislik başarıları arasındadır. Tarihi boyunca farklı kullanım dönemleri geçiren yapı, İstanbul’un kültür katmanlarını bir arada taşır.": {
+    "en": "Hagia Sophia was built in Istanbul in the sixth century. The historic peninsula brings together Byzantine and Ottoman architecture.",
+    "az": "Ayasofya İstanbulda VI əsrdə inşa edilib. Tarixi yarımada Bizans və Osmanlı memarlığının əsərlərini birləşdirir.",
+    "es": "Santa Sofía se construyó en Estambul en el siglo VI. La península histórica reúne arquitectura bizantina y otomana.",
+    "ru": "Айя-София построена в Стамбуле в VI веке. Исторический полуостров объединяет памятники византийской и османской архитектуры."
+  },
+  "Sultanahmet Camii, İstanbul’un tarihî yarımadasında 17. yüzyılda yapılmıştır. Kubbeleri, altı minaresi ve İznik çinileriyle tanınır. Ayasofya ve eski Hipodrom çevresindeki konumu, onu şehrin anıtsal merkezinin bir parçası yapar.": {
+    "en": "The Blue Mosque is a seventeenth-century Ottoman monument in Istanbul’s historic skyline.",
+    "az": "Sultanahmet məscidi İstanbulun tarixi siluetində XVII əsr Osmanlı memarlığının nümunəsidir.",
+    "es": "La Mezquita Azul es un monumento otomano del siglo XVII en el perfil histórico de Estambul.",
+    "ru": "Голубая мечеть — османский памятник XVII века, формирующий исторический силуэт Стамбула."
+  },
+  "Selimiye Camii, Mimar Sinan’ın Edirne’de tasarladığı büyük bir Osmanlı külliyesinin merkezidir. Tek merkezî kubbesi ve dört ince minaresi, kentin görünümünü belirler. İç mekânındaki oranlar ve İznik çinileri, yapının mimari bütünlüğünü tamamlar.": {
+    "en": "The Selimiye complex in Edirne was designed by Sinan. It has one great dome, four minarets and Iznik tiles.",
+    "az": "Ədirnədəki Səlimiyə kompleksi Memar Sinanın əsəridir. Böyük günbəzi, dörd minarəsi və İznik kaşıları ilə tanınır.",
+    "es": "El conjunto de Selimiye, en Edirne, es obra de Sinan. Tiene una gran cúpula, cuatro minaretes y azulejos de İznik.",
+    "ru": "Комплекс Селимие в Эдирне создан Синаном. Он отличается большим куполом, четырьмя минаретами и изникскими изразцами."
+  },
+  "Nemrut Dağı’ndaki anıt alanı, Kommagene Kralı I. Antiochos için düzenlenmiştir. Dev heykeller, Yunan ve Pers kültürlerinin birleştiği bir inanç ve krallık anlayışını yansıtır. Zirvedeki tümülüs ve heykel terasları, gün doğumu manzaralarıyla birlikte tanınır.": {
+    "en": "The mausoleum on Mount Nemrut belongs to Antiochus I of Commagene. Its monuments combine Greek and Persian cultural traditions.",
+    "az": "Nəmrud dağındakı məqbərə Kommagena kralı I Antioxosa aiddir. Abidələr Yunan və fars mədəniyyətlərini birləşdirir.",
+    "es": "El mausoleo del monte Nemrut pertenece a Antíoco I de Comagene. Sus monumentos combinan tradiciones griegas y persas.",
+    "ru": "Мавзолей на горе Немрут принадлежит Антиоху I Коммагенскому. Памятники объединяют греческие и персидские культурные традиции."
+  },
+  "Celsus Kütüphanesi, Efes’in Roma döneminden kalan anıtsal yapılarından biridir. İki katlı görünüm veren sütunlu cephesi, nişleri ve bezemeleriyle tanınır. Antik liman kentinin bilim, kültür ve kamusal yaşamına ilişkin önemli bir iz taşır.": {
+    "en": "Ephesus was a Roman port city. The Library of Celsus and the Great Theatre are among its major Roman monuments.",
+    "az": "Efes Roma dövrünün liman şəhərlərindən idi. Sels kitabxanası və Böyük Teatr şəhərin mühüm Roma abidələrindəndir.",
+    "es": "Éfeso fue una ciudad portuaria romana. La Biblioteca de Celso y el Gran Teatro destacan entre sus monumentos romanos.",
+    "ru": "Эфес был римским портовым городом. Библиотека Цельса и Большой театр относятся к его главным римским памятникам."
+  },
+  "Göbeklitepe, Neolitik dönemin erken evrelerine ait anıtsal yapılara sahip bir arkeolojik alandır. T biçimli dikilitaşların üzerinde hayvan kabartmaları ve çeşitli işaretler bulunur. Alan, avcı-toplayıcı toplulukların inanç ve ortak yapı üretimi hakkında önemli bilgiler sağlar.": {
+    "en": "Göbekli Tepe’s monumental structures date to 9600–8200 BCE. Its T-shaped pillars feature carvings of wild animals.",
+    "az": "Göbəklitəpənin monumental tikililəri e.ə. 9600–8200-cü illərə aiddir. T formalı sütunlarında vəhşi heyvan təsvirləri var.",
+    "es": "Las estructuras monumentales de Göbekli Tepe datan de 9600–8200 a. C. Sus pilares en T muestran animales salvajes tallados.",
+    "ru": "Монументальные сооружения Гёбекли-Тепе датируются 9600–8200 годами до н. э. На Т-образных столбах вырезаны дикие животные."
+  },
+  "Mekânı tanı": {
+    "en": "About the place",
+    "az": "Məkanı tanı",
+    "es": "Conoce el lugar",
+    "ru": "Об этом месте"
+  },
+  "Kaynak: {name}": {
+    "en": "Source: {name}",
+    "az": "Mənbə: {name}",
+    "es": "Fuente: {name}",
+    "ru": "Источник: {name}"
+  },
+  "Ortaköy Camii, İstanbul Boğazı kıyısında yer alan ve Büyük Mecidiye Camii adıyla da bilinen yapıdır. Denizle doğrudan ilişki kuran konumu ve bezemeli cepheleri, onu Boğaziçi’nin tanınan simgelerinden biri yapar. Görselde cami, boğaz köprüsü ve kıyı yaşamıyla birlikte yorumlanmıştır.": {
+    "en": "Ortaköy Mosque, also known as the Büyük Mecidiye Mosque, stands on Istanbul’s Bosphorus shore. Its waterfront setting and ornate façades make it a familiar landmark. The artwork brings the mosque together with the Bosphorus bridge and life along the shore.",
+    "az": "Böyük Məcidiyyə məscidi kimi də tanınan Ortaköy məscidi İstanbul boğazının sahilində yerləşir. Sahildəki mövqeyi və bəzəkli fasadları onu Boğazın tanınmış abidəsinə çevirir. Rəsmdə məscid, körpü və sahil həyatı birlikdə təsvir olunur.",
+    "es": "La mezquita de Ortaköy, también llamada Büyük Mecidiye, se alza a orillas del Bósforo en Estambul. Su ubicación junto al agua y sus fachadas decoradas la convierten en un monumento emblemático. La ilustración reúne la mezquita, el puente y la vida de la costa.",
+    "ru": "Мечеть Ортакёй, известная также как Бююк-Меджидие, стоит на берегу Босфора в Стамбуле. Прибрежное расположение и украшенные фасады делают её узнаваемым памятником. На рисунке мечеть показана вместе с мостом и жизнью побережья."
+  },
+  "İzmir Saat Kulesi, Konak Meydanı’nda bulunan ve 1901 yılında yapılan kent simgesidir. İnce taş işçiliği, saat yüzleri ve çevresindeki küçük çeşmeler yapının ayırt edici parçalarıdır. Meydanın denize yakın konumu, kuleyi İzmir’in kıyı yaşamıyla bütünleştirir.": {
+    "en": "Izmir’s Clock Tower stands in Konak Square and was built in 1901. Fine stonework, clock faces and small fountains distinguish the monument. The square’s seaside setting connects the tower with the city’s coastal life.",
+    "az": "İzmir Saat Qülləsi Konak meydanında yerləşir və 1901-ci ildə tikilib. İncə daş işçiliyi, saatları və kiçik fəvvarələri abidənin səciyyəvi xüsusiyyətləridir. Meydanın dənizə yaxınlığı qülləni şəhərin sahil həyatı ilə birləşdirir.",
+    "es": "La Torre del Reloj de İzmir se encuentra en la plaza Konak y fue construida en 1901. Destaca por su trabajo en piedra, relojes y pequeñas fuentes. Su ubicación cerca del mar la vincula con la vida costera de la ciudad.",
+    "ru": "Часовая башня Измира находится на площади Конак и построена в 1901 году. Её отличают тонкая каменная отделка, циферблаты и небольшие фонтаны. Близость площади к морю связывает башню с прибрежной жизнью города."
+  },
+  "Balıklıgöl, Şanlıurfa merkezinde, tarihî camiler ve revaklarla çevrili bir göl alanıdır. Halil-ür Rahman ve Aynzeliha gölleri, İbrahim Peygamber’le ilişkilendirilen yerel inanç anlatılarıyla tanınır. Suda yaşayan balıklar, bölgedeki ziyaret ve saygı geleneğinin bir parçasıdır.": {
+    "en": "Balıklıgöl lies in central Şanlıurfa, surrounded by historic mosques and arcades. The Halil-ür Rahman and Aynzeliha pools are associated with local traditions about Abraham. The fish are respected as part of the site’s religious visiting tradition.",
+    "az": "Balıqlıgöl Şanlıurfanın mərkəzində tarixi məscidlər və tağlı keçidlərlə əhatə olunur. Halil-ür Rəhman və Aynzəliha gölləri İbrahim peyğəmbərlə bağlı yerli rəvayətlərlə tanınır. Balıqlara hörmət edilməsi buranın ziyarət ənənəsinin bir hissəsidir.",
+    "es": "Balıklıgöl se encuentra en el centro de Şanlıurfa, entre mezquitas históricas y arcadas. Los estanques Halil-ür Rahman y Aynzeliha se relacionan con tradiciones locales sobre Abraham. El respeto a sus peces forma parte de la tradición religiosa del lugar.",
+    "ru": "Балыклыгёль находится в центре Шанлыурфы среди исторических мечетей и аркад. Водоёмы Халиль-юр-Рахман и Айнзельха связаны с местными преданиями об Аврааме. Уважительное отношение к рыбам является частью традиции посещения этого места."
   }
 }

@@ -39,10 +39,13 @@ def main():
     try:
         data_dir.mkdir(parents=True, exist_ok=True)
         (data_dir / "paintings").mkdir(exist_ok=True)
+        handlers = [logging.FileHandler(data_dir / "game.log", encoding="utf-8")]
+        if sys.stderr is not None:
+            handlers.append(logging.StreamHandler())
         logging.basicConfig(
             level=logging.DEBUG if args.debug else logging.INFO,
             format="%(asctime)s %(levelname)s %(name)s: %(message)s",
-            handlers=[logging.FileHandler(data_dir / "game.log", encoding="utf-8"), logging.StreamHandler()],
+            handlers=handlers,
         )
         updates = SimpleQueue()
 

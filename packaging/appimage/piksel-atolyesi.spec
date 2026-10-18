@@ -1,9 +1,11 @@
+import sys
 from pathlib import Path
 
 
 project_root = Path(SPECPATH).parents[1]
 source_root = project_root / "src"
 resources = source_root / "pixel_coloring" / "resources"
+application_name = "Piksel-Atolyesi" if sys.platform == "win32" else "piksel-atolyesi"
 
 a = Analysis(
     [str(source_root / "pixel_coloring" / "__main__.py")],
@@ -24,7 +26,8 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name="piksel-atolyesi",
+    name=application_name,
+    icon=str(resources / "icons/piksel-atolyesi.ico") if sys.platform == "win32" else None,
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -39,5 +42,5 @@ coll = COLLECT(
     strip=False,
     upx=False,
     upx_exclude=[],
-    name="piksel-atolyesi",
+    name=application_name,
 )

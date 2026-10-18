@@ -1,6 +1,6 @@
 import time
 
-from PySide6.QtCore import QPointF, QRectF, Qt, QTimer, Signal
+from PySide6.QtCore import QPointF, QRectF, Qt, Signal
 from PySide6.QtGui import QColor, QFont, QPainter, QPen
 from PySide6.QtWidgets import QWidget
 
@@ -36,8 +36,8 @@ class Canvas(QWidget):
         self.last_cell = None
         self.last_pos = QPointF()
         self.hover = None
-        self.wrong = None
         self.first_resize = True
+        self.camera_changed.connect(self.remember_view)
         self.painting_cursor = painting_pointer()
         self.setCursor(self.painting_cursor)
 
@@ -49,6 +49,7 @@ class Canvas(QWidget):
         self.update()
 
     def fit(self):
+        self.finish_stroke()
         p = self.session.painting
         self.camera.fit(p.width, p.height)
         self.constrain_camera()
@@ -69,6 +70,16 @@ class Canvas(QWidget):
         self.update()
         self.camera_changed.emit()
 
+    def pan_cells(self, dx, dy):
+        self.pan_view(dx * self.camera.zoom, dy * self.camera.zoom)
+
+    def remember_view(self):
+        c, p = self.camera, self.session.painting
+        self.session.view_state = dict(
+            zoom=c.zoom, center_x=(c.viewport_width / 2 - c.pan_x) / c.zoom,
+            center_y=(c.viewport_height / 2 - c.pan_y) / c.zoom, width=p.width, height=p.height,
+        )
+
     def fill_at(self, pos):
         x, y = self.camera.screen_to_cell(pos.x(), pos.y())
         self.fill_cell(x, y)
@@ -88,16 +99,27 @@ class Canvas(QWidget):
             self.session.changed()
             self.changed.emit()
             self.stroke_finished.emit()
-        elif result == PaintResult.WRONG and self.settings.get("feedback", True):
-            self.wrong = x, y
-            QTimer.singleShot(220, self.clear_wrong)
         self.update()
 
     def resizeEvent(self, event):
+        state = self.session.view_state
+        c = self.camera
+        center_x = (c.viewport_width / 2 - c.pan_x) / c.zoom
+        center_y = (c.viewport_height / 2 - c.pan_y) / c.zoom
         self.camera.viewport_width, self.camera.viewport_height = self.width(), self.height()
         if self.first_resize:
-            self.fit()
+            if state is not None:
+                c.max_zoom = max(c.max_zoom, self.width() / self.session.painting.width,
+                                 self.height() / self.session.painting.height)
+                c.zoom = max(c.min_zoom, min(c.max_zoom, state['zoom']))
+                c.pan_x = self.width() / 2 - state['center_x'] * c.zoom
+                c.pan_y = self.height() / 2 - state['center_y'] * c.zoom
+            else:
+                self.fit()
             self.first_resize = False
+        else:
+            c.pan_x = self.width() / 2 - center_x * c.zoom
+            c.pan_y = self.height() / 2 - center_y * c.zoom
         self.constrain_camera()
         self.camera_changed.emit()
         super().resizeEvent(event)
@@ -117,7 +139,9 @@ class Canvas(QWidget):
                     sx, sy = c.cell_to_screen(tx * TILE_SIZE, ty * TILE_SIZE)
                     q.drawImage(QRectF(sx, sy, tile.width() * c.zoom, tile.height() * c.zoom), tile)
             if self.settings.get("grid", True) and c.zoom >= 9:
-                q.setPen(QPen(QColor(35, 39, 46, int(255 * self.settings.get("grid_opacity", 0.22))), 1))
+                opacity = max(0, min(1, self.settings.get('grid_opacity', .22)))
+                width = max(1, min(4, self.settings.get('grid_width', 1)))
+                q.setPen(QPen(QColor(35, 39, 46, int(255 * opacity)), width))
                 left, top = c.cell_to_screen(x0, y0)
                 right, bottom = c.cell_to_screen(x1, y1)
                 for x in range(x0, x1 + 1):
@@ -128,7 +152,10 @@ class Canvas(QWidget):
                     q.drawLine(QPointF(left, sy), QPointF(right, sy))
             if self.settings.get("numbers", True) and c.zoom >= 18:
                 font = QFont("Noto Sans")
-                font.setPixelSize(int(min(15, c.zoom * 0.43)))
+                scale = max(50, min(200, self.settings.get('number_scale', 100))) / 100
+                digits = len(str(len(self.session.color_numbers)))
+                font.setPixelSize(max(4, int(min(c.zoom / (.65 * digits + .4),
+                                                min(15, c.zoom * .43) * scale))))
                 q.setFont(font)
                 q.setPen(QColor("#51555C"))
                 for y in range(y0, y1):
@@ -138,7 +165,7 @@ class Canvas(QWidget):
                             q.drawText(
                                 QRectF(sx, sy, c.zoom, c.zoom),
                                 Qt.AlignmentFlag.AlignCenter,
-                                str(int(p.target_map[y, x]) + 1),
+                                str(self.session.color_numbers[int(p.target_map[y, x])]),
                             )
         if self.debug:
             q.setPen(QColor("#FFFFFF"))
@@ -243,18 +270,16 @@ class Canvas(QWidget):
                 any_changed = True
                 dirty_x0, dirty_y0 = min(dirty_x0, x), min(dirty_y0, y)
                 dirty_x1, dirty_y1 = max(dirty_x1, x + 1), max(dirty_y1, y + 1)
-            elif result == PaintResult.WRONG and self.settings.get("feedback", True):
-                self.wrong = x, y
-                QTimer.singleShot(220, self.clear_wrong)
         self.last_cell = cell
         if any_changed:
             self.region_changed.emit(dirty_x0, dirty_y0, dirty_x1, dirty_y1)
             self.session.changed()
             self.changed.emit()
-        self.update()
-
-    def clear_wrong(self):
-        self.wrong = None
+            selected = self.session.selected
+            if self.session.painting.counts[selected] >= self.session.painting.totals[selected]:
+                # End this gesture before selecting another color, so holding the
+                # mouse cannot accidentally paint the next color along the line.
+                self.finish_stroke()
         self.update()
 
     def finish_stroke(self):

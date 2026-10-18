@@ -2,6 +2,8 @@ from PySide6.QtCore import QPointF, QRectF, Qt
 from PySide6.QtGui import QColor, QFont, QPainter, QPen
 from PySide6.QtWidgets import QPushButton
 
+from .i18n import percentage, tr
+
 
 class ProgressTile(QPushButton):
     """A perimeter meter and readable badge for saved painting progress."""
@@ -31,6 +33,6 @@ class ProgressTile(QPushButton):
         q.drawRoundedRect(badge, 5, 5)
         q.setPen(color)
         q.setFont(QFont('Noto Sans', 9, QFont.Weight.Bold))
-        text = 'Bitti' if self.percent >= 100 else f'%{self.percent:.1f}'.replace('.', ',')
+        text = tr('Bitti') if self.percent >= 100 else percentage(self.percent)
         q.drawText(badge, Qt.AlignmentFlag.AlignCenter, text)
         q.end()

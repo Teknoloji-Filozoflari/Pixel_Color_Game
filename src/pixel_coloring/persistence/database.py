@@ -1,4 +1,5 @@
 import json
+import math
 import sqlite3
 import time
 from contextlib import contextmanager
@@ -16,6 +17,11 @@ CREATE TABLE IF NOT EXISTS progress (
  save_version INTEGER, progress_blob BLOB, selected_color INTEGER
 );
 CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT);
+CREATE TABLE IF NOT EXISTS view_states (
+ painting_id TEXT PRIMARY KEY REFERENCES paintings(id) ON DELETE CASCADE,
+ zoom REAL NOT NULL, center_x REAL NOT NULL, center_y REAL NOT NULL,
+ width INTEGER NOT NULL, height INTEGER NOT NULL
+);
 CREATE TABLE IF NOT EXISTS statistics (key TEXT PRIMARY KEY, value TEXT);
 CREATE TABLE IF NOT EXISTS achievements (id TEXT PRIMARY KEY, unlocked INTEGER, unlocked_at REAL);
 PRAGMA user_version=1;
@@ -67,49 +73,31 @@ class Database:
                 ) for painting, path in entries],
             )
 
-    def install_enlarged_sample(self, painting, path):
-        """Upgrade bundled 64x48 samples and their masks in one DB transaction."""
-        from ..importer.level_writer import write_level
-
-        with self.connect() as con:
-            con.execute("BEGIN IMMEDIATE")
-            old = con.execute(
-                "SELECT width,height FROM paintings WHERE id=?", (painting.id,)
-            ).fetchone()
-            if old == (64, 48):
-                saved = con.execute(
-                    "SELECT save_version,progress_blob FROM progress WHERE painting_id=?",
-                    (painting.id,),
-                ).fetchone()
-                if saved is not None:
-                    version, blob = saved
-                    if version != 1 or len(blob) != 384:
-                        raise ValueError("Eski resmin boyama kaydı bozuk; büyütme uygulanmadı")
-                    mask = np.unpackbits(np.frombuffer(blob, dtype=np.uint8)).reshape(48, 64)
-                    mask = mask.repeat(2, axis=0).repeat(2, axis=1)
-                    count = int(mask.sum())
-                    con.execute(
-                        "UPDATE progress SET progress_blob=?,painted_count=?,"
-                        "completion_percentage=? WHERE painting_id=?",
-                        (np.packbits(mask).tobytes(), count, 100 * count / mask.size, painting.id),
-                    )
-            elif old is not None and old != (painting.width, painting.height):
-                raise ValueError("Başlangıç resminin boyutları desteklenmiyor")
-            # Atomic level replacement happens before commit, so a failed commit is retryable.
-            if old != (painting.width, painting.height) or not path.exists():
-                write_level(painting, path)
-            con.execute(
-                """INSERT INTO paintings VALUES (?,?,?,?,?,?,?,?,?)
-                ON CONFLICT(id) DO UPDATE SET width=excluded.width,height=excluded.height,
-                data_path=excluded.data_path""",
-                (painting.id, painting.title, painting.author, painting.category,
-                 painting.width, painting.height, len(painting.palette), str(path), time.time()),
-            )
-
-    def save(self, snapshot):
+    def save(self, snapshot, view_state=None):
         snapshot = (*snapshot[:3], 0, 0, *snapshot[5:])
         with self.connect() as con:
             con.execute("INSERT OR REPLACE INTO progress VALUES (?,?,?,?,?,?,?,?)", snapshot)
+            if view_state is not None:
+                con.execute(
+                    "INSERT OR REPLACE INTO view_states VALUES (?,?,?,?,?,?)",
+                    (snapshot[0], view_state['zoom'], view_state['center_x'], view_state['center_y'],
+                     view_state['width'], view_state['height']),
+                )
+
+    def load_view(self, painting):
+        with self.connect() as con:
+            row = con.execute(
+                "SELECT zoom,center_x,center_y,width,height FROM view_states WHERE painting_id=?",
+                (painting.id,),
+            ).fetchone()
+        if row is None or row[3:] != (painting.width, painting.height):
+            return None
+        zoom, x, y, width, height = row
+        if not all(isinstance(v, (int, float)) and math.isfinite(v) for v in (zoom, x, y)):
+            return None
+        if not .05 <= zoom <= 10000:
+            return None
+        return dict(zoom=zoom, center_x=x, center_y=y, width=width, height=height)
 
     def load(self, painting):
         with self.connect() as con:
@@ -119,7 +107,7 @@ class Database:
                 (painting.id,),
             ).fetchone()
         if row is None:
-            return 0.0, 0
+            return 0.0, None
         version, blob, elapsed, selected = row
         expected = (painting.target_map.size + 7) // 8
         if version != 1 or len(blob) != expected:

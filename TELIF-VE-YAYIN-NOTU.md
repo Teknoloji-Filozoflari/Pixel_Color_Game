@@ -1,8 +1,8 @@
 # Görseller ve mağaza yayını
 
-Kontrol tarihi: 15 Eylül 2026.
+Kontrol tarihi: 18 Ekim 2026.
 
-Paketin 536 koleksiyon görseli bu proje için OpenAI görsel üretimiyle oluşturuldu; stok fotoğraf sitelerinden indirilmedi. Kullanıcının örnek oyun ekran görüntüleri koleksiyon içeriği olarak dağıtılmamıştır.
+Paketin 900 koleksiyon görseli bu proje için OpenAI görsel üretimiyle oluşturuldu; stok fotoğraf sitelerinden indirilmedi. Kullanıcının örnek oyun ekran görüntüleri koleksiyon içeriği olarak dağıtılmamıştır.
 
 Bu kaynak bilgisi, bütün görseller için kesin bir “telifsizdir” veya üçüncü kişi haklarını ihlal etmez güvencesi değildir. Her görsele yönelik bağımsız bir hak sahipliği incelemesi yapılmamıştır.
 

@@ -5,17 +5,21 @@ from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
     QMenu,
-    QMessageBox,
     QPushButton,
     QScrollArea,
     QSizePolicy,
+    QStyle,
     QVBoxLayout,
     QWidget,
 )
 
 from ..rendering.canvas import Canvas
+from .appearance import AppearanceMenu
+from .artwork_info import ArtworkInfoDialog
+from .completion import CompletionOverlay
 from .controls_help import ControlsButton, ControlsDialog
 from .i18n import number, painting_meaning, painting_title, percentage, tr
+from .recording import RecordingMenu
 from .view_actions import HIGHLIGHTS, ViewButton
 from .widgets import FillButton, GameActionButton, HintButton, Minimap, Palette, label
 
@@ -23,11 +27,13 @@ from .widgets import FillButton, GameActionButton, HintButton, Minimap, Palette,
 class GameScreen(QWidget):
     back_requested = Signal()
     save_requested = Signal()
+    recording_export_requested = Signal()
 
     def __init__(self, session, settings, debug=False):
         super().__init__()
         self.session, self.settings = session, settings
         self.focus_mode = False
+        self.active = True
         self.completed_announced = session.painting.progress == 1
         root = QVBoxLayout(self)
         root.setContentsMargins(20, 14, 20, 14)
@@ -88,7 +94,6 @@ class GameScreen(QWidget):
         body.addWidget(self.canvas, 1)
         sidebar = QWidget()
         self.painting_sidebar = sidebar
-        sidebar.setFixedWidth(262)
         panels = QVBoxLayout(sidebar)
         panels.setContentsMargins(0, 0, 0, 0)
         panels.setSpacing(16)
@@ -109,6 +114,11 @@ class GameScreen(QWidget):
         side.addWidget(label(tr("Bir numara seç, eşleşen hücreleri boya."), "muted"))
         self.palette = Palette(session)
         scroll = QScrollArea()
+        self.palette_scroll = scroll
+        # Reserve scrollbar space so the fifth palette column is never clipped.
+        sidebar.setFixedWidth(
+            self.palette.width() + 34 + scroll.style().pixelMetric(QStyle.PixelMetric.PM_ScrollBarExtent)
+        )
         scroll.setWidget(self.palette)
         scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         side.addWidget(scroll, 1)
@@ -133,8 +143,20 @@ class GameScreen(QWidget):
         self.highlight_button.clicked.connect(self.cycle_highlight_color)
         self.fullscreen_button = ViewButton("fullscreen", tr("Yalnızca resim · F11 (çıkış: Esc)"))
         self.fullscreen_button.clicked.connect(self.toggle_focus_mode)
+        self.appearance_button = ViewButton('appearance', tr('Görünüm ayarları'))
+        self.appearance_menu = AppearanceMenu(settings, self.appearance_button)
+        self.appearance_menu.changed.connect(self.appearance_changed)
+        self.appearance_button.setMenu(self.appearance_menu)
+        self.recording_button = ViewButton('recording', tr('Boyama kaydı · GIF'))
+        self.recording_button.setCheckable(True)
+        self.recording_menu = RecordingMenu(self.canvas, self.recording_button)
+        self.recording_menu.export_requested.connect(self.recording_export_requested.emit)
+        self.recording_button.setMenu(self.recording_menu)
+        self.info_button = ViewButton('info', tr('Resim hakkında'))
+        self.info_button.clicked.connect(self.show_artwork_info)
         for tool in (self.home_button, self.save_button, self.fill_button, self.hint_button,
-                     self.controls_button, self.grid_button, self.highlight_button, self.fullscreen_button):
+                     self.controls_button, self.grid_button, self.highlight_button,
+                     self.appearance_button, self.recording_button, self.info_button, self.fullscreen_button):
             tool.setFixedSize(42, 40)
             tools.addWidget(tool)
         top.insertLayout(0, tools)
@@ -149,15 +171,38 @@ class GameScreen(QWidget):
             ("M", self.toggle_minimap),
             ("F11", self.toggle_focus_mode),
             ("Escape", self.exit_focus_mode),
-            ("Left", lambda: self.canvas.pan_view(-96, 0)),
-            ("Right", lambda: self.canvas.pan_view(96, 0)),
-            ("Up", lambda: self.canvas.pan_view(0, -96)),
-            ("Down", lambda: self.canvas.pan_view(0, 96)),
+            ("Left", lambda: self.canvas.pan_cells(-1, 0)),
+            ("Right", lambda: self.canvas.pan_cells(1, 0)),
+            ("Up", lambda: self.canvas.pan_cells(0, -1)),
+            ("Down", lambda: self.canvas.pan_cells(0, 1)),
         ]:
             shortcut = QShortcut(QKeySequence(keys), self)
             shortcut.setContext(Qt.ShortcutContext.WidgetWithChildrenShortcut)
             shortcut.activated.connect(callback)
         self.refresh()
+
+    def appearance_changed(self):
+        self.grid_button.setChecked(self.settings.get('grid', True))
+        self.canvas.update()
+
+    def show_artwork_info(self):
+        self.canvas.finish_stroke()
+        dialog = ArtworkInfoDialog(self.session.painting, self)
+        dialog.exec()
+        dialog.deleteLater()
+        self.canvas.setFocus()
+
+    def dispose(self):
+        self.active = False
+        self.recording_menu.pause()
+        for overlay in self.canvas.findChildren(CompletionOverlay):
+            overlay.cancel()
+
+    def hideEvent(self, event):
+        for overlay in self.canvas.findChildren(CompletionOverlay):
+            overlay.cancel()
+        self.recording_menu.pause()
+        super().hideEvent(event)
 
     def show_controls(self):
         self.canvas.finish_stroke()
@@ -168,6 +213,21 @@ class GameScreen(QWidget):
     def select(self, i):
         self.canvas.select(i)
         self.refresh()
+        self.ensure_selected_visible()
+        self.canvas.setFocus()
+
+    def showEvent(self, event):
+        super().showEvent(event)
+        self.ensure_selected_visible()
+
+    def ensure_selected_visible(self):
+        slot = self.session.color_numbers[self.session.selected] - 1
+        cell = self.palette.cell
+        self.palette_scroll.ensureVisible(
+            slot % self.palette.columns * cell + cell // 2,
+            slot // self.palette.columns * cell + cell // 2,
+            cell // 2, cell // 2,
+        )
 
     def set_fill_mode(self, enabled):
         self.canvas.finish_stroke()
@@ -201,6 +261,12 @@ class GameScreen(QWidget):
         self.refresh()
 
     def stroke_done(self):
+        p = self.session.painting
+        selected = self.session.selected
+        if p.counts[selected] >= p.totals[selected]:
+            following = self.session.next_unfinished_color(after=selected)
+            if following is not None:
+                self.select(following)
         self.refresh()
         if self.session.painting.progress == 1 and not self.completed_announced:
             self.completed_announced = True
@@ -210,13 +276,14 @@ class GameScreen(QWidget):
             QTimer.singleShot(0, self.show_completion)
 
     def show_completion(self):
-        QMessageBox.information(
-            self,
-            tr("Bir resim, binlerce küçük an."),
-            tr('Tebrikler! {title} tamamlandı.\n\n{cells} hücreye renk verdiniz.\n'
-               'İlerlemeniz kaydediliyor. Yeni bir resim için koleksiyona dönebilirsiniz.',
-               title=painting_title(self.session.painting.id, self.session.painting.title), cells=number(self.session.painting.target_map.size)),
-        )
+        if not self.active or not self.isVisible() or self.session.painting.progress < 1:
+            return
+        if any(not overlay.ended for overlay in self.canvas.findChildren(CompletionOverlay)):
+            return
+        if self.recording_menu.recorder.active:
+            self.recording_menu.recorder.capture(force=True)
+        overlay = CompletionOverlay(self.canvas, animate=self.settings.get('completion_animation', True))
+        overlay.collection_requested.connect(self.back_requested.emit)
 
     def toggle_grid(self):
         self.settings["grid"] = not self.settings.get("grid", True)
@@ -249,8 +316,8 @@ class GameScreen(QWidget):
         window = self.window()
         self.previous_window_state = window.windowState()
         self.hidden_panels = [self.status_header, self.painting_sidebar]
-        if window is not self and hasattr(window, "sidebar"):
-            self.hidden_panels.extend([window.sidebar, window.statusBar()])
+        if window is not self and hasattr(window, "statusBar"):
+            self.hidden_panels.append(window.statusBar())
         self.panel_visibility = [not panel.isHidden() for panel in self.hidden_panels]
         for panel in self.hidden_panels:
             panel.hide()

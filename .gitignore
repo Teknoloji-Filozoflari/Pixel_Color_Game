@@ -45,3 +45,9 @@ prime/
 result
 result-*
 bundle.tar.gz
+
+# Windows installers and other generated release archives
+*.exe
+*.deb
+*.deb.sha256
+pytest-output.txt

@@ -102,7 +102,9 @@ def build_collection(window, root):
     head.addWidget(language_combo, alignment=Qt.AlignmentFlag.AlignVCenter)
     window.language_combo = language_combo
     language_combo.currentIndexChanged.connect(lambda index: window.change_language(language_combo.itemData(index)))
-    head.addWidget(HomeAction('add', tr('Resim ekle'), window.import_dialog))
+    add_button = HomeAction('add', tr('Resim ekle'), None)
+    add_button.setMenu(window.import_menu(add_button))
+    head.addWidget(add_button)
     head.addWidget(HomeAction('settings', tr('Ayarlar'), window.show_settings))
     head.addWidget(HomeAction('exit', tr('Çıkış'), window.close))
     root.addWidget(hero)

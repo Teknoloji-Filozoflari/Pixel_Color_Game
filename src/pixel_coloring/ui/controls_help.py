@@ -79,7 +79,7 @@ class ControlsDialog(QDialog):
         grid = QGridLayout(keyboard)
         grid.setVerticalSpacing(16)
         for i, (key, description) in enumerate([
-            (tr("Ok tuşları"), tr("Resimde gezin; basılı tutarak devam et.")),
+            (tr("Ok tuşları"), tr("Her basışta bir kare ilerle; basılı tutarak devam et.")),
             ("Ctrl + S", tr("Boyama ilerlemesini kaydet.")),
             ("F", tr("Resmi ekrana sığdır.")),
             ("G", tr("Izgarayı aç / kapat.")),

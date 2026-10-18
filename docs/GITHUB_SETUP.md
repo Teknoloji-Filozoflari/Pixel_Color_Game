@@ -1,30 +1,65 @@
-# GitHub'a yükleme — 0.16.0
+# GitHub ve sürüm yayını
 
-Bu kaynak paketinde 900 görsel korunur. Kişisel boyama ilerlemesi, kullanıcı ayarları,
-veri tabanları, test çıktıları ve yerel Python ortamı bulunmaz. Yeni kullanıcıda bütün
-resimler sıfır boyama ilerlemesiyle açılır. Güncelleme mevcut oyuncunun ilerlemesini korur.
+Kaynak depo: https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game
 
-1. RAR dosyasını başka bilgisayarda tamamen çıkar.
-2. GitHub Desktop ile hedef depoyu klonla. Paketin içindeki dosyaları depo köküne kopyala;
-   src, pyproject.toml ve .github doğrudan kökte bulunmalı. RAR dosyasını depoya ekleme.
-3. Değişiklikleri commit edip push yap. Actions bölümündeki testlerin sonucunu kontrol et.
-4. v0.16.0 etiketiyle bir GitHub Release oluştur. AppImage ve Debian iş akışları paketleri
-   derleyip Release'e ekler. Debian işi temiz Debian 12 ve 13 kurulumlarını da sınar.
-   Başarıyla tamamlandıklarını Actions üzerinden doğrula.
+## Kaynağı gönderme
 
-Kaynak kodu çalıştırmak için Python 3.13 veya üstünü kurup paket klasöründe:
+`pyproject.toml` ve `.git` bulunan depo kökünde:
 
 ```bash
-python -m pip install .
-python run.py
+gh auth login --hostname github.com --git-protocol https --web
+gh auth setup-git
+gh auth status
+git remote -v
+git status --short
+git push origin main
 ```
 
-Windows'ta kaynak klasöründeki start.bat da oyunu açar; Python ve bağımlılıklar kurulu olmalı.
-RAR bir kaynak paketidir; içinde hazır Windows EXE'si bulunmaz. Oyunculara Python kurulumu
-gerektirmeyen Windows sürümü dağıtmak için ayrıca taşınabilir Windows paketi hazırlanmalıdır.
+Commit henüz oluşturulmamışsa önce değişiklikleri inceleyip `git add` ve `git commit` kullan. Token veya cihaz giriş kodunu depoya, issue'ya veya sohbet mesajına yazma. Başka bir bilgisayardaki kurulu oyunun dosyalarını bu kaynağın üstüne kopyalama.
 
-Yerel paket oluşturma: python packaging/build_release.py
-Yerel Python çalışma ortamıyla taşınabilir ZIP: python packaging/build_release.py --runtime .tools/python
+## Paketleri üretme
 
-Kod GNU GPL 3.0 veya sonraki sürümleri lisanslıdır; görseller için ASSETS_LICENSE.md ve üçüncü taraf bileşenler için
-THIRD_PARTY.md ile LICENSES dizinini koru.
+`Windows EXE`, main'e push ile otomatik çalışır. Diğer paketleri aynı main commit'inde Actions sayfasından veya CLI ile başlat:
+
+```bash
+gh workflow run appimage.yml --ref main
+gh workflow run debian-package.yml --ref main
+gh workflow run rpm.yml --ref main
+gh workflow run snap.yml --ref main
+gh workflow run nix.yml --ref main
+```
+
+Windows için yeniden üretim gerekirse `gh workflow run windows.yml --ref main` kullan. `Python package` testlerinin de başarılı olduğunu kontrol et.
+
+```bash
+gh run list --branch main --limit 15
+```
+
+Her iş akışının başarılı koşusundaki **ID**'yi not et. Bu sırada main'e yeni commit gönderme: bütün koşular yayınlanacak kaynakla aynı `head_sha` değerine sahip olmalıdır. Paket üretim dosyalarında veya notlarda bir hata düzeltilirse yeni commit'te kontroller yeniden çalıştırılır.
+
+## Doğrulanmış sürümü yayınlama
+
+`pyproject.toml`, `src/pixel_coloring/__init__.py` ve `snap/snapcraft.yaml` sürümleri aynı olmalıdır. `docs/release-notes/v<sürüm>.md` bulunmalıdır. Yeni bir etiket elle oluşturmak gerekli değildir; yayın iş akışı hedef commit üzerinde oluşturur.
+
+Actions → **Publish verified release** → **Run workflow** bölümünde altı koşu ID'sini gir. CLI karşılığı (yer tutucuları gerçek sayılarla değiştir):
+
+```bash
+gh workflow run publish-verified.yml --ref main \
+  -f appimage_run=APPIMAGE_ID -f deb_run=DEB_ID \
+  -f rpm_run=RPM_ID -f snap_run=SNAP_ID \
+  -f nix_run=NIX_ID -f windows_run=WINDOWS_ID
+```
+
+Yayın kontrolü her koşunun doğru depodan, doğru iş akışından ve **aynı commit'ten** geldiğini; başarıyla tamamlandığını doğrular. Farklı koşuların `SHA256SUMS` dosyaları birbirinin üstüne yazılmaz; paketler önce ayrı dizinlerde kontrol edilir. Aynı isimli dosyalar reddedilir.
+
+Son adım Windows EXE/ZIP, Linux paketleri, kaynak ZIP, Python wheel/sdist ve ortak `SHA256SUMS` ile `v<sürüm>` yayınını oluşturur. Mevcut sürümler silinmez veya değiştirilmez. Önceden var olan bir sürüm etiketinin üzerine yazılmaz.
+
+Nix flake üzerinden sunulur; ayrı Nix kurulum dosyası yüklenmez. AppImage, DEB, RPM, Snap ve Windows dosyalarının beklenen sürümlü adları zorunlu tutulur. Wheel içinde 900 `.pcolor` bulunduğu da kontrol edilir.
+
+## Yerel kaynak arşivi
+
+```bash
+python packaging/build_release.py
+```
+
+Temiz kaynak ZIP'ine sanal ortamlar, önbellekler, kişisel veritabanları, günlükler, kimlik bilgileri veya derlenmiş EXE eklenmez. Geçici hazırlık dizini otomatik temizlenir; komut tekrar çalıştırılabilir. Windows paketleri için eski gömülü Python `--runtime` yöntemi kaldırılmıştır; `packaging/build_windows.py` kullanılır.

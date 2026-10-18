@@ -31,10 +31,15 @@ jobs:
           .venv/bin/python -m pytest -q
           .venv/bin/python packaging/build_bundle.py
           .venv/bin/python packaging/build_rpm.py
+      - name: Create checksums
+        working-directory: dist
+        run: sha256sum ./*.rpm > SHA256SUMS
       - uses: actions/upload-artifact@v4
         with:
           name: piksel-atolyesi-rpm-x86_64
-          path: dist/*.rpm
+          path: |
+            dist/*.rpm
+            dist/SHA256SUMS
           if-no-files-found: error
   install:
     needs: build

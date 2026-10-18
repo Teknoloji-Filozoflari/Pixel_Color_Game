@@ -41,5 +41,7 @@ jobs:
           PY
           fi
           exit "$result"
+      - name: Lint
+        run: python -m ruff check src tests run.py packaging/build_bundle.py packaging/build_release.py packaging/build_windows.py packaging/windows/smoke_test.py packaging/verify_release_runs.py
       - name: Verify release sources
         run: python packaging/build_release.py

@@ -52,10 +52,20 @@ jobs:
           tar -C build/bundle -xzf bundle.tar.gz
       - uses: canonical/action-build@v1
         id: snapcraft
+      - name: Stage package and checksum
+        env:
+          SNAP_PACKAGE: ${{ steps.snapcraft.outputs.snap }}
+        run: |
+          mkdir -p dist
+          cp "$SNAP_PACKAGE" dist/
+          cd dist
+          sha256sum ./*.snap > SHA256SUMS
       - uses: actions/upload-artifact@v4
         with:
           name: piksel-atolyesi-snap-amd64
-          path: ${{ steps.snapcraft.outputs.snap }}
+          path: |
+            dist/*.snap
+            dist/SHA256SUMS
           if-no-files-found: error
   install:
     needs: build

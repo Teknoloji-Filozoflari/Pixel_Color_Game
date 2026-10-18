@@ -1,4 +1,4 @@
-name: Publish verified Linux packages
+name: Publish verified release
 
 on:
   workflow_dispatch:
@@ -23,6 +23,10 @@ on:
         description: Successful Nix build and smoke run ID
         required: true
         type: string
+      windows_run:
+        description: Successful Windows EXE build and install run ID
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -44,38 +48,58 @@ jobs:
       - name: Require successful package checks
         env:
           GH_TOKEN: ${{ github.token }}
-          RUN_IDS: ${{ inputs.appimage_run }} ${{ inputs.deb_run }} ${{ inputs.rpm_run }} ${{ inputs.snap_run }} ${{ inputs.nix_run }}
+          APPIMAGE_RUN: ${{ inputs.appimage_run }}
+          DEB_RUN: ${{ inputs.deb_run }}
+          RPM_RUN: ${{ inputs.rpm_run }}
+          SNAP_RUN: ${{ inputs.snap_run }}
+          NIX_RUN: ${{ inputs.nix_run }}
+          WINDOWS_RUN: ${{ inputs.windows_run }}
         shell: bash
         run: |
-          set -euo pipefail
-          for run_id in $RUN_IDS; do
-            [[ "$run_id" =~ ^[0-9]+$ ]]
-            test "$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run_id" --jq .conclusion)" = success
-          done
+          python packaging/verify_release_runs.py
       - uses: actions/download-artifact@v4
         with:
           run-id: ${{ inputs.appimage_run }}
           name: piksel-atolyesi-appimage-x86_64
           github-token: ${{ github.token }}
-          path: release-assets
+          path: verified/appimage
       - uses: actions/download-artifact@v4
         with:
           run-id: ${{ inputs.deb_run }}
           name: piksel-atolyesi-debian-amd64
           github-token: ${{ github.token }}
-          path: release-assets
+          path: verified/deb
       - uses: actions/download-artifact@v4
         with:
           run-id: ${{ inputs.rpm_run }}
           name: piksel-atolyesi-rpm-x86_64
           github-token: ${{ github.token }}
-          path: release-assets
+          path: verified/rpm
       - uses: actions/download-artifact@v4
         with:
           run-id: ${{ inputs.snap_run }}
           name: piksel-atolyesi-snap-amd64
           github-token: ${{ github.token }}
-          path: release-assets
+          path: verified/snap
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ inputs.windows_run }}
+          name: piksel-atolyesi-windows-x64
+          github-token: ${{ github.token }}
+          path: verified/windows
+      - name: Verify package checksums before combining assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir release-assets
+          for directory in verified/*; do
+            (cd "$directory" && sha256sum --check --strict SHA256SUMS)
+            while IFS= read -r -d '' package; do
+              name=$(basename "$package")
+              test ! -e "release-assets/$name"
+              cp "$package" "release-assets/$name"
+            done < <(find "$directory" -maxdepth 1 -type f ! -name SHA256SUMS -print0)
+          done
       - name: Build clean Python and source packages
         shell: bash
         run: |
@@ -90,6 +114,8 @@ jobs:
           test -f "release-assets/piksel-atolyesi_${version}-1_amd64.deb"
           test -f "release-assets/piksel-atolyesi-$version-1.fc43.x86_64.rpm"
           test -f "release-assets/piksel-atolyesi_${version}_amd64.snap"
+          test -f "release-assets/Piksel-Atolyesi-$version-Setup-x64.exe"
+          test -f "release-assets/piksel-atolyesi-$version-windows-x64.zip"
           python - <<'PY'
           from pathlib import Path
           import zipfile
@@ -98,7 +124,6 @@ jobs:
               assert len([name for name in archive.namelist() if name.endswith(".pcolor")]) == 900
           PY
           cd release-assets
-          sha256sum --check SHA256SUMS
           find . -maxdepth 1 -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS
       - name: Publish verified release
         env:

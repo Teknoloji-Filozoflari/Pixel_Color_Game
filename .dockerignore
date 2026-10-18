@@ -5,3 +5,15 @@ dist
 .pytest_cache
 **/__pycache__
 *.pyc
+.ruff_cache
+.mypy_cache
+.tools
+.agents
+.codex
+work
+runtime
+local-data
+*.sqlite3*
+*.log
+.env
+.env.*

@@ -1,0 +1,41 @@
+name: Windows EXE
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 35
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+      - name: Install build dependencies
+        run: python -m pip install -c requirements-tested.txt ".[dev]" PyInstaller==6.22.3
+      - name: Lint
+        run: python -m ruff check src tests run.py packaging/build_bundle.py packaging/build_release.py packaging/build_windows.py packaging/windows/smoke_test.py packaging/verify_release_runs.py
+      - name: Test
+        run: python -m pytest -q
+      - name: Build installer and portable archive
+        run: python packaging/build_windows.py
+      - name: Verify installer and native Windows startup
+        run: python packaging/windows/smoke_test.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: piksel-atolyesi-windows-x64
+          path: |
+            dist/*-Setup-x64.exe
+            dist/*-windows-x64.zip
+            dist/SHA256SUMS
+          if-no-files-found: error

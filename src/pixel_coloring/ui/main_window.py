@@ -2,6 +2,8 @@ import json
 import logging
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from queue import SimpleQueue
+from threading import Event
 
 from PySide6.QtCore import QIODevice, QSaveFile, Qt, QTimer
 from PySide6.QtGui import QPixmap
@@ -13,7 +15,9 @@ from PySide6.QtWidgets import (
     QFrame,
     QHBoxLayout,
     QMainWindow,
+    QMenu,
     QMessageBox,
+    QProgressDialog,
     QScrollArea,
     QSlider,
     QStackedWidget,
@@ -22,7 +26,7 @@ from PySide6.QtWidgets import (
 )
 
 from ..core.game_session import GameSession
-from ..importer.image_importer import import_image, validate_dimensions
+from ..importer.image_importer import validate_dimensions
 from ..importer.level_writer import read_level, read_thumbnail, write_level
 from ..persistence.save_manager import SaveManager
 from ..services.library import delete_imported
@@ -41,7 +45,6 @@ class MainWindow(QMainWindow):
         self.settings = {
             "grid": True,
             "numbers": True,
-            "feedback": True,
             "autosave": 300,
             "highlight": 0.75,
             "grid_opacity": 0.22,
@@ -56,6 +59,9 @@ class MainWindow(QMainWindow):
         self.settings['language'] = set_language(self.settings.get('language', 'tr'))
         self.saver = SaveManager(database)
         self.worker = ThreadPoolExecutor(max_workers=1, thread_name_prefix="levels")
+        self.batch_cancel = Event()
+        self.batch_progress = SimpleQueue()
+        self.batch_dialog = None
         self.job = None
         self.job_kind = None
         self.game = None
@@ -71,10 +77,6 @@ class MainWindow(QMainWindow):
         layout = QHBoxLayout(root)
         layout.setContentsMargins(0, 0, 0, 0)
         layout.setSpacing(0)
-        self.sidebar = QFrame()
-        self.sidebar.setFixedWidth(194)
-        self.nav_buttons = {}
-        self.sidebar.hide()
         self.stack = QStackedWidget()
         layout.addWidget(self.stack, 1)
         self.setCentralWidget(root)
@@ -86,7 +88,7 @@ class MainWindow(QMainWindow):
         self.autosave_timer.timeout.connect(self.save_game)
         self.autosave_timer.start(int(self.settings["autosave"]) * 1000)
         self.refresh_library()
-        self.show_home()
+        self.show_collection()
 
     def showEvent(self, event):
         super().showEvent(event)
@@ -132,17 +134,15 @@ class MainWindow(QMainWindow):
             except Exception as exc:
                 self.error(tr("Son kayıt tamamlanamadı"), exc)
                 return False
+            self.game.dispose()
             self.stack.removeWidget(self.game)
             self.game.deleteLater()
             self.game = None
-        self.sidebar.hide()
         return True
 
     def page(self, active, heading, subtitle):
         if not self.leave_game():
             return None
-        for key, widget in self.nav_buttons.items():
-            widget.setChecked(key == active)
         while self.stack.count():
             widget = self.stack.widget(0)
             self.stack.removeWidget(widget)
@@ -185,9 +185,6 @@ class MainWindow(QMainWindow):
             if max(self.metadata[id][2:4]) > 512
             else Qt.TransformationMode.FastTransformation,
         )
-
-    def show_home(self):
-        self.show_collection()
 
     def change_language(self, language):
         if language not in LANGUAGES or language == self.settings['language']:
@@ -253,8 +250,9 @@ class MainWindow(QMainWindow):
             painting = read_level(self.paths[id])
             with self.database.connect() as con:
                 con.execute("DELETE FROM progress WHERE painting_id=?", (id,))
+                con.execute("DELETE FROM view_states WHERE painting_id=?", (id,))
                 con.execute("DELETE FROM achievements WHERE id=?", ("complete:" + id,))
-            self.show_game((painting, 0, 0))
+            self.show_game((painting, 0, None))
         except Exception as exc:
             self.error(tr("Resim yeniden başlatılamadı"), exc)
 
@@ -296,21 +294,21 @@ class MainWindow(QMainWindow):
         def load():
             painting = read_level(self.paths[id])
             elapsed, selected = self.database.load(painting)
-            return painting, elapsed, selected
+            return painting, elapsed, selected, self.database.load_view(painting)
 
         self.job = self.worker.submit(load)
         self.job_kind = "load"
 
     def show_game(self, loaded):
-        painting, elapsed, selected = loaded
-        session = GameSession(painting)
-        session.elapsed_base, session.selected = elapsed, selected
+        painting, elapsed, selected, *view = loaded
+        session = GameSession(painting, selected=selected, view_state=view[0] if view else None)
+        session.elapsed_base = elapsed
         self.game = GameScreen(session, self.settings, self.debug)
         self.game.back_requested.connect(self.show_collection)
         self.game.save_requested.connect(self.save_game)
+        self.game.recording_export_requested.connect(self.export_recording)
         self.stack.addWidget(self.game)
         self.stack.setCurrentWidget(self.game)
-        self.sidebar.hide()
         self.game.canvas.setFocus()
         self.statusBar().showMessage(tr("Boyamaya hazır · Ctrl+S: kaydet · Orta fare: taşı"))
 
@@ -343,10 +341,16 @@ class MainWindow(QMainWindow):
     def save_game(self):
         if self.game:
             # A single ordered writer means an older autosave cannot overwrite a newer one.
+            self.game.canvas.remember_view()
             self.saver.save(self.game.session)
             self.statusBar().showMessage(tr("Kaydediliyor…"))
 
     def poll(self):
+        while not self.batch_progress.empty():
+            done, name = self.batch_progress.get_nowait()
+            if self.batch_dialog is not None:
+                self.batch_dialog.setValue(done)
+                self.batch_dialog.setLabelText(tr('Ekleniyor: {name}', name=name))
         try:
             if self.saver.poll():
                 self.statusBar().showMessage(tr("✓ İlerlemen bu cihaza kaydedildi"), 5000)
@@ -359,6 +363,10 @@ class MainWindow(QMainWindow):
                 result = job.result()
                 if kind == "load":
                     self.show_game(result)
+                elif kind == 'gif':
+                    self.statusBar().showMessage(tr('GIF kaydedildi: {path}', path=str(result)), 8000)
+                elif kind == 'batch':
+                    self.finish_batch(result)
                 else:
                     self.refresh_library()
                     self.collection_selected = result
@@ -366,7 +374,111 @@ class MainWindow(QMainWindow):
                     self.show_collection()
                     self.statusBar().showMessage(tr("✓ Resim koleksiyonuna eklendi"), 8000)
             except Exception as exc:
-                self.error(tr("Resim açılamadı") if kind == "load" else tr("Resim içe aktarılamadı"), exc)
+                if kind == 'batch':
+                    self.close_batch_dialog()
+                title = tr('GIF kaydedilemedi') if kind == 'gif' else (
+                    tr('Resim açılamadı') if kind == 'load' else tr('Resim içe aktarılamadı'))
+                self.error(title, exc)
+
+    def export_recording(self):
+        if self.job or not self.game:
+            return
+        menu = self.game.recording_menu
+        path, _ = QFileDialog.getSaveFileName(self, tr('GIF olarak kaydet'),
+                                             'boyama.gif', 'GIF (*.gif)')
+        if not path:
+            return
+        if not path.lower().endswith('.gif'):
+            path += '.gif'
+        menu.pause()
+        from ..core.timelapse import export_gif
+
+        self.job = self.worker.submit(export_gif, list(menu.recorder.frames), path)
+        self.job_kind = 'gif'
+        self.statusBar().showMessage(tr('GIF hazırlanıyor…'))
+
+    def import_menu(self, parent):
+        menu = QMenu(parent)
+        menu.addAction(tr('Resim seç'), self.import_dialog)
+        menu.addAction(tr('Toplu resim ekle'), self.import_multiple)
+        menu.addAction(tr('Klasörden ekle'), self.import_folder)
+        return menu
+
+    def import_multiple(self):
+        if self.job:
+            return
+        paths, _ = QFileDialog.getOpenFileNames(
+            self, tr('Toplu resim ekle'), '',
+            tr('Resimler (*.png *.jpg *.jpeg *.webp *.pcolor)'))
+        self.begin_batch([Path(path) for path in paths])
+
+    def import_folder(self):
+        if self.job:
+            return
+        directory = QFileDialog.getExistingDirectory(self, tr('Klasörden ekle'))
+        if not directory:
+            return
+        from ..importer.batch import folder_images
+
+        try:
+            paths = folder_images(directory)
+        except OSError as exc:
+            self.error(tr('Resim içe aktarılamadı'), exc)
+            return
+        if not paths:
+            QMessageBox.information(self, tr('Klasörden ekle'), tr('Bu klasörde desteklenen resim bulunamadı.'))
+            return
+        self.begin_batch(paths)
+
+    def begin_batch(self, paths):
+        if not paths or self.job:
+            return
+        from ..importer.batch import import_batch
+        from .batch_import import BatchImportDialog
+
+        dialog = BatchImportDialog(paths, self)
+        accepted = dialog.exec() == QDialog.DialogCode.Accepted
+        bounds, colors = dialog.options()
+        dialog.deleteLater()
+        if not accepted:
+            return
+        self.batch_cancel.clear()
+        self.batch_dialog = QProgressDialog(tr('Resimler hazırlanıyor…'), tr('İptal'), 0, len(paths), self)
+        self.batch_dialog.setWindowTitle(tr('Toplu resim ekle'))
+        self.batch_dialog.setMinimumDuration(0)
+        self.batch_dialog.setAutoClose(False)
+        self.batch_dialog.setAutoReset(False)
+        self.batch_dialog.canceled.connect(self.batch_cancel.set)
+        self.batch_dialog.show()
+        self.job = self.worker.submit(import_batch, paths, bounds, colors, self.data_dir / 'paintings',
+                                      self.database, self.batch_cancel, self.batch_progress)
+        self.job_kind = 'batch'
+
+    def close_batch_dialog(self):
+        if self.batch_dialog is not None:
+            self.batch_dialog.close()
+            self.batch_dialog.deleteLater()
+            self.batch_dialog = None
+
+    def finish_batch(self, result):
+        self.close_batch_dialog()
+        if result.imported:
+            self.refresh_library()
+            self.collection_selected = result.imported[-1]
+            self.collection_category = 'İçe aktarılan'
+            self.show_collection()
+        summary = tr('{count} resim eklendi.', count=len(result.imported))
+        if result.cancelled:
+            summary += ' ' + tr('İşlem iptal edildi; eklenen resimler korundu.')
+        self.statusBar().showMessage(summary, 10000)
+        if result.errors:
+            details = '\n'.join(name + ': ' + error for name, error in result.errors)
+            box = QMessageBox(QMessageBox.Icon.Warning, tr('Eklenemeyen dosyalar'), summary,
+                              QMessageBox.StandardButton.Ok, self)
+            box.setTextFormat(Qt.TextFormat.PlainText)
+            box.setDetailedText(details)
+            box.exec()
+            box.deleteLater()
 
     def import_dialog(self):
         if self.job:
@@ -379,21 +491,38 @@ class MainWindow(QMainWindow):
         from pathlib import Path
 
         path = Path(path)
-        self.statusBar().showMessage(tr("Resim dönüştürülüyor; renk paleti otomatik ayarlanıyor…"))
+        prepared = None
+        if path.suffix.lower() != '.pcolor':
+            from .import_preview import ImportPreviewDialog
+
+            try:
+                dialog = ImportPreviewDialog(path, self)
+                if dialog.exec() != QDialog.DialogCode.Accepted:
+                    dialog.deleteLater()
+                    return
+                prepared = dialog.painting
+                dialog.deleteLater()
+            except Exception as exc:
+                self.error(tr('Resim içe aktarılamadı'), exc)
+                return
+        self.statusBar().showMessage(tr("Resim koleksiyona ekleniyor…"))
 
         def convert():
             import uuid
 
+            painting = prepared
             if path.suffix.lower() == ".pcolor":
                 painting = read_level(path)
                 validate_dimensions(painting.width, painting.height)
                 # Independent imported copies cannot overwrite existing painting progress.
                 painting.id = str(uuid.uuid4())
-            else:
-                painting = import_image(path)
             dest = self.data_dir / "paintings" / (painting.id + ".pcolor")
             write_level(painting, dest)
-            self.database.register(painting, dest)
+            try:
+                self.database.register(painting, dest)
+            except Exception:
+                dest.unlink(missing_ok=True)
+                raise
             return painting.id
 
         self.job = self.worker.submit(convert)
@@ -421,7 +550,6 @@ class MainWindow(QMainWindow):
         for key, title in [
             ("grid", tr("Hücre ızgarası")),
             ("numbers", tr("Yakından bakarken numaralar")),
-            ("feedback", tr("Yanlış renkte kırmızı geri bildirim")),
             ("sound", tr("Tamamlandığında sistem sesi")),
         ]:
             cb = QCheckBox(title)
@@ -493,9 +621,9 @@ class MainWindow(QMainWindow):
         guide_box.addWidget(label(tr('Kendi resmini ekle'), 'subheading'))
         for text in (
             'Ana sayfadaki resim ekle simgesini kullan. PNG, JPG, JPEG, WEBP ve .pcolor dosyaları desteklenir.',
-            'En fazla 1920 piksel genişlik ve 1080 piksel yükseklik: toplam üst sınır 2.073.600 pikseldir. Daha büyük resimleri eklemeden önce küçültmelisin.',
-            'Resmin özgün boyutları korunur; her piksel bir boyama hücresi olur. Küçük ve belirgin şekilli resimler daha kolay tamamlanır.',
-            'Normal resimlerde renk paleti boyuta göre otomatik belirlenir; hedef 10–60 renktir. Kaynak resimde daha az renk varsa daha az kullanılabilir. Şeffaf alanlar beyaz olur. .pcolor dosyalarının hazır paleti korunur.',
+            'Boyama boyutu en fazla 1920 × 1080 piksel olabilir. Daha büyük resimleri önizlemede küçültebilirsin.',
+            'Önizlemede piksel boyutunu ve renk sayısını ayarlayabilirsin. Her piksel bir boyama hücresi olur; küçük resimler daha kolay tamamlanır.',
+            'Renk sayısını otomatik seçebilir veya 2–256 arasında ayarlayabilirsin. Özgün resim ve boyama önizlemesi yan yana gösterilir. Şeffaf alanlar beyaz olur. .pcolor dosyalarının hazır paleti korunur.',
             'Resmin Yüklenenler sekmesine eklenir. Buradan resmi ve boyama kaydını silebilirsin; bilgisayarındaki özgün dosya silinmez.',
         ):
             paragraph = label(tr(text), 'muted')
@@ -505,7 +633,7 @@ class MainWindow(QMainWindow):
         root.addWidget(
             label(
                 tr("Kısayollar: Ctrl+S kaydet\n"
-                "F sığdır · G ızgara · M mini harita · Ok tuşları: resimde gezin\n"
+                "F sığdır · G ızgara · M mini harita · Ok tuşları: bir kare ilerle\n"
                 "Sağ tık: hücrenin rengini seç · Toplu boya: bitişik alanı doldur\n"
                 "Orta fare: taşı · Tekerlek: yakınlaştır"),
                 "muted",
@@ -531,6 +659,10 @@ class MainWindow(QMainWindow):
             )
             event.ignore()
             return
+        if self.game:
+            self.game.dispose()
+        self.batch_cancel.set()
+        self.close_batch_dialog()
         self.saver.close()
         self.worker.shutdown(wait=True)
         self.autosave_timer.stop()
