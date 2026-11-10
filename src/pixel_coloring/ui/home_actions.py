@@ -7,7 +7,8 @@ class HomeAction(QPushButton):
     def __init__(self, kind, caption, callback):
         super().__init__()
         self.kind = kind
-        self.setFixedSize(48, 44)
+        # Filter sits beside the language combo; keep it a step smaller than the other actions.
+        self.setFixedSize(36, 34) if kind == 'filter' else self.setFixedSize(48, 44)
         self.setToolTip(caption)
         self.setAccessibleName(caption)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
@@ -19,7 +20,8 @@ class HomeAction(QPushButton):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         color = '#F3946F' if self.kind == 'exit' and self.underMouse() else '#D4E8E2'
-        painter.setPen(QPen(QColor(color), 2, Qt.PenStyle.SolidLine,
+        width = 1.8 if self.kind == 'filter' else 2
+        painter.setPen(QPen(QColor(color), width, Qt.PenStyle.SolidLine,
                             Qt.PenCapStyle.RoundCap, Qt.PenJoinStyle.RoundJoin))
         painter.setBrush(Qt.BrushStyle.NoBrush)
         if self.kind == 'add':
@@ -43,12 +45,12 @@ class HomeAction(QPushButton):
                 painter.rotate(45)
         elif self.kind == 'filter':
             painter.drawPolyline(QPolygonF([
-                QPointF(12, 12), QPointF(36, 12), QPointF(27, 23),
-                QPointF(27, 33), QPointF(21, 36), QPointF(21, 23), QPointF(12, 12),
+                QPointF(8, 8), QPointF(28, 8), QPointF(20, 17),
+                QPointF(20, 25), QPointF(16, 27), QPointF(16, 17), QPointF(8, 8),
             ]))
             if self.property('filtersActive'):
-                painter.setPen(QPen(QColor('#F0784F'), 2))
-                painter.drawEllipse(QRectF(30, 28, 7, 7))
+                painter.setPen(QPen(QColor('#F0784F'), 1.8))
+                painter.drawEllipse(QRectF(23, 21, 5, 5))
         else:
             painter.drawLine(16, 14, 32, 30)
             painter.drawLine(32, 14, 16, 30)
