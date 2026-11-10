@@ -1588,5 +1588,17 @@
     "az": "Boyama yazısı · dayandırılıb, davam edə bilərsən",
     "es": "Grabación · en pausa, puedes continuar",
     "ru": "Запись · на паузе, можно продолжить"
+  },
+  "Filtreler": {
+    "en": "Filters",
+    "az": "Filtrlər",
+    "es": "Filtros",
+    "ru": "Фильтры"
+  },
+  "Filtreler · seçili": {
+    "en": "Filters · active",
+    "az": "Filtrlər · aktiv",
+    "es": "Filtros · activos",
+    "ru": "Фильтры · активны"
   }
 }

@@ -7,11 +7,13 @@ from PySide6.QtWidgets import (
     QGridLayout,
     QHBoxLayout,
     QLayout,
+    QMenu,
     QPushButton,
     QScrollArea,
     QSizePolicy,
     QVBoxLayout,
     QWidget,
+    QWidgetAction,
 )
 
 from ..importer.level_writer import read_level
@@ -86,22 +88,83 @@ class CollectionPreview(QWidget):
         painter.end()
 
 
-def _combo(object_name, accessible):
+def _compact_combo(object_name, accessible):
     widget = QComboBox()
     widget.setObjectName(object_name)
     widget.setAccessibleName(accessible)
     widget.setCursor(Qt.CursorShape.PointingHandCursor)
-    widget.setMinimumHeight(40)
+    widget.setFixedHeight(32)
+    widget.setMinimumWidth(168)
     widget.setStyleSheet('''
         QComboBox {background:#263C3B; color:#D4E8E2; border:1px solid #52786D;
-            border-radius:10px; padding:0 12px; font-weight:600;}
+            border-radius:8px; padding:0 10px; font-size:12px; font-weight:600;}
         QComboBox:hover {background:#315048; border-color:#85C7AD;}
         QComboBox:focus {border:2px solid #F3946F;}
-        QComboBox::drop-down {border:0; width:26px;}
+        QComboBox::drop-down {border:0; width:22px;}
         QComboBox QAbstractItemView {background:#263238; color:#E5F1ED;
-            selection-background-color:#315B51; padding:6px; border:1px solid #52786D;}
+            selection-background-color:#315B51; padding:4px; border:1px solid #52786D;}
     ''')
     return widget
+
+
+class FilterMenu(QMenu):
+    changed = Signal()
+
+    def __init__(self, settings, parent=None):
+        super().__init__(parent)
+        self.settings = settings
+        panel = QWidget(self)
+        panel.setObjectName('filterMenuPanel')
+        panel.setStyleSheet('''
+            QWidget#filterMenuPanel {background:#1C2928; border:1px solid #496B62; border-radius:12px;}
+            QLabel {color:#AEB9C4; font-size:11px; font-weight:600;}
+        ''')
+        layout = QVBoxLayout(panel)
+        layout.setContentsMargins(12, 10, 12, 12)
+        layout.setSpacing(6)
+
+        self.difficulty = _compact_combo('difficultyFilter', tr('Zorluk'))
+        self.difficulty.addItem(tr('Tüm zorluklar'), '')
+        for name in DIFFICULTIES:
+            self.difficulty.addItem(tr(name), name)
+        self.difficulty.setCurrentIndex(
+            max(0, self.difficulty.findData(settings.get('collection_difficulty', '')))
+        )
+
+        self.status = _compact_combo('statusFilter', tr('Durum'))
+        for key, caption in STATUS_FILTERS:
+            self.status.addItem(tr(caption), key)
+        self.status.setCurrentIndex(
+            max(0, self.status.findData(settings.get('collection_status', 'all')))
+        )
+
+        self.sort = _compact_combo('sortFilter', tr('Sıralama'))
+        for key, caption in SORT_OPTIONS:
+            self.sort.addItem(tr(caption), key)
+        self.sort.setCurrentIndex(
+            max(0, self.sort.findData(settings.get('collection_sort', 'catalog')))
+        )
+
+        for caption, combo in (
+            (tr('Zorluk'), self.difficulty),
+            (tr('Durum'), self.status),
+            (tr('Sıralama'), self.sort),
+        ):
+            layout.addWidget(label(caption, 'muted'))
+            layout.addWidget(combo)
+
+        action = QWidgetAction(self)
+        action.setDefaultWidget(panel)
+        self.addAction(action)
+        for combo in (self.difficulty, self.status, self.sort):
+            combo.currentIndexChanged.connect(self.changed.emit)
+
+    def is_active(self):
+        return (
+            bool(self.difficulty.currentData())
+            or self.status.currentData() != 'all'
+            or self.sort.currentData() != 'catalog'
+        )
 
 
 def build_collection(window, root):
@@ -125,6 +188,12 @@ def build_collection(window, root):
     brand.addWidget(logo)
     brand.addWidget(label(tr('Bir resim seç. Renklerle tamamla.'), 'muted'))
     head.addLayout(brand, 1)
+
+    filter_button = HomeAction('filter', tr('Filtreler'), None)
+    filter_menu = FilterMenu(window.settings, filter_button)
+    filter_button.setMenu(filter_menu)
+    head.addWidget(filter_button, alignment=Qt.AlignmentFlag.AlignVCenter)
+
     language_combo = LanguageSelector()
     language_combo.setObjectName('languageSelector')
     language_combo.setAccessibleName(tr('Dil'))
@@ -205,31 +274,9 @@ def build_collection(window, root):
     arrange_categories()
     root.addWidget(category_bar)
 
-    filters = QFrame()
-    filters.setObjectName('panel')
-    filter_row = QHBoxLayout(filters)
-    filter_row.setContentsMargins(14, 10, 14, 10)
-    filter_row.setSpacing(10)
-    difficulty = _combo('difficultyFilter', tr('Zorluk'))
-    difficulty.addItem(tr('Tüm zorluklar'), '')
-    for name in DIFFICULTIES:
-        difficulty.addItem(tr(name), name)
-    difficulty.setCurrentIndex(max(0, difficulty.findData(window.settings.get('collection_difficulty', ''))))
-    status = _combo('statusFilter', tr('Durum'))
-    for key, caption in STATUS_FILTERS:
-        status.addItem(tr(caption), key)
-    status.setCurrentIndex(max(0, status.findData(window.settings.get('collection_status', 'all'))))
-    sort = _combo('sortFilter', tr('Sıralama'))
-    for key, caption in SORT_OPTIONS:
-        sort.addItem(tr(caption), key)
-    sort.setCurrentIndex(max(0, sort.findData(window.settings.get('collection_sort', 'catalog'))))
-    filter_row.addWidget(label(tr('Zorluk'), 'muted'))
-    filter_row.addWidget(difficulty, 1)
-    filter_row.addWidget(label(tr('Durum'), 'muted'))
-    filter_row.addWidget(status, 1)
-    filter_row.addWidget(label(tr('Sıralama'), 'muted'))
-    filter_row.addWidget(sort, 1)
-    root.addWidget(filters)
+    difficulty = filter_menu.difficulty
+    status = filter_menu.status
+    sort = filter_menu.sort
 
     content = QHBoxLayout()
     content.setSpacing(22)
@@ -269,6 +316,15 @@ def build_collection(window, root):
 
     icon_timer.timeout.connect(load_visible_icons)
     scroll.verticalScrollBar().valueChanged.connect(lambda _: icon_timer.start(0))
+
+    def sync_filter_button():
+        active = filter_menu.is_active()
+        filter_button.setProperty('filtersActive', active)
+        filter_button.setToolTip(
+            tr('Filtreler · seçili') if active else tr('Filtreler')
+        )
+        filter_button.setAccessibleName(filter_button.toolTip())
+        filter_button.update()
 
     def toggle_favorite(chosen):
         current = set(window.settings.get('favorites') or [])
@@ -443,11 +499,11 @@ def build_collection(window, root):
             })
         except Exception:
             pass
+        sync_filter_button()
         arrange(force=True)
 
-    difficulty.currentIndexChanged.connect(lambda *_: persist_filters())
-    status.currentIndexChanged.connect(lambda *_: persist_filters())
-    sort.currentIndexChanged.connect(lambda *_: persist_filters())
+    filter_menu.changed.connect(persist_filters)
+    sync_filter_button()
 
     def category_changed(name):
         window.collection_category = name
