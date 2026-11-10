@@ -41,6 +41,14 @@ class HomeAction(QPushButton):
             for _ in range(8):
                 painter.drawLine(0, -9, 0, -13)
                 painter.rotate(45)
+        elif self.kind == 'filter':
+            painter.drawPolyline(QPolygonF([
+                QPointF(12, 12), QPointF(36, 12), QPointF(27, 23),
+                QPointF(27, 33), QPointF(21, 36), QPointF(21, 23), QPointF(12, 12),
+            ]))
+            if self.property('filtersActive'):
+                painter.setPen(QPen(QColor('#F0784F'), 2))
+                painter.drawEllipse(QRectF(30, 28, 7, 7))
         else:
             painter.drawLine(16, 14, 32, 30)
             painter.drawLine(32, 14, 16, 30)
