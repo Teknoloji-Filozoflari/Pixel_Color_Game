@@ -293,16 +293,15 @@ class MainWindow(QMainWindow):
 
         def load():
             painting = read_level(self.paths[id])
-            elapsed, selected = self.database.load(painting)
-            return painting, elapsed, selected, self.database.load_view(painting)
+            _, selected = self.database.load(painting)
+            return painting, selected, self.database.load_view(painting)
 
         self.job = self.worker.submit(load)
         self.job_kind = "load"
 
     def show_game(self, loaded):
-        painting, elapsed, selected, *view = loaded
+        painting, selected, *view = loaded
         session = GameSession(painting, selected=selected, view_state=view[0] if view else None)
-        session.elapsed_base = elapsed
         self.game = GameScreen(session, self.settings, self.debug)
         self.game.back_requested.connect(self.show_collection)
         self.game.save_requested.connect(self.save_game)

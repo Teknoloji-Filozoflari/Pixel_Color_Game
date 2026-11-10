@@ -11,6 +11,7 @@ WORKFLOWS = {
     "SNAP_RUN": "snap.yml",
     "NIX_RUN": "nix.yml",
     "WINDOWS_RUN": "windows.yml",
+    "MACOS_RUN": "macos.yml",
 }
 
 

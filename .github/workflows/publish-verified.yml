@@ -27,6 +27,10 @@ on:
         description: Successful Windows EXE build and install run ID
         required: true
         type: string
+      macos_run:
+        description: Successful macOS app build and smoke run ID
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -54,6 +58,7 @@ jobs:
           SNAP_RUN: ${{ inputs.snap_run }}
           NIX_RUN: ${{ inputs.nix_run }}
           WINDOWS_RUN: ${{ inputs.windows_run }}
+          MACOS_RUN: ${{ inputs.macos_run }}
         shell: bash
         run: |
           python packaging/verify_release_runs.py
@@ -87,6 +92,12 @@ jobs:
           name: piksel-atolyesi-windows-x64
           github-token: ${{ github.token }}
           path: verified/windows
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ inputs.macos_run }}
+          name: piksel-atolyesi-macos-arm64
+          github-token: ${{ github.token }}
+          path: verified/macos-arm64
       - name: Verify package checksums before combining assets
         shell: bash
         run: |
@@ -116,6 +127,7 @@ jobs:
           test -f "release-assets/piksel-atolyesi_${version}_amd64.snap"
           test -f "release-assets/Piksel-Atolyesi-$version-Setup-x64.exe"
           test -f "release-assets/piksel-atolyesi-$version-windows-x64.zip"
+          test -f "release-assets/piksel-atolyesi-$version-macos-arm64.zip"
           python - <<'PY'
           from pathlib import Path
           import zipfile

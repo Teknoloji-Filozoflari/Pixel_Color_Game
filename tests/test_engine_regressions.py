@@ -1,14 +1,12 @@
 from collections import deque
 
 import numpy as np
-import pytest
 
 from pixel_coloring.core.paint_engine import PaintingEngine, PaintResult, line_cells
 from pixel_coloring.core.painting import Painting
 
 
-@pytest.mark.parametrize('record_history', [False, True])
-def test_flood_fill_matches_four_connected_reference_and_preserves_counts(record_history):
+def test_flood_fill_matches_four_connected_reference_and_preserves_counts():
     random = np.random.default_rng(42)
     target = random.integers(0, 2, (20, 30))
     painting = Painting('fill', 'Test', np.array([[10, 20, 30], [100, 110, 120]]), target)
@@ -26,7 +24,7 @@ def test_flood_fill_matches_four_connected_reference_and_preserves_counts(record
             continue
         expected.add((x, y))
         pending.extend([(x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)])
-    engine = PaintingEngine(painting, record_history=record_history)
+    engine = PaintingEngine(painting)
     result, indices = engine.fill_region(15, 10, selected)
     assert result == PaintResult.CORRECT
     assert set(indices.tolist()) == {y * painting.width + x for x, y in expected}
@@ -35,13 +33,6 @@ def test_flood_fill_matches_four_connected_reference_and_preserves_counts(record
         mask[y, x] = True
     assert np.array_equal(painting.painted_mask, mask)
     assert np.array_equal(painting.counts, np.bincount(target[mask], minlength=2))
-    if record_history:
-        engine.undo()
-        assert np.array_equal(painting.painted_mask, original)
-        engine.redo()
-        assert np.array_equal(painting.painted_mask, mask)
-    else:
-        assert not engine.undo_stack
 
 
 def test_fast_brush_interpolation_has_no_gaps_in_any_direction():

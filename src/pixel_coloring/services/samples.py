@@ -17,6 +17,8 @@ def ensure_samples(folder, database, progress=None):
     catalog = json.loads((gallery / "catalog.json").read_text(encoding="utf-8"))
     with database.connect() as con:
         con.execute("CREATE TABLE IF NOT EXISTS bundle_cache (id TEXT PRIMARY KEY, signature TEXT)")
+        # Keep older installs aligned with the renamed Vehicles category label.
+        con.execute("UPDATE paintings SET category='Araçlar' WHERE category='Arabalar'")
         cache = dict(con.execute("SELECT id,signature FROM bundle_cache"))
         registered = {r[0]: r[1:] for r in con.execute(
             "SELECT id,width,height,palette_size,data_path FROM paintings")}

@@ -40,6 +40,10 @@ class ViewButton(QPushButton):
         elif self.kind == 'recording':
             q.drawRoundedRect(QRectF(10, 11, 22, 18), 3, 3)
             q.drawEllipse(QRectF(17, 16, 8, 8))
+        elif self.kind == 'target':
+            q.drawRect(QRectF(10, 10, 14, 20))
+            q.drawRect(QRectF(18, 10, 14, 20))
+            q.drawLine(24, 10, 24, 30)
         elif self.kind == 'highlight':
             q.drawRect(QRectF(11, 10, 20, 20))
             for offset in (0, 6, 12):

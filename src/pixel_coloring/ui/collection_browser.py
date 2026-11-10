@@ -21,6 +21,23 @@ from .i18n import LANGUAGES, number, painting_meaning, painting_title, tr
 from .progress_tile import ProgressTile
 from .widgets import ResponsiveGrid, button, label
 
+DIFFICULTIES = [
+    'Çok Kolay', 'Kolay', 'Kolay-Orta', 'Orta', 'Orta-Zor', 'Zor', 'Uzman',
+]
+STATUS_FILTERS = [
+    ('all', 'Tümü'),
+    ('not_started', 'Başlanmamış'),
+    ('in_progress', 'Devam eden'),
+    ('completed', 'Tamamlanan'),
+    ('favorites', 'Favoriler'),
+]
+SORT_OPTIONS = [
+    ('catalog', 'Katalog sırası'),
+    ('difficulty', 'Zorluk'),
+    ('progress', 'İlerleme'),
+    ('recent', 'Son oynanan'),
+]
+
 
 class CategoryBar(QFrame):
     resized = Signal()
@@ -69,7 +86,34 @@ class CollectionPreview(QWidget):
         painter.end()
 
 
+def _combo(object_name, accessible):
+    widget = QComboBox()
+    widget.setObjectName(object_name)
+    widget.setAccessibleName(accessible)
+    widget.setCursor(Qt.CursorShape.PointingHandCursor)
+    widget.setMinimumHeight(40)
+    widget.setStyleSheet('''
+        QComboBox {background:#263C3B; color:#D4E8E2; border:1px solid #52786D;
+            border-radius:10px; padding:0 12px; font-weight:600;}
+        QComboBox:hover {background:#315048; border-color:#85C7AD;}
+        QComboBox:focus {border:2px solid #F3946F;}
+        QComboBox::drop-down {border:0; width:26px;}
+        QComboBox QAbstractItemView {background:#263238; color:#E5F1ED;
+            selection-background-color:#315B51; padding:6px; border:1px solid #52786D;}
+    ''')
+    return widget
+
+
 def build_collection(window, root):
+    favorites = set(window.settings.get('favorites') or [])
+    window.settings['favorites'] = sorted(favorites)
+    if window.settings.get('collection_status') not in {key for key, _ in STATUS_FILTERS}:
+        window.settings['collection_status'] = 'all'
+    if window.settings.get('collection_sort') not in {key for key, _ in SORT_OPTIONS}:
+        window.settings['collection_sort'] = 'catalog'
+    if window.settings.get('collection_difficulty') not in (None, '', *DIFFICULTIES):
+        window.settings['collection_difficulty'] = ''
+
     hero = QFrame()
     hero.setObjectName('panel')
     head = QHBoxLayout(hero)
@@ -109,7 +153,7 @@ def build_collection(window, root):
     head.addWidget(HomeAction('exit', tr('Çıkış'), window.close))
     root.addWidget(hero)
     categories = ['Tüm kategoriler', 'Doğa', 'Hayvanlar', 'Fantastik', 'Manzaralar',
-                  'Şehirler', 'TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Arabalar', 'İçe aktarılan']
+                  'Şehirler', 'TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar', 'İçe aktarılan']
     if window.collection_category not in categories:
         window.collection_category = categories[0]
     category_bar = CategoryBar()
@@ -160,6 +204,33 @@ def build_collection(window, root):
     category_bar.resized.connect(arrange_categories)
     arrange_categories()
     root.addWidget(category_bar)
+
+    filters = QFrame()
+    filters.setObjectName('panel')
+    filter_row = QHBoxLayout(filters)
+    filter_row.setContentsMargins(14, 10, 14, 10)
+    filter_row.setSpacing(10)
+    difficulty = _combo('difficultyFilter', tr('Zorluk'))
+    difficulty.addItem(tr('Tüm zorluklar'), '')
+    for name in DIFFICULTIES:
+        difficulty.addItem(tr(name), name)
+    difficulty.setCurrentIndex(max(0, difficulty.findData(window.settings.get('collection_difficulty', ''))))
+    status = _combo('statusFilter', tr('Durum'))
+    for key, caption in STATUS_FILTERS:
+        status.addItem(tr(caption), key)
+    status.setCurrentIndex(max(0, status.findData(window.settings.get('collection_status', 'all'))))
+    sort = _combo('sortFilter', tr('Sıralama'))
+    for key, caption in SORT_OPTIONS:
+        sort.addItem(tr(caption), key)
+    sort.setCurrentIndex(max(0, sort.findData(window.settings.get('collection_sort', 'catalog'))))
+    filter_row.addWidget(label(tr('Zorluk'), 'muted'))
+    filter_row.addWidget(difficulty, 1)
+    filter_row.addWidget(label(tr('Durum'), 'muted'))
+    filter_row.addWidget(status, 1)
+    filter_row.addWidget(label(tr('Sıralama'), 'muted'))
+    filter_row.addWidget(sort, 1)
+    root.addWidget(filters)
+
     content = QHBoxLayout()
     content.setSpacing(22)
     details = QFrame()
@@ -183,6 +254,7 @@ def build_collection(window, root):
     loaded_icons = set()
     icon_timer = QTimer(container)
     icon_timer.setSingleShot(True)
+    progress = window.database.progress_map()
 
     def load_visible_icons():
         viewport = scroll.viewport().rect()
@@ -197,6 +269,21 @@ def build_collection(window, root):
 
     icon_timer.timeout.connect(load_visible_icons)
     scroll.verticalScrollBar().valueChanged.connect(lambda _: icon_timer.start(0))
+
+    def toggle_favorite(chosen):
+        current = set(window.settings.get('favorites') or [])
+        if chosen in current:
+            current.remove(chosen)
+        else:
+            current.add(chosen)
+        window.settings['favorites'] = sorted(current)
+        try:
+            window.database.set_settings({'favorites': window.settings['favorites']})
+        except Exception:
+            pass
+        arrange(force=True)
+        if window.collection_selected == chosen:
+            select(chosen)
 
     def select(chosen):
         window.collection_selected = chosen
@@ -228,7 +315,12 @@ def build_collection(window, root):
         info = QFrame()
         info.setStyleSheet('QFrame {background:#216F65; border-radius:10px;}')
         info_box = QVBoxLayout(info)
-        dimensions = label(f'{width} × {height}   ·   {number(width*height)} px')
+        meta = window.level_details.get(chosen, {})
+        difficulty_name = meta.get('difficulty')
+        lines = [f'{width} × {height}   ·   {number(width*height)} px']
+        if difficulty_name:
+            lines.append(tr(difficulty_name))
+        dimensions = label('\n'.join(lines))
         dimensions.setAlignment(Qt.AlignmentFlag.AlignCenter)
         info_box.addWidget(dimensions)
         palette = QPixmap(320, max(1, (len(p.palette)+15)//16)*20)
@@ -242,6 +334,9 @@ def build_collection(window, root):
         colors.setAlignment(Qt.AlignmentFlag.AlignCenter)
         info_box.addWidget(colors)
         detail_box.addWidget(info)
+        favorited = chosen in set(window.settings.get('favorites') or [])
+        favorite_caption = tr('Favoriden çıkar') if favorited else tr('Favorilere ekle')
+        detail_box.addWidget(button(favorite_caption, lambda: toggle_favorite(chosen)))
         action = tr('Baştan başla') if p.progress == 1 else (tr('Devam et') if p.painted_count else tr('Boyamaya başla'))
         detail_box.addWidget(button(action, lambda: window.restart_painting(chosen) if p.progress == 1 else window.open_painting(chosen), True))
         detail_box.addWidget(button(tr('Önizle'), lambda: window.preview_painting(chosen)))
@@ -250,33 +345,66 @@ def build_collection(window, root):
         if not chosen.startswith('sample-'):
             detail_box.addWidget(button(tr('Resmi sil'), lambda: window.delete_painting(chosen)))
 
-    progress = window.database.progress_map()
     for key, (title, cat, *_rest) in window.metadata.items():
-        title = painting_title(key, title)
+        display_title = painting_title(key, title)
         percent = progress.get(key, (0,))[0]
         tile = ProgressTile(percent)
         tile.setCheckable(True)
         tile.setStyleSheet('QPushButton:checked {background:#315B51; border:2px solid #8BC9B5;}')
         tile.setFixedSize(96, 92)
         tile.setIconSize(QSize(78, 72))
-        status = tr('Bitti') if percent >= 100 else tr('%{percent} boyandı', percent=number(percent, 1))
-        tile.setToolTip(title + ' · ' + status)
-        tile.setAccessibleName(title + ' · ' + status)
+        status_text = tr('Bitti') if percent >= 100 else tr('%{percent} boyandı', percent=number(percent, 1))
+        tile.setToolTip(display_title + ' · ' + status_text)
+        tile.setAccessibleName(display_title + ' · ' + status_text)
         meta = window.level_details.get(key, {})
-        tile.setProperty('level_order', meta.get('order'))
+        tile.setProperty('level_order', meta.get('order', 10**9))
+        tile.setProperty('level_tier', meta.get('tier', 99))
+        tile.setProperty('level_difficulty', meta.get('difficulty', ''))
         tile.setProperty('level_category', cat)
+        tile.setProperty('progress_percent', float(percent or 0))
+        tile.setProperty('last_played', float((progress.get(key) or (0, 0, 0, 0))[3] or 0))
         tile.clicked.connect(lambda checked=False, chosen=key: select(chosen))
         tiles.append((tile, key, cat))
 
     last_arrangement = None
 
-    def arrange():
+    def matches(key, cat, tile):
+        if window.collection_category not in ('Tüm kategoriler', cat):
+            return False
+        wanted_difficulty = difficulty.currentData()
+        if wanted_difficulty and tile.property('level_difficulty') != wanted_difficulty:
+            return False
+        percent = float(tile.property('progress_percent') or 0)
+        status_key = status.currentData()
+        favorited = key in set(window.settings.get('favorites') or [])
+        if status_key == 'not_started' and percent > 0:
+            return False
+        if status_key == 'in_progress' and not (0 < percent < 100):
+            return False
+        if status_key == 'completed' and percent < 100:
+            return False
+        if status_key == 'favorites' and not favorited:
+            return False
+        return True
+
+    def sort_key(item):
+        tile, key, cat = item
+        mode = sort.currentData()
+        if mode == 'difficulty':
+            return (tile.property('level_tier') or 99, tile.property('level_order') or 10**9, key)
+        if mode == 'progress':
+            return (-float(tile.property('progress_percent') or 0), tile.property('level_order') or 10**9, key)
+        if mode == 'recent':
+            return (-float(tile.property('last_played') or 0), tile.property('level_order') or 10**9, key)
+        return (cat, tile.property('level_order') or 10**9, key)
+
+    def arrange(force=False):
         nonlocal last_arrangement
-        visible = [(t, k) for t, k, c in tiles
-                   if window.collection_category == 'Tüm kategoriler' or window.collection_category == c]
+        visible = [(t, k) for t, k, c in sorted(tiles, key=sort_key) if matches(k, c, t)]
         columns = max(1, scroll.viewport().width() // 108)
-        arrangement = (columns, tuple(key for _, key in visible))
-        if arrangement == last_arrangement:
+        arrangement = (columns, status.currentData(), difficulty.currentData(), sort.currentData(),
+                       window.collection_category, tuple(key for _, key in visible))
+        if not force and arrangement == last_arrangement:
             if not icon_timer.isActive():
                 icon_timer.start(0)
             return
@@ -296,21 +424,39 @@ def build_collection(window, root):
                     widget.hide()
                     widget.setParent(None)
                     widget.deleteLater()
-            detail_box.addWidget(label(tr('Bu kategoride henüz resim yok.'), 'subheading'))
+            detail_box.addWidget(label(tr('Bu filtreyle eşleşen resim yok.'), 'subheading'))
             if window.collection_category == 'İçe aktarılan':
                 detail_box.addWidget(button(tr('Resim ekle'), window.import_dialog, True))
         if visible and window.collection_selected not in [key for _, key in visible]:
             select(visible[0][1])
         icon_timer.start(0)
 
+    def persist_filters():
+        window.settings['collection_difficulty'] = difficulty.currentData() or ''
+        window.settings['collection_status'] = status.currentData()
+        window.settings['collection_sort'] = sort.currentData()
+        try:
+            window.database.set_settings({
+                'collection_difficulty': window.settings['collection_difficulty'],
+                'collection_status': window.settings['collection_status'],
+                'collection_sort': window.settings['collection_sort'],
+            })
+        except Exception:
+            pass
+        arrange(force=True)
+
+    difficulty.currentIndexChanged.connect(lambda *_: persist_filters())
+    status.currentIndexChanged.connect(lambda *_: persist_filters())
+    sort.currentIndexChanged.connect(lambda *_: persist_filters())
+
     def category_changed(name):
         window.collection_category = name
-        arrange()
+        arrange(force=True)
     for name, tab in window.category_buttons.items():
         tab.clicked.connect(lambda checked=False, selected=name: category_changed(selected))
     container.resized.connect(arrange)
     scroll.viewport_resized.connect(arrange)
     previous_selection = window.collection_selected
-    arrange()
+    arrange(force=True)
     if previous_selection == window.collection_selected and window.collection_selected in window.paths:
         select(window.collection_selected)

@@ -15,7 +15,7 @@ Piksel Atölyesi toplam **900** hazır resim içerir. Uygulamanın kullandığı
 | TÜRK MOTİFLERİ | 91 |
 | Harikalar | 91 |
 | Teknoloji | 91 |
-| Arabalar | 91 |
+| Araçlar | 91 |
 | **Toplam** | **900** |
 
 ## Zorluk dağılımı
@@ -51,4 +51,4 @@ Kaynak pakette eksik olan 018 — Özgürlük Heykeli görseli, kullanıcının 
 
 Teknoloji koleksiyonu envanterdeki yedi seviyede 13'er görseli korur ve Harikalar ile aynı dönüştürme/sıralama yöntemini kullanır. Izgaralar ve palet sınırları yukarıdaki oyun basamaklarından seçilir; özgün kaynak kimlikleri, başlıklar ve kaynak üretim revizyonları korunur. Kaynak PNG'ler değiştirilmez. İlk üç seviyede küçük renk parçaları azaltılır; resimlerin tamamı oranı korunarak hedef ızgaraya sığdırılır. Kategori ve başlıklar beş dilde gösterilir.
 
-Arabalar koleksiyonundaki 91 görsel de aynı oyun basamaklarına uyarlanır; yedi seviyede 13'er görsel korunur ve her seviyede görsel karmaşıklığına göre sıralanır. Otomobil, motosiklet, tren, uçak ve tekne görsellerinin kaynak PNG dosyaları değiştirilmez. Başlıklar beş dilde gösterilir.
+Araçlar koleksiyonundaki 91 görsel de aynı oyun basamaklarına uyarlanır; yedi seviyede 13'er görsel korunur ve her seviyede görsel karmaşıklığına göre sıralanır. Otomobil, motosiklet, tren, uçak ve tekne görsellerinin kaynak PNG dosyaları değiştirilmez. Başlıklar beş dilde gösterilir.

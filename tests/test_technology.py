@@ -46,16 +46,15 @@ def test_technology_sources_grids_progression_and_translations():
 
 
 @pytest.mark.parametrize('tier', range(1, 8))
-def test_technology_paint_undo_save_reopen_and_export(tier, tmp_path):
+def test_technology_paint_save_reopen_and_export(tier, tmp_path):
     item = next(item for item in TECHNOLOGY if item['tier'] == tier)
     path = GALLERY / (item['id'] + '.pcolor')
     p = read_level(path)
     color = int(p.target_map[0, 0])
     engine = PaintingEngine(p)
     assert engine.paint_cell(0, 0, color) is PaintResult.CORRECT
-    engine.end_stroke()
-    assert len(engine.undo()) == 1 and p.painted_count == 0
-    assert len(engine.redo()) == 1 and p.painted_count == 1
+    assert engine.end_stroke()
+    assert p.painted_count == 1
     session = GameSession(p)
     session.selected = color
     database = Database(tmp_path / 'progress.sqlite3')

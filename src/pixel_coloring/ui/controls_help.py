@@ -70,6 +70,7 @@ class ControlsDialog(QDialog):
             (tr("Orta tuş"), tr("Basılı tutup sürükle: resmi taşı.")),
             (tr("Fare tekerleği"), tr("İmlecin olduğu yere yakınlaş veya uzaklaş.")),
             (tr("Mini harita"), tr("Gitmek istediğin yere tıkla. Ampul, kalan pikselleri kırmızı gösterir.")),
+            (tr("Dokunmatik"), tr("Bir parmakla boya; iki parmakla taşı veya pinch ile yakınlaştır.")),
         ]:
             instructions.addWidget(label(title, "subheading"))
             instructions.addWidget(label(text, "muted"))
@@ -84,6 +85,7 @@ class ControlsDialog(QDialog):
             ("F", tr("Resmi ekrana sığdır.")),
             ("G", tr("Izgarayı aç / kapat.")),
             ("M", tr("Mini haritayı aç / kapat.")),
+            ("V", tr("Hedef (bitmiş) görünümü aç / kapat.")),
             ("F11", tr("Yalnızca resim / normal görünüm.")),
             ("Esc", tr("Tam ekrandan çık; boyama veya taşımayı bitir.")),
         ]):

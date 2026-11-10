@@ -54,7 +54,8 @@ def test_appearance_controls_update_actual_canvas_and_sync_shortcuts(game, app):
 
 def test_new_toolbar_buttons_fit_small_window_without_overlap(game):
     widgets = [game.home_button, game.appearance_button, game.recording_button,
-               game.info_button, game.fullscreen_button, game.pixel_count_label, game.progress_label]
+               game.target_button, game.info_button, game.fullscreen_button,
+               game.pixel_count_label, game.progress_label]
     for index, widget in enumerate(widgets):
         assert game.status_header.rect().contains(widget.geometry())
         for other in widgets[index + 1:]:
@@ -66,7 +67,7 @@ def test_recording_is_opt_in_pause_resume_and_ui_signal_work(game, app):
     assert not menu.recorder.frames
     game.canvas.changed.emit()
     assert not menu.recorder.dirty
-    menu.toggle_action.trigger()
+    menu.start_action.trigger()
     assert menu.timer.isActive()
     assert game.recording_button.isChecked()
     p = game.session.painting
@@ -74,9 +75,13 @@ def test_recording_is_opt_in_pause_resume_and_ui_signal_work(game, app):
     game.canvas.changed.emit()
     menu.recorder.capture()
     assert len(menu.recorder.frames) == 2
-    menu.toggle_action.trigger()
+    menu.pause_action.trigger()
     assert not menu.timer.isActive()
     assert not game.recording_button.isChecked()
+    menu.resume_action.trigger()
+    assert menu.timer.isActive()
+    assert game.recording_button.isChecked()
+    menu.pause_action.trigger()
     exports = []
     game.recording_export_requested.connect(lambda: exports.append(True))
     menu.export_action.trigger()
@@ -419,11 +424,11 @@ def test_main_window_batch_gif_and_settings_persistence(app, tmp_path, monkeypat
         id = result.imported[0]
         assert id in window.metadata
         p = read_level(window.paths[id])
-        window.show_game((p, 0, None))
+        window.show_game((p, None))
         window.show()
         app.processEvents()
         window.game.appearance_menu.controls['grid_width'].setValue(4)
-        window.game.recording_menu.toggle()
+        window.game.recording_menu.start()
         p.restore(np.ones(p.target_map.shape, dtype=bool))
         window.game.canvas.changed.emit()
         monkeypatch.setattr(QFileDialog, 'getSaveFileName', lambda *args: (str(tmp_path / 'test.gif'), ''))

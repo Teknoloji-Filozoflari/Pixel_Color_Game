@@ -12976,7 +12976,7 @@
   {
     "id": "sample-arabalar-002",
     "title": "Mavi Küp",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 60,
     "height": 48,
     "colors": 10,
@@ -13000,7 +13000,7 @@
   {
     "id": "sample-arabalar-006",
     "title": "Pervaneli Uçak",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 60,
     "height": 48,
     "colors": 10,
@@ -13024,7 +13024,7 @@
   {
     "id": "sample-arabalar-004",
     "title": "Dağ Teleferiği",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 64,
     "height": 48,
     "colors": 12,
@@ -13048,7 +13048,7 @@
   {
     "id": "sample-arabalar-012",
     "title": "Kırmızı Cabrio",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 64,
     "height": 48,
     "colors": 12,
@@ -13072,7 +13072,7 @@
   {
     "id": "sample-arabalar-005",
     "title": "Kırmızı Scooter",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 70,
     "height": 56,
     "colors": 12,
@@ -13096,7 +13096,7 @@
   {
     "id": "sample-arabalar-003",
     "title": "Nane Mikro",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 70,
     "height": 56,
     "colors": 12,
@@ -13120,7 +13120,7 @@
   {
     "id": "sample-arabalar-008",
     "title": "Yolcu Teknesi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 76,
     "height": 57,
     "colors": 14,
@@ -13144,7 +13144,7 @@
   {
     "id": "sample-arabalar-009",
     "title": "Krem Klasik",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 76,
     "height": 57,
     "colors": 14,
@@ -13168,7 +13168,7 @@
   {
     "id": "sample-arabalar-001",
     "title": "Turuncu Motosiklet",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 76,
     "height": 57,
     "colors": 14,
@@ -13192,7 +13192,7 @@
   {
     "id": "sample-arabalar-007",
     "title": "Tarla Traktörü",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 80,
     "height": 60,
     "colors": 15,
@@ -13216,7 +13216,7 @@
   {
     "id": "sample-arabalar-011",
     "title": "Motor Yat",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 80,
     "height": 60,
     "colors": 15,
@@ -13240,7 +13240,7 @@
   {
     "id": "sample-arabalar-013",
     "title": "Teleferik İstasyonu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 80,
     "height": 64,
     "colors": 15,
@@ -13264,7 +13264,7 @@
   {
     "id": "sample-arabalar-010",
     "title": "Atlı Yolculuk",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 80,
     "height": 64,
     "colors": 15,
@@ -13288,7 +13288,7 @@
   {
     "id": "sample-arabalar-021",
     "title": "Rüzgâr Sörfü",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 100,
     "height": 80,
     "colors": 16,
@@ -13312,7 +13312,7 @@
   {
     "id": "sample-arabalar-016",
     "title": "Çiftlik Pikabı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 104,
     "height": 78,
     "colors": 16,
@@ -13336,7 +13336,7 @@
   {
     "id": "sample-arabalar-025",
     "title": "Küçük Havaalanı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 104,
     "height": 78,
     "colors": 16,
@@ -13360,7 +13360,7 @@
   {
     "id": "sample-arabalar-020",
     "title": "Deniz Uçağı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 110,
     "height": 88,
     "colors": 18,
@@ -13384,7 +13384,7 @@
   {
     "id": "sample-arabalar-018",
     "title": "Kanyon Buggy",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 110,
     "height": 88,
     "colors": 18,
@@ -13408,7 +13408,7 @@
   {
     "id": "sample-arabalar-017",
     "title": "Şehir Otobüsü",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 120,
     "height": 90,
     "colors": 18,
@@ -13432,7 +13432,7 @@
   {
     "id": "sample-arabalar-022",
     "title": "Garajdaki Klasik",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 120,
     "height": 90,
     "colors": 18,
@@ -13456,7 +13456,7 @@
   {
     "id": "sample-arabalar-023",
     "title": "Karlı İstasyonda Tren",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 120,
     "height": 90,
     "colors": 18,
@@ -13480,7 +13480,7 @@
   {
     "id": "sample-arabalar-026",
     "title": "Ay Işığı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 120,
     "height": 90,
     "colors": 18,
@@ -13504,7 +13504,7 @@
   {
     "id": "sample-arabalar-015",
     "title": "Orman Gezgini",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 130,
     "height": 100,
     "colors": 20,
@@ -13528,7 +13528,7 @@
   {
     "id": "sample-arabalar-019",
     "title": "Elektrikli Bisiklet",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 130,
     "height": 100,
     "colors": 20,
@@ -13552,7 +13552,7 @@
   {
     "id": "sample-arabalar-024",
     "title": "Nehir Kayağı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 132,
     "height": 99,
     "colors": 20,
@@ -13576,7 +13576,7 @@
   {
     "id": "sample-arabalar-014",
     "title": "Bisiklet Turu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 132,
     "height": 99,
     "colors": 20,
@@ -13600,7 +13600,7 @@
   {
     "id": "sample-arabalar-032",
     "title": "Şehir Otoparkı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 140,
     "height": 112,
     "colors": 22,
@@ -13624,7 +13624,7 @@
   {
     "id": "sample-arabalar-038",
     "title": "Yolcu Uçağı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 150,
     "height": 120,
     "colors": 23,
@@ -13648,7 +13648,7 @@
   {
     "id": "sample-arabalar-039",
     "title": "Kırmızı Toprak",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13672,7 +13672,7 @@
   {
     "id": "sample-arabalar-029",
     "title": "Kurtarma Helikopteri",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13696,7 +13696,7 @@
   {
     "id": "sample-arabalar-034",
     "title": "Sıcak Hava Balonları",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13720,7 +13720,7 @@
   {
     "id": "sample-arabalar-027",
     "title": "Tur Motosikleti",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13744,7 +13744,7 @@
   {
     "id": "sample-arabalar-030",
     "title": "Ayçiçeği Rotası",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13768,7 +13768,7 @@
   {
     "id": "sample-arabalar-031",
     "title": "Taş Köprü",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13792,7 +13792,7 @@
   {
     "id": "sample-arabalar-035",
     "title": "Lavanta Gezisi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13816,7 +13816,7 @@
   {
     "id": "sample-arabalar-033",
     "title": "Buharlı Tren",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 160,
     "height": 128,
     "colors": 24,
@@ -13840,7 +13840,7 @@
   {
     "id": "sample-arabalar-037",
     "title": "Tarihi Tramvay",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 170,
     "height": 136,
     "colors": 25,
@@ -13864,7 +13864,7 @@
   {
     "id": "sample-arabalar-036",
     "title": "Kütüphane Sokağı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 180,
     "height": 144,
     "colors": 25,
@@ -13888,7 +13888,7 @@
   {
     "id": "sample-arabalar-028",
     "title": "Eski Tren İstasyonu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 185,
     "height": 148,
     "colors": 25,
@@ -13912,7 +13912,7 @@
   {
     "id": "sample-arabalar-040",
     "title": "Turkuaz Sahil Cabrio",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 190,
     "height": 152,
     "colors": 26,
@@ -13936,7 +13936,7 @@
   {
     "id": "sample-arabalar-043",
     "title": "Rüzgâr Çiftliği",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 200,
     "height": 160,
     "colors": 27,
@@ -13960,7 +13960,7 @@
   {
     "id": "sample-arabalar-044",
     "title": "Endüstriyel Garaj",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 200,
     "height": 160,
     "colors": 27,
@@ -13984,7 +13984,7 @@
   {
     "id": "sample-arabalar-051",
     "title": "Yarış Hazırlığı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 200,
     "height": 160,
     "colors": 27,
@@ -14008,7 +14008,7 @@
   {
     "id": "sample-arabalar-041",
     "title": "İtfaiye Aracı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 200,
     "height": 160,
     "colors": 27,
@@ -14032,7 +14032,7 @@
   {
     "id": "sample-arabalar-042",
     "title": "Dağ Virajı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 200,
     "height": 160,
     "colors": 27,
@@ -14056,7 +14056,7 @@
   {
     "id": "sample-arabalar-050",
     "title": "Volkan Yolu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 210,
     "height": 168,
     "colors": 28,
@@ -14080,7 +14080,7 @@
   {
     "id": "sample-arabalar-047",
     "title": "Çöl Gecesi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 220,
     "height": 176,
     "colors": 29,
@@ -14104,7 +14104,7 @@
   {
     "id": "sample-arabalar-046",
     "title": "Buzlu Geçit",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 220,
     "height": 176,
     "colors": 29,
@@ -14128,7 +14128,7 @@
   {
     "id": "sample-arabalar-045",
     "title": "Kiraz Çiçekleri",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 220,
     "height": 176,
     "colors": 29,
@@ -14152,7 +14152,7 @@
   {
     "id": "sample-arabalar-052",
     "title": "Üzüm Bağı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 220,
     "height": 176,
     "colors": 29,
@@ -14176,7 +14176,7 @@
   {
     "id": "sample-arabalar-049",
     "title": "Orman Kampında Karavan",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 230,
     "height": 184,
     "colors": 30,
@@ -14200,7 +14200,7 @@
   {
     "id": "sample-arabalar-048",
     "title": "Orman Rallisi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 235,
     "height": 188,
     "colors": 30,
@@ -14224,7 +14224,7 @@
   {
     "id": "sample-arabalar-053",
     "title": "Yük Kamyonu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 240,
     "height": 192,
     "colors": 31,
@@ -14248,7 +14248,7 @@
   {
     "id": "sample-arabalar-062",
     "title": "Yelkenli",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 250,
     "height": 200,
     "colors": 32,
@@ -14272,7 +14272,7 @@
   {
     "id": "sample-arabalar-056",
     "title": "Uçak Hangarı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 250,
     "height": 200,
     "colors": 32,
@@ -14296,7 +14296,7 @@
   {
     "id": "sample-arabalar-055",
     "title": "Gece Atölyesi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 250,
     "height": 200,
     "colors": 32,
@@ -14320,7 +14320,7 @@
   {
     "id": "sample-arabalar-063",
     "title": "Havalimanı Apronu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 250,
     "height": 200,
     "colors": 32,
@@ -14344,7 +14344,7 @@
   {
     "id": "sample-arabalar-061",
     "title": "Yeraltı Otoparkı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 250,
     "height": 200,
     "colors": 32,
@@ -14368,7 +14368,7 @@
   {
     "id": "sample-arabalar-054",
     "title": "Alp Teleferiği",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 260,
     "height": 208,
     "colors": 33,
@@ -14392,7 +14392,7 @@
   {
     "id": "sample-arabalar-065",
     "title": "Uçak Hangarı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 270,
     "height": 216,
     "colors": 34,
@@ -14416,7 +14416,7 @@
   {
     "id": "sample-arabalar-064",
     "title": "Çatı Bahçeleri",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 270,
     "height": 216,
     "colors": 34,
@@ -14440,7 +14440,7 @@
   {
     "id": "sample-arabalar-060",
     "title": "Sonbahar Malikânesi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 280,
     "height": 224,
     "colors": 34,
@@ -14464,7 +14464,7 @@
   {
     "id": "sample-arabalar-057",
     "title": "Karlı Viyadük Treni",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 280,
     "height": 224,
     "colors": 34,
@@ -14488,7 +14488,7 @@
   {
     "id": "sample-arabalar-059",
     "title": "Ralli Servisi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 290,
     "height": 232,
     "colors": 35,
@@ -14512,7 +14512,7 @@
   {
     "id": "sample-arabalar-058",
     "title": "Paletli Kar Aracı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 295,
     "height": 232,
     "colors": 35,
@@ -14536,7 +14536,7 @@
   {
     "id": "sample-arabalar-076",
     "title": "Arabalı Feribot",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 300,
     "height": 240,
     "colors": 36,
@@ -14560,7 +14560,7 @@
   {
     "id": "sample-arabalar-066",
     "title": "Mor Pist Coupé",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 310,
     "height": 248,
     "colors": 37,
@@ -14584,7 +14584,7 @@
   {
     "id": "sample-arabalar-071",
     "title": "Havalimanı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 340,
     "height": 272,
     "colors": 38,
@@ -14608,7 +14608,7 @@
   {
     "id": "sample-arabalar-078",
     "title": "Güneşli Pit Alanı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 400,
     "height": 240,
     "colors": 38,
@@ -14632,7 +14632,7 @@
   {
     "id": "sample-arabalar-073",
     "title": "Yağmurlu Taş Sokak",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 400,
     "height": 240,
     "colors": 38,
@@ -14656,7 +14656,7 @@
   {
     "id": "sample-arabalar-074",
     "title": "Metro İstasyonu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 400,
     "height": 240,
     "colors": 38,
@@ -14680,7 +14680,7 @@
   {
     "id": "sample-arabalar-069",
     "title": "Hızlı Tren",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 400,
     "height": 240,
     "colors": 38,
@@ -14704,7 +14704,7 @@
   {
     "id": "sample-arabalar-075",
     "title": "Bambu Tapınağı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 400,
     "height": 240,
     "colors": 38,
@@ -14728,7 +14728,7 @@
   {
     "id": "sample-arabalar-072",
     "title": "Klasik Restorasyon",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 400,
     "height": 240,
     "colors": 38,
@@ -14752,7 +14752,7 @@
   {
     "id": "sample-arabalar-070",
     "title": "Akşam Tren Garı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 350,
     "height": 280,
     "colors": 39,
@@ -14776,7 +14776,7 @@
   {
     "id": "sample-arabalar-068",
     "title": "Sisli Orman",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 360,
     "height": 288,
     "colors": 39,
@@ -14800,7 +14800,7 @@
   {
     "id": "sample-arabalar-077",
     "title": "Kar Motosikleti",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 380,
     "height": 304,
     "colors": 40,
@@ -14824,7 +14824,7 @@
   {
     "id": "sample-arabalar-067",
     "title": "Sepetli Motosiklet",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 390,
     "height": 304,
     "colors": 40,
@@ -14848,7 +14848,7 @@
   {
     "id": "sample-arabalar-082",
     "title": "Konteyner Gemisi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 500,
     "height": 400,
     "colors": 44,
@@ -14872,7 +14872,7 @@
   {
     "id": "sample-arabalar-086",
     "title": "Havaalanı Çekicisi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 800,
     "height": 640,
     "colors": 52,
@@ -14896,7 +14896,7 @@
   {
     "id": "sample-arabalar-087",
     "title": "Kargo Uçağı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1080,
     "height": 864,
     "colors": 60,
@@ -14920,7 +14920,7 @@
   {
     "id": "sample-arabalar-083",
     "title": "Planör",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1280,
     "height": 800,
     "colors": 60,
@@ -14944,7 +14944,7 @@
   {
     "id": "sample-arabalar-088",
     "title": "Nehir Vapuru",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1280,
     "height": 800,
     "colors": 60,
@@ -14968,7 +14968,7 @@
   {
     "id": "sample-arabalar-080",
     "title": "Çöl Şehri",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1440,
     "height": 960,
     "colors": 60,
@@ -14992,7 +14992,7 @@
   {
     "id": "sample-arabalar-085",
     "title": "Klasik Otomobil Garajı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1600,
     "height": 1000,
     "colors": 60,
@@ -15016,7 +15016,7 @@
   {
     "id": "sample-arabalar-079",
     "title": "Servis Atölyesi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1600,
     "height": 1000,
     "colors": 60,
@@ -15040,7 +15040,7 @@
   {
     "id": "sample-arabalar-090",
     "title": "Yataklı Tren",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1600,
     "height": 1000,
     "colors": 60,
@@ -15064,7 +15064,7 @@
   {
     "id": "sample-arabalar-081",
     "title": "Gece Dağ Rallisi",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1600,
     "height": 1000,
     "colors": 60,
@@ -15088,7 +15088,7 @@
   {
     "id": "sample-arabalar-089",
     "title": "Yük Treni",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1920,
     "height": 1080,
     "colors": 60,
@@ -15112,7 +15112,7 @@
   {
     "id": "sample-arabalar-084",
     "title": "Kış Araştırma Aracı",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1920,
     "height": 1080,
     "colors": 60,
@@ -15136,7 +15136,7 @@
   {
     "id": "sample-arabalar-091",
     "title": "Lokomotif Deposu",
-    "category": "Arabalar",
+    "category": "Araçlar",
     "width": 1920,
     "height": 1080,
     "colors": 60,
