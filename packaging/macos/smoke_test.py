@@ -29,9 +29,9 @@ def main():
         with closing(sqlite3.connect(data / 'progress.sqlite3')) as database:
             if database.execute('SELECT COUNT(*) FROM paintings').fetchone()[0] != 900:
                 raise RuntimeError('Installed collection is incomplete')
-    archives = list((ROOT / 'dist').glob('piksel-atolyesi-*-macos-*.zip'))
+    archives = list((ROOT / 'dist').glob('piksel-atolyesi-*-macos-arm64.zip'))
     if len(archives) != 1:
-        raise RuntimeError('Expected exactly one macOS ZIP in dist/')
+        raise RuntimeError('Expected exactly one macOS arm64 ZIP in dist/')
     print(f'macOS app smoke verified: {app.name}; archive {archives[0].name}')
 
 

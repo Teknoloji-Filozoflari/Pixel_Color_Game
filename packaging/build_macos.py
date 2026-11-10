@@ -78,16 +78,12 @@ def main():
     shutil.copytree(ROOT / 'LICENSES', app / 'Contents/Resources/LICENSES', dirs_exist_ok=True)
     output = ROOT / 'dist'
     output.mkdir(exist_ok=True)
+    if os.uname().machine != 'arm64':
+        raise RuntimeError('Official macOS packages are built on Apple Silicon (arm64) runners only')
     zip_stem = output / f'piksel-atolyesi-{version}-macos-arm64'
     if zip_stem.with_suffix('.zip').exists():
         zip_stem.with_suffix('.zip').unlink()
     portable = Path(shutil.make_archive(str(zip_stem), 'zip', app.parent, app.name))
-    # Prefer Apple Silicon artifact naming; Intel runners can rename via CI matrix.
-    arch = os.uname().machine
-    if arch == 'x86_64':
-        renamed = output / f'piksel-atolyesi-{version}-macos-x64.zip'
-        portable.replace(renamed)
-        portable = renamed
     checksum = hashlib.sha256(portable.read_bytes()).hexdigest()
     (output / 'SHA256SUMS').write_text(f'{checksum}  {portable.name}\n', encoding='utf-8', newline='\n')
     print(f'Built {portable.name}')

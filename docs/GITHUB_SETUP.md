@@ -53,9 +53,9 @@ gh workflow run publish-verified.yml --ref main \
 
 Yayın kontrolü her koşunun doğru depodan, doğru iş akışından ve **aynı commit'ten** geldiğini; başarıyla tamamlandığını doğrular. Farklı koşuların `SHA256SUMS` dosyaları birbirinin üstüne yazılmaz; paketler önce ayrı dizinlerde kontrol edilir. Aynı isimli dosyalar reddedilir.
 
-Son adım Windows EXE/ZIP, macOS ZIP (arm64 + x64), Linux paketleri, kaynak ZIP, Python wheel/sdist ve ortak `SHA256SUMS` ile `v<sürüm>` yayınını oluşturur. Mevcut sürümler silinmez veya değiştirilmez. Önceden var olan bir sürüm etiketinin üzerine yazılmaz.
+Son adım Windows EXE/ZIP, macOS arm64 ZIP, Linux paketleri, kaynak ZIP, Python wheel/sdist ve ortak `SHA256SUMS` ile `v<sürüm>` yayınını oluşturur. Mevcut sürümler silinmez veya değiştirilmez. Önceden var olan bir sürüm etiketinin üzerine yazılmaz.
 
-Nix flake üzerinden sunulur; ayrı Nix kurulum dosyası yüklenmez. AppImage, DEB, RPM, Snap, Windows ve macOS dosyalarının beklenen sürümlü adları zorunlu tutulur. Wheel içinde 900 `.pcolor` bulunduğu da kontrol edilir.
+Nix flake üzerinden sunulur; ayrı Nix kurulum dosyası yüklenmez. AppImage, DEB, RPM, Snap, Windows ve macOS arm64 dosyalarının beklenen sürümlü adları zorunlu tutulur. Wheel içinde 900 `.pcolor` bulunduğu da kontrol edilir.
 
 ## Yerel kaynak arşivi
 

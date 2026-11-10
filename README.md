@@ -26,7 +26,6 @@ Hesap açmadan, reklam veya telemetri olmadan oyna. Küçük bir sahneyi tek otu
 | **Windows 10 / 11 · x64** | **`Piksel-Atolyesi-<sürüm>-Setup-x64.exe`** | Yükleyiciyi aç, kurulumu tamamla ve Başlat menüsünden oyna. Python kurulumu gerekmez. |
 | **Windows · taşınabilir** | `piksel-atolyesi-<sürüm>-windows-x64.zip` | ZIP'in tamamını çıkar, içindeki `Piksel-Atolyesi.exe` dosyasını aç. |
 | **macOS · Apple Silicon** | `piksel-atolyesi-<sürüm>-macos-arm64.zip` | ZIP'i çıkar, `Piksel Atölyesi.app` dosyasını aç. İlk açılışta sağ tık → Aç. |
-| **macOS · Intel** | `piksel-atolyesi-<sürüm>-macos-x64.zip` | ZIP'i çıkar, `Piksel Atölyesi.app` dosyasını aç. |
 | **Linux · AppImage** | `Piksel-Atolyesi-<sürüm>-x86_64.AppImage` | Dosyaya çalıştırma izni verip aç. Ubuntu 22.04+ tabanı, glibc 2.35+. |
 | **Debian 12 / 13 · amd64** | `piksel-atolyesi_<sürüm>-1_amd64.deb` | `sudo apt install ./indirdiğin-dosya.deb` |
 | **Fedora 43 · x86_64** | `piksel-atolyesi-<sürüm>-1.fc43.x86_64.rpm` | `sudo dnf install ./indirdiğin-dosya.rpm` |

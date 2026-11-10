@@ -98,12 +98,6 @@ jobs:
           name: piksel-atolyesi-macos-arm64
           github-token: ${{ github.token }}
           path: verified/macos-arm64
-      - uses: actions/download-artifact@v4
-        with:
-          run-id: ${{ inputs.macos_run }}
-          name: piksel-atolyesi-macos-x64
-          github-token: ${{ github.token }}
-          path: verified/macos-x64
       - name: Verify package checksums before combining assets
         shell: bash
         run: |
@@ -134,7 +128,6 @@ jobs:
           test -f "release-assets/Piksel-Atolyesi-$version-Setup-x64.exe"
           test -f "release-assets/piksel-atolyesi-$version-windows-x64.zip"
           test -f "release-assets/piksel-atolyesi-$version-macos-arm64.zip"
-          test -f "release-assets/piksel-atolyesi-$version-macos-x64.zip"
           python - <<'PY'
           from pathlib import Path
           import zipfile
