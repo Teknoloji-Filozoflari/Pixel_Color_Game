@@ -28,4 +28,4 @@ python packaging/macos/smoke_test.py
 
 ## GitHub Actions
 
-`macOS app` iş akışı `macos-14` (arm64) runner'ında testleri çalıştırır, uygulamayı paketler ve offscreen açılışta 900 resmi doğrular. Yayın süreci: [GITHUB_SETUP.md](GITHUB_SETUP.md).
+`macOS app` iş akışı `macos-14` (arm64) runner'ında testleri çalıştırır, uygulamayı paketler ve offscreen açılışta 900 resmi doğrular. PR'larda otomatik çalışmaz; `main` push veya Actions → **macOS app** → **Run workflow** ile tetiklenir. Yayın süreci: [GITHUB_SETUP.md](GITHUB_SETUP.md).

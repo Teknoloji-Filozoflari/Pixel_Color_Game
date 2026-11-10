@@ -19,7 +19,7 @@ Commit henüz oluşturulmamışsa önce değişiklikleri inceleyip `git add` ve 
 
 ## Paketleri üretme
 
-`Windows EXE` ve `macOS app`, main'e push ile otomatik çalışır. Diğer paketleri aynı main commit'inde Actions sayfasından veya CLI ile başlat:
+`Windows EXE`, main'e push ile otomatik çalışır. `macOS app` da main push'ta çalışır; gerekirse Actions → **macOS app** → **Run workflow** ile aynı commit'te yeniden başlat. Diğer paketleri aynı main commit'inde Actions sayfasından veya CLI ile başlat:
 
 ```bash
 gh workflow run appimage.yml --ref main

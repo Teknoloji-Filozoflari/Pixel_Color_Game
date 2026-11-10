@@ -1,10 +1,12 @@
 name: macOS app
 
+# macOS runners on this repository have been unreliable in PR queues
+# (jobs stay queued or cancel before a runner is assigned). Keep packaging
+# available for main releases and manual runs from the Actions tab.
 on:
   workflow_dispatch:
   push:
     branches: [main]
-  pull_request:
 
 permissions:
   contents: read
