@@ -15,7 +15,7 @@ from pixel_coloring.persistence.save_manager import SaveManager
 RESOURCES = Path(__file__).parents[1] / 'src/pixel_coloring/resources'
 GALLERY = RESOURCES / 'paintings'
 CATALOG = {item['id']: item for item in json.loads((GALLERY / 'catalog.json').read_text(encoding='utf-8'))}
-CARS = sorted((item for item in CATALOG.values() if item['category'] == 'Arabalar'),
+CARS = sorted((item for item in CATALOG.values() if item['category'] == 'Araçlar'),
                     key=lambda item: item['order'])
 
 
@@ -29,7 +29,7 @@ def test_cars_sources_grids_progression_and_translations():
     for item in CARS:
         reference = CATALOG[item['reference_id']]
         p = read_level(GALLERY / (item['id'] + '.pcolor'))
-        assert p.category == 'Arabalar' and p.title == item['title']
+        assert p.category == 'Araçlar' and p.title == item['title']
         assert p.meaning == ''
         assert (p.width, p.height) == (max(reference['width'], reference['height']),
                                        min(reference['width'], reference['height']))
@@ -46,16 +46,15 @@ def test_cars_sources_grids_progression_and_translations():
 
 
 @pytest.mark.parametrize('tier', range(1, 8))
-def test_cars_paint_undo_save_reopen_and_export(tier, tmp_path):
+def test_cars_paint_save_reopen_and_export(tier, tmp_path):
     item = next(item for item in CARS if item['tier'] == tier)
     path = GALLERY / (item['id'] + '.pcolor')
     p = read_level(path)
     color = int(p.target_map[0, 0])
     engine = PaintingEngine(p)
     assert engine.paint_cell(0, 0, color) is PaintResult.CORRECT
-    engine.end_stroke()
-    assert len(engine.undo()) == 1 and p.painted_count == 0
-    assert len(engine.redo()) == 1 and p.painted_count == 1
+    assert engine.end_stroke()
+    assert p.painted_count == 1
     session = GameSession(p)
     session.selected = color
     database = Database(tmp_path / 'progress.sqlite3')

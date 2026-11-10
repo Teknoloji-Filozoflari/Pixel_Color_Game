@@ -22,7 +22,7 @@ class SaveManager:
             p.progress * 100,
             p.painted_count,
             0,
-            0,
+            time.time(),
             1,
             np.packbits(p.painted_mask).tobytes(),
             session.selected,

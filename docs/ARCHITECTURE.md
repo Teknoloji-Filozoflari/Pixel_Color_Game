@@ -34,7 +34,7 @@ Bu belge v0.17.0 kaynak kodunu anlatır. Uygulama, Qt Widgets arayüzü ile Qt'd
 
 Hedef ve palet kopyalanıp salt okunur yapılır; maske ve sayaçlar boyama sırasında değişir. 255'e kadar renk için hedef harita `uint8`, daha büyük paletlerde `uint16` kullanır. Kurucu boyut, RGB aralığı ve renk indekslerini doğrular.
 
-`GameSession`, seçili renk, kamera görünümü ve değişiklik/kayıt revizyonlarını yönetir. Çekirdekte komut geçmişi desteği bulunsa da oyun oturumu `record_history=False` kullanır; arayüzde geri al/ileri al yoktur. Süre özelliği sıfır döner.
+`GameSession`, seçili renk, kamera görünümü ve değişiklik/kayıt revizyonlarını yönetir. Geri al/ileri al yoktur. Boyama süresi istatistiği tutulmaz; `last_played` yalnızca koleksiyon sıralaması içindir.
 
 ## Boyama akışı
 

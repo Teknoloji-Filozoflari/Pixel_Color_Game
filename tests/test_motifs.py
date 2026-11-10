@@ -128,7 +128,7 @@ def test_collection_and_game_meanings_at_minimum_window_size(app, tmp_path):
         window.collection_category = 'TÜRK MOTİFLERİ'
         window.show()
         app.processEvents()
-        assert list(window.category_buttons)[-6:] == ['TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Arabalar', 'İçe aktarılan']
+        assert list(window.category_buttons)[-6:] == ['TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar', 'İçe aktarılan']
         for language in ['tr', 'az', 'en', 'es', 'ru']:
             if window.settings['language'] != language:
                 window.change_language(language)
@@ -197,7 +197,7 @@ def test_pixel_count_selector_and_painted_percentage(app, tmp_path):
         game.close()
 
 
-@pytest.mark.parametrize('category', ['Harikalar', 'Teknoloji', 'Arabalar'])
+@pytest.mark.parametrize('category', ['Harikalar', 'Teknoloji', 'Araçlar'])
 def test_filter_translations_and_category_wrapping(app, tmp_path, category):
     from pixel_coloring.ui.i18n import set_language, tr
     from pixel_coloring.ui.main_window import MainWindow

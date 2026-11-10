@@ -39,7 +39,8 @@ class Database:
             con.executescript(SCHEMA)
             con.execute("DELETE FROM statistics")
             con.execute("DELETE FROM achievements")
-            con.execute("UPDATE progress SET elapsed_seconds=0, last_played=0")
+            # Duration stats stay unused; last_played still powers collection sorting.
+            con.execute("UPDATE progress SET elapsed_seconds=0")
 
     @contextmanager
     def connect(self):
@@ -74,7 +75,8 @@ class Database:
             )
 
     def save(self, snapshot, view_state=None):
-        snapshot = (*snapshot[:3], 0, 0, *snapshot[5:])
+        # Keep elapsed unused (always 0) while preserving caller-provided last_played.
+        snapshot = (*snapshot[:3], 0, snapshot[4], *snapshot[5:])
         with self.connect() as con:
             con.execute("INSERT OR REPLACE INTO progress VALUES (?,?,?,?,?,?,?,?)", snapshot)
             if view_state is not None:

@@ -2,7 +2,6 @@ from enum import Enum, auto
 
 import numpy as np
 
-from .commands import PaintCommand
 from .painting import Painting
 
 
@@ -14,15 +13,9 @@ class PaintResult(Enum):
 
 
 class PaintingEngine:
-    def __init__(self, painting: Painting, record_history=True):
+    def __init__(self, painting: Painting):
         self.painting = painting
-        self.record_history = record_history
-        self.undo_stack = []
-        self.redo_stack = []
-        self.stroke = []
         self.stroke_changed = False
-        self.history_budget = 32 * 1024 * 1024
-        self.history_bytes = 0
 
     def paint_cell(self, x, y, selected_color_id):
         p = self.painting
@@ -35,31 +28,16 @@ class PaintingEngine:
         p.painted_mask[y, x] = True
         p.counts[selected_color_id] += 1
         self.stroke_changed = True
-        if self.record_history:
-            self.stroke.append(y * p.width + x)
         return PaintResult.CORRECT
 
     def end_stroke(self):
         if not self.stroke_changed:
-            return None
+            return False
         self.stroke_changed = False
-        command = PaintCommand(np.array(self.stroke, dtype=np.uint32))
-        self.stroke.clear()
-        self._record(command)
-        return command
-
-    def _record(self, command):
-        if not self.record_history:
-            return
-        self.history_bytes -= sum(c.nbytes for c in self.redo_stack)
-        self.redo_stack.clear()
-        self.undo_stack.append(command)
-        self.history_bytes += command.nbytes
-        while self.history_bytes > self.history_budget and len(self.undo_stack) > 1:
-            self.history_bytes -= self.undo_stack.pop(0).nbytes
+        return True
 
     def fill_region(self, x, y, selected_color_id):
-        """Paint one four-connected unpainted region as a single undo command.
+        """Paint one four-connected unpainted region.
 
         Scanline runs keep the stack compact, even for multi-million-cell areas.
         Already painted cells are boundaries; diagonal contact does not connect areas.
@@ -108,34 +86,9 @@ class PaintingEngine:
                             break
                         start = neighbor.find(b'\x01', end, right)
         indices = np.concatenate(runs)
-        command = PaintCommand(indices)
         p.painted_mask.ravel()[indices] = True
         p.counts[selected_color_id] += len(indices)
-        self._record(command)
         return PaintResult.CORRECT, indices
-
-    def _apply(self, command, value):
-        p = self.painting
-        p.painted_mask.ravel()[command.indices] = value
-        delta = np.bincount(p.target_map.ravel()[command.indices], minlength=len(p.palette))
-        p.counts += delta if value else -delta
-        return command.indices
-
-    def undo(self):
-        self.end_stroke()
-        if not self.undo_stack:
-            return np.array([], dtype=np.uint32)
-        command = self.undo_stack.pop()
-        self.redo_stack.append(command)
-        return self._apply(command, False)
-
-    def redo(self):
-        self.end_stroke()
-        if not self.redo_stack:
-            return np.array([], dtype=np.uint32)
-        command = self.redo_stack.pop()
-        self.undo_stack.append(command)
-        return self._apply(command, True)
 
 
 def line_cells(start, end):

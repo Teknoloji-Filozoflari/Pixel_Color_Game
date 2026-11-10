@@ -5,7 +5,7 @@ from .palette import spread_palette
 class GameSession:
     def __init__(self, painting, selected=None, view_state=None):
         self.painting = painting
-        self.engine = PaintingEngine(painting, record_history=False)
+        self.engine = PaintingEngine(painting)
         self.view_state = view_state
         self.palette_order = spread_palette(painting.palette, painting.id)
         self.color_numbers = {color: index + 1 for index, color in enumerate(self.palette_order)}
@@ -19,7 +19,6 @@ class GameSession:
                 following = self.next_unfinished_color(after=selected)
                 if following is not None:
                     self.selected = following
-        self.elapsed_base = 0.0
         self.revision = 0
         self.saved_revision = -1
 
@@ -32,10 +31,6 @@ class GameSession:
             if p.counts[color] < p.totals[color]:
                 return color
         return None
-
-    @property
-    def elapsed(self):
-        return 0.0
 
     def changed(self):
         self.revision += 1

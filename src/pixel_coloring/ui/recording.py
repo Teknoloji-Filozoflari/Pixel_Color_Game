@@ -2,7 +2,7 @@ from PySide6.QtCore import QTimer, Signal
 from PySide6.QtWidgets import QMenu
 
 from ..core.timelapse import Timelapse
-from .i18n import tr
+from .i18n import number, tr
 
 
 class RecordingMenu(QMenu):
@@ -12,10 +12,15 @@ class RecordingMenu(QMenu):
         super().__init__(button)
         self.button = button
         self.recorder = Timelapse(canvas.session.painting)
-        self.toggle_action = self.addAction(tr('Kaydı başlat / sürdür'), self.toggle)
+        self.start_action = self.addAction(tr('Kaydı başlat'), self.start)
+        self.pause_action = self.addAction(tr('Kaydı duraklat'), self.pause)
+        self.resume_action = self.addAction(tr('Kaydı sürdür'), self.resume)
         self.export_action = self.addAction(tr('GIF olarak kaydet'), self.export_requested.emit)
         self.addSeparator()
-        note = self.addAction(tr('Kayıt bu resim açıkken tutulur. Çıkmadan GIF kaydet.'))
+        self.status_action = self.addAction('')
+        self.status_action.setEnabled(False)
+        self.addSeparator()
+        note = self.addAction(tr('Duraklatıp sonra sürebilirsin. Resimden çıkmadan GIF kaydet.'))
         note.setEnabled(False)
         canvas.changed.connect(self.recorder.changed)
         self.timer = QTimer(self)
@@ -24,12 +29,19 @@ class RecordingMenu(QMenu):
         self.aboutToShow.connect(self.sync)
         self.sync()
 
-    def toggle(self):
+    def start(self):
+        if self.recorder.frames and not self.recorder.active:
+            self.resume()
+            return
+        self.recorder.start()
+        self.timer.start()
+        self.sync()
+
+    def resume(self):
         if self.recorder.active:
-            self.pause()
-        else:
-            self.recorder.start()
-            self.timer.start()
+            return
+        self.recorder.start()
+        self.timer.start()
         self.sync()
 
     def pause(self):
@@ -38,6 +50,23 @@ class RecordingMenu(QMenu):
         self.sync()
 
     def sync(self):
-        self.toggle_action.setText(tr('Kaydı duraklat') if self.recorder.active else tr('Kaydı başlat / sürdür'))
-        self.export_action.setEnabled(bool(self.recorder.frames))
-        self.button.setChecked(self.recorder.active)
+        has_frames = bool(self.recorder.frames)
+        active = self.recorder.active
+        self.start_action.setEnabled(not active and not has_frames)
+        self.pause_action.setEnabled(active)
+        self.resume_action.setEnabled(not active and has_frames)
+        self.export_action.setEnabled(has_frames)
+        if active:
+            status = tr('Kayıt sürüyor · {count} kare', count=number(len(self.recorder.frames)))
+        elif has_frames:
+            status = tr('Duraklatıldı · {count} kare hazır', count=number(len(self.recorder.frames)))
+        else:
+            status = tr('Kayıt kapalı')
+        self.status_action.setText(status)
+        self.button.setChecked(active)
+        if active:
+            self.button.setToolTip(tr('Boyama kaydı · kayıt sürüyor'))
+        elif has_frames:
+            self.button.setToolTip(tr('Boyama kaydı · duraklatıldı, sürebilirsin'))
+        else:
+            self.button.setToolTip(tr('Boyama kaydı · GIF'))

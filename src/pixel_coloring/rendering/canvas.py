@@ -1,13 +1,14 @@
+import math
 import time
 
-from PySide6.QtCore import QPointF, QRectF, Qt, Signal
+from PySide6.QtCore import QEvent, QPointF, QRectF, Qt, Signal
 from PySide6.QtGui import QColor, QFont, QPainter, QPen
 from PySide6.QtWidgets import QWidget
 
 from ..core.paint_engine import PaintResult, line_cells
 from .camera import Camera
 from .pointer import painting_pointer
-from .tile_cache import TILE_SIZE, TileCache
+from .tile_cache import TILE_SIZE, TileCache, rgb_image
 
 
 class Canvas(QWidget):
@@ -30,16 +31,27 @@ class Canvas(QWidget):
         self.setMinimumSize(320, 280)
         self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
         self.setMouseTracking(True)
+        self.setAttribute(Qt.WidgetAttribute.WA_AcceptTouchEvents, True)
         self.dragging = False
         self.fill_mode = False
         self.panning = False
+        self.show_target = False
         self.last_cell = None
         self.last_pos = QPointF()
         self.hover = None
         self.first_resize = True
+        self.touch_pan = None
+        self.pinch = None
         self.camera_changed.connect(self.remember_view)
         self.painting_cursor = painting_pointer()
         self.setCursor(self.painting_cursor)
+
+    def set_show_target(self, enabled):
+        self.finish_stroke()
+        self.panning = False
+        self.show_target = enabled
+        self.setCursor(Qt.CursorShape.OpenHandCursor if enabled else self.painting_cursor)
+        self.update()
 
     def select(self, selected):
         self.finish_stroke()
@@ -81,10 +93,14 @@ class Canvas(QWidget):
         )
 
     def fill_at(self, pos):
+        if self.show_target:
+            return
         x, y = self.camera.screen_to_cell(pos.x(), pos.y())
         self.fill_cell(x, y)
 
     def fill_cell(self, x, y):
+        if self.show_target:
+            return
         result, indices = self.session.engine.fill_region(x, y, self.session.selected)
         if result == PaintResult.CORRECT:
             self.cache.invalidate_indices(indices)
@@ -133,12 +149,17 @@ class Canvas(QWidget):
         q.setRenderHint(QPainter.RenderHint.SmoothPixmapTransform, c.zoom < 1)
         x0, y0, x1, y1 = c.visible_cell_rect(p.width, p.height)
         if x0 < x1 and y0 < y1:
-            for ty in range(y0 // TILE_SIZE, (y1 - 1) // TILE_SIZE + 1):
-                for tx in range(x0 // TILE_SIZE, (x1 - 1) // TILE_SIZE + 1):
-                    tile = self.cache.get(tx, ty)
-                    sx, sy = c.cell_to_screen(tx * TILE_SIZE, ty * TILE_SIZE)
-                    q.drawImage(QRectF(sx, sy, tile.width() * c.zoom, tile.height() * c.zoom), tile)
-            if self.settings.get("grid", True) and c.zoom >= 9:
+            if self.show_target:
+                completed = rgb_image(p.palette[p.target_map[y0:y1, x0:x1]])
+                sx, sy = c.cell_to_screen(x0, y0)
+                q.drawImage(QRectF(sx, sy, (x1 - x0) * c.zoom, (y1 - y0) * c.zoom), completed)
+            else:
+                for ty in range(y0 // TILE_SIZE, (y1 - 1) // TILE_SIZE + 1):
+                    for tx in range(x0 // TILE_SIZE, (x1 - 1) // TILE_SIZE + 1):
+                        tile = self.cache.get(tx, ty)
+                        sx, sy = c.cell_to_screen(tx * TILE_SIZE, ty * TILE_SIZE)
+                        q.drawImage(QRectF(sx, sy, tile.width() * c.zoom, tile.height() * c.zoom), tile)
+            if not self.show_target and self.settings.get("grid", True) and c.zoom >= 9:
                 opacity = max(0, min(1, self.settings.get('grid_opacity', .22)))
                 width = max(1, min(4, self.settings.get('grid_width', 1)))
                 q.setPen(QPen(QColor(35, 39, 46, int(255 * opacity)), width))
@@ -150,7 +171,7 @@ class Canvas(QWidget):
                 for y in range(y0, y1 + 1):
                     _, sy = c.cell_to_screen(0, y)
                     q.drawLine(QPointF(left, sy), QPointF(right, sy))
-            if self.settings.get("numbers", True) and c.zoom >= 18:
+            if not self.show_target and self.settings.get("numbers", True) and c.zoom >= 18:
                 font = QFont("Noto Sans")
                 scale = max(50, min(200, self.settings.get('number_scale', 100))) / 100
                 digits = len(str(len(self.session.color_numbers)))
@@ -204,12 +225,15 @@ class Canvas(QWidget):
         self.setFocus()
         self.last_pos = event.position()
         if event.button() == Qt.MouseButton.RightButton:
+            if self.show_target:
+                return
             self.finish_stroke()
             x, y = self.camera.screen_to_cell(event.position().x(), event.position().y())
             p = self.session.painting
             if 0 <= x < p.width and 0 <= y < p.height:
                 self.color_picked.emit(int(p.target_map[y, x]))
-        elif event.button() == Qt.MouseButton.MiddleButton:
+        elif event.button() == Qt.MouseButton.MiddleButton or (
+                event.button() == Qt.MouseButton.LeftButton and self.show_target):
             self.panning = True
             self.pan_anchor = (event.position(), self.camera.pan_x, self.camera.pan_y)
             self.setCursor(Qt.CursorShape.ClosedHandCursor)
@@ -231,7 +255,7 @@ class Canvas(QWidget):
             self.camera.pan_y = pan_y + delta.y()
             self.constrain_camera()
             self.camera_changed.emit()
-        elif self.dragging:
+        elif self.dragging and not self.show_target:
             if self.fill_mode:
                 self.fill_drag_at(pos)
             else:
@@ -240,6 +264,8 @@ class Canvas(QWidget):
         self.update()
 
     def fill_drag_at(self, pos):
+        if self.show_target:
+            return
         cell = self.camera.screen_to_cell(pos.x(), pos.y())
         if cell == (-1, -1):
             self.last_cell = None
@@ -254,6 +280,8 @@ class Canvas(QWidget):
             self.last_cell = cell
 
     def paint_at(self, pos):
+        if self.show_target:
+            return
         cell = self.camera.screen_to_cell(pos.x(), pos.y())
         if cell == (-1, -1):
             self.last_cell = None
@@ -291,20 +319,89 @@ class Canvas(QWidget):
     def mouseReleaseEvent(self, event):
         self.finish_stroke()
         self.panning = False
-        self.setCursor(self.painting_cursor)
+        self.setCursor(Qt.CursorShape.OpenHandCursor if self.show_target else self.painting_cursor)
+
+    def event(self, event):
+        if event.type() in (QEvent.Type.TouchBegin, QEvent.Type.TouchUpdate, QEvent.Type.TouchEnd,
+                            QEvent.Type.TouchCancel):
+            return self.handle_touch(event)
+        return super().event(event)
+
+    def handle_touch(self, event):
+        """Tablet/touch: one finger paints or pans target view; two fingers pan/pinch."""
+        points = event.points()
+        if event.type() in (QEvent.Type.TouchEnd, QEvent.Type.TouchCancel) or not points:
+            self.finish_stroke()
+            self.panning = False
+            self.touch_pan = None
+            self.pinch = None
+            self.setCursor(Qt.CursorShape.OpenHandCursor if self.show_target else self.painting_cursor)
+            event.accept()
+            return True
+        self.setFocus()
+        if len(points) >= 2:
+            self.finish_stroke()
+            first, second = points[0].position(), points[1].position()
+            center = QPointF((first.x() + second.x()) / 2, (first.y() + second.y()) / 2)
+            distance = math.hypot(first.x() - second.x(), first.y() - second.y())
+            if self.pinch is None:
+                self.pinch = (center, distance, self.camera.zoom, self.camera.pan_x, self.camera.pan_y)
+            else:
+                origin, start_distance, start_zoom, pan_x, pan_y = self.pinch
+                if start_distance > 1:
+                    target = start_zoom * (distance / start_distance)
+                    self.camera.zoom_at(origin.x(), origin.y(), target / self.camera.zoom)
+                self.camera.pan_x = pan_x + (center.x() - origin.x())
+                self.camera.pan_y = pan_y + (center.y() - origin.y())
+                self.constrain_camera()
+                self.camera_changed.emit()
+                self.update()
+            self.touch_pan = None
+            event.accept()
+            return True
+        point = points[0].position()
+        self.pinch = None
+        if self.show_target:
+            if self.touch_pan is None:
+                self.touch_pan = (point, self.camera.pan_x, self.camera.pan_y)
+            else:
+                start, pan_x, pan_y = self.touch_pan
+                self.camera.pan_x = pan_x + (point.x() - start.x())
+                self.camera.pan_y = pan_y + (point.y() - start.y())
+                self.constrain_camera()
+                self.camera_changed.emit()
+                self.update()
+            event.accept()
+            return True
+        if event.type() == QEvent.Type.TouchBegin:
+            self.dragging = True
+            self.last_cell = None
+            if self.fill_mode:
+                self.fill_drag_at(point)
+            else:
+                self.paint_at(point)
+        elif self.dragging:
+            if self.fill_mode:
+                self.fill_drag_at(point)
+            else:
+                self.paint_at(point)
+        self.last_pos = point
+        self.update()
+        event.accept()
+        return True
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
             self.finish_stroke()
             self.panning = False
-            self.setCursor(self.painting_cursor)
+            self.setCursor(Qt.CursorShape.OpenHandCursor if self.show_target else self.painting_cursor)
         else:
             super().keyPressEvent(event)
 
     def focusOutEvent(self, event):
         self.finish_stroke()
         self.panning = False
-        self.setCursor(self.painting_cursor)
+        self.setCursor(Qt.CursorShape.OpenHandCursor if self.show_target else self.painting_cursor)
         super().focusOutEvent(event)
 
     def leaveEvent(self, event):

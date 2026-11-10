@@ -152,12 +152,16 @@ class GameScreen(QWidget):
         self.recording_menu = RecordingMenu(self.canvas, self.recording_button)
         self.recording_menu.export_requested.connect(self.recording_export_requested.emit)
         self.recording_button.setMenu(self.recording_menu)
+        self.target_button = ViewButton('target', tr('Hedef görünüm · V'))
+        self.target_button.setCheckable(True)
+        self.target_button.toggled.connect(self.toggle_target_view)
         self.info_button = ViewButton('info', tr('Resim hakkında'))
         self.info_button.clicked.connect(self.show_artwork_info)
         for tool in (self.home_button, self.save_button, self.fill_button, self.hint_button,
                      self.controls_button, self.grid_button, self.highlight_button,
-                     self.appearance_button, self.recording_button, self.info_button, self.fullscreen_button):
-            tool.setFixedSize(42, 40)
+                     self.appearance_button, self.recording_button, self.target_button,
+                     self.info_button, self.fullscreen_button):
+            tool.setFixedSize(44, 42)
             tools.addWidget(tool)
         top.insertLayout(0, tools)
         self.palette.selected.connect(self.select)
@@ -169,6 +173,7 @@ class GameScreen(QWidget):
             ("F", self.canvas.fit),
             ("G", self.toggle_grid),
             ("M", self.toggle_minimap),
+            ("V", self.target_button.toggle),
             ("F11", self.toggle_focus_mode),
             ("Escape", self.exit_focus_mode),
             ("Left", lambda: self.canvas.pan_cells(-1, 0)),
@@ -289,6 +294,16 @@ class GameScreen(QWidget):
         self.settings["grid"] = not self.settings.get("grid", True)
         self.grid_button.setChecked(self.settings["grid"])
         self.canvas.update()
+
+    def toggle_target_view(self, enabled=None):
+        if enabled is None:
+            enabled = self.target_button.isChecked()
+        self.canvas.set_show_target(enabled)
+        self.target_button.setChecked(enabled)
+        self.fill_button.setEnabled(not enabled)
+        self.hint_button.setEnabled(not enabled)
+        self.palette.setEnabled(not enabled)
+        self.canvas.setFocus()
 
     def toggle_minimap(self):
         self.minimap.setVisible(not self.minimap.isVisible())

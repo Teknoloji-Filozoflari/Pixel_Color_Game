@@ -44,7 +44,7 @@ def main():
             assert image.size == (int(entry['source_width']), int(entry['source_height']))
             image.verify()
         source_paths[item['id']] = source
-        item['category'] = 'Arabalar'
+        item['category'] = 'Araçlar'
     catalog_path = GALLERY / 'catalog.json'
     catalog = json.loads(catalog_path.read_text(encoding='utf-8'))
     plan = progression_plan(items, catalog, source_paths)
@@ -85,7 +85,7 @@ def main():
         output = staged / path.name
         write_level(p, output)
         restored = read_level(output)
-        assert (restored.id, restored.title, restored.category) == (item['id'], item['title'], 'Arabalar')
+        assert (restored.id, restored.title, restored.category) == (item['id'], item['title'], 'Araçlar')
         assert np.array_equal(restored.palette, p.palette) and np.array_equal(restored.target_map, p.target_map)
         updates.append((output, path))
         additions.append(dict(id=p.id, title=p.title, category=p.category, width=p.width, height=p.height,

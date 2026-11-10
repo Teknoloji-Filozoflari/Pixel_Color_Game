@@ -863,11 +863,11 @@
     "es": "Tecnología",
     "ru": "Технологии"
   },
-  "Arabalar": {
-    "en": "Cars",
-    "az": "Avtomobillər",
-    "es": "Coches",
-    "ru": "Автомобили"
+  "Araçlar": {
+    "en": "Vehicles",
+    "az": "Nəqliyyat",
+    "es": "Vehículos",
+    "ru": "Транспорт"
   },
   "İptal": {
     "en": "Cancel",
@@ -1432,5 +1432,161 @@
     "az": "Balıqlıgöl Şanlıurfanın mərkəzində tarixi məscidlər və tağlı keçidlərlə əhatə olunur. Halil-ür Rəhman və Aynzəliha gölləri İbrahim peyğəmbərlə bağlı yerli rəvayətlərlə tanınır. Balıqlara hörmət edilməsi buranın ziyarət ənənəsinin bir hissəsidir.",
     "es": "Balıklıgöl se encuentra en el centro de Şanlıurfa, entre mezquitas históricas y arcadas. Los estanques Halil-ür Rahman y Aynzeliha se relacionan con tradiciones locales sobre Abraham. El respeto a sus peces forma parte de la tradición religiosa del lugar.",
     "ru": "Балыклыгёль находится в центре Шанлыурфы среди исторических мечетей и аркад. Водоёмы Халиль-юр-Рахман и Айнзельха связаны с местными преданиями об Аврааме. Уважительное отношение к рыбам является частью традиции посещения этого места."
+  },
+  "Tüm zorluklar": {
+    "en": "All difficulties",
+    "az": "Bütün çətinliklər",
+    "es": "Todas las dificultades",
+    "ru": "Все сложности"
+  },
+  "Başlanmamış": {
+    "en": "Not started",
+    "az": "Başlanmayıb",
+    "es": "Sin empezar",
+    "ru": "Не начато"
+  },
+  "Devam eden": {
+    "en": "In progress",
+    "az": "Davam edir",
+    "es": "En curso",
+    "ru": "В процессе"
+  },
+  "Tamamlanan": {
+    "en": "Completed",
+    "az": "Tamamlanmış",
+    "es": "Completadas",
+    "ru": "Завершённые"
+  },
+  "Favoriler": {
+    "en": "Favorites",
+    "az": "Seçilmişlər",
+    "es": "Favoritos",
+    "ru": "Избранное"
+  },
+  "Katalog sırası": {
+    "en": "Catalog order",
+    "az": "Kataloq sırası",
+    "es": "Orden del catálogo",
+    "ru": "Порядок каталога"
+  },
+  "Zorluk": {
+    "en": "Difficulty",
+    "az": "Çətinlik",
+    "es": "Dificultad",
+    "ru": "Сложность"
+  },
+  "Durum": {
+    "en": "Status",
+    "az": "Vəziyyət",
+    "es": "Estado",
+    "ru": "Статус"
+  },
+  "Sıralama": {
+    "en": "Sort",
+    "az": "Sıralama",
+    "es": "Orden",
+    "ru": "Сортировка"
+  },
+  "İlerleme": {
+    "en": "Progress",
+    "az": "İrəliləyiş",
+    "es": "Progreso",
+    "ru": "Прогресс"
+  },
+  "Son oynanan": {
+    "en": "Recently played",
+    "az": "Son oynanılan",
+    "es": "Jugado recientemente",
+    "ru": "Недавние"
+  },
+  "Favorilere ekle": {
+    "en": "Add to favorites",
+    "az": "Seçilmişlərə əlavə et",
+    "es": "Añadir a favoritos",
+    "ru": "В избранное"
+  },
+  "Favoriden çıkar": {
+    "en": "Remove from favorites",
+    "az": "Seçilmişlərdən çıxar",
+    "es": "Quitar de favoritos",
+    "ru": "Убрать из избранного"
+  },
+  "Bu filtreyle eşleşen resim yok.": {
+    "en": "No pictures match these filters.",
+    "az": "Bu filtrlərə uyğun şəkil yoxdur.",
+    "es": "Ninguna imagen coincide con estos filtros.",
+    "ru": "Нет изображений по этим фильтрам."
+  },
+  "Hedef görünüm · V": {
+    "en": "Target view · V",
+    "az": "Hədəf görünüş · V",
+    "es": "Vista objetivo · V",
+    "ru": "Готовый вид · V"
+  },
+  "Hedef (bitmiş) görünümü aç / kapat.": {
+    "en": "Show / hide the finished target picture.",
+    "az": "Bitmiş hədəf şəkli göstər / gizlət.",
+    "es": "Mostrar / ocultar la imagen terminada.",
+    "ru": "Показать / скрыть готовый рисунок."
+  },
+  "Dokunmatik": {
+    "en": "Touch",
+    "az": "Toxunma",
+    "es": "Táctil",
+    "ru": "Сенсор"
+  },
+  "Bir parmakla boya; iki parmakla taşı veya pinch ile yakınlaştır.": {
+    "en": "Paint with one finger; pan or pinch-zoom with two.",
+    "az": "Bir barmaqla boya; iki barmaqla daşı və ya yaxınlaşdır.",
+    "es": "Pinta con un dedo; mueve o amplía con dos.",
+    "ru": "Рисуйте одним пальцем; двумя пальцами двигайте или масштабируйте."
+  },
+  "Kaydı başlat": {
+    "en": "Start recording",
+    "az": "Yazmağa başla",
+    "es": "Empezar grabación",
+    "ru": "Начать запись"
+  },
+  "Kaydı sürdür": {
+    "en": "Resume recording",
+    "az": "Yazmağı davam et",
+    "es": "Reanudar grabación",
+    "ru": "Продолжить запись"
+  },
+  "Duraklatıp sonra sürebilirsin. Resimden çıkmadan GIF kaydet.": {
+    "en": "You can pause and resume later. Save the GIF before leaving the picture.",
+    "az": "Dayandırıb sonra davam edə bilərsən. Şəkildən çıxmadan GIF yadda saxla.",
+    "es": "Puedes pausar y continuar después. Guarda el GIF antes de salir de la imagen.",
+    "ru": "Можно поставить на паузу и продолжить. Сохраните GIF до выхода из рисунка."
+  },
+  "Kayıt sürüyor · {count} kare": {
+    "en": "Recording · {count} frames",
+    "az": "Yazılır · {count} kadr",
+    "es": "Grabando · {count} fotogramas",
+    "ru": "Идёт запись · {count} кадров"
+  },
+  "Duraklatıldı · {count} kare hazır": {
+    "en": "Paused · {count} frames ready",
+    "az": "Dayandırılıb · {count} kadr hazırdır",
+    "es": "En pausa · {count} fotogramas listos",
+    "ru": "Пауза · готово кадров: {count}"
+  },
+  "Kayıt kapalı": {
+    "en": "Recording off",
+    "az": "Yazma bağlıdır",
+    "es": "Grabación desactivada",
+    "ru": "Запись выключена"
+  },
+  "Boyama kaydı · kayıt sürüyor": {
+    "en": "Painting recording · in progress",
+    "az": "Boyama yazısı · davam edir",
+    "es": "Grabación · en curso",
+    "ru": "Запись раскраски · идёт"
+  },
+  "Boyama kaydı · duraklatıldı, sürebilirsin": {
+    "en": "Painting recording · paused, you can resume",
+    "az": "Boyama yazısı · dayandırılıb, davam edə bilərsən",
+    "es": "Grabación · en pausa, puedes continuar",
+    "ru": "Запись · на паузе, можно продолжить"
   }
 }
