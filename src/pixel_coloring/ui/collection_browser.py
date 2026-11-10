@@ -157,7 +157,9 @@ class FilterMenu(QMenu):
         action.setDefaultWidget(panel)
         self.addAction(action)
         for combo in (self.difficulty, self.status, self.sort):
-            combo.currentIndexChanged.connect(self.changed.emit)
+            # currentIndexChanged carries an int; wrap so the no-arg signal still fires.
+            combo.currentIndexChanged.connect(lambda *_: self.changed.emit())
+            combo.activated.connect(lambda *_: self.changed.emit())
 
     def is_active(self):
         return (
@@ -500,9 +502,10 @@ def build_collection(window, root):
         except Exception:
             pass
         sync_filter_button()
+        # Apply to the current category immediately, even if the popup is still closing.
         arrange(force=True)
 
-    filter_menu.changed.connect(persist_filters)
+    filter_menu.changed.connect(lambda: QTimer.singleShot(0, persist_filters))
     sync_filter_button()
 
     def category_changed(name):

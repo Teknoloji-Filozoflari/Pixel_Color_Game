@@ -59,6 +59,24 @@ def test_target_view_blocks_painting_and_shows_completed_image(app):
     screen.deleteLater()
 
 
+def test_filter_menu_emits_changed_when_combo_selection_updates(app):
+    from pixel_coloring.ui.collection_browser import FilterMenu
+
+    menu = FilterMenu({
+        'collection_difficulty': '',
+        'collection_status': 'all',
+        'collection_sort': 'catalog',
+    })
+    seen = []
+    menu.changed.connect(lambda: seen.append(True))
+    menu.status.setCurrentIndex(menu.status.findData('completed'))
+    app.processEvents()
+    assert seen
+    assert menu.status.currentData() == 'completed'
+    assert menu.is_active()
+    menu.deleteLater()
+
+
 def test_favorites_and_last_played_persist_for_collection_sorting(tmp_path):
     database = Database(tmp_path / 'progress.sqlite3')
     database.set_settings({'favorites': ['sample-arabalar-001'], 'collection_sort': 'recent'})
