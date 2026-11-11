@@ -11,7 +11,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        # Pin Ubuntu: ubuntu-latest (26.04) has been failing apt DNS to mirrors.
+        os: [ubuntu-24.04, windows-latest]
     env:
       QT_QPA_PLATFORM: offscreen
     steps:
@@ -22,10 +23,10 @@ jobs:
       - name: Install Linux graphics runtime
         if: runner.os == 'Linux'
         run: |
-          for attempt in 1 2 3 4 5; do
+          for attempt in 1 2 3; do
             sudo apt-get update && sudo apt-get install --yes libegl1 && exit 0
             echo "apt install failed (attempt $attempt); retrying..."
-            sleep $((attempt * 8))
+            sleep $((attempt * 5))
           done
           exit 1
       - name: Install dependencies
