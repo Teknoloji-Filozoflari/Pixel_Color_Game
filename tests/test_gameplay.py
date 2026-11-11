@@ -228,6 +228,16 @@ def test_saved_original_color_ids_and_masks_survive_display_shuffle(games, tmp_p
     assert GameSession(fresh).color_numbers[GameSession(fresh).selected] == 1
 
 
+def test_palette_selection_border_stays_visible_on_light_and_dark(games):
+    from PySide6.QtGui import QColor
+
+    game = games()
+    light = game.palette.selection_border(QColor(245, 236, 220))
+    dark = game.palette.selection_border(QColor(61, 40, 23))
+    assert light.name() == '#1b242c'
+    assert dark.name() == '#f0784f'
+
+
 @pytest.mark.parametrize('pos', [(-1, 22), (22, -1), (230, 22), (22, 92), (68, 68)])
 def test_empty_palette_space_never_selects_a_color(games, pos):
     from PySide6.QtCore import QEvent, QPointF, Qt

@@ -144,6 +144,14 @@ class Palette(QWidget):
         self.setMouseTracking(True)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
 
+    def selection_border(self, color):
+        """Keep the selected swatch readable on both cream and dark paints."""
+        # Light fills need a dark ring (cream ≈ old white border). Dark fills use
+        # the brand accent already used for focus elsewhere in the UI.
+        if color.lightness() > 145:
+            return QColor('#1B242C')
+        return QColor('#F0784F')
+
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
@@ -153,8 +161,10 @@ class Palette(QWidget):
             x, y = slot % self.columns * self.cell, slot // self.columns * self.cell
             color = QColor(*[int(v) for v in rgb])
             painter.setBrush(color)
-            painter.setPen(QPen(QColor('#F6F1E9') if i == self.session.selected else QColor('#505965'),
-                                3 if i == self.session.selected else 1))
+            if i == self.session.selected:
+                painter.setPen(QPen(self.selection_border(color), 3))
+            else:
+                painter.setPen(QPen(QColor('#505965'), 1))
             painter.drawRoundedRect(QRectF(x + 4, y + 4, 36, 36), 8, 8)
             painter.setPen(QColor('#161B23') if color.lightness() > 145 else QColor('#FFFFFF'))
             if p.counts[i] == p.totals[i]:
