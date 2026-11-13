@@ -11,7 +11,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        # Pin Ubuntu: ubuntu-latest (26.04) has been failing apt DNS to mirrors.
+        os: [ubuntu-24.04, windows-latest]
     env:
       QT_QPA_PLATFORM: offscreen
     steps:
@@ -21,7 +22,22 @@ jobs:
           python-version: '3.13'
       - name: Install Linux graphics runtime
         if: runner.os == 'Linux'
-        run: sudo apt-get update && sudo apt-get install --yes libegl1
+        run: |
+          # GitHub runners have been hitting temporary Ubuntu mirror DNS failures.
+          if ! getent hosts archive.ubuntu.com >/dev/null 2>&1; then
+            printf 'nameserver 1.1.1.1\nnameserver 8.8.8.8\n' | sudo tee /etc/resolv.conf >/dev/null
+          fi
+          for attempt in 1 2 3 4; do
+            sudo apt-get update && sudo apt-get install --yes libegl1 && exit 0
+            echo "apt install failed (attempt $attempt); retrying..."
+            sleep $((attempt * 10))
+          done
+          # Prefer continuing if the image already provides EGL for offscreen Qt.
+          if ldconfig -p 2>/dev/null | grep -qi 'libEGL\.so'; then
+            echo "apt failed but libEGL is already present; continuing"
+            exit 0
+          fi
+          exit 1
       - name: Install dependencies
         run: python -m pip install ".[dev]"
       - name: Test
