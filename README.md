@@ -40,7 +40,7 @@ Kurulum ayrıntıları: [Windows](docs/WINDOWS.md) · [macOS](docs/MACOS.md) · 
 
 | | |
 |---|---|
-| **900 resim, 10 kategori** | 5 kategori pakette (çevrimdışı); 5 kategori mağazadan indirilebilir. |
+| **991 resim, 11 kategori** | 5 kategori pakette (çevrimdışı); 6 kategori mağazadan indirilebilir. |
 | **Koleksiyon keşfi** | Zorluk, durum (başlanmamış / devam / bitti) ve favori filtreleri; katalog, zorluk, ilerleme veya son oynanan sıralaması. |
 | **7 zorluk seviyesi** | Çok Kolay'dan Uzman'a; kısa molalar için küçük resimler, uzun çalışmalar için ayrıntılı sahneler. |
 | **Rahat boyama** | Sürükleyerek boya, bitişik alanı doldur, sağ tıkla renk seç, ipucuyla kalan hücreyi bul. |

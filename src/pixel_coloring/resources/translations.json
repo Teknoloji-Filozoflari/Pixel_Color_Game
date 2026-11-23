@@ -1816,5 +1816,17 @@
     "az": "{easy} – {hard}",
     "es": "{easy} – {hard}",
     "ru": "{easy} – {hard}"
+  },
+  "Uzay": {
+    "en": "Space",
+    "az": "Kosmos",
+    "es": "Espacio",
+    "ru": "Космос"
+  },
+  "Uzay, gezegenler ve keşif sahneleri.": {
+    "en": "Space, planets, and exploration scenes.",
+    "az": "Kosmos, planetlər və kəşfiyyat səhnələri.",
+    "es": "Espacio, planetas y escenas de exploración.",
+    "ru": "Космос, планеты и сцены исследований."
   }
 }

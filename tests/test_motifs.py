@@ -159,7 +159,7 @@ def test_collection_and_game_meanings_at_minimum_window_size(app, tmp_path):
             'Şehirler',
             'İçe aktarılan',
         ]
-        for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar'):
+        for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar', 'Uzay'):
             assert remote not in window.category_buttons
         for language in ['tr', 'az', 'en', 'es', 'ru']:
             if window.settings['language'] != language:
@@ -274,7 +274,7 @@ def test_filter_translations_and_category_wrapping(app, tmp_path, category):
             assert category in window.category_buttons
             assert window.category_buttons[category].text() == tr(category)
             # Undownloaded optional packs stay out of the bar (Mağaza-only).
-            for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar'):
+            for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar', 'Uzay'):
                 if remote != category:
                     assert remote not in window.category_buttons
             tiles = window.stack.currentWidget().findChildren(ProgressTile)

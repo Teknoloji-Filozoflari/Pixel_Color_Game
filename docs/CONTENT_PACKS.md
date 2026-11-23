@@ -20,6 +20,7 @@ GitHub Releases üzerinden isteğe bağlı ZIP paketleri olarak indirilir.
 - Harikalar
 - Araçlar
 - Teknoloji
+- Uzay
 
 Uygulama içi **Mağaza** ekranından bir dokunuşla indirilir; tarayıcı açılmaz.
 İndirme bitince SHA-256 doğrulanır, seviyeler kurulur ve koleksiyon yenilenir.
