@@ -268,7 +268,9 @@ def build_collection(window, root):
         tab.setAccessibleName(caption)
         tab.setCheckable(True)
         tab.setChecked(name == window.collection_category)
-        tab.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        # Keep the caption on one line; grow tabs to fit instead of wrapping text.
+        tab.setSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.Fixed)
+        tab.setMinimumWidth(tab.sizeHint().width())
         tab.setCursor(Qt.CursorShape.PointingHandCursor)
         group.addButton(tab)
         window.category_buttons[name] = tab

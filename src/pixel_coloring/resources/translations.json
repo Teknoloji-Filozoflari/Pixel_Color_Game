@@ -1804,5 +1804,17 @@
     "az": "Çətinlik bölgüsü",
     "es": "Distribución de dificultad",
     "ru": "Распределение сложности"
+  },
+  "Zorluk: {mix}": {
+    "en": "Difficulty: {mix}",
+    "az": "Çətinlik: {mix}",
+    "es": "Dificultad: {mix}",
+    "ru": "Сложность: {mix}"
+  },
+  "{easy} – {hard}": {
+    "en": "{easy} – {hard}",
+    "az": "{easy} – {hard}",
+    "es": "{easy} – {hard}",
+    "ru": "{easy} – {hard}"
   }
 }
