@@ -56,3 +56,4 @@ pytest-output.txt
 packaging/sources/uzay/*.png
 packaging/sources/spor/*.png
 packaging/sources/tarih/*.png
+packaging/sources/masallar/*.png
