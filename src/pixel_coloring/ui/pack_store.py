@@ -187,8 +187,9 @@ class PackDetailPane(QFrame):
         if paths:
             for index, path in enumerate(paths):
                 thumb = QLabel()
-                thumb.setMinimumSize(200, 150)
-                thumb.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+                thumb.setFixedHeight(168)
+                thumb.setMinimumWidth(220)
+                thumb.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
                 thumb.setAlignment(Qt.AlignmentFlag.AlignCenter)
                 thumb.setStyleSheet(
                     "background:#263C3B; border-radius:10px; border:1px solid #496B62;"
@@ -197,15 +198,13 @@ class PackDetailPane(QFrame):
                 if not pixmap.isNull():
                     thumb.setPixmap(
                         pixmap.scaled(
-                            420,
-                            280,
+                            360,
+                            160,
                             Qt.AspectRatioMode.KeepAspectRatio,
                             Qt.TransformationMode.SmoothTransformation,
                         )
                     )
                 preview_grid.addWidget(thumb, index // 2, index % 2)
-            preview_grid.setRowStretch(0, 1)
-            preview_grid.setRowStretch(1, 1)
         else:
             preview_grid.addWidget(label(tr("Önizleme yok."), "muted"), 0, 0)
         self.layout.addLayout(preview_grid, 1)
