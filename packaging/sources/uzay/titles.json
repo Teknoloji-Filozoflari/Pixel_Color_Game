@@ -1,0 +1,548 @@
+{
+  "sample-uzay-001": {
+    "en": "Crescent Moon",
+    "az": "Hilal Ay",
+    "es": "Luna creciente",
+    "ru": "Полумесяц"
+  },
+  "sample-uzay-002": {
+    "en": "Red Rocket",
+    "az": "Qırmızı raket",
+    "es": "Cohete rojo",
+    "ru": "Красная ракета"
+  },
+  "sample-uzay-003": {
+    "en": "Ringed Planet",
+    "az": "Halqalı planet",
+    "es": "Planeta anillado",
+    "ru": "Планета с кольцами"
+  },
+  "sample-uzay-004": {
+    "en": "Bright Star",
+    "az": "Parlaq ulduz",
+    "es": "Estrella brillante",
+    "ru": "Яркая звезда"
+  },
+  "sample-uzay-005": {
+    "en": "Small Asteroid",
+    "az": "Kiçik asteroid",
+    "es": "Asteroide pequeño",
+    "ru": "Маленький астероид"
+  },
+  "sample-uzay-006": {
+    "en": "Space Helmet",
+    "az": "Kosmos dəbilqəsi",
+    "es": "Casco espacial",
+    "ru": "Космический шлем"
+  },
+  "sample-uzay-007": {
+    "en": "Simple Telescope",
+    "az": "Sadə teleskop",
+    "es": "Telescopio simple",
+    "ru": "Простой телескоп"
+  },
+  "sample-uzay-008": {
+    "en": "Tiny Comet",
+    "az": "Kiçik komet",
+    "es": "Cometa pequeña",
+    "ru": "Маленькая комета"
+  },
+  "sample-uzay-009": {
+    "en": "Dish Antenna",
+    "az": "Peyk antenası",
+    "es": "Antena parabólica",
+    "ru": "Спутниковая антенна"
+  },
+  "sample-uzay-010": {
+    "en": "Full Moon",
+    "az": "Bütöv ay",
+    "es": "Luna llena",
+    "ru": "Полная луна"
+  },
+  "sample-uzay-011": {
+    "en": "Blue Planet",
+    "az": "Göy planet",
+    "es": "Planeta azul",
+    "ru": "Синяя планета"
+  },
+  "sample-uzay-012": {
+    "en": "Shooting Star",
+    "az": "Axan ulduz",
+    "es": "Estrella fugaz",
+    "ru": "Падающая звезда"
+  },
+  "sample-uzay-013": {
+    "en": "Tiny Alien",
+    "az": "Kiçik yadplanetli",
+    "es": "Pequeño alienígena",
+    "ru": "Маленький инопланетянин"
+  },
+  "sample-uzay-014": {
+    "en": "Astronaut",
+    "az": "Astronavt",
+    "es": "Astronauta",
+    "ru": "Астронавт"
+  },
+  "sample-uzay-015": {
+    "en": "Orbiting Satellite",
+    "az": "Orbitada peyk",
+    "es": "Satélite en órbita",
+    "ru": "Орбитальный спутник"
+  },
+  "sample-uzay-016": {
+    "en": "Flying Saucer",
+    "az": "Uçan boşqab",
+    "es": "Platillo volante",
+    "ru": "Летающая тарелка"
+  },
+  "sample-uzay-017": {
+    "en": "Space Shuttle",
+    "az": "Kosmos gəmisi",
+    "es": "Transbordador espacial",
+    "ru": "Шаттл"
+  },
+  "sample-uzay-018": {
+    "en": "Moon Rover",
+    "az": "Ay roveri",
+    "es": "Rover lunar",
+    "ru": "Лунный ровер"
+  },
+  "sample-uzay-019": {
+    "en": "Landing Capsule",
+    "az": "Eniş kapsulu",
+    "es": "Cápsula de aterrizaje",
+    "ru": "Спускаемая капсула"
+  },
+  "sample-uzay-020": {
+    "en": "Solar Panels",
+    "az": "Günəş panelləri",
+    "es": "Paneles solares",
+    "ru": "Солнечные панели"
+  },
+  "sample-uzay-021": {
+    "en": "Spacewalk",
+    "az": "Kosmos gəzintisi",
+    "es": "Paseo espacial",
+    "ru": "Выход в открытый космос"
+  },
+  "sample-uzay-022": {
+    "en": "Space Probe",
+    "az": "Kosmos zondusu",
+    "es": "Sonda espacial",
+    "ru": "Космический зонд"
+  },
+  "sample-uzay-023": {
+    "en": "Space Telescope",
+    "az": "Kosmos teleskopu",
+    "es": "Telescopio espacial",
+    "ru": "Космический телескоп"
+  },
+  "sample-uzay-024": {
+    "en": "Icy Moon Shore",
+    "az": "Buzlu ay sahili",
+    "es": "Orilla de luna helada",
+    "ru": "Берег ледяной луны"
+  },
+  "sample-uzay-025": {
+    "en": "Alien Craft",
+    "az": "Yadplanetli gəmi",
+    "es": "Nave alienígena",
+    "ru": "Инопланетный корабль"
+  },
+  "sample-uzay-026": {
+    "en": "Rocket Launch",
+    "az": "Raket buraxılışı",
+    "es": "Lanzamiento de cohete",
+    "ru": "Запуск ракеты"
+  },
+  "sample-uzay-027": {
+    "en": "Earth from Orbit",
+    "az": "Yerdən orbit",
+    "es": "Tierra desde órbita",
+    "ru": "Земля с орбиты"
+  },
+  "sample-uzay-028": {
+    "en": "Mars Landscape",
+    "az": "Mars mənzərəsi",
+    "es": "Paisaje de Marte",
+    "ru": "Пейзаж Марса"
+  },
+  "sample-uzay-029": {
+    "en": "Space Station",
+    "az": "Kosmos stansiyası",
+    "es": "Estación espacial",
+    "ru": "Космическая станция"
+  },
+  "sample-uzay-030": {
+    "en": "Venus Clouds",
+    "az": "Venera buludları",
+    "es": "Nubes de Venus",
+    "ru": "Облака Венеры"
+  },
+  "sample-uzay-031": {
+    "en": "Mercury Craters",
+    "az": "Merkuri kraterləri",
+    "es": "Cráteres de Mercurio",
+    "ru": "Кратеры Меркурия"
+  },
+  "sample-uzay-032": {
+    "en": "Lunar Outpost",
+    "az": "Ay bazası",
+    "es": "Puesto lunar",
+    "ru": "Лунная база"
+  },
+  "sample-uzay-033": {
+    "en": "Space Greenhouse",
+    "az": "Kosmos istixanası",
+    "es": "Invernadero espacial",
+    "ru": "Космическая теплица"
+  },
+  "sample-uzay-034": {
+    "en": "Asteroid Mine",
+    "az": "Asteroid mədəni",
+    "es": "Mina de asteroide",
+    "ru": "Астероидная шахта"
+  },
+  "sample-uzay-035": {
+    "en": "Docking Port",
+    "az": "Dok portu",
+    "es": "Puerto de atraque",
+    "ru": "Стыковочный порт"
+  },
+  "sample-uzay-036": {
+    "en": "Mars Canyon",
+    "az": "Mars kanyonu",
+    "es": "Cañón de Marte",
+    "ru": "Каньон Марса"
+  },
+  "sample-uzay-037": {
+    "en": "Space Elevator",
+    "az": "Kosmos liftı",
+    "es": "Ascensor espacial",
+    "ru": "Космический лифт"
+  },
+  "sample-uzay-038": {
+    "en": "Solar Storm",
+    "az": "Günəş fırtınası",
+    "es": "Tormenta solar",
+    "ru": "Солнечная буря"
+  },
+  "sample-uzay-039": {
+    "en": "Above Phobos",
+    "az": "Phobos üzərində",
+    "es": "Sobre Fobos",
+    "ru": "Над Фобосом"
+  },
+  "sample-uzay-040": {
+    "en": "Comet Passage",
+    "az": "Komet keçidi",
+    "es": "Paso del cometa",
+    "ru": "Пролёт кометы"
+  },
+  "sample-uzay-041": {
+    "en": "Lunar Landing",
+    "az": "Ay enişi",
+    "es": "Alunizaje",
+    "ru": "Лунная посадка"
+  },
+  "sample-uzay-042": {
+    "en": "Nebula Voyage",
+    "az": "Dumanlıq səyahəti",
+    "es": "Viaje por nebulosa",
+    "ru": "Путешествие в туманности"
+  },
+  "sample-uzay-043": {
+    "en": "Jupiter Close-up",
+    "az": "Yupiter yaxın",
+    "es": "Júpiter de cerca",
+    "ru": "Юпитер вблизи"
+  },
+  "sample-uzay-044": {
+    "en": "Saturn Approach",
+    "az": "Saturn yaxınlaşması",
+    "es": "Aproximación a Saturno",
+    "ru": "Приближение к Сатурну"
+  },
+  "sample-uzay-045": {
+    "en": "Black Hole Halo",
+    "az": "Qara dəlik halosu",
+    "es": "Halo de agujero negro",
+    "ru": "Ореол чёрной дыры"
+  },
+  "sample-uzay-046": {
+    "en": "Constellation Scene",
+    "az": "Bürc səhnəsi",
+    "es": "Escena de constelación",
+    "ru": "Сцена созвездия"
+  },
+  "sample-uzay-047": {
+    "en": "Solar Flare",
+    "az": "Günəş alovu",
+    "es": "Llamarada solar",
+    "ru": "Солнечная вспышка"
+  },
+  "sample-uzay-048": {
+    "en": "Shuttle Landing",
+    "az": "Şattl enişi",
+    "es": "Aterrizaje del transbordador",
+    "ru": "Посадка шаттла"
+  },
+  "sample-uzay-049": {
+    "en": "Colony Dome",
+    "az": "Koloniya günbəzi",
+    "es": "Cúpula colonial",
+    "ru": "Купол колонии"
+  },
+  "sample-uzay-050": {
+    "en": "Ice Moon",
+    "az": "Buz ayı",
+    "es": "Luna de hielo",
+    "ru": "Ледяная луна"
+  },
+  "sample-uzay-051": {
+    "en": "Volcanic Moon",
+    "az": "Vulkan ayı",
+    "es": "Luna volcánica",
+    "ru": "Вулканическая луна"
+  },
+  "sample-uzay-052": {
+    "en": "Telescope Array",
+    "az": "Teleskop sırası",
+    "es": "Matriz de telescopios",
+    "ru": "Массив телескопов"
+  },
+  "sample-uzay-053": {
+    "en": "Saturn and Moons",
+    "az": "Saturn və peykləri",
+    "es": "Saturno y lunas",
+    "ru": "Сатурн и спутники"
+  },
+  "sample-uzay-054": {
+    "en": "Asteroid Field",
+    "az": "Asteroid sahəsi",
+    "es": "Campo de asteroides",
+    "ru": "Поле астероидов"
+  },
+  "sample-uzay-055": {
+    "en": "Alien Planet",
+    "az": "Yadplanet",
+    "es": "Planeta alienígena",
+    "ru": "Чужая планета"
+  },
+  "sample-uzay-056": {
+    "en": "Ring Station",
+    "az": "Halqa stansiyası",
+    "es": "Estación anular",
+    "ru": "Кольцевая станция"
+  },
+  "sample-uzay-057": {
+    "en": "Pillars of Creation",
+    "az": "Yaradılış sütunları",
+    "es": "Pilares de la creación",
+    "ru": "Столпы творения"
+  },
+  "sample-uzay-058": {
+    "en": "Mars Ruins",
+    "az": "Mars xarabaları",
+    "es": "Ruinas de Marte",
+    "ru": "Руины Марса"
+  },
+  "sample-uzay-059": {
+    "en": "Comet Swarm",
+    "az": "Komet sürüsü",
+    "es": "Enjambre de cometas",
+    "ru": "Рой комет"
+  },
+  "sample-uzay-060": {
+    "en": "Twin Planets",
+    "az": "Cüt planet",
+    "es": "Planetas gemelos",
+    "ru": "Планеты-близнецы"
+  },
+  "sample-uzay-061": {
+    "en": "Crystal Cave",
+    "az": "Kristal mağara",
+    "es": "Cueva de cristal",
+    "ru": "Кристальная пещера"
+  },
+  "sample-uzay-062": {
+    "en": "Plasma Storm",
+    "az": "Plazma fırtınası",
+    "es": "Tormenta de plasma",
+    "ru": "Плазменный шторм"
+  },
+  "sample-uzay-063": {
+    "en": "Galactic Rim",
+    "az": "Qalaktika kənarı",
+    "es": "Borde galáctico",
+    "ru": "Край галактики"
+  },
+  "sample-uzay-064": {
+    "en": "Orbital Ring",
+    "az": "Orbital halqa",
+    "es": "Anillo orbital",
+    "ru": "Орбитальное кольцо"
+  },
+  "sample-uzay-065": {
+    "en": "Alien Ruins",
+    "az": "Yadplanetli xarabaları",
+    "es": "Ruinas alienígenas",
+    "ru": "Инопланетные руины"
+  },
+  "sample-uzay-066": {
+    "en": "Starship Hangar",
+    "az": "Ulduz gəmisi anbarı",
+    "es": "Hangar de naves",
+    "ru": "Ангар звездолётов"
+  },
+  "sample-uzay-067": {
+    "en": "Binary Star System",
+    "az": "Cüt ulduz sistemi",
+    "es": "Sistema binario",
+    "ru": "Двойная звезда"
+  },
+  "sample-uzay-068": {
+    "en": "Europa Geysers",
+    "az": "Avropa geyzerləri",
+    "es": "Géiseres de Europa",
+    "ru": "Гейзеры Европы"
+  },
+  "sample-uzay-069": {
+    "en": "Dyson Swarm",
+    "az": "Dayson sürüsü",
+    "es": "Enjambre de Dyson",
+    "ru": "Рой Дайсона"
+  },
+  "sample-uzay-070": {
+    "en": "Explorer Fleet",
+    "az": "Kəşfiyyat donanması",
+    "es": "Flota exploradora",
+    "ru": "Флот исследователей"
+  },
+  "sample-uzay-071": {
+    "en": "Wormhole Gate",
+    "az": "Qurd dəliyi",
+    "es": "Agujero de gusano",
+    "ru": "Червоточина"
+  },
+  "sample-uzay-072": {
+    "en": "Megastructure",
+    "az": "Meqastruktur",
+    "es": "Megaestructura",
+    "ru": "Мегаструктура"
+  },
+  "sample-uzay-073": {
+    "en": "Quasar Vista",
+    "az": "Kvazar mənzərəsi",
+    "es": "Vista de cuásar",
+    "ru": "Вид на квазар"
+  },
+  "sample-uzay-074": {
+    "en": "Space Shipyard",
+    "az": "Kosmos gəmiqayırması",
+    "es": "Astillero espacial",
+    "ru": "Космическая верфь"
+  },
+  "sample-uzay-075": {
+    "en": "Terraforming Mars",
+    "az": "Marsın dəyişdirilməsi",
+    "es": "Terraformación de Marte",
+    "ru": "Терраформирование Марса"
+  },
+  "sample-uzay-076": {
+    "en": "Lunar Metropolis",
+    "az": "Ay metropolisi",
+    "es": "Metrópolis lunar",
+    "ru": "Лунный мегаполис"
+  },
+  "sample-uzay-077": {
+    "en": "Asteroid Fortress",
+    "az": "Asteroid qalası",
+    "es": "Fortaleza de asteroide",
+    "ru": "Астероидная крепость"
+  },
+  "sample-uzay-078": {
+    "en": "Alien Mothership",
+    "az": "Yadplanetli ana gəmi",
+    "es": "Nave nodriza",
+    "ru": "Материнский корабль"
+  },
+  "sample-uzay-079": {
+    "en": "Spiral Galaxy",
+    "az": "Spiral qalaktika",
+    "es": "Galaxia espiral",
+    "ru": "Спиральная галактика"
+  },
+  "sample-uzay-080": {
+    "en": "Orbital City",
+    "az": "Orbital şəhər",
+    "es": "Ciudad orbital",
+    "ru": "Орбитальный город"
+  },
+  "sample-uzay-081": {
+    "en": "Deep Space Nebula",
+    "az": "Dərin kosmos dumanlığı",
+    "es": "Nebulosa del espacio profundo",
+    "ru": "Туманность глубокого космоса"
+  },
+  "sample-uzay-082": {
+    "en": "Multi-Planet System",
+    "az": "Çoxplanetli sistem",
+    "es": "Sistema multiplanetario",
+    "ru": "Многопланетная система"
+  },
+  "sample-uzay-083": {
+    "en": "Warp Gate Network",
+    "az": "Keçid şəbəkəsi",
+    "es": "Red de portales",
+    "ru": "Сеть врат"
+  },
+  "sample-uzay-084": {
+    "en": "Galactic Core",
+    "az": "Qalaktika nüvəsi",
+    "es": "Núcleo galáctico",
+    "ru": "Галактическое ядро"
+  },
+  "sample-uzay-085": {
+    "en": "Planet City",
+    "az": "Planet şəhəri",
+    "es": "Ciudad planeta",
+    "ru": "Планета-город"
+  },
+  "sample-uzay-086": {
+    "en": "Supernova Remnant",
+    "az": "Supernova qalığı",
+    "es": "Remanente de supernova",
+    "ru": "Остаток сверхновой"
+  },
+  "sample-uzay-087": {
+    "en": "Ark Ship",
+    "az": "Nuh gəmisi",
+    "es": "Nave arca",
+    "ru": "Ковчег"
+  },
+  "sample-uzay-088": {
+    "en": "Space Cathedral",
+    "az": "Kosmos kafedralı",
+    "es": "Catedral espacial",
+    "ru": "Космический собор"
+  },
+  "sample-uzay-089": {
+    "en": "Living Asteroid City",
+    "az": "Canlı asteroid şəhəri",
+    "es": "Ciudad asteroide viva",
+    "ru": "Живой город-астероид"
+  },
+  "sample-uzay-090": {
+    "en": "Cosmic Web",
+    "az": "Kosmiki şəbəkə",
+    "es": "Telaraña cósmica",
+    "ru": "Космическая паутина"
+  },
+  "sample-uzay-091": {
+    "en": "Fleet and Nebula",
+    "az": "Donanma və dumanlıq",
+    "es": "Flota y nebulosa",
+    "ru": "Флот и туманность"
+  }
+}

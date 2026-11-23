@@ -1,6 +1,6 @@
 ﻿# Koleksiyon özeti
 
-Piksel Atölyesi toplam **900** hazır resim içerir. Uygulamanın kullandığı eksiksiz ve makine tarafından okunabilir liste `src/pixel_coloring/resources/paintings/catalog.json` dosyasındadır.
+Piksel Atölyesi toplam **991** hazır resim içerir (91’i isteğe bağlı Uzay paketi). Uygulamanın kullandığı eksiksiz ve makine tarafından okunabilir liste `src/pixel_coloring/resources/paintings/catalog.json` dosyasındadır.
 
 ## Kategoriler
 
@@ -16,20 +16,21 @@ Piksel Atölyesi toplam **900** hazır resim içerir. Uygulamanın kullandığı
 | Harikalar | 91 |
 | Teknoloji | 91 |
 | Araçlar | 91 |
-| **Toplam** | **900** |
+| Uzay | 91 |
+| **Toplam** | **991** |
 
 ## Zorluk dağılımı
 
 | Zorluk | Resim sayısı |
 |---|---:|
-| Çok Kolay | 69 |
-| Kolay | 74 |
-| Kolay-Orta | 119 |
-| Orta | 119 |
-| Orta-Zor | 119 |
-| Zor | 119 |
-| Uzman | 281 |
-| **Toplam** | **900** |
+| Çok Kolay | 82 |
+| Kolay | 87 |
+| Kolay-Orta | 132 |
+| Orta | 132 |
+| Orta-Zor | 132 |
+| Zor | 132 |
+| Uzman | 294 |
+| **Toplam** | **991** |
 
 Görseller 48×48 ile 1920×1080 arasında, 2.880 ile 2.073.600 hücre ve 10–60 renk aralığındadır. Katalogdaki kimlikler kayıt ilerlemesini eşleştirdiği için mevcut bir resmin kimliği yayınlar arasında değiştirilmemelidir.
 
@@ -52,3 +53,5 @@ Kaynak pakette eksik olan 018 — Özgürlük Heykeli görseli, kullanıcının 
 Teknoloji koleksiyonu envanterdeki yedi seviyede 13'er görseli korur ve Harikalar ile aynı dönüştürme/sıralama yöntemini kullanır. Izgaralar ve palet sınırları yukarıdaki oyun basamaklarından seçilir; özgün kaynak kimlikleri, başlıklar ve kaynak üretim revizyonları korunur. Kaynak PNG'ler değiştirilmez. İlk üç seviyede küçük renk parçaları azaltılır; resimlerin tamamı oranı korunarak hedef ızgaraya sığdırılır. Kategori ve başlıklar beş dilde gösterilir.
 
 Araçlar koleksiyonundaki 91 görsel de aynı oyun basamaklarına uyarlanır; yedi seviyede 13'er görsel korunur ve her seviyede görsel karmaşıklığına göre sıralanır. Otomobil, motosiklet, tren, uçak ve tekne görsellerinin kaynak PNG dosyaları değiştirilmez. Başlıklar beş dilde gösterilir.
+
+Uzay koleksiyonu 91 görsel içerir; Harikalar / Teknoloji / Araçlar ile aynı yedi basamaklı 13’er dağılımı ve renk/piksel merdivenini kullanır. İsteğe bağlı indirme paketidir.

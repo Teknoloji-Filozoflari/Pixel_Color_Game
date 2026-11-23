@@ -1,0 +1,730 @@
+[
+  {
+    "id": "sample-uzay-001",
+    "tier": 1,
+    "slug": "ay",
+    "title": "Hilal Ay",
+    "preview": "uzay-t1-01-ay.jpg",
+    "file": "001-ay.png"
+  },
+  {
+    "id": "sample-uzay-002",
+    "tier": 1,
+    "slug": "roket",
+    "title": "Kırmızı Roket",
+    "preview": "uzay-t1-02-roket.jpg",
+    "file": "002-roket.png"
+  },
+  {
+    "id": "sample-uzay-003",
+    "tier": 1,
+    "slug": "gezegen",
+    "title": "Halkalı Gezegen",
+    "preview": "uzay-t1-03-gezegen.jpg",
+    "file": "003-gezegen.png"
+  },
+  {
+    "id": "sample-uzay-004",
+    "tier": 1,
+    "slug": "yildiz",
+    "title": "Parlak Yıldız",
+    "preview": null,
+    "file": "004-yildiz.png"
+  },
+  {
+    "id": "sample-uzay-005",
+    "tier": 1,
+    "slug": "asteroit",
+    "title": "Küçük Asteroit",
+    "preview": null,
+    "file": "005-asteroit.png"
+  },
+  {
+    "id": "sample-uzay-006",
+    "tier": 1,
+    "slug": "kask",
+    "title": "Uzay Kaskı",
+    "preview": null,
+    "file": "006-kask.png"
+  },
+  {
+    "id": "sample-uzay-007",
+    "tier": 1,
+    "slug": "teleskop",
+    "title": "Basit Teleskop",
+    "preview": null,
+    "file": "007-teleskop.png"
+  },
+  {
+    "id": "sample-uzay-008",
+    "tier": 1,
+    "slug": "kuyruklu",
+    "title": "Küçük Kuyrukluyıldız",
+    "preview": null,
+    "file": "008-kuyruklu.png"
+  },
+  {
+    "id": "sample-uzay-009",
+    "tier": 1,
+    "slug": "uydu-cana",
+    "title": "Uydu Anteni",
+    "preview": null,
+    "file": "009-uydu-cana.png"
+  },
+  {
+    "id": "sample-uzay-010",
+    "tier": 1,
+    "slug": "dolunay",
+    "title": "Dolunay",
+    "preview": null,
+    "file": "010-dolunay.png"
+  },
+  {
+    "id": "sample-uzay-011",
+    "tier": 1,
+    "slug": "dunya-top",
+    "title": "Mavi Gezegen",
+    "preview": null,
+    "file": "011-dunya-top.png"
+  },
+  {
+    "id": "sample-uzay-012",
+    "tier": 1,
+    "slug": "yildiz-kaymasi",
+    "title": "Kayan Yıldız",
+    "preview": null,
+    "file": "012-yildiz-kaymasi.png"
+  },
+  {
+    "id": "sample-uzay-013",
+    "tier": 1,
+    "slug": "uzayli",
+    "title": "Küçük Uzaylı",
+    "preview": null,
+    "file": "013-uzayli.png"
+  },
+  {
+    "id": "sample-uzay-014",
+    "tier": 2,
+    "slug": "astronot",
+    "title": "Astronot",
+    "preview": "uzay-t2-01-astronot.jpg",
+    "file": "014-astronot.png"
+  },
+  {
+    "id": "sample-uzay-015",
+    "tier": 2,
+    "slug": "uydu",
+    "title": "Yörünge Uydusu",
+    "preview": "uzay-t2-02-uydu.jpg",
+    "file": "015-uydu.png"
+  },
+  {
+    "id": "sample-uzay-016",
+    "tier": 2,
+    "slug": "ufo",
+    "title": "Uçan Daire",
+    "preview": "uzay-t2-03-ufo.jpg",
+    "file": "016-ufo.png"
+  },
+  {
+    "id": "sample-uzay-017",
+    "tier": 2,
+    "slug": "mekik",
+    "title": "Uzay Mekikleri",
+    "preview": null,
+    "file": "017-mekik.png"
+  },
+  {
+    "id": "sample-uzay-018",
+    "tier": 2,
+    "slug": "gezgin",
+    "title": "Ay Gezgini",
+    "preview": null,
+    "file": "018-gezgin.png"
+  },
+  {
+    "id": "sample-uzay-019",
+    "tier": 2,
+    "slug": "kapsul",
+    "title": "İniş Kapsülü",
+    "preview": null,
+    "file": "019-kapsul.png"
+  },
+  {
+    "id": "sample-uzay-020",
+    "tier": 2,
+    "slug": "gunes-panel",
+    "title": "Güneş Panelleri",
+    "preview": null,
+    "file": "020-gunes-panel.png"
+  },
+  {
+    "id": "sample-uzay-021",
+    "tier": 2,
+    "slug": "tether",
+    "title": "Uzay Yürüyüşü",
+    "preview": null,
+    "file": "021-tether.png"
+  },
+  {
+    "id": "sample-uzay-022",
+    "tier": 2,
+    "slug": "sonde",
+    "title": "Uzay Sondası",
+    "preview": null,
+    "file": "022-sonde.png"
+  },
+  {
+    "id": "sample-uzay-023",
+    "tier": 2,
+    "slug": "hubble",
+    "title": "Uzay Teleskobu",
+    "preview": null,
+    "file": "023-hubble.png"
+  },
+  {
+    "id": "sample-uzay-024",
+    "tier": 2,
+    "slug": "buz-kiyisi",
+    "title": "Buzlu Ay Kıyısı",
+    "preview": null,
+    "file": "024-buz-kiyisi.png"
+  },
+  {
+    "id": "sample-uzay-025",
+    "tier": 2,
+    "slug": "alien-craft",
+    "title": "Uzaylı Gemisi",
+    "preview": null,
+    "file": "025-alien-craft.png"
+  },
+  {
+    "id": "sample-uzay-026",
+    "tier": 2,
+    "slug": "roket-firlatma",
+    "title": "Roket Fırlatma",
+    "preview": null,
+    "file": "026-roket-firlatma.png"
+  },
+  {
+    "id": "sample-uzay-027",
+    "tier": 3,
+    "slug": "dunya",
+    "title": "Dünya Yörüngeden",
+    "preview": "uzay-t3-01-dunya.jpg",
+    "file": "027-dunya.png"
+  },
+  {
+    "id": "sample-uzay-028",
+    "tier": 3,
+    "slug": "mars",
+    "title": "Mars Manzarası",
+    "preview": "uzay-t3-02-mars.jpg",
+    "file": "028-mars.png"
+  },
+  {
+    "id": "sample-uzay-029",
+    "tier": 3,
+    "slug": "istasyon",
+    "title": "Uzay İstasyonu",
+    "preview": "uzay-t3-03-istasyon.jpg",
+    "file": "029-istasyon.png"
+  },
+  {
+    "id": "sample-uzay-030",
+    "tier": 3,
+    "slug": "venus",
+    "title": "Venüs Bulutları",
+    "preview": null,
+    "file": "030-venus.png"
+  },
+  {
+    "id": "sample-uzay-031",
+    "tier": 3,
+    "slug": "merkur",
+    "title": "Merkür Kraterleri",
+    "preview": null,
+    "file": "031-merkur.png"
+  },
+  {
+    "id": "sample-uzay-032",
+    "tier": 3,
+    "slug": "ay-us",
+    "title": "Ay Üssü",
+    "preview": null,
+    "file": "032-ay-us.png"
+  },
+  {
+    "id": "sample-uzay-033",
+    "tier": 3,
+    "slug": "sera",
+    "title": "Uzay Serası",
+    "preview": null,
+    "file": "033-sera.png"
+  },
+  {
+    "id": "sample-uzay-034",
+    "tier": 3,
+    "slug": "maden",
+    "title": "Asteroit Madeni",
+    "preview": null,
+    "file": "034-maden.png"
+  },
+  {
+    "id": "sample-uzay-035",
+    "tier": 3,
+    "slug": "dock",
+    "title": "Kenetlenme Kapısı",
+    "preview": null,
+    "file": "035-dock.png"
+  },
+  {
+    "id": "sample-uzay-036",
+    "tier": 3,
+    "slug": "mars-kanyon",
+    "title": "Mars Kanyonu",
+    "preview": null,
+    "file": "036-mars-kanyon.png"
+  },
+  {
+    "id": "sample-uzay-037",
+    "tier": 3,
+    "slug": "elevator",
+    "title": "Uzay Asansörü",
+    "preview": null,
+    "file": "037-elevator.png"
+  },
+  {
+    "id": "sample-uzay-038",
+    "tier": 3,
+    "slug": "firtina",
+    "title": "Güneş Fırtınası",
+    "preview": null,
+    "file": "038-firtina.png"
+  },
+  {
+    "id": "sample-uzay-039",
+    "tier": 3,
+    "slug": "phobos",
+    "title": "Phobos Üzerinde",
+    "preview": null,
+    "file": "039-phobos.png"
+  },
+  {
+    "id": "sample-uzay-040",
+    "tier": 4,
+    "slug": "kuyrukluyildiz",
+    "title": "Kuyrukluyıldız Geçişi",
+    "preview": "uzay-t4-01-kuyrukluyildiz.jpg",
+    "file": "040-kuyrukluyildiz.png"
+  },
+  {
+    "id": "sample-uzay-041",
+    "tier": 4,
+    "slug": "ay-inis",
+    "title": "Ay İnişi",
+    "preview": "uzay-t4-02-ay-inis.jpg",
+    "file": "041-ay-inis.png"
+  },
+  {
+    "id": "sample-uzay-042",
+    "tier": 4,
+    "slug": "bulutsu",
+    "title": "Bulutsu Yolculuğu",
+    "preview": "uzay-t4-03-bulutsu.jpg",
+    "file": "042-bulutsu.png"
+  },
+  {
+    "id": "sample-uzay-043",
+    "tier": 4,
+    "slug": "jupiter",
+    "title": "Jüpiter Yakın",
+    "preview": null,
+    "file": "043-jupiter.png"
+  },
+  {
+    "id": "sample-uzay-044",
+    "tier": 4,
+    "slug": "saturn-yaklas",
+    "title": "Satürn Yaklaşımı",
+    "preview": null,
+    "file": "044-saturn-yaklas.png"
+  },
+  {
+    "id": "sample-uzay-045",
+    "tier": 4,
+    "slug": "kara-delik",
+    "title": "Kara Delik Halesi",
+    "preview": null,
+    "file": "045-kara-delik.png"
+  },
+  {
+    "id": "sample-uzay-046",
+    "tier": 4,
+    "slug": "takimyildiz",
+    "title": "Takımyıldız Sahnesi",
+    "preview": null,
+    "file": "046-takimyildiz.png"
+  },
+  {
+    "id": "sample-uzay-047",
+    "tier": 4,
+    "slug": "gunes-patlama",
+    "title": "Güneş Patlaması",
+    "preview": null,
+    "file": "047-gunes-patlama.png"
+  },
+  {
+    "id": "sample-uzay-048",
+    "tier": 4,
+    "slug": "mekik-inis",
+    "title": "Mekik İnişi",
+    "preview": null,
+    "file": "048-mekik-inis.png"
+  },
+  {
+    "id": "sample-uzay-049",
+    "tier": 4,
+    "slug": "kubbe",
+    "title": "Koloni Kubbesi",
+    "preview": null,
+    "file": "049-kubbe.png"
+  },
+  {
+    "id": "sample-uzay-050",
+    "tier": 4,
+    "slug": "buz-ayi",
+    "title": "Buz Ayı",
+    "preview": null,
+    "file": "050-buz-ayi.png"
+  },
+  {
+    "id": "sample-uzay-051",
+    "tier": 4,
+    "slug": "yanardag-ay",
+    "title": "Yanardağ Ayı",
+    "preview": null,
+    "file": "051-yanardag-ay.png"
+  },
+  {
+    "id": "sample-uzay-052",
+    "tier": 4,
+    "slug": "teleskop-dizisi",
+    "title": "Teleskop Dizisi",
+    "preview": null,
+    "file": "052-teleskop-dizisi.png"
+  },
+  {
+    "id": "sample-uzay-053",
+    "tier": 5,
+    "slug": "saturn",
+    "title": "Satürn ve Uyduları",
+    "preview": "uzay-t5-01-saturn.jpg",
+    "file": "053-saturn.png"
+  },
+  {
+    "id": "sample-uzay-054",
+    "tier": 5,
+    "slug": "asteroit-alani",
+    "title": "Asteroit Alanı",
+    "preview": "uzay-t5-02-asteroit.jpg",
+    "file": "054-asteroit-alani.png"
+  },
+  {
+    "id": "sample-uzay-055",
+    "tier": 5,
+    "slug": "yabanci-gezegen",
+    "title": "Yabancı Gezegen",
+    "preview": "uzay-t5-03-yabanci-gezegen.jpg",
+    "file": "055-yabanci-gezegen.png"
+  },
+  {
+    "id": "sample-uzay-056",
+    "tier": 5,
+    "slug": "halka-istasyon",
+    "title": "Halka İstasyon",
+    "preview": null,
+    "file": "056-halka-istasyon.png"
+  },
+  {
+    "id": "sample-uzay-057",
+    "tier": 5,
+    "slug": "sutunlar",
+    "title": "Yaratılış Sütunları",
+    "preview": null,
+    "file": "057-sutunlar.png"
+  },
+  {
+    "id": "sample-uzay-058",
+    "tier": 5,
+    "slug": "mars-harabe",
+    "title": "Mars Harabeleri",
+    "preview": null,
+    "file": "058-mars-harabe.png"
+  },
+  {
+    "id": "sample-uzay-059",
+    "tier": 5,
+    "slug": "komet-surusu",
+    "title": "Kuyrukluyıldız Sürüsü",
+    "preview": null,
+    "file": "059-komet-surusu.png"
+  },
+  {
+    "id": "sample-uzay-060",
+    "tier": 5,
+    "slug": "cift-gezegen",
+    "title": "Çift Gezegen",
+    "preview": null,
+    "file": "060-cift-gezegen.png"
+  },
+  {
+    "id": "sample-uzay-061",
+    "tier": 5,
+    "slug": "kristal-magara",
+    "title": "Kristal Mağara",
+    "preview": null,
+    "file": "061-kristal-magara.png"
+  },
+  {
+    "id": "sample-uzay-062",
+    "tier": 5,
+    "slug": "plazma",
+    "title": "Plazma Fırtınası",
+    "preview": null,
+    "file": "062-plazma.png"
+  },
+  {
+    "id": "sample-uzay-063",
+    "tier": 5,
+    "slug": "galaksi-kenari",
+    "title": "Galaksi Kenarı",
+    "preview": null,
+    "file": "063-galaksi-kenari.png"
+  },
+  {
+    "id": "sample-uzay-064",
+    "tier": 5,
+    "slug": "yorunge-halka",
+    "title": "Yörünge Halkası",
+    "preview": null,
+    "file": "064-yorunge-halka.png"
+  },
+  {
+    "id": "sample-uzay-065",
+    "tier": 5,
+    "slug": "uzayli-harabe",
+    "title": "Uzaylı Harabeleri",
+    "preview": null,
+    "file": "065-uzayli-harabe.png"
+  },
+  {
+    "id": "sample-uzay-066",
+    "tier": 6,
+    "slug": "hangar",
+    "title": "Yıldız Gemisi Hangarı",
+    "preview": "uzay-t6-01-hangar.jpg",
+    "file": "066-hangar.png"
+  },
+  {
+    "id": "sample-uzay-067",
+    "tier": 6,
+    "slug": "cift-yildiz",
+    "title": "Çift Yıldız Sistemi",
+    "preview": "uzay-t6-02-cift-yildiz.jpg",
+    "file": "067-cift-yildiz.png"
+  },
+  {
+    "id": "sample-uzay-068",
+    "tier": 6,
+    "slug": "europa",
+    "title": "Europa Gayzerleri",
+    "preview": "uzay-t6-03-europa.jpg",
+    "file": "068-europa.png"
+  },
+  {
+    "id": "sample-uzay-069",
+    "tier": 6,
+    "slug": "dyson",
+    "title": "Dyson Sürüsü",
+    "preview": null,
+    "file": "069-dyson.png"
+  },
+  {
+    "id": "sample-uzay-070",
+    "tier": 6,
+    "slug": "filo",
+    "title": "Keşif Filosu",
+    "preview": null,
+    "file": "070-filo.png"
+  },
+  {
+    "id": "sample-uzay-071",
+    "tier": 6,
+    "slug": "solucan",
+    "title": "Solucan Deliği",
+    "preview": null,
+    "file": "071-solucan.png"
+  },
+  {
+    "id": "sample-uzay-072",
+    "tier": 6,
+    "slug": "megayapi",
+    "title": "Mega Yapı",
+    "preview": null,
+    "file": "072-megayapi.png"
+  },
+  {
+    "id": "sample-uzay-073",
+    "tier": 6,
+    "slug": "quazar",
+    "title": "Kuazar Manzarası",
+    "preview": null,
+    "file": "073-quazar.png"
+  },
+  {
+    "id": "sample-uzay-074",
+    "tier": 6,
+    "slug": "tersane",
+    "title": "Uzay Tersanesi",
+    "preview": null,
+    "file": "074-tersane.png"
+  },
+  {
+    "id": "sample-uzay-075",
+    "tier": 6,
+    "slug": "terraforming",
+    "title": "Mars Dönüşümü",
+    "preview": null,
+    "file": "075-terraforming.png"
+  },
+  {
+    "id": "sample-uzay-076",
+    "tier": 6,
+    "slug": "ay-metropol",
+    "title": "Ay Metropolü",
+    "preview": null,
+    "file": "076-ay-metropol.png"
+  },
+  {
+    "id": "sample-uzay-077",
+    "tier": 6,
+    "slug": "kale",
+    "title": "Asteroit Kalesi",
+    "preview": null,
+    "file": "077-kale.png"
+  },
+  {
+    "id": "sample-uzay-078",
+    "tier": 6,
+    "slug": "ana-gemi",
+    "title": "Uzaylı Ana Gemisi",
+    "preview": null,
+    "file": "078-ana-gemi.png"
+  },
+  {
+    "id": "sample-uzay-079",
+    "tier": 7,
+    "slug": "galaksi",
+    "title": "Sarmal Galaksi",
+    "preview": "uzay-t7-01-galaksi.jpg",
+    "file": "079-galaksi.png"
+  },
+  {
+    "id": "sample-uzay-080",
+    "tier": 7,
+    "slug": "yorunge-sehir",
+    "title": "Yörünge Şehri",
+    "preview": "uzay-t7-02-yorunge-sehir.jpg",
+    "file": "080-yorunge-sehir.png"
+  },
+  {
+    "id": "sample-uzay-081",
+    "tier": 7,
+    "slug": "derin-uzay",
+    "title": "Derin Uzay Bulutsusu",
+    "preview": "uzay-t7-03-derin-uzay.jpg",
+    "file": "081-derin-uzay.png"
+  },
+  {
+    "id": "sample-uzay-082",
+    "tier": 7,
+    "slug": "coklu-sistem",
+    "title": "Çoklu Gezegen Sistemi",
+    "preview": null,
+    "file": "082-coklu-sistem.png"
+  },
+  {
+    "id": "sample-uzay-083",
+    "tier": 7,
+    "slug": "warp-agi",
+    "title": "Geçit Ağı",
+    "preview": null,
+    "file": "083-warp-agi.png"
+  },
+  {
+    "id": "sample-uzay-084",
+    "tier": 7,
+    "slug": "galaktik-cekirdek",
+    "title": "Galaktik Çekirdek",
+    "preview": null,
+    "file": "084-galaktik-cekirdek.png"
+  },
+  {
+    "id": "sample-uzay-085",
+    "tier": 7,
+    "slug": "gezegen-sehir",
+    "title": "Gezegen Şehri",
+    "preview": null,
+    "file": "085-gezegen-sehir.png"
+  },
+  {
+    "id": "sample-uzay-086",
+    "tier": 7,
+    "slug": "supernova",
+    "title": "Süpernova Kalıntısı",
+    "preview": null,
+    "file": "086-supernova.png"
+  },
+  {
+    "id": "sample-uzay-087",
+    "tier": 7,
+    "slug": "gemisi",
+    "title": "Nuh Gemisi",
+    "preview": null,
+    "file": "087-gemisi.png"
+  },
+  {
+    "id": "sample-uzay-088",
+    "tier": 7,
+    "slug": "katedral",
+    "title": "Uzay Katedrali",
+    "preview": null,
+    "file": "088-katedral.png"
+  },
+  {
+    "id": "sample-uzay-089",
+    "tier": 7,
+    "slug": "canli-asteroit",
+    "title": "Canlı Asteroit Şehri",
+    "preview": null,
+    "file": "089-canli-asteroit.png"
+  },
+  {
+    "id": "sample-uzay-090",
+    "tier": 7,
+    "slug": "kosmik-ag",
+    "title": "Kozmik Ağ",
+    "preview": null,
+    "file": "090-kosmik-ag.png"
+  },
+  {
+    "id": "sample-uzay-091",
+    "tier": 7,
+    "slug": "filo-bulutsu",
+    "title": "Filo ve Bulutsu",
+    "preview": null,
+    "file": "091-filo-bulutsu.png"
+  }
+]
