@@ -36,6 +36,16 @@ class HomeAction(QPushButton):
             for x in (11, 26):
                 for y in (9, 24):
                     painter.drawRoundedRect(QRectF(x, y, 11, 11), 2, 2)
+        elif self.kind == 'store':
+            # Storefront: awning + shop body + doorway.
+            painter.drawPolyline(QPolygonF([
+                QPointF(12, 16), QPointF(14, 11), QPointF(34, 11), QPointF(36, 16),
+            ]))
+            painter.drawLine(12, 16, 36, 16)
+            for x in (15, 20, 25, 30):
+                painter.drawLine(x, 12, x, 16)
+            painter.drawRoundedRect(QRectF(13, 16, 22, 18), 2, 2)
+            painter.drawRect(QRectF(21, 22, 6, 12))
         elif self.kind == 'settings':
             painter.translate(24, 22)
             painter.drawEllipse(QRectF(-9, -9, 18, 18))

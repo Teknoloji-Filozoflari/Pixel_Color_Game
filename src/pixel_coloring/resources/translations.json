@@ -1768,5 +1768,41 @@
     "az": "Endirmə alınmadı: {reason}",
     "es": "Error de descarga: {reason}",
     "ru": "Ошибка загрузки: {reason}"
+  },
+  "Bir paket seçerek önizleme, boyut ve zorluk dağılımını gör.": {
+    "en": "Select a pack to see previews, size, and difficulty mix.",
+    "az": "Önizləmə, ölçü və çətinlik bölgüsünü görmək üçün paket seç.",
+    "es": "Elige un paquete para ver vistas previas, tamaño y dificultad.",
+    "ru": "Выберите набор, чтобы увидеть превью, размер и сложность."
+  },
+  "{count} resim": {
+    "en": "{count} pictures",
+    "az": "{count} şəkil",
+    "es": "{count} imágenes",
+    "ru": "{count} картинок"
+  },
+  "Sürüm {version}": {
+    "en": "Version {version}",
+    "az": "Versiya {version}",
+    "es": "Versión {version}",
+    "ru": "Версия {version}"
+  },
+  "Örnek önizlemeler": {
+    "en": "Sample previews",
+    "az": "Nümunə önizləmələr",
+    "es": "Vistas previas de ejemplo",
+    "ru": "Примеры превью"
+  },
+  "Önizleme yok.": {
+    "en": "No preview.",
+    "az": "Önizləmə yoxdur.",
+    "es": "Sin vista previa.",
+    "ru": "Нет превью."
+  },
+  "Zorluk dağılımı": {
+    "en": "Difficulty mix",
+    "az": "Çətinlik bölgüsü",
+    "es": "Distribución de dificultad",
+    "ru": "Распределение сложности"
   }
 }

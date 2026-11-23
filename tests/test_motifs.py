@@ -220,7 +220,10 @@ def test_pixel_count_selector_and_painted_percentage(app, tmp_path):
 
 @pytest.mark.parametrize('category', ['Harikalar', 'Teknoloji', 'Araçlar'])
 def test_filter_translations_and_category_wrapping(app, tmp_path, category):
-    from pixel_coloring.services.packs import is_bundled_category
+    import shutil
+    import time
+
+    from pixel_coloring.services.packs import pack_for_category
     from pixel_coloring.ui.i18n import set_language, tr
     from pixel_coloring.ui.main_window import MainWindow
     from pixel_coloring.ui.progress_tile import ProgressTile
@@ -233,6 +236,18 @@ def test_filter_translations_and_category_wrapping(app, tmp_path, category):
     database.register(entries[0][0], entries[0][1])
     old = read_level(GALLERY / (MOTIFS[0]['id'] + '.pcolor'))
     database.register(old, GALLERY / (old.id + '.pcolor'))
+    # Optional packs only appear in the category bar after PackManager install.
+    pack = pack_for_category(category)
+    paintings = tmp_path / 'paintings'
+    paintings.mkdir(exist_ok=True)
+    sample_id = pack['painting_ids'][0]
+    shutil.copy2(GALLERY / f'{sample_id}.pcolor', paintings / f'{sample_id}.pcolor')
+    meta_dir = tmp_path / 'packs' / pack['id']
+    meta_dir.mkdir(parents=True)
+    (meta_dir / 'pack.meta.json').write_text(
+        json.dumps({'id': pack['id'], 'category': category, 'version': 1, 'installed_at': time.time()}),
+        encoding='utf-8',
+    )
     window = MainWindow(tmp_path, database)
     try:
         window.collection_category = category
@@ -245,9 +260,12 @@ def test_filter_translations_and_category_wrapping(app, tmp_path, category):
             app.processEvents()
             assert window.width() == 960
             assert window.collection_category == category
-            # Optional packs show a download marker until PackManager installs them.
-            expected = tr(category) if is_bundled_category(category) else tr(category) + ' ↓'
-            assert window.category_buttons[category].text() == expected
+            assert category in window.category_buttons
+            assert window.category_buttons[category].text() == tr(category)
+            # Undownloaded optional packs stay out of the bar (Mağaza-only).
+            for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar'):
+                if remote != category:
+                    assert remote not in window.category_buttons
             tiles = window.stack.currentWidget().findChildren(ProgressTile)
             visible = [tile for tile in tiles if not tile.isHidden()]
             assert len(visible) == 91

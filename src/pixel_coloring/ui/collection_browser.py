@@ -19,10 +19,9 @@ from PySide6.QtWidgets import (
 from ..importer.level_writer import read_level
 from ..rendering.tile_cache import rgb_image
 from ..services.pack_manager import PackManager
-from ..services.packs import CATEGORY_ORDER, is_bundled_category, pack_for_category
+from ..services.packs import CATEGORY_ORDER, is_bundled_category
 from .home_actions import HomeAction
 from .i18n import LANGUAGES, number, painting_meaning, painting_title, tr
-from .pack_store import prompt_download_category
 from .progress_tile import ProgressTile
 from .widgets import ResponsiveGrid, button, label
 
@@ -224,14 +223,21 @@ def build_collection(window, root):
     add_button.setMenu(window.import_menu(add_button))
     head.addWidget(add_button)
     head.addWidget(HomeAction('settings', tr('Ayarlar'), window.show_settings))
-    store_button = button(tr('Mağaza'), window.show_pack_store, False)
-    store_button.setFixedHeight(44)
-    store_button.setMinimumWidth(96)
-    head.addWidget(store_button)
+    head.addWidget(HomeAction('store', tr('Mağaza'), window.show_pack_store))
     head.addWidget(HomeAction('exit', tr('Çıkış'), window.close))
     root.addWidget(hero)
     pack_manager = PackManager(window.data_dir, window.database)
-    categories = ['Tüm kategoriler', *CATEGORY_ORDER, 'İçe aktarılan']
+    installed_remote = {
+        pack["category"]
+        for pack in pack_manager.list_downloadable()
+        if pack.get("status") == "installed"
+    }
+    # Only bundled + installed optional packs appear in the bar; others live in Mağaza.
+    visible_categories = [
+        name for name in CATEGORY_ORDER
+        if is_bundled_category(name) or name in installed_remote
+    ]
+    categories = ['Tüm kategoriler', *visible_categories, 'İçe aktarılan']
     if window.collection_category not in categories:
         window.collection_category = categories[0]
     category_bar = CategoryBar()
@@ -250,21 +256,11 @@ def build_collection(window, root):
     group = QButtonGroup(category_bar)
     group.setExclusive(True)
     window.category_buttons = {}
-    installed_remote = {
-        pack["category"]
-        for pack in pack_manager.list_downloadable()
-        if pack.get("status") == "installed"
-    }
     for name in categories:
         if name == 'Tüm kategoriler':
             caption = tr('Tümü')
         elif name == 'İçe aktarılan':
             caption = tr('Yüklenenler')
-        elif (
-            not is_bundled_category(name)
-            and name not in installed_remote
-        ):
-            caption = tr(name) + ' ↓'
         else:
             caption = tr(name)
         tab = QPushButton(caption)
@@ -504,18 +500,9 @@ def build_collection(window, root):
                     widget.hide()
                     widget.setParent(None)
                     widget.deleteLater()
-            download_panel = None
-            category = window.collection_category
-            if category not in ('Tüm kategoriler', 'İçe aktarılan') and not is_bundled_category(category):
-                pack = pack_for_category(category)
-                if pack and not pack_manager.is_installed(pack['id']):
-                    download_panel = prompt_download_category(window, category)
-            if download_panel is not None:
-                detail_box.addWidget(download_panel)
-            else:
-                detail_box.addWidget(label(tr('Bu filtreyle eşleşen resim yok.'), 'subheading'))
-                if window.collection_category == 'İçe aktarılan':
-                    detail_box.addWidget(button(tr('Resim ekle'), window.import_dialog, True))
+            detail_box.addWidget(label(tr('Bu filtreyle eşleşen resim yok.'), 'subheading'))
+            if window.collection_category == 'İçe aktarılan':
+                detail_box.addWidget(button(tr('Resim ekle'), window.import_dialog, True))
         if visible and window.collection_selected not in [key for _, key in visible]:
             select(visible[0][1])
         icon_timer.start(0)
