@@ -1,4 +1,4 @@
-"""In-app content store for optional category packs."""
+"""In-app content store for optional category packs — dense 2-up card grid."""
 
 from __future__ import annotations
 
@@ -24,6 +24,8 @@ from ..services.pack_manager import PackError, PackManager
 from ..services.packs import format_bytes, load_catalog, preview_paths
 from .i18n import number, tr
 from .widgets import button, label
+
+STORE_COLUMNS = 2
 
 DIFFICULTY_ORDER = [
     "Çok Kolay",
@@ -61,7 +63,6 @@ def _difficulty_summary(difficulties: Counter) -> str:
         return ""
     if len(parts) <= 3:
         return " · ".join(parts)
-    # Keep the line compact when every tier is present.
     easiest = next((n for n in DIFFICULTY_ORDER if difficulties.get(n)), None)
     hardest = next((n for n in reversed(DIFFICULTY_ORDER) if difficulties.get(n)), None)
     if easiest and hardest and easiest != hardest:
@@ -70,18 +71,20 @@ def _difficulty_summary(difficulties: Counter) -> str:
 
 
 class PackCard(QFrame):
+    """One downloadable pack tile used in the store grid."""
+
     download_requested = Signal(str)
 
     def __init__(self, pack: dict, parent=None):
         super().__init__(parent)
         self.pack = pack
         self.setObjectName("packCard")
-        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
-        self.setMinimumHeight(320)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
+        self.setMinimumHeight(260)
         self.setStyleSheet(
             """
             QFrame#packCard {background:#1C2928; border:1px solid #496B62; border-radius:14px;}
-            QLabel#packTitle {color:#F0F5F3; font-size:20px; font-weight:800;}
+            QLabel#packTitle {color:#F0F5F3; font-size:18px; font-weight:800;}
             QLabel#packMeta {color:#AEB9C4; font-size:12px;}
             QLabel#packDesc {color:#D4E8E2; font-size:13px;}
             QLabel#statChip {background:#263C3B; color:#D4E8E2; border-radius:8px;
@@ -90,7 +93,7 @@ class PackCard(QFrame):
         )
         layout = QVBoxLayout(self)
         layout.setContentsMargins(16, 14, 16, 14)
-        layout.setSpacing(10)
+        layout.setSpacing(8)
 
         title_row = QHBoxLayout()
         title = label(tr(pack["category"]), None)
@@ -136,7 +139,7 @@ class PackCard(QFrame):
         previews.setSpacing(8)
         for path in preview_paths(pack["id"])[:4]:
             thumb = QLabel()
-            thumb.setFixedSize(108, 88)
+            thumb.setFixedSize(118, 92)
             thumb.setAlignment(Qt.AlignmentFlag.AlignCenter)
             thumb.setStyleSheet(
                 "background:#263C3B; border-radius:8px; border:1px solid #3F5A54;"
@@ -145,8 +148,8 @@ class PackCard(QFrame):
             if not pixmap.isNull():
                 thumb.setPixmap(
                     pixmap.scaled(
-                        108,
-                        88,
+                        118,
+                        92,
                         Qt.AspectRatioMode.KeepAspectRatioByExpanding,
                         Qt.TransformationMode.SmoothTransformation,
                     )
@@ -207,6 +210,8 @@ class PackCard(QFrame):
 
 
 class StoreGrid(QWidget):
+    """Host widget for the pack card QGridLayout (always 2 columns)."""
+
     resized = Signal()
 
     def resizeEvent(self, event):
@@ -219,14 +224,18 @@ def build_pack_store(window, root):
     window.pack_manager = manager
 
     scroll = QScrollArea()
+    scroll.setObjectName("packStoreScroll")
     scroll.setWidgetResizable(True)
     scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
     container = StoreGrid()
+    container.setObjectName("packStoreGrid")
     grid = QGridLayout(container)
-    grid.setContentsMargins(0, 0, 8, 0)
+    grid.setContentsMargins(0, 0, 8, 8)
     grid.setHorizontalSpacing(16)
     grid.setVerticalSpacing(16)
     grid.setAlignment(Qt.AlignmentFlag.AlignTop)
+    grid.setColumnStretch(0, 1)
+    grid.setColumnStretch(1, 1)
     scroll.setWidget(container)
     root.addWidget(scroll, 1)
 
@@ -300,18 +309,20 @@ def build_pack_store(window, root):
         cards[pack["id"]] = card
 
     def arrange():
-        width = max(scroll.viewport().width(), 1)
-        columns = 2 if width >= 720 else 1
+        # Desktop store is always a composed 2-up grid — never a 1-column list.
+        columns = STORE_COLUMNS
         for card in cards.values():
             grid.removeWidget(card)
             card.hide()
         for index, card in enumerate(cards.values()):
             grid.addWidget(card, index // columns, index % columns)
             card.show()
-        for column in range(2):
-            grid.setColumnStretch(column, 1 if column < columns else 0)
+        for column in range(STORE_COLUMNS):
+            grid.setColumnStretch(column, 1)
 
     container.resized.connect(arrange)
     arrange()
     QTimer.singleShot(0, arrange)
     window.pack_cards = cards
+    window.pack_store_grid = container
+    window.pack_store_columns = STORE_COLUMNS

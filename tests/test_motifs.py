@@ -149,7 +149,18 @@ def test_collection_and_game_meanings_at_minimum_window_size(app, tmp_path):
         window.collection_category = 'TÜRK MOTİFLERİ'
         window.show()
         app.processEvents()
-        assert list(window.category_buttons)[-6:] == ['TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar', 'İçe aktarılan']
+        # Undownloaded remotes stay out of the bar; only bundled + imports show.
+        assert list(window.category_buttons) == [
+            'Tüm kategoriler',
+            'Doğa',
+            'Hayvanlar',
+            'Fantastik',
+            'Manzaralar',
+            'Şehirler',
+            'İçe aktarılan',
+        ]
+        for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar'):
+            assert remote not in window.category_buttons
         for language in ['tr', 'az', 'en', 'es', 'ru']:
             if window.settings['language'] != language:
                 window.change_language(language)
