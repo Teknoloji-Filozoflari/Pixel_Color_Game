@@ -220,6 +220,7 @@ def test_pixel_count_selector_and_painted_percentage(app, tmp_path):
 
 @pytest.mark.parametrize('category', ['Harikalar', 'Teknoloji', 'Araçlar'])
 def test_filter_translations_and_category_wrapping(app, tmp_path, category):
+    from pixel_coloring.services.packs import is_bundled_category
     from pixel_coloring.ui.i18n import set_language, tr
     from pixel_coloring.ui.main_window import MainWindow
     from pixel_coloring.ui.progress_tile import ProgressTile
@@ -244,7 +245,9 @@ def test_filter_translations_and_category_wrapping(app, tmp_path, category):
             app.processEvents()
             assert window.width() == 960
             assert window.collection_category == category
-            assert window.category_buttons[category].text() == tr(category)
+            # Optional packs show a download marker until PackManager installs them.
+            expected = tr(category) if is_bundled_category(category) else tr(category) + ' ↓'
+            assert window.category_buttons[category].text() == expected
             tiles = window.stack.currentWidget().findChildren(ProgressTile)
             visible = [tile for tile in tiles if not tile.isHidden()]
             assert len(visible) == 91
