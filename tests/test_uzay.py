@@ -31,7 +31,7 @@ def test_uzay_files_match_catalog():
 
 
 def test_uzay_in_manifest():
-    from pixel_coloring.services.packs import pack_for_category, REMOTE_CATEGORIES
+    from pixel_coloring.services.packs import REMOTE_CATEGORIES, pack_for_category
 
     assert "Uzay" in REMOTE_CATEGORIES
     pack = pack_for_category("Uzay")
