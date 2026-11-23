@@ -1828,5 +1828,29 @@
     "az": "Kosmos, planetlər və kəşfiyyat səhnələri.",
     "es": "Espacio, planetas y escenas de exploración.",
     "ru": "Космос, планеты и сцены исследований."
+  },
+  "Spor": {
+    "en": "Sports",
+    "az": "İdman",
+    "es": "Deportes",
+    "ru": "Спорт"
+  },
+  "Spor dalları ve yarış sahneleri.": {
+    "en": "Sports disciplines and competition scenes.",
+    "az": "İdman növləri və yarış səhnələri.",
+    "es": "Disciplinas deportivas y escenas de competición.",
+    "ru": "Виды спорта и соревновательные сцены."
+  },
+  "Tarih ve Uygarlıklar": {
+    "en": "History & Civilizations",
+    "az": "Tarix və sivilizasiyalar",
+    "es": "Historia y civilizaciones",
+    "ru": "История и цивилизации"
+  },
+  "Tarih ve uygarlıkların sahneleri.": {
+    "en": "Scenes from history and civilizations.",
+    "az": "Tarix və sivilizasiya səhnələri.",
+    "es": "Escenas de historia y civilizaciones.",
+    "ru": "Сцены истории и цивилизаций."
   }
 }

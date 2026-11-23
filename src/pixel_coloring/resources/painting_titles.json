@@ -5944,5 +5944,1097 @@
     "az": "Donanma və dumanlıq",
     "es": "Flota y nebulosa",
     "ru": "Флот и туманность"
+  },
+  "sample-spor-001": {
+    "en": "Football",
+    "az": "Futbol topu",
+    "es": "Balón de fútbol",
+    "ru": "Футбольный мяч"
+  },
+  "sample-spor-002": {
+    "en": "Tennis Racket",
+    "az": "Tennis raketi",
+    "es": "Raqueta de tenis",
+    "ru": "Теннисная ракетка"
+  },
+  "sample-spor-003": {
+    "en": "Basketball",
+    "az": "Basketbol topu",
+    "es": "Balón de baloncesto",
+    "ru": "Баскетбольный мяч"
+  },
+  "sample-spor-004": {
+    "en": "Table Tennis Bat",
+    "az": "Ping-ponq raketi",
+    "es": "Pala de ping pong",
+    "ru": "Ракетка для пинг-понга"
+  },
+  "sample-spor-005": {
+    "en": "Baseball",
+    "az": "Beysbol topu",
+    "es": "Pelota de béisbol",
+    "ru": "Бейсбольный мяч"
+  },
+  "sample-spor-006": {
+    "en": "Bowling Pin",
+    "az": "Boulinq keğli",
+    "es": "Bolo de bolos",
+    "ru": "Кегля для боулинга"
+  },
+  "sample-spor-007": {
+    "en": "Shuttlecock",
+    "az": "Badminton topu",
+    "es": "Volante de bádminton",
+    "ru": "Волан для бадминтона"
+  },
+  "sample-spor-008": {
+    "en": "Frisbee",
+    "az": "Frizbi",
+    "es": "Frisbee",
+    "ru": "Фрисби"
+  },
+  "sample-spor-009": {
+    "en": "Dumbbell",
+    "az": "Qantəl",
+    "es": "Mancuerna",
+    "ru": "Гантель"
+  },
+  "sample-spor-010": {
+    "en": "Arrow",
+    "az": "Ox",
+    "es": "Flecha",
+    "ru": "Стрела"
+  },
+  "sample-spor-011": {
+    "en": "Oar",
+    "az": "Avər",
+    "es": "Remo",
+    "ru": "Весло"
+  },
+  "sample-spor-012": {
+    "en": "Ice Skate",
+    "az": "Konki",
+    "es": "Patín de hielo",
+    "ru": "Конёк"
+  },
+  "sample-spor-013": {
+    "en": "Boxing Glove",
+    "az": "Boks əlcəyi",
+    "es": "Guante de boxeo",
+    "ru": "Боксёрская перчатка"
+  },
+  "sample-spor-014": {
+    "en": "Bicycle",
+    "az": "Velosiped",
+    "es": "Bicicleta",
+    "ru": "Велосипед"
+  },
+  "sample-spor-015": {
+    "en": "Swimmer",
+    "az": "Üzgüçü",
+    "es": "Nadador",
+    "ru": "Пловец"
+  },
+  "sample-spor-016": {
+    "en": "Skier",
+    "az": "Xizəkçi",
+    "es": "Esquiador",
+    "ru": "Лыжник"
+  },
+  "sample-spor-017": {
+    "en": "Yoga Pose",
+    "az": "Yoqa poza",
+    "es": "Postura de yoga",
+    "ru": "Поза йоги"
+  },
+  "sample-spor-018": {
+    "en": "Gymnast",
+    "az": "Gimnast",
+    "es": "Gimnasta",
+    "ru": "Гимнаст"
+  },
+  "sample-spor-019": {
+    "en": "Fencer",
+    "az": "Qılıncoynadan",
+    "es": "Esgrimista",
+    "ru": "Фехтовальщик"
+  },
+  "sample-spor-020": {
+    "en": "Wrestlers",
+    "az": "Güləşçilər",
+    "es": "Luchadores",
+    "ru": "Борцы"
+  },
+  "sample-spor-021": {
+    "en": "Karate Kick",
+    "az": "Karate zərbəsi",
+    "es": "Patada de kárate",
+    "ru": "Удар карате"
+  },
+  "sample-spor-022": {
+    "en": "Judo Throw",
+    "az": "Cüdo atışı",
+    "es": "Proyección de judo",
+    "ru": "Бросок дзюдо"
+  },
+  "sample-spor-023": {
+    "en": "Archer",
+    "az": "Oxçu",
+    "es": "Arquero",
+    "ru": "Лучник"
+  },
+  "sample-spor-024": {
+    "en": "Skateboard",
+    "az": "Skeytbord",
+    "es": "Monopatín",
+    "ru": "Скейтборд"
+  },
+  "sample-spor-025": {
+    "en": "Runner",
+    "az": "Qaçışçı",
+    "es": "Corredor",
+    "ru": "Бегун"
+  },
+  "sample-spor-026": {
+    "en": "Table Tennis Rally",
+    "az": "Masa tenisi",
+    "es": "Ping pong",
+    "ru": "Настольный теннис"
+  },
+  "sample-spor-027": {
+    "en": "Stadium",
+    "az": "Stadion",
+    "es": "Estadio",
+    "ru": "Стадион"
+  },
+  "sample-spor-028": {
+    "en": "Boxing Ring",
+    "az": "Boks ringi",
+    "es": "Ring de boxeo",
+    "ru": "Боксёрский ринг"
+  },
+  "sample-spor-029": {
+    "en": "Golf Course",
+    "az": "Qolf sahəsi",
+    "es": "Campo de golf",
+    "ru": "Поле для гольфа"
+  },
+  "sample-spor-030": {
+    "en": "Rugby Scrumm",
+    "az": "Reqbi",
+    "es": "Scrum de rugby",
+    "ru": "Схватка регби"
+  },
+  "sample-spor-031": {
+    "en": "Handball",
+    "az": "Həndbol",
+    "es": "Balonmano",
+    "ru": "Гандбол"
+  },
+  "sample-spor-032": {
+    "en": "Cricket",
+    "az": "Kriket",
+    "es": "Críquet",
+    "ru": "Крикет"
+  },
+  "sample-spor-033": {
+    "en": "Equestrian",
+    "az": "Atçılıq",
+    "es": "Hípica",
+    "ru": "Конный спорт"
+  },
+  "sample-spor-034": {
+    "en": "Sailing",
+    "az": "Yelkən",
+    "es": "Vela",
+    "ru": "Парусный спорт"
+  },
+  "sample-spor-035": {
+    "en": "Canoeing",
+    "az": "Kanoe",
+    "es": "Piragüismo",
+    "ru": "Каноэ"
+  },
+  "sample-spor-036": {
+    "en": "Baseball Diamond",
+    "az": "Beysbol sahəsi",
+    "es": "Diamante de béisbol",
+    "ru": "Бейсбольное поле"
+  },
+  "sample-spor-037": {
+    "en": "Basketball Court",
+    "az": "Basketbol meydançası",
+    "es": "Cancha de baloncesto",
+    "ru": "Баскетбольная площадка"
+  },
+  "sample-spor-038": {
+    "en": "Tennis Court",
+    "az": "Tennis kortu",
+    "es": "Pista de tenis",
+    "ru": "Теннисный корт"
+  },
+  "sample-spor-039": {
+    "en": "Football Pitch",
+    "az": "Futbol sahəsi",
+    "es": "Campo de fútbol",
+    "ru": "Футбольное поле"
+  },
+  "sample-spor-040": {
+    "en": "Athletics Track",
+    "az": "Atletika cığırı",
+    "es": "Pista de atletismo",
+    "ru": "Легкоатлетический стадион"
+  },
+  "sample-spor-041": {
+    "en": "Volleyball Match",
+    "az": "Voleybol",
+    "es": "Partido de voleibol",
+    "ru": "Волейбол"
+  },
+  "sample-spor-042": {
+    "en": "Ice Hockey",
+    "az": "Xokkey",
+    "es": "Hockey sobre hielo",
+    "ru": "Хоккей"
+  },
+  "sample-spor-043": {
+    "en": "Water Polo",
+    "az": "Su polosu",
+    "es": "Waterpolo",
+    "ru": "Водное поло"
+  },
+  "sample-spor-044": {
+    "en": "Curling",
+    "az": "Körlinq",
+    "es": "Curling",
+    "ru": "Кёрлинг"
+  },
+  "sample-spor-045": {
+    "en": "Figure Skating",
+    "az": "Fiquurlu konkisürmə",
+    "es": "Patinaje artístico",
+    "ru": "Фигурное катание"
+  },
+  "sample-spor-046": {
+    "en": "Trampoline",
+    "az": "Batut",
+    "es": "Trampolín",
+    "ru": "Батут"
+  },
+  "sample-spor-047": {
+    "en": "Triathlon",
+    "az": "Triatlon",
+    "es": "Triatlón",
+    "ru": "Триатлон"
+  },
+  "sample-spor-048": {
+    "en": "Rugby Match",
+    "az": "Reqbi matçı",
+    "es": "Partido de rugby",
+    "ru": "Матч по регби"
+  },
+  "sample-spor-049": {
+    "en": "Basketball Game",
+    "az": "Basketbol oyunu",
+    "es": "Partido de baloncesto",
+    "ru": "Баскетбольный матч"
+  },
+  "sample-spor-050": {
+    "en": "Tennis Match",
+    "az": "Tennis matçı",
+    "es": "Partido de tenis",
+    "ru": "Теннисный матч"
+  },
+  "sample-spor-051": {
+    "en": "Football Match",
+    "az": "Futbol matçı",
+    "es": "Partido de fútbol",
+    "ru": "Футбольный матч"
+  },
+  "sample-spor-052": {
+    "en": "Weightlifting",
+    "az": "Ağır atletika",
+    "es": "Halterofilia",
+    "ru": "Тяжёлая атлетика"
+  },
+  "sample-spor-053": {
+    "en": "Sprint Race",
+    "az": "Sprint yarışı",
+    "es": "Carrera de velocidad",
+    "ru": "Спринтерский забег"
+  },
+  "sample-spor-054": {
+    "en": "Surfing",
+    "az": "Sörf",
+    "es": "Surf",
+    "ru": "Сёрфинг"
+  },
+  "sample-spor-055": {
+    "en": "Rock Climbing",
+    "az": "Qaya dırmanma",
+    "es": "Escalada",
+    "ru": "Скалолазание"
+  },
+  "sample-spor-056": {
+    "en": "Snowboarding",
+    "az": "Snoubord",
+    "es": "Snowboard",
+    "ru": "Сноуборд"
+  },
+  "sample-spor-057": {
+    "en": "BMX Track",
+    "az": "BMX cığırı",
+    "es": "Pista de BMX",
+    "ru": "Трек BMX"
+  },
+  "sample-spor-058": {
+    "en": "Paragliding",
+    "az": "Yamac paraşütü",
+    "es": "Parapente",
+    "ru": "Парапланеризм"
+  },
+  "sample-spor-059": {
+    "en": "Rafting",
+    "az": "Raftinq",
+    "es": "Rafting",
+    "ru": "Рафтинг"
+  },
+  "sample-spor-060": {
+    "en": "Wakeboarding",
+    "az": "Ueykbord",
+    "es": "Wakeboard",
+    "ru": "Вейкборд"
+  },
+  "sample-spor-061": {
+    "en": "Mountain Biking",
+    "az": "Dağ velosipedi",
+    "es": "Ciclismo de montaña",
+    "ru": "Горный велосипед"
+  },
+  "sample-spor-062": {
+    "en": "Parkour",
+    "az": "Parkur",
+    "es": "Parkour",
+    "ru": "Паркур"
+  },
+  "sample-spor-063": {
+    "en": "Rowing Race",
+    "az": "Avarçəkmə yarışı",
+    "es": "Regata de remo",
+    "ru": "Гонка на вёслах"
+  },
+  "sample-spor-064": {
+    "en": "Sailing Race",
+    "az": "Yelkən yarışı",
+    "es": "Regata de vela",
+    "ru": "Парусная гонка"
+  },
+  "sample-spor-065": {
+    "en": "Motocross",
+    "az": "Motokros",
+    "es": "Motocross",
+    "ru": "Мотокросс"
+  },
+  "sample-spor-066": {
+    "en": "Olympic Stadium",
+    "az": "Olimpiya stadionu",
+    "es": "Estadio olímpico",
+    "ru": "Олимпийский стадион"
+  },
+  "sample-spor-067": {
+    "en": "Ski Jump",
+    "az": "Xizək tullanması",
+    "es": "Salto de esquí",
+    "ru": "Прыжки с трамплина"
+  },
+  "sample-spor-068": {
+    "en": "Diving Platform",
+    "az": "Suya tullanma",
+    "es": "Plataforma de saltos",
+    "ru": "Вышка для прыжков"
+  },
+  "sample-spor-069": {
+    "en": "Formula Racing",
+    "az": "Formula yarışı",
+    "es": "Carrera de Fórmula",
+    "ru": "Формула"
+  },
+  "sample-spor-070": {
+    "en": "MotoGP",
+    "az": "MotoGP",
+    "es": "MotoGP",
+    "ru": "MotoGP"
+  },
+  "sample-spor-071": {
+    "en": "Velodrome",
+    "az": "Velodrom",
+    "es": "Velódromo",
+    "ru": "Велодром"
+  },
+  "sample-spor-072": {
+    "en": "Hippodrome",
+    "az": "Hipodrom",
+    "es": "Hipódromo",
+    "ru": "Ипподром"
+  },
+  "sample-spor-073": {
+    "en": "Aquatic Center",
+    "az": "Akvatika mərkəzi",
+    "es": "Centro acuático",
+    "ru": "Водный центр"
+  },
+  "sample-spor-074": {
+    "en": "Boxing Arena",
+    "az": "Boks arenası",
+    "es": "Arena de boxeo",
+    "ru": "Боксёрская арена"
+  },
+  "sample-spor-075": {
+    "en": "Ski Resort",
+    "az": "Xizək mərkəzi",
+    "es": "Estación de esquí",
+    "ru": "Горнолыжный курорт"
+  },
+  "sample-spor-076": {
+    "en": "Golf Club",
+    "az": "Qolf klubu",
+    "es": "Club de golf",
+    "ru": "Гольф-клуб"
+  },
+  "sample-spor-077": {
+    "en": "Tennis Complex",
+    "az": "Tennis kompleksi",
+    "es": "Complejo de tenis",
+    "ru": "Теннисный комплекс"
+  },
+  "sample-spor-078": {
+    "en": "Packed Stadium",
+    "az": "Dolu stadion",
+    "es": "Estadio lleno",
+    "ru": "Полный стадион"
+  },
+  "sample-spor-079": {
+    "en": "City Marathon",
+    "az": "Şəhər marafonu",
+    "es": "Maratón urbano",
+    "ru": "Городской марафон"
+  },
+  "sample-spor-080": {
+    "en": "Skate Park",
+    "az": "Skeyt park",
+    "es": "Skatepark",
+    "ru": "Скейт-парк"
+  },
+  "sample-spor-081": {
+    "en": "Championship Final",
+    "az": "Çempionat finalı",
+    "es": "Final del campeonato",
+    "ru": "Финал чемпионата"
+  },
+  "sample-spor-082": {
+    "en": "Olympic Opening",
+    "az": "Olimpiya açılışı",
+    "es": "Apertura olímpica",
+    "ru": "Открытие Олимпиады"
+  },
+  "sample-spor-083": {
+    "en": "Extreme Sports Park",
+    "az": "Ekstrem park",
+    "es": "Parque extremo",
+    "ru": "Парк экстрима"
+  },
+  "sample-spor-084": {
+    "en": "Ironman Finish",
+    "az": "Ironman finişi",
+    "es": "Meta Ironman",
+    "ru": "Финиш Ironman"
+  },
+  "sample-spor-085": {
+    "en": "Cycling Tour",
+    "az": "Velosiped turu",
+    "es": "Vuelta ciclista",
+    "ru": "Велогонка"
+  },
+  "sample-spor-086": {
+    "en": "Multi-Sport Arena",
+    "az": "Çoxidmanlı arena",
+    "es": "Arena multideporte",
+    "ru": "Мультиспортивная арена"
+  },
+  "sample-spor-087": {
+    "en": "Winter Games",
+    "az": "Qış oyunları",
+    "es": "Juegos de invierno",
+    "ru": "Зимние игры"
+  },
+  "sample-spor-088": {
+    "en": "Trophy Night",
+    "az": "Kubok gecəsi",
+    "es": "Noche del trofeo",
+    "ru": "Ночь кубка"
+  },
+  "sample-spor-089": {
+    "en": "Mega Skate Bowl",
+    "az": "Meqa skeyt",
+    "es": "Mega bowl de skate",
+    "ru": "Мега-скейтбоул"
+  },
+  "sample-spor-090": {
+    "en": "Championship Pool",
+    "az": "Çempionat hovuzu",
+    "es": "Piscina de campeonato",
+    "ru": "Чемпионский бассейн"
+  },
+  "sample-spor-091": {
+    "en": "Grand Prix Night",
+    "az": "Grand Prix gecəsi",
+    "es": "Noche de Gran Premio",
+    "ru": "Ночь Гран-при"
+  },
+  "sample-tarih-001": {
+    "en": "Amphora",
+    "az": "Amfora",
+    "es": "Ánfora",
+    "ru": "Амфора"
+  },
+  "sample-tarih-002": {
+    "en": "Cuneiform Tablet",
+    "az": "Mixəyazılı lövhə",
+    "es": "Tableta cuneiforme",
+    "ru": "Клинописная табличка"
+  },
+  "sample-tarih-003": {
+    "en": "Ankh",
+    "az": "Anx",
+    "es": "Anj",
+    "ru": "Анх"
+  },
+  "sample-tarih-004": {
+    "en": "Scarab",
+    "az": "Skarabey",
+    "es": "Escarabajo",
+    "ru": "Скарабей"
+  },
+  "sample-tarih-005": {
+    "en": "Olive Branch",
+    "az": "Zeytun budağı",
+    "es": "Rama de olivo",
+    "ru": "Оливковая ветвь"
+  },
+  "sample-tarih-006": {
+    "en": "Gladiator Sword",
+    "az": "Qladiator qılıncı",
+    "es": "Espada de gladiador",
+    "ru": "Меч гладиатора"
+  },
+  "sample-tarih-007": {
+    "en": "Cylinder Seal",
+    "az": "Silindr möhür",
+    "es": "Sello cilíndrico",
+    "ru": "Цилиндрическая печать"
+  },
+  "sample-tarih-008": {
+    "en": "Papyrus Scroll",
+    "az": "Papirus rulonu",
+    "es": "Rollo de papiro",
+    "ru": "Папирусный свиток"
+  },
+  "sample-tarih-009": {
+    "en": "Laurel Wreath",
+    "az": "Dəfnə tacı",
+    "es": "Corona de laurel",
+    "ru": "Лавровый венок"
+  },
+  "sample-tarih-010": {
+    "en": "Roman Urn",
+    "az": "Roma urnası",
+    "es": "Urna romana",
+    "ru": "Римская урна"
+  },
+  "sample-tarih-011": {
+    "en": "Hittite Bow",
+    "az": "Xett oxu",
+    "es": "Arco hitita",
+    "ru": "Хеттский лук"
+  },
+  "sample-tarih-012": {
+    "en": "Silk Bolt",
+    "az": "İpək topu",
+    "es": "Rollo de seda",
+    "ru": "Рулон шёлка"
+  },
+  "sample-tarih-013": {
+    "en": "Ancient Coin",
+    "az": "Antik pul",
+    "es": "Moneda antigua",
+    "ru": "Древняя монета"
+  },
+  "sample-tarih-014": {
+    "en": "Pyramid",
+    "az": "Piramida",
+    "es": "Pirámide",
+    "ru": "Пирамида"
+  },
+  "sample-tarih-015": {
+    "en": "Greek Column",
+    "az": "Yunan sütunu",
+    "es": "Columna griega",
+    "ru": "Греческая колонна"
+  },
+  "sample-tarih-016": {
+    "en": "Roman Helmet",
+    "az": "Roma dəbilqəsi",
+    "es": "Casco romano",
+    "ru": "Римский шлем"
+  },
+  "sample-tarih-017": {
+    "en": "Obelisk",
+    "az": "Obelisk",
+    "es": "Obelisco",
+    "ru": "Обелиск"
+  },
+  "sample-tarih-018": {
+    "en": "Bronze Tripod",
+    "az": "Bürünc üçayaq",
+    "es": "Trípode de bronce",
+    "ru": "Бронзовый треножник"
+  },
+  "sample-tarih-019": {
+    "en": "Roman Shield",
+    "az": "Roma qalxanı",
+    "es": "Escudo romano",
+    "ru": "Римский щит"
+  },
+  "sample-tarih-020": {
+    "en": "Lamassu",
+    "az": "Lamassu",
+    "es": "Lamassu",
+    "ru": "Ламассу"
+  },
+  "sample-tarih-021": {
+    "en": "Fresco Fragment",
+    "az": "Freska parçası",
+    "es": "Fragmento de fresco",
+    "ru": "Фрагмент фрески"
+  },
+  "sample-tarih-022": {
+    "en": "Funerary Stele",
+    "az": "Məzar steli",
+    "es": "Estela funeraria",
+    "ru": "Погребальная стела"
+  },
+  "sample-tarih-023": {
+    "en": "Lighthouse of Alexandria",
+    "az": "İsgəndəriyyə mayakı",
+    "es": "Faro de Alejandría",
+    "ru": "Александрийский маяк"
+  },
+  "sample-tarih-024": {
+    "en": "Hittite Sun Disk",
+    "az": "Xett günəş diski",
+    "es": "Disco solar hitita",
+    "ru": "Хеттский солнечный диск"
+  },
+  "sample-tarih-025": {
+    "en": "Lone Camel",
+    "az": "Tək dəvə",
+    "es": "Camello solitario",
+    "ru": "Одиночный верблюд"
+  },
+  "sample-tarih-026": {
+    "en": "Mosaic Piece",
+    "az": "Mozaika parçası",
+    "es": "Pieza de mosaico",
+    "ru": "Фрагмент мозаики"
+  },
+  "sample-tarih-027": {
+    "en": "Ziggurat",
+    "az": "Ziggurat",
+    "es": "Zigurat",
+    "ru": "Зиккурат"
+  },
+  "sample-tarih-028": {
+    "en": "Egyptian Temple",
+    "az": "Misir məbədi",
+    "es": "Templo egipcio",
+    "ru": "Египетский храм"
+  },
+  "sample-tarih-029": {
+    "en": "Agora",
+    "az": "Aqora",
+    "es": "Ágora",
+    "ru": "Агора"
+  },
+  "sample-tarih-030": {
+    "en": "Sphinx",
+    "az": "Sfinks",
+    "es": "Esfinge",
+    "ru": "Сфинкс"
+  },
+  "sample-tarih-031": {
+    "en": "Small Amphitheatre",
+    "az": "Kiçik amfiteatr",
+    "es": "Pequeño anfiteatro",
+    "ru": "Малый амфитеатр"
+  },
+  "sample-tarih-032": {
+    "en": "Roman Villa",
+    "az": "Roma villası",
+    "es": "Villa romana",
+    "ru": "Римская вилла"
+  },
+  "sample-tarih-033": {
+    "en": "City Gate",
+    "az": "Qala qapısı",
+    "es": "Puerta de la muralla",
+    "ru": "Городские ворота"
+  },
+  "sample-tarih-034": {
+    "en": "Courtyard House",
+    "az": "Həyətli ev",
+    "es": "Casa con patio",
+    "ru": "Дом с двором"
+  },
+  "sample-tarih-035": {
+    "en": "Egyptian Garden",
+    "az": "Misir bağı",
+    "es": "Jardín egipcio",
+    "ru": "Египетский сад"
+  },
+  "sample-tarih-036": {
+    "en": "Rock Tomb",
+    "az": "Qaya qəbri",
+    "es": "Tumba rupestre",
+    "ru": "Скальная гробница"
+  },
+  "sample-tarih-037": {
+    "en": "Caravanserai",
+    "az": "Karvansara",
+    "es": "Caravasar",
+    "ru": "Караван-сарай"
+  },
+  "sample-tarih-038": {
+    "en": "Nile Fisherman",
+    "az": "Nil balıqçısı",
+    "es": "Pescador del Nilo",
+    "ru": "Нильский рыбак"
+  },
+  "sample-tarih-039": {
+    "en": "Pottery Kiln",
+    "az": "Saxsı sobası",
+    "es": "Horno de alfarero",
+    "ru": "Гончарная печь"
+  },
+  "sample-tarih-040": {
+    "en": "Roman Forum",
+    "az": "Roma forumu",
+    "es": "Foro romano",
+    "ru": "Римский форум"
+  },
+  "sample-tarih-041": {
+    "en": "Hittite Gate",
+    "az": "Xett qapısı",
+    "es": "Puerta hitita",
+    "ru": "Хеттские ворота"
+  },
+  "sample-tarih-042": {
+    "en": "Silk Road Caravan",
+    "az": "İpək Yolu karvanı",
+    "es": "Caravana de la Ruta de la Seda",
+    "ru": "Караван Шёлкового пути"
+  },
+  "sample-tarih-043": {
+    "en": "Colosseum",
+    "az": "Kolizey",
+    "es": "Coliseo",
+    "ru": "Колизей"
+  },
+  "sample-tarih-044": {
+    "en": "Avenue of Sphinxes",
+    "az": "Sfinks yolu",
+    "es": "Avenida de las esfinges",
+    "ru": "Аллея сфинксов"
+  },
+  "sample-tarih-045": {
+    "en": "Delphi",
+    "az": "Delfi",
+    "es": "Delfos",
+    "ru": "Дельфы"
+  },
+  "sample-tarih-046": {
+    "en": "Palace of Nineveh",
+    "az": "Ninova sarayı",
+    "es": "Palacio de Nínive",
+    "ru": "Дворец Ниневии"
+  },
+  "sample-tarih-047": {
+    "en": "Walls of Troy",
+    "az": "Troya divarları",
+    "es": "Murallas de Troya",
+    "ru": "Стены Трои"
+  },
+  "sample-tarih-048": {
+    "en": "Fairy Chimneys",
+    "az": "Pəri bacaları",
+    "es": "Chimeneas de hadas",
+    "ru": "Скальные трубы"
+  },
+  "sample-tarih-049": {
+    "en": "Roman Baths",
+    "az": "Roma hamamı",
+    "es": "Termas romanas",
+    "ru": "Римские термы"
+  },
+  "sample-tarih-050": {
+    "en": "Mountain Bridge",
+    "az": "Dağ körpüsü",
+    "es": "Puente de montaña",
+    "ru": "Горный мост"
+  },
+  "sample-tarih-051": {
+    "en": "Burial Chamber",
+    "az": "Qəbir otağı",
+    "es": "Cámara funeraria",
+    "ru": "Погребальная камера"
+  },
+  "sample-tarih-052": {
+    "en": "Stadium of Olympia",
+    "az": "Olimpiya stadionu",
+    "es": "Estadio de Olimpia",
+    "ru": "Стадион Олимпии"
+  },
+  "sample-tarih-053": {
+    "en": "Nile Landscape",
+    "az": "Nil mənzərəsi",
+    "es": "Paisaje del Nilo",
+    "ru": "Пейзаж Нила"
+  },
+  "sample-tarih-054": {
+    "en": "Acropolis",
+    "az": "Akropol",
+    "es": "Acrópolis",
+    "ru": "Акрополь"
+  },
+  "sample-tarih-055": {
+    "en": "Aqueduct",
+    "az": "Su kəməri",
+    "es": "Acueducto",
+    "ru": "Акведук"
+  },
+  "sample-tarih-056": {
+    "en": "Karnak Hall",
+    "az": "Karnak zalı",
+    "es": "Sala de Karnak",
+    "ru": "Зал Карнака"
+  },
+  "sample-tarih-057": {
+    "en": "Pantheon",
+    "az": "Panteon",
+    "es": "Panteón",
+    "ru": "Пантеон"
+  },
+  "sample-tarih-058": {
+    "en": "Persepolis",
+    "az": "Persepolis",
+    "es": "Persépolis",
+    "ru": "Персеполь"
+  },
+  "sample-tarih-059": {
+    "en": "Hattusa",
+    "az": "Hattuşa",
+    "es": "Hattusa",
+    "ru": "Хаттуса"
+  },
+  "sample-tarih-060": {
+    "en": "Port of Alexandria",
+    "az": "İsgəndəriyyə limanı",
+    "es": "Puerto de Alejandría",
+    "ru": "Порт Александрии"
+  },
+  "sample-tarih-061": {
+    "en": "Samarkand Square",
+    "az": "Səmərqənd meydanı",
+    "es": "Plaza de Samarcanda",
+    "ru": "Площадь Самарканда"
+  },
+  "sample-tarih-062": {
+    "en": "Cappadocia Settlement",
+    "az": "Kapadokiya yaşayışı",
+    "es": "Asentamiento de Capadocia",
+    "ru": "Поселение Каппадокии"
+  },
+  "sample-tarih-063": {
+    "en": "Villa Garden",
+    "az": "Villa bağı",
+    "es": "Jardín de villa",
+    "ru": "Сад виллы"
+  },
+  "sample-tarih-064": {
+    "en": "Temple of Athena",
+    "az": "Afina məbədi",
+    "es": "Templo de Atenea",
+    "ru": "Храм Афины"
+  },
+  "sample-tarih-065": {
+    "en": "Assyrian Palace",
+    "az": "Assuriya sarayı",
+    "es": "Palacio asirio",
+    "ru": "Ассирийский дворец"
+  },
+  "sample-tarih-066": {
+    "en": "Ancient Street",
+    "az": "Antik küçə",
+    "es": "Calle antigua",
+    "ru": "Древняя улица"
+  },
+  "sample-tarih-067": {
+    "en": "Ephesus Ruins",
+    "az": "Efes xarabalıqları",
+    "es": "Ruinas de Éfeso",
+    "ru": "Руины Эфеса"
+  },
+  "sample-tarih-068": {
+    "en": "Silk Road Market",
+    "az": "İpək Yolu bazarı",
+    "es": "Mercado de la Ruta de la Seda",
+    "ru": "Базар Шёлкового пути"
+  },
+  "sample-tarih-069": {
+    "en": "Rome by Day",
+    "az": "Roma gündüz",
+    "es": "Roma de día",
+    "ru": "Рим днём"
+  },
+  "sample-tarih-070": {
+    "en": "City of Thebes",
+    "az": "Teb şəhəri",
+    "es": "Ciudad de Tebas",
+    "ru": "Фивы"
+  },
+  "sample-tarih-071": {
+    "en": "Athenian Agora",
+    "az": "Afina aqorası",
+    "es": "Ágora de Atenas",
+    "ru": "Афинская агора"
+  },
+  "sample-tarih-072": {
+    "en": "Uruk",
+    "az": "Uruk",
+    "es": "Uruk",
+    "ru": "Урук"
+  },
+  "sample-tarih-073": {
+    "en": "Bogazkoy",
+    "az": "Boğazköy",
+    "es": "Boğazköy",
+    "ru": "Богазкёй"
+  },
+  "sample-tarih-074": {
+    "en": "Palmyra",
+    "az": "Palmira",
+    "es": "Palmira",
+    "ru": "Пальмира"
+  },
+  "sample-tarih-075": {
+    "en": "Palace of Knossos",
+    "az": "Knossos sarayı",
+    "es": "Palacio de Cnosos",
+    "ru": "Дворец Кносса"
+  },
+  "sample-tarih-076": {
+    "en": "Port of Carthage",
+    "az": "Karfagen limanı",
+    "es": "Puerto de Cartago",
+    "ru": "Порт Карфагена"
+  },
+  "sample-tarih-077": {
+    "en": "Antioch",
+    "az": "Antakya",
+    "es": "Antioquía",
+    "ru": "Антиохия"
+  },
+  "sample-tarih-078": {
+    "en": "Sardis",
+    "az": "Sardis",
+    "es": "Sardes",
+    "ru": "Сарды"
+  },
+  "sample-tarih-079": {
+    "en": "Babylon",
+    "az": "Babil",
+    "es": "Babilonia",
+    "ru": "Вавилон"
+  },
+  "sample-tarih-080": {
+    "en": "Giza Plateau",
+    "az": "Gize platosu",
+    "es": "Meseta de Giza",
+    "ru": "Плато Гизы"
+  },
+  "sample-tarih-081": {
+    "en": "Ancient Mediterranean",
+    "az": "Antik Aralıq dənizi",
+    "es": "Mediterráneo antiguo",
+    "ru": "Древнее Средиземноморье"
+  },
+  "sample-tarih-082": {
+    "en": "Capital Rome",
+    "az": "Roma paytaxt",
+    "es": "Roma capital",
+    "ru": "Рим — столица"
+  },
+  "sample-tarih-083": {
+    "en": "Theban Necropolis",
+    "az": "Teb nekropolu",
+    "es": "Necrópolis tebana",
+    "ru": "Фиванский некрополь"
+  },
+  "sample-tarih-084": {
+    "en": "Athens Panorama",
+    "az": "Afina panoraması",
+    "es": "Panorama de Atenas",
+    "ru": "Панорама Афин"
+  },
+  "sample-tarih-085": {
+    "en": "Assyrian City",
+    "az": "Assuriya şəhəri",
+    "es": "Ciudad asiria",
+    "ru": "Ассирийский город"
+  },
+  "sample-tarih-086": {
+    "en": "Ephesus Panorama",
+    "az": "Efes panoraması",
+    "es": "Panorama de Éfeso",
+    "ru": "Панорама Эфеса"
+  },
+  "sample-tarih-087": {
+    "en": "Oasis City",
+    "az": "Vaha şəhəri",
+    "es": "Ciudad oasis",
+    "ru": "Город-оазис"
+  },
+  "sample-tarih-088": {
+    "en": "Plain of Troy",
+    "az": "Troya düzənliyi",
+    "es": "Llanura de Troya",
+    "ru": "Равнина Трои"
+  },
+  "sample-tarih-089": {
+    "en": "Persepolis Ceremony",
+    "az": "Persepolis mərasimi",
+    "es": "Ceremonial de Persépolis",
+    "ru": "Церемония в Персеполе"
+  },
+  "sample-tarih-090": {
+    "en": "Knossos and the Aegean",
+    "az": "Knossos və Egey",
+    "es": "Cnosos y el Egeo",
+    "ru": "Кносс и Эгеида"
+  },
+  "sample-tarih-091": {
+    "en": "Harbor Civilizations",
+    "az": "Liman sivilizasiyaları",
+    "es": "Civilizaciones portuarias",
+    "ru": "Портовые цивилизации"
   }
 }
