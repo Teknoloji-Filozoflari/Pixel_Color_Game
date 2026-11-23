@@ -1854,9 +1854,15 @@
     "ru": "Сцены истории и цивилизаций."
   },
   "Masallar ve Efsaneler": {
-    "en": "Tales & Legends"
+    "en": "Tales & Legends",
+    "az": "Nağıllar və əfsanələr",
+    "es": "Cuentos y leyendas",
+    "ru": "Сказки и легенды"
   },
   "Masallar ve efsane sahneleri.": {
-    "en": "Folk tales and legendary scenes."
+    "en": "Folk tales and legendary scenes.",
+    "az": "Xalq nağılları və əfsanə səhnələri.",
+    "es": "Escenas de cuentos populares y leyendas.",
+    "ru": "Сцены народных сказок и легенд."
   }
 }
