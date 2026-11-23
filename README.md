@@ -2,7 +2,7 @@
   <img src="src/pixel_coloring/resources/icons/piksel-atolyesi.png" width="112" alt="Piksel Atölyesi logosu">
   <h1>Piksel Atölyesi</h1>
   <p><strong>Bir resim seç. Renklerle tamamla.</strong></p>
-  <p>900 resimle başlayabileceğin, kendi görsellerini de boyayabileceğin çevrimdışı masaüstü oyunu.</p>
+  <p>Çekirdek beş kategoriyle çevrimdışı başla; ek kategorileri uygulama içi mağazadan indir. Kendi görsellerini de boyayabilirsin.</p>
 
   [![Sürüm](https://img.shields.io/github/v/release/Teknoloji-Filozoflari/Pixel_Color_Game?style=flat-square&color=f0784f)](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/releases/latest)
   [![Testler](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/actions/workflows/python-package.yml/badge.svg)](https://github.com/Teknoloji-Filozoflari/Pixel_Color_Game/actions/workflows/python-package.yml)
@@ -32,7 +32,7 @@ Hesap açmadan, reklam veya telemetri olmadan oyna. Küçük bir sahneyi tek otu
 | **Linux · Snap** | `piksel-atolyesi_<sürüm>_amd64.snap` | `sudo snap install --dangerous ./indirdiğin-dosya.snap` |
 | **Nix / NixOS** | [Flake ile kurulum](docs/LINUX_PACKAGES.md#nix--nixos) | `nix run github:Teknoloji-Filozoflari/Pixel_Color_Game` |
 
-900 resim ve çalışma bağımlılıkları hazır masaüstü paketlerine dahildir. İlk indirme ve kurulumdan sonra oyun için internet gerekmez. Güncelleme ve kaldırma boyama kayıtlarını silmez. Paketlerde geliştiricinin kişisel kayıtları bulunmaz.
+Çekirdek koleksiyon (Doğa, Hayvanlar, Fantastik, Manzaralar, Şehirler) ve çalışma bağımlılıkları masaüstü paketlerine dahildir — internet olmadan oynanır. TÜRKİYE, Türk Motifleri, Harikalar, Araçlar ve Teknoloji isteğe bağlı paketlerdir; uygulama içi mağazadan GitHub Releases üzerinden indirilir. Ayrıntılar: [docs/CONTENT_PACKS.md](docs/CONTENT_PACKS.md). Güncelleme ve kaldırma boyama kayıtlarını silmez.
 
 Kurulum ayrıntıları: [Windows](docs/WINDOWS.md) · [macOS](docs/MACOS.md) · [Linux](docs/LINUX_PACKAGES.md). Yayınlardaki `SHA256SUMS` dosyası indirdiğin paketlerin bütünlüğünü kontrol etmek içindir.
 
@@ -40,7 +40,7 @@ Kurulum ayrıntıları: [Windows](docs/WINDOWS.md) · [macOS](docs/MACOS.md) · 
 
 | | |
 |---|---|
-| **900 hazır resim, 10 kategori** | Doğa, Hayvanlar, Fantastik, Manzaralar, Şehirler, Türkiye, Türk Motifleri, Harikalar, Teknoloji ve Araçlar. |
+| **900 resim, 10 kategori** | 5 kategori pakette (çevrimdışı); 5 kategori mağazadan indirilebilir. |
 | **Koleksiyon keşfi** | Zorluk, durum (başlanmamış / devam / bitti) ve favori filtreleri; katalog, zorluk, ilerleme veya son oynanan sıralaması. |
 | **7 zorluk seviyesi** | Çok Kolay'dan Uzman'a; kısa molalar için küçük resimler, uzun çalışmalar için ayrıntılı sahneler. |
 | **Rahat boyama** | Sürükleyerek boya, bitişik alanı doldur, sağ tıkla renk seç, ipucuyla kalan hücreyi bul. |

@@ -133,7 +133,7 @@ jobs:
           import zipfile
           wheel = next(Path("release-assets").glob("*.whl"))
           with zipfile.ZipFile(wheel) as archive:
-              assert len([name for name in archive.namelist() if name.endswith(".pcolor")]) == 900
+              assert len([name for name in archive.namelist() if name.endswith(".pcolor")]) == 455
           PY
           cd release-assets
           find . -maxdepth 1 -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS

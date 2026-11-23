@@ -1600,5 +1600,173 @@
     "az": "Filtrlər · aktiv",
     "es": "Filtros · activos",
     "ru": "Фильтры · активны"
+  },
+  "Mağaza": {
+    "en": "Store",
+    "az": "Mağaza",
+    "es": "Tienda",
+    "ru": "Магазин"
+  },
+  "İçerik mağazası": {
+    "en": "Content store",
+    "az": "Məzmun mağazası",
+    "es": "Tienda de contenido",
+    "ru": "Магазин контента"
+  },
+  "İsteğe bağlı kategori paketlerini indir ve hemen boyamaya başla.": {
+    "en": "Download optional category packs and start painting right away.",
+    "az": "İstəyə bağlı kateqoriya paketlərini endir və dərhal boyamağa başla.",
+    "es": "Descarga paquetes de categorías opcionales y empieza a pintar de inmediato.",
+    "ru": "Скачайте дополнительные наборы категорий и сразу начните раскрашивать."
+  },
+  "Ek kategorileri indir. Çekirdek koleksiyon çevrimdışı kalır.": {
+    "en": "Download extra categories. The core collection stays offline.",
+    "az": "Əlavə kateqoriyaları endir. Əsas kolleksiya oflayn qalır.",
+    "es": "Descarga categorías extra. La colección principal sigue sin conexión.",
+    "ru": "Скачайте дополнительные категории. Базовая коллекция остаётся офлайн."
+  },
+  "İndir": {
+    "en": "Download",
+    "az": "Endir",
+    "es": "Descargar",
+    "ru": "Скачать"
+  },
+  "İndir (~{size})": {
+    "en": "Download (~{size})",
+    "az": "Endir (~{size})",
+    "es": "Descargar (~{size})",
+    "ru": "Скачать (~{size})"
+  },
+  "İndiriliyor…": {
+    "en": "Downloading…",
+    "az": "Endirilir…",
+    "es": "Descargando…",
+    "ru": "Загрузка…"
+  },
+  "İndiriliyor… %{percent}": {
+    "en": "Downloading… %{percent}",
+    "az": "Endirilir… %{percent}",
+    "es": "Descargando… %{percent}",
+    "ru": "Загрузка… %{percent}"
+  },
+  "Doğrulanıyor…": {
+    "en": "Verifying…",
+    "az": "Yoxlanılır…",
+    "es": "Verificando…",
+    "ru": "Проверка…"
+  },
+  "Açılıyor… %{percent}": {
+    "en": "Extracting… %{percent}",
+    "az": "Açılır… %{percent}",
+    "es": "Extrayendo… %{percent}",
+    "ru": "Распаковка… %{percent}"
+  },
+  "Kuruluyor… %{percent}": {
+    "en": "Installing… %{percent}",
+    "az": "Quraşdırılır… %{percent}",
+    "es": "Instalando… %{percent}",
+    "ru": "Установка… %{percent}"
+  },
+  "Yüklü": {
+    "en": "Installed",
+    "az": "Quraşdırılıb",
+    "es": "Instalado",
+    "ru": "Установлено"
+  },
+  "İndirilebilir": {
+    "en": "Downloadable",
+    "az": "Endirilə bilər",
+    "es": "Descargable",
+    "ru": "Доступно для скачивания"
+  },
+  "Boyamaya git": {
+    "en": "Go paint",
+    "az": "Boyamağa get",
+    "es": "Ir a pintar",
+    "ru": "К раскраске"
+  },
+  "{count} resim · {size}": {
+    "en": "{count} pictures · {size}",
+    "az": "{count} şəkil · {size}",
+    "es": "{count} imágenes · {size}",
+    "ru": "{count} картинок · {size}"
+  },
+  "İndirme başarısız": {
+    "en": "Download failed",
+    "az": "Endirmə alınmadı",
+    "es": "Error de descarga",
+    "ru": "Ошибка загрузки"
+  },
+  "‘{category}’ paketi hazır": {
+    "en": "‘{category}’ pack is ready",
+    "az": "‘{category}’ paketi hazırdır",
+    "es": "El paquete ‘{category}’ está listo",
+    "ru": "Набор «{category}» готов"
+  },
+  "Bu kategori henüz indirilmedi.": {
+    "en": "This category is not downloaded yet.",
+    "az": "Bu kateqoriya hələ endirilməyib.",
+    "es": "Esta categoría aún no se ha descargado.",
+    "ru": "Эта категория ещё не скачана."
+  },
+  "{count} resim · {size}. İndirdikten hemen sonra boyayabilirsin.": {
+    "en": "{count} pictures · {size}. You can paint right after downloading.",
+    "az": "{count} şəkil · {size}. Endirdikdən dərhal sonra boyaya bilərsən.",
+    "es": "{count} imágenes · {size}. Puedes pintar justo después de descargar.",
+    "ru": "{count} картинок · {size}. Сразу после загрузки можно раскрашивать."
+  },
+  "Mağazaya git": {
+    "en": "Go to store",
+    "az": "Mağazaya get",
+    "es": "Ir a la tienda",
+    "ru": "В магазин"
+  },
+  "MAĞAZA": {
+    "en": "STORE",
+    "az": "MAĞAZA",
+    "es": "TIENDA",
+    "ru": "МАГАЗИН"
+  },
+  "Türkiye’nin şehirleri, doğası ve kültürü.": {
+    "en": "Cities, nature, and culture of Türkiye.",
+    "az": "Türkiyənin şəhərləri, təbiəti və mədəniyyəti.",
+    "es": "Ciudades, naturaleza y cultura de Türkiye.",
+    "ru": "Города, природа и культура Турции."
+  },
+  "Geleneksel Türk motifleri ve süslemeleri.": {
+    "en": "Traditional Turkish motifs and ornaments.",
+    "az": "Ənənəvi türk motivləri və bəzəkləri.",
+    "es": "Motivos y ornamentos tradicionales turcos.",
+    "ru": "Традиционные турецкие мотивы и орнаменты."
+  },
+  "Dünyanın doğal ve mimari harikaları.": {
+    "en": "Natural and architectural wonders of the world.",
+    "az": "Dünyanın təbii və memarlıq möcüzələri.",
+    "es": "Maravillas naturales y arquitectónicas del mundo.",
+    "ru": "Природные и архитектурные чудеса мира."
+  },
+  "Klasik ve modern araçlar.": {
+    "en": "Classic and modern vehicles.",
+    "az": "Klassik və müasir nəqliyyat vasitələri.",
+    "es": "Vehículos clásicos y modernos.",
+    "ru": "Классический и современный транспорт."
+  },
+  "Bilim, mühendislik ve teknoloji sahneleri.": {
+    "en": "Science, engineering, and technology scenes.",
+    "az": "Elm, mühəndislik və texnologiya səhnələri.",
+    "es": "Escenas de ciencia, ingeniería y tecnología.",
+    "ru": "Сцены науки, инженерии и технологий."
+  },
+  "Paket bütünlük kontrolü başarısız (SHA-256)": {
+    "en": "Pack integrity check failed (SHA-256)",
+    "az": "Paket bütövlük yoxlaması alınmadı (SHA-256)",
+    "es": "Falló la comprobación de integridad del paquete (SHA-256)",
+    "ru": "Проверка целостности пакета не удалась (SHA-256)"
+  },
+  "İndirme başarısız: {reason}": {
+    "en": "Download failed: {reason}",
+    "az": "Endirmə alınmadı: {reason}",
+    "es": "Error de descarga: {reason}",
+    "ru": "Ошибка загрузки: {reason}"
   }
 }

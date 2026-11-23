@@ -22,7 +22,28 @@ pixel-coloring = "pixel_coloring.app:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-pixel_coloring = ["resources/fonts/*", "resources/paintings/*.pcolor", "resources/paintings/*.json", "resources/icons/*", "resources/translations.json", "resources/painting_titles.json", "resources/painting_meanings.json", "resources/artwork_facts.json"]
+pixel_coloring = [
+  "resources/fonts/*",
+  "resources/paintings/*.pcolor",
+  "resources/paintings/*.json",
+  "resources/icons/*",
+  "resources/packs/*.json",
+  "resources/packs/previews/*/*.webp",
+  "resources/translations.json",
+  "resources/painting_titles.json",
+  "resources/painting_meanings.json",
+  "resources/artwork_facts.json",
+]
+
+# Optional category packs ship via GitHub Releases, not the Python wheel.
+[tool.setuptools.exclude-package-data]
+pixel_coloring = [
+  "resources/paintings/sample-turkiye-*.pcolor",
+  "resources/paintings/sample-turk-motif-*.pcolor",
+  "resources/paintings/sample-harikalar-*.pcolor",
+  "resources/paintings/sample-arabalar-*.pcolor",
+  "resources/paintings/sample-teknoloji-*.pcolor",
+]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

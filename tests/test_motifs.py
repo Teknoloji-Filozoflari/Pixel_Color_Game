@@ -1,3 +1,4 @@
+import hashlib
 import io
 import json
 import zipfile
@@ -13,6 +14,9 @@ from pixel_coloring.core.painting import Painting
 from pixel_coloring.importer.level_writer import read_level, write_level
 from pixel_coloring.persistence.database import Database
 from pixel_coloring.persistence.save_manager import SaveManager
+from pixel_coloring.services import pack_manager as pack_manager_module
+from pixel_coloring.services.pack_manager import PackManager
+from pixel_coloring.services.packs import pack_by_id
 from pixel_coloring.services.samples import ensure_samples
 
 RESOURCES = Path(__file__).parents[1] / 'src/pixel_coloring/resources'
@@ -53,7 +57,7 @@ def test_meaning_roundtrip_and_legacy_compatibility(tmp_path):
     assert read_level(legacy).meaning == ''
 
 
-def test_bundle_install_preserves_saved_progress_and_exports(tmp_path):
+def test_bundle_install_preserves_saved_progress_and_exports(tmp_path, monkeypatch):
     database = Database(tmp_path / 'progress.sqlite3')
     folder = tmp_path / 'paintings'
     folder.mkdir()
@@ -68,7 +72,24 @@ def test_bundle_install_preserves_saved_progress_and_exports(tmp_path):
         reloaded = Painting(old.id, old.title, old.palette, old.target_map)
         database.load(reloaded)
         assert np.array_equal(reloaded.painted_mask, old.painted_mask)
-        motif = read_level(folder / (MOTIFS[0]['id'] + '.pcolor'))
+
+        # Motifs are optional downloads — install a one-level pack for this regression.
+        motif_id = MOTIFS[0]['id']
+        archive = tmp_path / 'motif-pack.zip'
+        with zipfile.ZipFile(archive, 'w') as zf:
+            zf.write(GALLERY / f'{motif_id}.pcolor', arcname=f'{motif_id}.pcolor')
+        digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+        original = pack_by_id('cat-turk-motifleri')
+        fake = {**original, 'painting_ids': [motif_id], 'painting_count': 1, 'sha256': digest}
+        real_lookup = pack_by_id
+        monkeypatch.setattr(
+            pack_manager_module,
+            'pack_by_id',
+            lambda pack_id: fake if pack_id == fake['id'] else real_lookup(pack_id),
+        )
+        PackManager(tmp_path, database).install_from_zip(fake['id'], archive)
+
+        motif = read_level(folder / f'{motif_id}.pcolor')
         session = GameSession(motif)
         color = int(motif.target_map[0, 0])
         assert session.engine.paint_cell(0, 0, color) is PaintResult.CORRECT
