@@ -162,6 +162,7 @@ class MainWindow(QMainWindow):
             "home": tr("ANA SAYFA"),
             "collection": tr("KOLEKSİYON"),
             "settings": tr("AYARLAR"),
+            "store": tr("MAĞAZA"),
         }.get(active, active)
         root.addWidget(label("PİKSEL ATÖLYESİ  /  " + section, "eyebrow"))
         root.addWidget(label(heading, "heading"))
@@ -209,6 +210,17 @@ class MainWindow(QMainWindow):
         root = self.page("collection", "", "")
         if root is not None:
             build_collection(self, root)
+
+    def show_pack_store(self):
+        from .pack_store import build_pack_store
+
+        root = self.page(
+            "store",
+            tr("İçerik mağazası"),
+            tr("Ek kategorileri indir. Çekirdek koleksiyon çevrimdışı kalır."),
+        )
+        if root is not None:
+            build_pack_store(self, root)
 
     def preview_painting(self, id):
         from ..rendering.tile_cache import rgb_image
@@ -610,6 +622,10 @@ class MainWindow(QMainWindow):
                 self.error(tr("Ayarlar kaydedilemedi"), exc)
 
         root.addWidget(button(tr("Tercihleri kaydet"), apply, True), alignment=Qt.AlignmentFlag.AlignLeft)
+        root.addWidget(
+            button(tr("İçerik mağazası"), self.show_pack_store, False),
+            alignment=Qt.AlignmentFlag.AlignLeft,
+        )
         guide = QFrame()
         guide.setObjectName('importGuide')
         guide.setMaximumWidth(580)
@@ -664,6 +680,9 @@ class MainWindow(QMainWindow):
         self.close_batch_dialog()
         self.saver.close()
         self.worker.shutdown(wait=True)
+        pack_worker = getattr(self, "pack_worker", None)
+        if pack_worker is not None:
+            pack_worker.shutdown(wait=False)
         self.autosave_timer.stop()
         self.poll_timer.stop()
         event.accept()

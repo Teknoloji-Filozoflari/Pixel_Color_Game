@@ -27,13 +27,13 @@ def main():
         subprocess.run([str(installed / "Piksel-Atolyesi.exe"), "--smoke-test", "--data-dir", str(data)],
                        env=environment, check=True, timeout=120)
         with closing(sqlite3.connect(data / "progress.sqlite3")) as database:
-            if database.execute("SELECT COUNT(*) FROM paintings").fetchone()[0] != 900:
+            if database.execute("SELECT COUNT(*) FROM paintings").fetchone()[0] != 455:
                 raise RuntimeError("Installed collection is incomplete")
         subprocess.run([str(installed / "unins000.exe"), "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART"],
                        check=True, timeout=120)
         if not (data / "progress.sqlite3").is_file():
             raise RuntimeError("Uninstall removed player data")
-    print("Windows installer, native startup, 900 paintings and uninstall verified")
+    print("Windows installer, native startup, 455 core paintings and uninstall verified")
 
 
 if __name__ == "__main__":

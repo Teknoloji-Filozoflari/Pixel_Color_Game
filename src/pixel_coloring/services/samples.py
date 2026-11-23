@@ -8,13 +8,15 @@ from types import SimpleNamespace
 
 from .bundle_update import install_updated_sample
 from .library import remove_retired_samples
+from .packs import bundled_painting_ids, load_catalog
 
 
 def ensure_samples(folder, database, progress=None):
     remove_retired_samples(database, folder)
     # Detailed bundled paintings are installed without replacing progress or user files.
     gallery = Path(__file__).resolve().parents[1] / "resources/paintings"
-    catalog = json.loads((gallery / "catalog.json").read_text(encoding="utf-8"))
+    catalog = load_catalog()
+    installable = bundled_painting_ids()
     with database.connect() as con:
         con.execute("CREATE TABLE IF NOT EXISTS bundle_cache (id TEXT PRIMARY KEY, signature TEXT)")
         # Keep older installs aligned with the renamed Vehicles category label.
@@ -31,10 +33,24 @@ def ensure_samples(folder, database, progress=None):
 
     completed = []
     registrations = []
-    total = len(catalog)
-    for index, item in enumerate(catalog):
-        source = gallery / (item['id'] + '.pcolor')
-        path = folder / source.name
+    # Core categories ship with the app; optional packs arrive via PackManager.
+    items = [item for item in catalog if item["id"] in installable]
+    items.extend(
+        item for item in catalog
+        if item["id"] not in installable and (folder / f"{item['id']}.pcolor").exists()
+    )
+    total = len(items)
+    for index, item in enumerate(items):
+        gallery_source = gallery / (item['id'] + '.pcolor')
+        path = folder / (item['id'] + '.pcolor')
+        if gallery_source.exists():
+            source = gallery_source
+        elif path.exists():
+            source = path
+        else:
+            if progress:
+                progress(index + 1, total)
+            continue
         expected = (item['width'], item['height'], item['colors'], str(path))
         unchanged = (path.exists() and registered.get(item['id']) == expected
                      and cache.get(item['id']) == signature(source, path, item))
@@ -44,10 +60,10 @@ def ensure_samples(folder, database, progress=None):
             install_updated_sample(source, path, database)
             completed.append((item['id'], signature(source, path, item)))
         else:
-            if not path.exists():
+            if source.resolve() != path.resolve() and not path.exists():
                 shutil.copy2(source, path)
             # Installing bundled art only needs its header, not millions of pixels.
-            with zipfile.ZipFile(source) as archive:
+            with zipfile.ZipFile(path if path.exists() else source) as archive:
                 meta = json.loads(archive.read('metadata.json'))
                 palette = json.loads(archive.read('palette.json'))
             painting = SimpleNamespace(**{key: meta.get(key, '') for key in

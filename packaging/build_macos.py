@@ -70,9 +70,15 @@ def main():
             break
     if gallery is None:
         raise RuntimeError('Bundled painting catalog is missing from the macOS app')
+    from build_bundle import bundled_painting_ids
+
+    keep = bundled_painting_ids()
+    for path in gallery.glob('*.pcolor'):
+        if path.stem not in keep:
+            path.unlink()
     catalog_count = len([path for path in gallery.glob('*.pcolor')])
-    if catalog_count != 900:
-        raise RuntimeError(f'Expected 900 paintings in the macOS app, found {catalog_count}')
+    if catalog_count != len(keep):
+        raise RuntimeError(f'Expected {len(keep)} core paintings in the macOS app, found {catalog_count}')
     for name in ('LICENSE', 'ASSETS_LICENSE.md', 'THIRD_PARTY.md', 'TELIF-VE-YAYIN-NOTU.md'):
         shutil.copy2(ROOT / name, app / 'Contents/Resources' / name)
     shutil.copytree(ROOT / 'LICENSES', app / 'Contents/Resources/LICENSES', dirs_exist_ok=True)

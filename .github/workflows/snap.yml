@@ -91,4 +91,4 @@ jobs:
           trap 'kill "$display_pid"' EXIT
           sleep 2
           DISPLAY=:99 QT_QPA_PLATFORM=xcb QT_DEBUG_PLUGINS=1 timeout 120s snap run piksel-atolyesi --smoke-test
-          python3 -c 'import sqlite3; from pathlib import Path; c=sqlite3.connect(Path.home()/"snap/piksel-atolyesi/common/data/PixelColoring/PikselAtolyesi/progress.sqlite3"); assert c.execute("SELECT COUNT(*) FROM paintings").fetchone()[0] == 900'
+          python3 -c 'import sqlite3; from pathlib import Path; c=sqlite3.connect(Path.home()/"snap/piksel-atolyesi/common/data/PixelColoring/PikselAtolyesi/progress.sqlite3"); assert c.execute("SELECT COUNT(*) FROM paintings").fetchone()[0] == 455'

@@ -1,3 +1,4 @@
+import hashlib
 import io
 import json
 import zipfile
@@ -13,6 +14,9 @@ from pixel_coloring.core.painting import Painting
 from pixel_coloring.importer.level_writer import read_level, write_level
 from pixel_coloring.persistence.database import Database
 from pixel_coloring.persistence.save_manager import SaveManager
+from pixel_coloring.services import pack_manager as pack_manager_module
+from pixel_coloring.services.pack_manager import PackManager
+from pixel_coloring.services.packs import pack_by_id
 from pixel_coloring.services.samples import ensure_samples
 
 RESOURCES = Path(__file__).parents[1] / 'src/pixel_coloring/resources'
@@ -53,7 +57,7 @@ def test_meaning_roundtrip_and_legacy_compatibility(tmp_path):
     assert read_level(legacy).meaning == ''
 
 
-def test_bundle_install_preserves_saved_progress_and_exports(tmp_path):
+def test_bundle_install_preserves_saved_progress_and_exports(tmp_path, monkeypatch):
     database = Database(tmp_path / 'progress.sqlite3')
     folder = tmp_path / 'paintings'
     folder.mkdir()
@@ -68,7 +72,24 @@ def test_bundle_install_preserves_saved_progress_and_exports(tmp_path):
         reloaded = Painting(old.id, old.title, old.palette, old.target_map)
         database.load(reloaded)
         assert np.array_equal(reloaded.painted_mask, old.painted_mask)
-        motif = read_level(folder / (MOTIFS[0]['id'] + '.pcolor'))
+
+        # Motifs are optional downloads — install a one-level pack for this regression.
+        motif_id = MOTIFS[0]['id']
+        archive = tmp_path / 'motif-pack.zip'
+        with zipfile.ZipFile(archive, 'w') as zf:
+            zf.write(GALLERY / f'{motif_id}.pcolor', arcname=f'{motif_id}.pcolor')
+        digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+        original = pack_by_id('cat-turk-motifleri')
+        fake = {**original, 'painting_ids': [motif_id], 'painting_count': 1, 'sha256': digest}
+        real_lookup = pack_by_id
+        monkeypatch.setattr(
+            pack_manager_module,
+            'pack_by_id',
+            lambda pack_id: fake if pack_id == fake['id'] else real_lookup(pack_id),
+        )
+        PackManager(tmp_path, database).install_from_zip(fake['id'], archive)
+
+        motif = read_level(folder / f'{motif_id}.pcolor')
         session = GameSession(motif)
         color = int(motif.target_map[0, 0])
         assert session.engine.paint_cell(0, 0, color) is PaintResult.CORRECT
@@ -128,7 +149,18 @@ def test_collection_and_game_meanings_at_minimum_window_size(app, tmp_path):
         window.collection_category = 'TÜRK MOTİFLERİ'
         window.show()
         app.processEvents()
-        assert list(window.category_buttons)[-6:] == ['TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar', 'İçe aktarılan']
+        # Undownloaded remotes stay out of the bar; only bundled + imports show.
+        assert list(window.category_buttons) == [
+            'Tüm kategoriler',
+            'Doğa',
+            'Hayvanlar',
+            'Fantastik',
+            'Manzaralar',
+            'Şehirler',
+            'İçe aktarılan',
+        ]
+        for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar'):
+            assert remote not in window.category_buttons
         for language in ['tr', 'az', 'en', 'es', 'ru']:
             if window.settings['language'] != language:
                 window.change_language(language)
@@ -199,6 +231,10 @@ def test_pixel_count_selector_and_painted_percentage(app, tmp_path):
 
 @pytest.mark.parametrize('category', ['Harikalar', 'Teknoloji', 'Araçlar'])
 def test_filter_translations_and_category_wrapping(app, tmp_path, category):
+    import shutil
+    import time
+
+    from pixel_coloring.services.packs import pack_for_category
     from pixel_coloring.ui.i18n import set_language, tr
     from pixel_coloring.ui.main_window import MainWindow
     from pixel_coloring.ui.progress_tile import ProgressTile
@@ -211,6 +247,18 @@ def test_filter_translations_and_category_wrapping(app, tmp_path, category):
     database.register(entries[0][0], entries[0][1])
     old = read_level(GALLERY / (MOTIFS[0]['id'] + '.pcolor'))
     database.register(old, GALLERY / (old.id + '.pcolor'))
+    # Optional packs only appear in the category bar after PackManager install.
+    pack = pack_for_category(category)
+    paintings = tmp_path / 'paintings'
+    paintings.mkdir(exist_ok=True)
+    sample_id = pack['painting_ids'][0]
+    shutil.copy2(GALLERY / f'{sample_id}.pcolor', paintings / f'{sample_id}.pcolor')
+    meta_dir = tmp_path / 'packs' / pack['id']
+    meta_dir.mkdir(parents=True)
+    (meta_dir / 'pack.meta.json').write_text(
+        json.dumps({'id': pack['id'], 'category': category, 'version': 1, 'installed_at': time.time()}),
+        encoding='utf-8',
+    )
     window = MainWindow(tmp_path, database)
     try:
         window.collection_category = category
@@ -223,7 +271,12 @@ def test_filter_translations_and_category_wrapping(app, tmp_path, category):
             app.processEvents()
             assert window.width() == 960
             assert window.collection_category == category
+            assert category in window.category_buttons
             assert window.category_buttons[category].text() == tr(category)
+            # Undownloaded optional packs stay out of the bar (Mağaza-only).
+            for remote in ('TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar'):
+                if remote != category:
+                    assert remote not in window.category_buttons
             tiles = window.stack.currentWidget().findChildren(ProgressTile)
             visible = [tile for tile in tiles if not tile.isHidden()]
             assert len(visible) == 91

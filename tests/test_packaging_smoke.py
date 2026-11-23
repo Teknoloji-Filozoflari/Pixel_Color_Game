@@ -12,7 +12,7 @@ ROOT = Path(__file__).parents[1]
 
 
 @pytest.mark.parametrize('target', ['bundle', 'installer'])
-@pytest.mark.parametrize('painting_count', [900, 899])
+@pytest.mark.parametrize('painting_count', [455, 454])
 def test_smoke_closes_database_even_when_collection_check_fails(tmp_path, monkeypatch, target, painting_count):
     script = 'packaging/build_bundle.py' if target == 'bundle' else 'packaging/windows/smoke_test.py'
     spec = importlib.util.spec_from_file_location(f'{target}_smoke_check', ROOT / script)
@@ -46,7 +46,7 @@ def test_smoke_closes_database_even_when_collection_check_fails(tmp_path, monkey
         (tmp_path / 'dist').mkdir()
         (tmp_path / 'dist/Piksel-Atolyesi-0.17.0-Setup-x64.exe').touch()
     try:
-        if painting_count == 900:
+        if painting_count == 455:
             module.main()
         else:
             with pytest.raises(RuntimeError, match='collection is incomplete'):

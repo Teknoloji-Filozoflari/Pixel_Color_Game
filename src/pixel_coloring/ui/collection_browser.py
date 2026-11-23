@@ -18,6 +18,8 @@ from PySide6.QtWidgets import (
 
 from ..importer.level_writer import read_level
 from ..rendering.tile_cache import rgb_image
+from ..services.pack_manager import PackManager
+from ..services.packs import CATEGORY_ORDER, is_bundled_category
 from .home_actions import HomeAction
 from .i18n import LANGUAGES, number, painting_meaning, painting_title, tr
 from .progress_tile import ProgressTile
@@ -221,10 +223,21 @@ def build_collection(window, root):
     add_button.setMenu(window.import_menu(add_button))
     head.addWidget(add_button)
     head.addWidget(HomeAction('settings', tr('Ayarlar'), window.show_settings))
+    head.addWidget(HomeAction('store', tr('Mağaza'), window.show_pack_store))
     head.addWidget(HomeAction('exit', tr('Çıkış'), window.close))
     root.addWidget(hero)
-    categories = ['Tüm kategoriler', 'Doğa', 'Hayvanlar', 'Fantastik', 'Manzaralar',
-                  'Şehirler', 'TÜRKİYE', 'TÜRK MOTİFLERİ', 'Harikalar', 'Teknoloji', 'Araçlar', 'İçe aktarılan']
+    pack_manager = PackManager(window.data_dir, window.database)
+    installed_remote = {
+        pack["category"]
+        for pack in pack_manager.list_downloadable()
+        if pack.get("status") == "installed"
+    }
+    # Only bundled + installed optional packs appear in the bar; others live in Mağaza.
+    visible_categories = [
+        name for name in CATEGORY_ORDER
+        if is_bundled_category(name) or name in installed_remote
+    ]
+    categories = ['Tüm kategoriler', *visible_categories, 'İçe aktarılan']
     if window.collection_category not in categories:
         window.collection_category = categories[0]
     category_bar = CategoryBar()
@@ -244,13 +257,20 @@ def build_collection(window, root):
     group.setExclusive(True)
     window.category_buttons = {}
     for name in categories:
-        caption = 'Tümü' if name == 'Tüm kategoriler' else ('Yüklenenler' if name == 'İçe aktarılan' else name)
-        tab = QPushButton(tr(caption))
+        if name == 'Tüm kategoriler':
+            caption = tr('Tümü')
+        elif name == 'İçe aktarılan':
+            caption = tr('Yüklenenler')
+        else:
+            caption = tr(name)
+        tab = QPushButton(caption)
         tab.setObjectName('categoryTab')
-        tab.setAccessibleName(tr(caption))
+        tab.setAccessibleName(caption)
         tab.setCheckable(True)
         tab.setChecked(name == window.collection_category)
-        tab.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        # Keep the caption on one line; grow tabs to fit instead of wrapping text.
+        tab.setSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.Fixed)
+        tab.setMinimumWidth(tab.sizeHint().width())
         tab.setCursor(Qt.CursorShape.PointingHandCursor)
         group.addButton(tab)
         window.category_buttons[name] = tab

@@ -3,8 +3,9 @@ version: '0.17.0'
 base: core24
 summary: Çevrim dışı piksel boyama oyunu
 description: |
-  900 hazır resim, yedi zorluk seviyesi, kendi görsellerini ekleme ve
-  otomatik kayıt ile Türkçe numaraya göre boyama oyunu.
+  Çekirdek beş kategori çevrimdışı oynanır; ek kategori paketleri isteğe bağlı
+  indirilebilir. Yedi zorluk seviyesi, kendi görsellerini ekleme ve otomatik kayıt
+  ile Türkçe numaraya göre boyama oyunu.
 grade: devel
 confinement: strict
 license: GPL-3.0-or-later
@@ -15,7 +16,7 @@ apps:
   piksel-atolyesi:
     command: bin/piksel-atolyesi
     desktop: usr/share/applications/io.github.teknolojifilozoflari.PixelColorGame.desktop
-    plugs: [desktop, desktop-legacy, wayland, x11, opengl, home]
+    plugs: [desktop, desktop-legacy, wayland, x11, opengl, home, network]
     environment:
       LD_LIBRARY_PATH: $SNAP/usr/lib/x86_64-linux-gnu:$SNAP/lib/x86_64-linux-gnu
       FONTCONFIG_PATH: $SNAP/etc/fonts

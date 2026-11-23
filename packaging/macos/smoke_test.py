@@ -27,7 +27,7 @@ def main():
             env=environment, check=True, timeout=180,
         )
         with closing(sqlite3.connect(data / 'progress.sqlite3')) as database:
-            if database.execute('SELECT COUNT(*) FROM paintings').fetchone()[0] != 900:
+            if database.execute('SELECT COUNT(*) FROM paintings').fetchone()[0] != 455:
                 raise RuntimeError('Installed collection is incomplete')
     archives = list((ROOT / 'dist').glob('piksel-atolyesi-*-macos-arm64.zip'))
     if len(archives) != 1:
