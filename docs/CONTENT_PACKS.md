@@ -21,6 +21,8 @@ GitHub Releases üzerinden isteğe bağlı ZIP paketleri olarak indirilir.
 - Araçlar
 - Teknoloji
 - Uzay
+- Spor
+- Tarih ve Uygarlıklar
 
 Uygulama içi **Mağaza** ekranından bir dokunuşla indirilir; tarayıcı açılmaz.
 İndirme bitince SHA-256 doğrulanır, seviyeler kurulur ve koleksiyon yenilenir.

@@ -52,5 +52,7 @@ bundle.tar.gz
 *.deb.sha256
 pytest-output.txt
 
-# Uzay source PNGs are regenerated; levels ship as .pcolor
+# Category source PNGs stay out of git; levels ship as .pcolor
 packaging/sources/uzay/*.png
+packaging/sources/spor/*.png
+packaging/sources/tarih/*.png

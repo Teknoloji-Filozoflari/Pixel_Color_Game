@@ -1,0 +1,548 @@
+{
+  "sample-spor-001": {
+    "en": "Football",
+    "az": "Futbol topu",
+    "es": "Balón de fútbol",
+    "ru": "Футбольный мяч"
+  },
+  "sample-spor-002": {
+    "en": "Tennis Racket",
+    "az": "Tennis raketi",
+    "es": "Raqueta de tenis",
+    "ru": "Теннисная ракетка"
+  },
+  "sample-spor-003": {
+    "en": "Basketball",
+    "az": "Basketbol topu",
+    "es": "Balón de baloncesto",
+    "ru": "Баскетбольный мяч"
+  },
+  "sample-spor-004": {
+    "en": "Table Tennis Bat",
+    "az": "Ping-ponq raketi",
+    "es": "Pala de ping pong",
+    "ru": "Ракетка для пинг-понга"
+  },
+  "sample-spor-005": {
+    "en": "Baseball",
+    "az": "Beysbol topu",
+    "es": "Pelota de béisbol",
+    "ru": "Бейсбольный мяч"
+  },
+  "sample-spor-006": {
+    "en": "Bowling Pin",
+    "az": "Boulinq keğli",
+    "es": "Bolo de bolos",
+    "ru": "Кегля для боулинга"
+  },
+  "sample-spor-007": {
+    "en": "Shuttlecock",
+    "az": "Badminton topu",
+    "es": "Volante de bádminton",
+    "ru": "Волан для бадминтона"
+  },
+  "sample-spor-008": {
+    "en": "Frisbee",
+    "az": "Frizbi",
+    "es": "Frisbee",
+    "ru": "Фрисби"
+  },
+  "sample-spor-009": {
+    "en": "Dumbbell",
+    "az": "Qantəl",
+    "es": "Mancuerna",
+    "ru": "Гантель"
+  },
+  "sample-spor-010": {
+    "en": "Arrow",
+    "az": "Ox",
+    "es": "Flecha",
+    "ru": "Стрела"
+  },
+  "sample-spor-011": {
+    "en": "Oar",
+    "az": "Avər",
+    "es": "Remo",
+    "ru": "Весло"
+  },
+  "sample-spor-012": {
+    "en": "Ice Skate",
+    "az": "Konki",
+    "es": "Patín de hielo",
+    "ru": "Конёк"
+  },
+  "sample-spor-013": {
+    "en": "Boxing Glove",
+    "az": "Boks əlcəyi",
+    "es": "Guante de boxeo",
+    "ru": "Боксёрская перчатка"
+  },
+  "sample-spor-014": {
+    "en": "Bicycle",
+    "az": "Velosiped",
+    "es": "Bicicleta",
+    "ru": "Велосипед"
+  },
+  "sample-spor-015": {
+    "en": "Swimmer",
+    "az": "Üzgüçü",
+    "es": "Nadador",
+    "ru": "Пловец"
+  },
+  "sample-spor-016": {
+    "en": "Skier",
+    "az": "Xizəkçi",
+    "es": "Esquiador",
+    "ru": "Лыжник"
+  },
+  "sample-spor-017": {
+    "en": "Yoga Pose",
+    "az": "Yoqa poza",
+    "es": "Postura de yoga",
+    "ru": "Поза йоги"
+  },
+  "sample-spor-018": {
+    "en": "Gymnast",
+    "az": "Gimnast",
+    "es": "Gimnasta",
+    "ru": "Гимнаст"
+  },
+  "sample-spor-019": {
+    "en": "Fencer",
+    "az": "Qılıncoynadan",
+    "es": "Esgrimista",
+    "ru": "Фехтовальщик"
+  },
+  "sample-spor-020": {
+    "en": "Wrestlers",
+    "az": "Güləşçilər",
+    "es": "Luchadores",
+    "ru": "Борцы"
+  },
+  "sample-spor-021": {
+    "en": "Karate Kick",
+    "az": "Karate zərbəsi",
+    "es": "Patada de kárate",
+    "ru": "Удар карате"
+  },
+  "sample-spor-022": {
+    "en": "Judo Throw",
+    "az": "Cüdo atışı",
+    "es": "Proyección de judo",
+    "ru": "Бросок дзюдо"
+  },
+  "sample-spor-023": {
+    "en": "Archer",
+    "az": "Oxçu",
+    "es": "Arquero",
+    "ru": "Лучник"
+  },
+  "sample-spor-024": {
+    "en": "Skateboard",
+    "az": "Skeytbord",
+    "es": "Monopatín",
+    "ru": "Скейтборд"
+  },
+  "sample-spor-025": {
+    "en": "Runner",
+    "az": "Qaçışçı",
+    "es": "Corredor",
+    "ru": "Бегун"
+  },
+  "sample-spor-026": {
+    "en": "Table Tennis Rally",
+    "az": "Masa tenisi",
+    "es": "Ping pong",
+    "ru": "Настольный теннис"
+  },
+  "sample-spor-027": {
+    "en": "Stadium",
+    "az": "Stadion",
+    "es": "Estadio",
+    "ru": "Стадион"
+  },
+  "sample-spor-028": {
+    "en": "Boxing Ring",
+    "az": "Boks ringi",
+    "es": "Ring de boxeo",
+    "ru": "Боксёрский ринг"
+  },
+  "sample-spor-029": {
+    "en": "Golf Course",
+    "az": "Qolf sahəsi",
+    "es": "Campo de golf",
+    "ru": "Поле для гольфа"
+  },
+  "sample-spor-030": {
+    "en": "Rugby Scrumm",
+    "az": "Reqbi",
+    "es": "Scrum de rugby",
+    "ru": "Схватка регби"
+  },
+  "sample-spor-031": {
+    "en": "Handball",
+    "az": "Həndbol",
+    "es": "Balonmano",
+    "ru": "Гандбол"
+  },
+  "sample-spor-032": {
+    "en": "Cricket",
+    "az": "Kriket",
+    "es": "Críquet",
+    "ru": "Крикет"
+  },
+  "sample-spor-033": {
+    "en": "Equestrian",
+    "az": "Atçılıq",
+    "es": "Hípica",
+    "ru": "Конный спорт"
+  },
+  "sample-spor-034": {
+    "en": "Sailing",
+    "az": "Yelkən",
+    "es": "Vela",
+    "ru": "Парусный спорт"
+  },
+  "sample-spor-035": {
+    "en": "Canoeing",
+    "az": "Kanoe",
+    "es": "Piragüismo",
+    "ru": "Каноэ"
+  },
+  "sample-spor-036": {
+    "en": "Baseball Diamond",
+    "az": "Beysbol sahəsi",
+    "es": "Diamante de béisbol",
+    "ru": "Бейсбольное поле"
+  },
+  "sample-spor-037": {
+    "en": "Basketball Court",
+    "az": "Basketbol meydançası",
+    "es": "Cancha de baloncesto",
+    "ru": "Баскетбольная площадка"
+  },
+  "sample-spor-038": {
+    "en": "Tennis Court",
+    "az": "Tennis kortu",
+    "es": "Pista de tenis",
+    "ru": "Теннисный корт"
+  },
+  "sample-spor-039": {
+    "en": "Football Pitch",
+    "az": "Futbol sahəsi",
+    "es": "Campo de fútbol",
+    "ru": "Футбольное поле"
+  },
+  "sample-spor-040": {
+    "en": "Athletics Track",
+    "az": "Atletika cığırı",
+    "es": "Pista de atletismo",
+    "ru": "Легкоатлетический стадион"
+  },
+  "sample-spor-041": {
+    "en": "Volleyball Match",
+    "az": "Voleybol",
+    "es": "Partido de voleibol",
+    "ru": "Волейбол"
+  },
+  "sample-spor-042": {
+    "en": "Ice Hockey",
+    "az": "Xokkey",
+    "es": "Hockey sobre hielo",
+    "ru": "Хоккей"
+  },
+  "sample-spor-043": {
+    "en": "Water Polo",
+    "az": "Su polosu",
+    "es": "Waterpolo",
+    "ru": "Водное поло"
+  },
+  "sample-spor-044": {
+    "en": "Curling",
+    "az": "Körlinq",
+    "es": "Curling",
+    "ru": "Кёрлинг"
+  },
+  "sample-spor-045": {
+    "en": "Figure Skating",
+    "az": "Fiquurlu konkisürmə",
+    "es": "Patinaje artístico",
+    "ru": "Фигурное катание"
+  },
+  "sample-spor-046": {
+    "en": "Trampoline",
+    "az": "Batut",
+    "es": "Trampolín",
+    "ru": "Батут"
+  },
+  "sample-spor-047": {
+    "en": "Triathlon",
+    "az": "Triatlon",
+    "es": "Triatlón",
+    "ru": "Триатлон"
+  },
+  "sample-spor-048": {
+    "en": "Rugby Match",
+    "az": "Reqbi matçı",
+    "es": "Partido de rugby",
+    "ru": "Матч по регби"
+  },
+  "sample-spor-049": {
+    "en": "Basketball Game",
+    "az": "Basketbol oyunu",
+    "es": "Partido de baloncesto",
+    "ru": "Баскетбольный матч"
+  },
+  "sample-spor-050": {
+    "en": "Tennis Match",
+    "az": "Tennis matçı",
+    "es": "Partido de tenis",
+    "ru": "Теннисный матч"
+  },
+  "sample-spor-051": {
+    "en": "Football Match",
+    "az": "Futbol matçı",
+    "es": "Partido de fútbol",
+    "ru": "Футбольный матч"
+  },
+  "sample-spor-052": {
+    "en": "Weightlifting",
+    "az": "Ağır atletika",
+    "es": "Halterofilia",
+    "ru": "Тяжёлая атлетика"
+  },
+  "sample-spor-053": {
+    "en": "Sprint Race",
+    "az": "Sprint yarışı",
+    "es": "Carrera de velocidad",
+    "ru": "Спринтерский забег"
+  },
+  "sample-spor-054": {
+    "en": "Surfing",
+    "az": "Sörf",
+    "es": "Surf",
+    "ru": "Сёрфинг"
+  },
+  "sample-spor-055": {
+    "en": "Rock Climbing",
+    "az": "Qaya dırmanma",
+    "es": "Escalada",
+    "ru": "Скалолазание"
+  },
+  "sample-spor-056": {
+    "en": "Snowboarding",
+    "az": "Snoubord",
+    "es": "Snowboard",
+    "ru": "Сноуборд"
+  },
+  "sample-spor-057": {
+    "en": "BMX Track",
+    "az": "BMX cığırı",
+    "es": "Pista de BMX",
+    "ru": "Трек BMX"
+  },
+  "sample-spor-058": {
+    "en": "Paragliding",
+    "az": "Yamac paraşütü",
+    "es": "Parapente",
+    "ru": "Парапланеризм"
+  },
+  "sample-spor-059": {
+    "en": "Rafting",
+    "az": "Raftinq",
+    "es": "Rafting",
+    "ru": "Рафтинг"
+  },
+  "sample-spor-060": {
+    "en": "Wakeboarding",
+    "az": "Ueykbord",
+    "es": "Wakeboard",
+    "ru": "Вейкборд"
+  },
+  "sample-spor-061": {
+    "en": "Mountain Biking",
+    "az": "Dağ velosipedi",
+    "es": "Ciclismo de montaña",
+    "ru": "Горный велосипед"
+  },
+  "sample-spor-062": {
+    "en": "Parkour",
+    "az": "Parkur",
+    "es": "Parkour",
+    "ru": "Паркур"
+  },
+  "sample-spor-063": {
+    "en": "Rowing Race",
+    "az": "Avarçəkmə yarışı",
+    "es": "Regata de remo",
+    "ru": "Гонка на вёслах"
+  },
+  "sample-spor-064": {
+    "en": "Sailing Race",
+    "az": "Yelkən yarışı",
+    "es": "Regata de vela",
+    "ru": "Парусная гонка"
+  },
+  "sample-spor-065": {
+    "en": "Motocross",
+    "az": "Motokros",
+    "es": "Motocross",
+    "ru": "Мотокросс"
+  },
+  "sample-spor-066": {
+    "en": "Olympic Stadium",
+    "az": "Olimpiya stadionu",
+    "es": "Estadio olímpico",
+    "ru": "Олимпийский стадион"
+  },
+  "sample-spor-067": {
+    "en": "Ski Jump",
+    "az": "Xizək tullanması",
+    "es": "Salto de esquí",
+    "ru": "Прыжки с трамплина"
+  },
+  "sample-spor-068": {
+    "en": "Diving Platform",
+    "az": "Suya tullanma",
+    "es": "Plataforma de saltos",
+    "ru": "Вышка для прыжков"
+  },
+  "sample-spor-069": {
+    "en": "Formula Racing",
+    "az": "Formula yarışı",
+    "es": "Carrera de Fórmula",
+    "ru": "Формула"
+  },
+  "sample-spor-070": {
+    "en": "MotoGP",
+    "az": "MotoGP",
+    "es": "MotoGP",
+    "ru": "MotoGP"
+  },
+  "sample-spor-071": {
+    "en": "Velodrome",
+    "az": "Velodrom",
+    "es": "Velódromo",
+    "ru": "Велодром"
+  },
+  "sample-spor-072": {
+    "en": "Hippodrome",
+    "az": "Hipodrom",
+    "es": "Hipódromo",
+    "ru": "Ипподром"
+  },
+  "sample-spor-073": {
+    "en": "Aquatic Center",
+    "az": "Akvatika mərkəzi",
+    "es": "Centro acuático",
+    "ru": "Водный центр"
+  },
+  "sample-spor-074": {
+    "en": "Boxing Arena",
+    "az": "Boks arenası",
+    "es": "Arena de boxeo",
+    "ru": "Боксёрская арена"
+  },
+  "sample-spor-075": {
+    "en": "Ski Resort",
+    "az": "Xizək mərkəzi",
+    "es": "Estación de esquí",
+    "ru": "Горнолыжный курорт"
+  },
+  "sample-spor-076": {
+    "en": "Golf Club",
+    "az": "Qolf klubu",
+    "es": "Club de golf",
+    "ru": "Гольф-клуб"
+  },
+  "sample-spor-077": {
+    "en": "Tennis Complex",
+    "az": "Tennis kompleksi",
+    "es": "Complejo de tenis",
+    "ru": "Теннисный комплекс"
+  },
+  "sample-spor-078": {
+    "en": "Packed Stadium",
+    "az": "Dolu stadion",
+    "es": "Estadio lleno",
+    "ru": "Полный стадион"
+  },
+  "sample-spor-079": {
+    "en": "City Marathon",
+    "az": "Şəhər marafonu",
+    "es": "Maratón urbano",
+    "ru": "Городской марафон"
+  },
+  "sample-spor-080": {
+    "en": "Skate Park",
+    "az": "Skeyt park",
+    "es": "Skatepark",
+    "ru": "Скейт-парк"
+  },
+  "sample-spor-081": {
+    "en": "Championship Final",
+    "az": "Çempionat finalı",
+    "es": "Final del campeonato",
+    "ru": "Финал чемпионата"
+  },
+  "sample-spor-082": {
+    "en": "Olympic Opening",
+    "az": "Olimpiya açılışı",
+    "es": "Apertura olímpica",
+    "ru": "Открытие Олимпиады"
+  },
+  "sample-spor-083": {
+    "en": "Extreme Sports Park",
+    "az": "Ekstrem park",
+    "es": "Parque extremo",
+    "ru": "Парк экстрима"
+  },
+  "sample-spor-084": {
+    "en": "Ironman Finish",
+    "az": "Ironman finişi",
+    "es": "Meta Ironman",
+    "ru": "Финиш Ironman"
+  },
+  "sample-spor-085": {
+    "en": "Cycling Tour",
+    "az": "Velosiped turu",
+    "es": "Vuelta ciclista",
+    "ru": "Велогонка"
+  },
+  "sample-spor-086": {
+    "en": "Multi-Sport Arena",
+    "az": "Çoxidmanlı arena",
+    "es": "Arena multideporte",
+    "ru": "Мультиспортивная арена"
+  },
+  "sample-spor-087": {
+    "en": "Winter Games",
+    "az": "Qış oyunları",
+    "es": "Juegos de invierno",
+    "ru": "Зимние игры"
+  },
+  "sample-spor-088": {
+    "en": "Trophy Night",
+    "az": "Kubok gecəsi",
+    "es": "Noche del trofeo",
+    "ru": "Ночь кубка"
+  },
+  "sample-spor-089": {
+    "en": "Mega Skate Bowl",
+    "az": "Meqa skeyt",
+    "es": "Mega bowl de skate",
+    "ru": "Мега-скейтбоул"
+  },
+  "sample-spor-090": {
+    "en": "Championship Pool",
+    "az": "Çempionat hovuzu",
+    "es": "Piscina de campeonato",
+    "ru": "Чемпионский бассейн"
+  },
+  "sample-spor-091": {
+    "en": "Grand Prix Night",
+    "az": "Grand Prix gecəsi",
+    "es": "Noche de Gran Premio",
+    "ru": "Ночь Гран-при"
+  }
+}

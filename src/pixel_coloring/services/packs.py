@@ -14,7 +14,16 @@ GALLERY_DIR = RESOURCES / "paintings"
 # Locked product set — also recorded in the shipped manifest.
 BUNDLED_CATEGORIES = frozenset({"Doğa", "Hayvanlar", "Fantastik", "Manzaralar", "Şehirler"})
 REMOTE_CATEGORIES = frozenset(
-    {"TÜRKİYE", "TÜRK MOTİFLERİ", "Harikalar", "Araçlar", "Teknoloji", "Uzay"}
+    {
+        "TÜRKİYE",
+        "TÜRK MOTİFLERİ",
+        "Harikalar",
+        "Araçlar",
+        "Teknoloji",
+        "Uzay",
+        "Spor",
+        "Tarih ve Uygarlıklar",
+    }
 )
 
 CATEGORY_ORDER = [
@@ -29,6 +38,8 @@ CATEGORY_ORDER = [
     "Teknoloji",
     "Araçlar",
     "Uzay",
+    "Spor",
+    "Tarih ve Uygarlıklar",
 ]
 
 

@@ -1,6 +1,6 @@
 ﻿# Koleksiyon özeti
 
-Piksel Atölyesi toplam **991** hazır resim içerir (91’i isteğe bağlı Uzay paketi). Uygulamanın kullandığı eksiksiz ve makine tarafından okunabilir liste `src/pixel_coloring/resources/paintings/catalog.json` dosyasındadır.
+Piksel Atölyesi toplam **1173** hazır resim içerir (isteğe bağlı Uzay, Spor ve Tarih paketleri dahil). Uygulamanın kullandığı eksiksiz ve makine tarafından okunabilir liste `src/pixel_coloring/resources/paintings/catalog.json` dosyasındadır.
 
 ## Kategoriler
 
@@ -17,20 +17,22 @@ Piksel Atölyesi toplam **991** hazır resim içerir (91’i isteğe bağlı Uza
 | Teknoloji | 91 |
 | Araçlar | 91 |
 | Uzay | 91 |
-| **Toplam** | **991** |
+| Spor | 91 |
+| Tarih ve Uygarlıklar | 91 |
+| **Toplam** | **1173** |
 
 ## Zorluk dağılımı
 
 | Zorluk | Resim sayısı |
 |---|---:|
-| Çok Kolay | 82 |
-| Kolay | 87 |
-| Kolay-Orta | 132 |
-| Orta | 132 |
-| Orta-Zor | 132 |
-| Zor | 132 |
-| Uzman | 294 |
-| **Toplam** | **991** |
+| Çok Kolay | 108 |
+| Kolay | 113 |
+| Kolay-Orta | 158 |
+| Orta | 158 |
+| Orta-Zor | 158 |
+| Zor | 158 |
+| Uzman | 320 |
+| **Toplam** | **1173** |
 
 Görseller 48×48 ile 1920×1080 arasında, 2.880 ile 2.073.600 hücre ve 10–60 renk aralığındadır. Katalogdaki kimlikler kayıt ilerlemesini eşleştirdiği için mevcut bir resmin kimliği yayınlar arasında değiştirilmemelidir.
 
@@ -55,3 +57,7 @@ Teknoloji koleksiyonu envanterdeki yedi seviyede 13'er görseli korur ve Harikal
 Araçlar koleksiyonundaki 91 görsel de aynı oyun basamaklarına uyarlanır; yedi seviyede 13'er görsel korunur ve her seviyede görsel karmaşıklığına göre sıralanır. Otomobil, motosiklet, tren, uçak ve tekne görsellerinin kaynak PNG dosyaları değiştirilmez. Başlıklar beş dilde gösterilir.
 
 Uzay koleksiyonu 91 görsel içerir; Harikalar / Teknoloji / Araçlar ile aynı yedi basamaklı 13’er dağılımı ve renk/piksel merdivenini kullanır. İsteğe bağlı indirme paketidir.
+
+Spor koleksiyonu 91 görsel içerir; Harikalar basamaklı dağılımını kullanır. İsteğe bağlı indirme paketidir.
+
+Tarih ve Uygarlıklar koleksiyonu 91 görsel içerir; Mezopotamya’dan İpek Yolu’na uzanan uygarlık sahnelerini kapsar. İsteğe bağlı indirme paketidir.

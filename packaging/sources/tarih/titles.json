@@ -1,0 +1,548 @@
+{
+  "sample-tarih-001": {
+    "en": "Amphora",
+    "az": "Amfora",
+    "es": "Ánfora",
+    "ru": "Амфора"
+  },
+  "sample-tarih-002": {
+    "en": "Cuneiform Tablet",
+    "az": "Mixəyazılı lövhə",
+    "es": "Tableta cuneiforme",
+    "ru": "Клинописная табличка"
+  },
+  "sample-tarih-003": {
+    "en": "Ankh",
+    "az": "Anx",
+    "es": "Anj",
+    "ru": "Анх"
+  },
+  "sample-tarih-004": {
+    "en": "Scarab",
+    "az": "Skarabey",
+    "es": "Escarabajo",
+    "ru": "Скарабей"
+  },
+  "sample-tarih-005": {
+    "en": "Olive Branch",
+    "az": "Zeytun budağı",
+    "es": "Rama de olivo",
+    "ru": "Оливковая ветвь"
+  },
+  "sample-tarih-006": {
+    "en": "Gladiator Sword",
+    "az": "Qladiator qılıncı",
+    "es": "Espada de gladiador",
+    "ru": "Меч гладиатора"
+  },
+  "sample-tarih-007": {
+    "en": "Cylinder Seal",
+    "az": "Silindr möhür",
+    "es": "Sello cilíndrico",
+    "ru": "Цилиндрическая печать"
+  },
+  "sample-tarih-008": {
+    "en": "Papyrus Scroll",
+    "az": "Papirus rulonu",
+    "es": "Rollo de papiro",
+    "ru": "Папирусный свиток"
+  },
+  "sample-tarih-009": {
+    "en": "Laurel Wreath",
+    "az": "Dəfnə tacı",
+    "es": "Corona de laurel",
+    "ru": "Лавровый венок"
+  },
+  "sample-tarih-010": {
+    "en": "Roman Urn",
+    "az": "Roma urnası",
+    "es": "Urna romana",
+    "ru": "Римская урна"
+  },
+  "sample-tarih-011": {
+    "en": "Hittite Bow",
+    "az": "Xett oxu",
+    "es": "Arco hitita",
+    "ru": "Хеттский лук"
+  },
+  "sample-tarih-012": {
+    "en": "Silk Bolt",
+    "az": "İpək topu",
+    "es": "Rollo de seda",
+    "ru": "Рулон шёлка"
+  },
+  "sample-tarih-013": {
+    "en": "Ancient Coin",
+    "az": "Antik pul",
+    "es": "Moneda antigua",
+    "ru": "Древняя монета"
+  },
+  "sample-tarih-014": {
+    "en": "Pyramid",
+    "az": "Piramida",
+    "es": "Pirámide",
+    "ru": "Пирамида"
+  },
+  "sample-tarih-015": {
+    "en": "Greek Column",
+    "az": "Yunan sütunu",
+    "es": "Columna griega",
+    "ru": "Греческая колонна"
+  },
+  "sample-tarih-016": {
+    "en": "Roman Helmet",
+    "az": "Roma dəbilqəsi",
+    "es": "Casco romano",
+    "ru": "Римский шлем"
+  },
+  "sample-tarih-017": {
+    "en": "Obelisk",
+    "az": "Obelisk",
+    "es": "Obelisco",
+    "ru": "Обелиск"
+  },
+  "sample-tarih-018": {
+    "en": "Bronze Tripod",
+    "az": "Bürünc üçayaq",
+    "es": "Trípode de bronce",
+    "ru": "Бронзовый треножник"
+  },
+  "sample-tarih-019": {
+    "en": "Roman Shield",
+    "az": "Roma qalxanı",
+    "es": "Escudo romano",
+    "ru": "Римский щит"
+  },
+  "sample-tarih-020": {
+    "en": "Lamassu",
+    "az": "Lamassu",
+    "es": "Lamassu",
+    "ru": "Ламассу"
+  },
+  "sample-tarih-021": {
+    "en": "Fresco Fragment",
+    "az": "Freska parçası",
+    "es": "Fragmento de fresco",
+    "ru": "Фрагмент фрески"
+  },
+  "sample-tarih-022": {
+    "en": "Funerary Stele",
+    "az": "Məzar steli",
+    "es": "Estela funeraria",
+    "ru": "Погребальная стела"
+  },
+  "sample-tarih-023": {
+    "en": "Lighthouse of Alexandria",
+    "az": "İsgəndəriyyə mayakı",
+    "es": "Faro de Alejandría",
+    "ru": "Александрийский маяк"
+  },
+  "sample-tarih-024": {
+    "en": "Hittite Sun Disk",
+    "az": "Xett günəş diski",
+    "es": "Disco solar hitita",
+    "ru": "Хеттский солнечный диск"
+  },
+  "sample-tarih-025": {
+    "en": "Lone Camel",
+    "az": "Tək dəvə",
+    "es": "Camello solitario",
+    "ru": "Одиночный верблюд"
+  },
+  "sample-tarih-026": {
+    "en": "Mosaic Piece",
+    "az": "Mozaika parçası",
+    "es": "Pieza de mosaico",
+    "ru": "Фрагмент мозаики"
+  },
+  "sample-tarih-027": {
+    "en": "Ziggurat",
+    "az": "Ziggurat",
+    "es": "Zigurat",
+    "ru": "Зиккурат"
+  },
+  "sample-tarih-028": {
+    "en": "Egyptian Temple",
+    "az": "Misir məbədi",
+    "es": "Templo egipcio",
+    "ru": "Египетский храм"
+  },
+  "sample-tarih-029": {
+    "en": "Agora",
+    "az": "Aqora",
+    "es": "Ágora",
+    "ru": "Агора"
+  },
+  "sample-tarih-030": {
+    "en": "Sphinx",
+    "az": "Sfinks",
+    "es": "Esfinge",
+    "ru": "Сфинкс"
+  },
+  "sample-tarih-031": {
+    "en": "Small Amphitheatre",
+    "az": "Kiçik amfiteatr",
+    "es": "Pequeño anfiteatro",
+    "ru": "Малый амфитеатр"
+  },
+  "sample-tarih-032": {
+    "en": "Roman Villa",
+    "az": "Roma villası",
+    "es": "Villa romana",
+    "ru": "Римская вилла"
+  },
+  "sample-tarih-033": {
+    "en": "City Gate",
+    "az": "Qala qapısı",
+    "es": "Puerta de la muralla",
+    "ru": "Городские ворота"
+  },
+  "sample-tarih-034": {
+    "en": "Courtyard House",
+    "az": "Həyətli ev",
+    "es": "Casa con patio",
+    "ru": "Дом с двором"
+  },
+  "sample-tarih-035": {
+    "en": "Egyptian Garden",
+    "az": "Misir bağı",
+    "es": "Jardín egipcio",
+    "ru": "Египетский сад"
+  },
+  "sample-tarih-036": {
+    "en": "Rock Tomb",
+    "az": "Qaya qəbri",
+    "es": "Tumba rupestre",
+    "ru": "Скальная гробница"
+  },
+  "sample-tarih-037": {
+    "en": "Caravanserai",
+    "az": "Karvansara",
+    "es": "Caravasar",
+    "ru": "Караван-сарай"
+  },
+  "sample-tarih-038": {
+    "en": "Nile Fisherman",
+    "az": "Nil balıqçısı",
+    "es": "Pescador del Nilo",
+    "ru": "Нильский рыбак"
+  },
+  "sample-tarih-039": {
+    "en": "Pottery Kiln",
+    "az": "Saxsı sobası",
+    "es": "Horno de alfarero",
+    "ru": "Гончарная печь"
+  },
+  "sample-tarih-040": {
+    "en": "Roman Forum",
+    "az": "Roma forumu",
+    "es": "Foro romano",
+    "ru": "Римский форум"
+  },
+  "sample-tarih-041": {
+    "en": "Hittite Gate",
+    "az": "Xett qapısı",
+    "es": "Puerta hitita",
+    "ru": "Хеттские ворота"
+  },
+  "sample-tarih-042": {
+    "en": "Silk Road Caravan",
+    "az": "İpək Yolu karvanı",
+    "es": "Caravana de la Ruta de la Seda",
+    "ru": "Караван Шёлкового пути"
+  },
+  "sample-tarih-043": {
+    "en": "Colosseum",
+    "az": "Kolizey",
+    "es": "Coliseo",
+    "ru": "Колизей"
+  },
+  "sample-tarih-044": {
+    "en": "Avenue of Sphinxes",
+    "az": "Sfinks yolu",
+    "es": "Avenida de las esfinges",
+    "ru": "Аллея сфинксов"
+  },
+  "sample-tarih-045": {
+    "en": "Delphi",
+    "az": "Delfi",
+    "es": "Delfos",
+    "ru": "Дельфы"
+  },
+  "sample-tarih-046": {
+    "en": "Palace of Nineveh",
+    "az": "Ninova sarayı",
+    "es": "Palacio de Nínive",
+    "ru": "Дворец Ниневии"
+  },
+  "sample-tarih-047": {
+    "en": "Walls of Troy",
+    "az": "Troya divarları",
+    "es": "Murallas de Troya",
+    "ru": "Стены Трои"
+  },
+  "sample-tarih-048": {
+    "en": "Fairy Chimneys",
+    "az": "Pəri bacaları",
+    "es": "Chimeneas de hadas",
+    "ru": "Скальные трубы"
+  },
+  "sample-tarih-049": {
+    "en": "Roman Baths",
+    "az": "Roma hamamı",
+    "es": "Termas romanas",
+    "ru": "Римские термы"
+  },
+  "sample-tarih-050": {
+    "en": "Mountain Bridge",
+    "az": "Dağ körpüsü",
+    "es": "Puente de montaña",
+    "ru": "Горный мост"
+  },
+  "sample-tarih-051": {
+    "en": "Burial Chamber",
+    "az": "Qəbir otağı",
+    "es": "Cámara funeraria",
+    "ru": "Погребальная камера"
+  },
+  "sample-tarih-052": {
+    "en": "Stadium of Olympia",
+    "az": "Olimpiya stadionu",
+    "es": "Estadio de Olimpia",
+    "ru": "Стадион Олимпии"
+  },
+  "sample-tarih-053": {
+    "en": "Nile Landscape",
+    "az": "Nil mənzərəsi",
+    "es": "Paisaje del Nilo",
+    "ru": "Пейзаж Нила"
+  },
+  "sample-tarih-054": {
+    "en": "Acropolis",
+    "az": "Akropol",
+    "es": "Acrópolis",
+    "ru": "Акрополь"
+  },
+  "sample-tarih-055": {
+    "en": "Aqueduct",
+    "az": "Su kəməri",
+    "es": "Acueducto",
+    "ru": "Акведук"
+  },
+  "sample-tarih-056": {
+    "en": "Karnak Hall",
+    "az": "Karnak zalı",
+    "es": "Sala de Karnak",
+    "ru": "Зал Карнака"
+  },
+  "sample-tarih-057": {
+    "en": "Pantheon",
+    "az": "Panteon",
+    "es": "Panteón",
+    "ru": "Пантеон"
+  },
+  "sample-tarih-058": {
+    "en": "Persepolis",
+    "az": "Persepolis",
+    "es": "Persépolis",
+    "ru": "Персеполь"
+  },
+  "sample-tarih-059": {
+    "en": "Hattusa",
+    "az": "Hattuşa",
+    "es": "Hattusa",
+    "ru": "Хаттуса"
+  },
+  "sample-tarih-060": {
+    "en": "Port of Alexandria",
+    "az": "İsgəndəriyyə limanı",
+    "es": "Puerto de Alejandría",
+    "ru": "Порт Александрии"
+  },
+  "sample-tarih-061": {
+    "en": "Samarkand Square",
+    "az": "Səmərqənd meydanı",
+    "es": "Plaza de Samarcanda",
+    "ru": "Площадь Самарканда"
+  },
+  "sample-tarih-062": {
+    "en": "Cappadocia Settlement",
+    "az": "Kapadokiya yaşayışı",
+    "es": "Asentamiento de Capadocia",
+    "ru": "Поселение Каппадокии"
+  },
+  "sample-tarih-063": {
+    "en": "Villa Garden",
+    "az": "Villa bağı",
+    "es": "Jardín de villa",
+    "ru": "Сад виллы"
+  },
+  "sample-tarih-064": {
+    "en": "Temple of Athena",
+    "az": "Afina məbədi",
+    "es": "Templo de Atenea",
+    "ru": "Храм Афины"
+  },
+  "sample-tarih-065": {
+    "en": "Assyrian Palace",
+    "az": "Assuriya sarayı",
+    "es": "Palacio asirio",
+    "ru": "Ассирийский дворец"
+  },
+  "sample-tarih-066": {
+    "en": "Ancient Street",
+    "az": "Antik küçə",
+    "es": "Calle antigua",
+    "ru": "Древняя улица"
+  },
+  "sample-tarih-067": {
+    "en": "Ephesus Ruins",
+    "az": "Efes xarabalıqları",
+    "es": "Ruinas de Éfeso",
+    "ru": "Руины Эфеса"
+  },
+  "sample-tarih-068": {
+    "en": "Silk Road Market",
+    "az": "İpək Yolu bazarı",
+    "es": "Mercado de la Ruta de la Seda",
+    "ru": "Базар Шёлкового пути"
+  },
+  "sample-tarih-069": {
+    "en": "Rome by Day",
+    "az": "Roma gündüz",
+    "es": "Roma de día",
+    "ru": "Рим днём"
+  },
+  "sample-tarih-070": {
+    "en": "City of Thebes",
+    "az": "Teb şəhəri",
+    "es": "Ciudad de Tebas",
+    "ru": "Фивы"
+  },
+  "sample-tarih-071": {
+    "en": "Athenian Agora",
+    "az": "Afina aqorası",
+    "es": "Ágora de Atenas",
+    "ru": "Афинская агора"
+  },
+  "sample-tarih-072": {
+    "en": "Uruk",
+    "az": "Uruk",
+    "es": "Uruk",
+    "ru": "Урук"
+  },
+  "sample-tarih-073": {
+    "en": "Bogazkoy",
+    "az": "Boğazköy",
+    "es": "Boğazköy",
+    "ru": "Богазкёй"
+  },
+  "sample-tarih-074": {
+    "en": "Palmyra",
+    "az": "Palmira",
+    "es": "Palmira",
+    "ru": "Пальмира"
+  },
+  "sample-tarih-075": {
+    "en": "Palace of Knossos",
+    "az": "Knossos sarayı",
+    "es": "Palacio de Cnosos",
+    "ru": "Дворец Кносса"
+  },
+  "sample-tarih-076": {
+    "en": "Port of Carthage",
+    "az": "Karfagen limanı",
+    "es": "Puerto de Cartago",
+    "ru": "Порт Карфагена"
+  },
+  "sample-tarih-077": {
+    "en": "Antioch",
+    "az": "Antakya",
+    "es": "Antioquía",
+    "ru": "Антиохия"
+  },
+  "sample-tarih-078": {
+    "en": "Sardis",
+    "az": "Sardis",
+    "es": "Sardes",
+    "ru": "Сарды"
+  },
+  "sample-tarih-079": {
+    "en": "Babylon",
+    "az": "Babil",
+    "es": "Babilonia",
+    "ru": "Вавилон"
+  },
+  "sample-tarih-080": {
+    "en": "Giza Plateau",
+    "az": "Gize platosu",
+    "es": "Meseta de Giza",
+    "ru": "Плато Гизы"
+  },
+  "sample-tarih-081": {
+    "en": "Ancient Mediterranean",
+    "az": "Antik Aralıq dənizi",
+    "es": "Mediterráneo antiguo",
+    "ru": "Древнее Средиземноморье"
+  },
+  "sample-tarih-082": {
+    "en": "Capital Rome",
+    "az": "Roma paytaxt",
+    "es": "Roma capital",
+    "ru": "Рим — столица"
+  },
+  "sample-tarih-083": {
+    "en": "Theban Necropolis",
+    "az": "Teb nekropolu",
+    "es": "Necrópolis tebana",
+    "ru": "Фиванский некрополь"
+  },
+  "sample-tarih-084": {
+    "en": "Athens Panorama",
+    "az": "Afina panoraması",
+    "es": "Panorama de Atenas",
+    "ru": "Панорама Афин"
+  },
+  "sample-tarih-085": {
+    "en": "Assyrian City",
+    "az": "Assuriya şəhəri",
+    "es": "Ciudad asiria",
+    "ru": "Ассирийский город"
+  },
+  "sample-tarih-086": {
+    "en": "Ephesus Panorama",
+    "az": "Efes panoraması",
+    "es": "Panorama de Éfeso",
+    "ru": "Панорама Эфеса"
+  },
+  "sample-tarih-087": {
+    "en": "Oasis City",
+    "az": "Vaha şəhəri",
+    "es": "Ciudad oasis",
+    "ru": "Город-оазис"
+  },
+  "sample-tarih-088": {
+    "en": "Plain of Troy",
+    "az": "Troya düzənliyi",
+    "es": "Llanura de Troya",
+    "ru": "Равнина Трои"
+  },
+  "sample-tarih-089": {
+    "en": "Persepolis Ceremony",
+    "az": "Persepolis mərasimi",
+    "es": "Ceremonial de Persépolis",
+    "ru": "Церемония в Персеполе"
+  },
+  "sample-tarih-090": {
+    "en": "Knossos and the Aegean",
+    "az": "Knossos və Egey",
+    "es": "Cnosos y el Egeo",
+    "ru": "Кносс и Эгеида"
+  },
+  "sample-tarih-091": {
+    "en": "Harbor Civilizations",
+    "az": "Liman sivilizasiyaları",
+    "es": "Civilizaciones portuarias",
+    "ru": "Портовые цивилизации"
+  }
+}

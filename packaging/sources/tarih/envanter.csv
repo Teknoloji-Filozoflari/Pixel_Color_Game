@@ -1,0 +1,92 @@
+id,title,file,sha256,source_width,source_height
+sample-tarih-001,Amfora,001-amfora.png,ecc743ee6af9a9dfabeabe57d1e60c8f4db4480bcfc4d662571146f54d85a6c9,1448,1086
+sample-tarih-002,Çivi Yazılı Tablet,002-tablet.png,bc710995ffc0d0e9d397a376449414e854331fdc46f93b3080d03e9afd667dfc,1448,1086
+sample-tarih-003,Ankh,003-ankh.png,13b05cf7d2fbd76268de85ce874886a91f7f3c3b624e6313049cd2ffcf6b8a2b,1448,1086
+sample-tarih-004,Skarabe,004-skarabe.png,71c82400dd9a84d584ada0a8ef36385722cc4405360dc7807093a495732b556f,1448,1086
+sample-tarih-005,Zeytin Dalı,005-zeytin-dali.png,208c7b1488ff1e56629d611138f13dcd51651dca79d1f5690da41e8fb7bfa13c,1448,1086
+sample-tarih-006,Gladyatör Kılıcı,006-kisa-kilic.png,44458732c292b05c922f4ade80c028660fa9d42a6ab0599fb99f358c0a00fc1f,1448,1086
+sample-tarih-007,Silindir Mühür,007-silindir-muhur.png,1ae8f60ed83a465a5c1d25db1e3e7d2a9988a1f916f169913ab39565255ffc4e,1448,1086
+sample-tarih-008,Papirüs Rulosu,008-papirus.png,4a7938cb42c51539e8a0e35649457dde5e06ffce85fb3f0acb467ec165ac726e,1448,1086
+sample-tarih-009,Defne Tacı,009-defne-taci.png,9ddc232049046a80fe66652f4b14c4338b2c21f5cbd5b82a15b9c74252487885,1448,1086
+sample-tarih-010,Roma Urnası,010-roma-urn.png,ae2ea2bba7f49d08bf54447a0e55eb046c7a2ddc381d67ad18809242ac480767,1448,1086
+sample-tarih-011,Hitit Yayı,011-hitit-yay.png,76077231ad26d6625dd7a412c4bd8785d64f5949dd3c7160c62fa56fc313a2b0,1448,1086
+sample-tarih-012,İpek Topu,012-ipek-top.png,2f1764c6add5d0c18979c67a577b3d15b250c9dee2109602dc8de754248d8334,1448,1086
+sample-tarih-013,Antik Para,013-antik-para.png,886207bc601ffc9e4c2a9a97ea9214f4ff2ca49162526f5eb8d983c059191385,1448,1086
+sample-tarih-014,Piramit,014-piramit.png,4e4234e46019accb7504e999f034a5f2dab1285e2b81e83fe538ec7b458d315a,1448,1086
+sample-tarih-015,Yunan Sütunu,015-sutun.png,cd668a73441c02898d007a08615e0e60fcc46ec49cfb4731bdfd36f4fa01b986,1448,1086
+sample-tarih-016,Roma Miğferi,016-migfer.png,8b9648117f8b3ed0068ba57eda3e187da601b96565c2e59dd52dfa3705f50706,1448,1086
+sample-tarih-017,Obelisk,017-obelisk.png,a26558024bd92f0d4d58e90524a9499c2b42fef88e440230306ff4ca95b918db,1448,1086
+sample-tarih-018,Bronz Üçayak,018-ucayak.png,44042d7c888924600294b9302f9d7b42032f1491a49b6099a90e3f2bdcb47254,1448,1086
+sample-tarih-019,Roma Kalkanı,019-kalkan.png,0a166fb1d163082f790e5a00de8b313090bd081179399ea35ac159d35ef28485,1448,1086
+sample-tarih-020,Lamassu,020-lamassu.png,366e6c37be800dc2c6e36cb8542f4a807aa9f001e620a9fbdafc58c44a24273f,1448,1086
+sample-tarih-021,Fresk Parçası,021-fresk.png,f5d5e777ef443b92a970efccaf62cc9dfe8a657ccbfcbd491a1338f32f26bde4,1448,1086
+sample-tarih-022,Mezar Steli,022-stele.png,3d2dc6373a684cf1e202511c19bee316b64ee2e2e359985c7fe04d56a24dc7ea,1448,1086
+sample-tarih-023,İskenderiye Feneri,023-fener.png,9d9bc0dc5eea74b6b2924cfc8d32df1caabcbde85351758b3125ac1cffd220af,1448,1086
+sample-tarih-024,Hitit Güneş Diski,024-hitit-gunes.png,2a0e30f3b215c1041ea70966f54dda0b551663e7944e71fddcadac18929879e2,1448,1086
+sample-tarih-025,Tek Deve,025-deve.png,07969b2deccdf10b13256854b8f021016c6723ec16d6574f9094cffc5d4f5afb,1448,1086
+sample-tarih-026,Mozaik Parça,026-mozaik.png,84b902e2e186a5373af363f4f0a0fa51c17597090ea573c1aab3f91f37368bbf,1448,1086
+sample-tarih-027,Ziggurat,027-ziggurat.png,6be6b280a7cbfd7755ed62f1afadaddaa388d58d6b575d87b8e4b9cfc08cad7d,1448,1086
+sample-tarih-028,Mısır Tapınağı,028-tapinak.png,842c1397d8938d4bb838d52f03a4e6f6d5edaf2c5b4100f1d4e5e3511576e013,1448,1086
+sample-tarih-029,Agora,029-agora.png,eb2067213216d27d0136ee98f794956ef8bd0e9f0c53eda7554c2046e1a2ca6a,1448,1086
+sample-tarih-030,Sfenks,030-sfenks.png,97a9b5b97d8876e36c2c850689717703e104b75652c077cc39d14a8fa536047d,1448,1086
+sample-tarih-031,Küçük Amfitiyatro,031-amfi.png,7cbd36e3319eca0dd5a43e5152e2bebc1aee9ada6726438ba92271e21642c390,1448,1086
+sample-tarih-032,Roma Villası,032-villa.png,22a475888d826f55665d62a18e126d905d8ea8f34059e177814d2dab78270f88,1448,1086
+sample-tarih-033,Sur Kapısı,033-sur-kapi.png,2b5405c8053ca2c1bc4d7aeaa8fe1541bc4fee1a72fdf27efb7ddd3e7887a532,1448,1086
+sample-tarih-034,Avlulu Ev,034-avlu-ev.png,2a86678be5efb8776b072bbd41c8b0653e0b2109ffb58b6bd390bd2dd844686c,1448,1086
+sample-tarih-035,Mısır Bahçesi,035-misir-bahce.png,8109cff084a0650b3bf0ccd6f83479ea2b9316e6c62c64b169c4bf930ae79771,1448,1086
+sample-tarih-036,Kaya Mezarı,036-kaya-mezar.png,a391350f3d4d2c04621f236aa6ee1401b0cb8c9687812537fea7fa74de647aa9,1448,1086
+sample-tarih-037,Kervansaray,037-kervansaray.png,c0c2d014cf8c814047c806aec802651c2d374406b28088ff284fd3333d18d42a,1448,1086
+sample-tarih-038,Nil Balıkçısı,038-balikci.png,0d750a08e861c105ead77a3399f8b2b4bdc749bffbb96011d96dc1d6b480b8e0,1448,1086
+sample-tarih-039,Çömlek Fırını,039-camur-firin.png,7328c0ed8c8e90a117f5b6a413a9a629d821f2f1612e9e2461e4598bc578db34,1448,1086
+sample-tarih-040,Roma Forumu,040-forum.png,8de97ac8b5c1ddb8e11768fd1fb39a31a7b0c397fdfb8ad80f298848a20e1968,1448,1086
+sample-tarih-041,Hitit Kapısı,041-hitit.png,5ee26ea2f87351e1fb8e2fe52cb8cb7132cbca10ad19fb85c13c3562e856e1c0,1448,1086
+sample-tarih-042,İpek Yolu Kervanı,042-kervan.png,4632e4af7f194203220379e4a599e59716c99158f15051d5d7f2d07c865b394e,1448,1086
+sample-tarih-043,Kolezyum,043-kolezyum.png,c0391a88da7ce326894e1ffc72366ecde7d1dbc057bfd58ed62136c9d3c07d32,1448,1086
+sample-tarih-044,Sfenks Yolu,044-sfenks-yolu.png,107b610338f1d5f282fc90277424ccab5f5c44e15e6d265e3d442985325032b8,1448,1086
+sample-tarih-045,Delphi,045-delphi.png,3a5d8a5f76c45ff35bf864b9c1f610c6d1bc9a22b3d2b1135d1b231a907cf01c,1448,1086
+sample-tarih-046,Ninova Sarayı,046-ninova.png,b35b8a4fc70cf17bfb910385c3766066faa00e9e249a987f56a3a5de28b83ce4,1448,1086
+sample-tarih-047,Troya Surları,047-troya.png,303c93143478967de2301e5756a84b3959e5c80c5090bd9cd301cac51c772357,1448,1086
+sample-tarih-048,Peri Bacaları,048-peribacasi.png,c20b4c27db80f6af691da6eb67e575ad75f7ce18c2823d8023313f770fb6c3f6,1448,1086
+sample-tarih-049,Roma Hamamı,049-hamam.png,f0ed477a222c1a47040241c555f472eb89258321f3c35b08ed23d0b00019562d,1448,1086
+sample-tarih-050,Dağ Köprüsü,050-dag-koprusu.png,f71fac991625390738aed3eacdaebce485d34fbddd5451388acdcd6d91cad066,1448,1086
+sample-tarih-051,Mezar Odası,051-mezar-odasi.png,4a5ec75d8c9650a9e6b11b7f3ed40527bb0224afdd8df357933f1ced41ed3040,1448,1086
+sample-tarih-052,Olimpia Stadyumu,052-olimpia.png,ef638eb002321a6cad7fff22dba5acfbfa64146bb14a761fbc4c3630cc68181a,1448,1086
+sample-tarih-053,Nil Manzarası,053-nil.png,395a11d1b6f82a343cf942dbb61bf239e0ffd4ea21e99cacb6a39dd9cd533985,1448,1086
+sample-tarih-054,Akropolis,054-akropolis.png,d3618b00d5e536e635a61b0c85a5dc2399e68baedcd7070dd55fd53682c65641,1448,1086
+sample-tarih-055,Su Kemeri,055-su-kemeri.png,b1881e9ad75b9508cfd5f2bf6bd36f54fec92911fe0b9f31ba8f2925e8bf7f90,1448,1086
+sample-tarih-056,Karnak Salonu,056-karnak.png,6ed29517799a7634cc008949846467a6b207ff0f16c1e7d63c6a4d00f88ccef8,1448,1086
+sample-tarih-057,Pantheon,057-pantheon.png,102c2090fe6475ace8d18b8274fbc3758a7adecac3c0a53b9c2310c3821bb570,1448,1086
+sample-tarih-058,Persepolis,058-persepolis.png,e5c646b74aae0ce39f3379560c0da57c14f61e053dafd69da96597b23ec57524,1448,1086
+sample-tarih-059,Hattuşa,059-hattusa.png,234017d0fc471d897968e4962ccd9d44a7c0d1984ab8260c89cadc4a9906caed,1448,1086
+sample-tarih-060,İskenderiye Limanı,060-iskenderiye.png,3dcaec1a35d2d9c4a40bb287d6ee4cc23ae6892f3a00d4b7861182cbd034f40f,1448,1086
+sample-tarih-061,Semerkant Meydanı,061-semerkant.png,45bcd82bcc0476d1ed4fd7cf886cf87af4e975f0a753b22df6e87aa340024502,1448,1086
+sample-tarih-062,Kapadokya Yerleşimi,062-kapadokya.png,fa46c2a622c5a5dd1f186d55c65cd46646687719afbfbdc474425a96ecb4e8a1,1448,1086
+sample-tarih-063,Villa Bahçesi,063-villa-bahce.png,00c5fc0abafca6a89874227219e146319cd90611ee0208a15ea84f7dd30a4e02,1448,1086
+sample-tarih-064,Athena Tapınağı,064-athena.png,63f0b76b2e1cb381ce058d86e793cac0f83fe865d9d0207f06aa6071eaf4f685,1448,1086
+sample-tarih-065,Asur Sarayı,065-asur-saray.png,236c7640530466dd8e7ce07f73cc640c7a1601e903590c20b29aae48576e7fc8,1448,1086
+sample-tarih-066,Antik Sokak,066-pompeii.png,aa07ed57f01d837d37c9a58a9a4d6d3d2d4b90166d764afc590014417e118b31,1448,1086
+sample-tarih-067,Efes Harabeleri,067-efes.png,05408009de50723190d80319d6f1c7cbcf6e4ef35ea3976442c24cf019a0af84,1448,1086
+sample-tarih-068,İpek Yolu Pazarı,068-pazar.png,5a9e911738896ddcfb9c79c33cb91dad4ca1bcc096e173773a5c70d8ebd4b343,1448,1086
+sample-tarih-069,Roma Gündüz,069-roma-gun.png,4890f9db9ba32036cbfd04938e7faf40c61ecb935a49620f7d098909793ada27,1448,1086
+sample-tarih-070,Teb Kenti,070-teb.png,7913a9327b426091d129a74ae730218c87f48db23be4bd9ce0c621aa391affc6,1448,1086
+sample-tarih-071,Atina Agorası,071-atina-agora.png,67701383ae854f089ee38400a68c9f703bc4e1c14b86769a4f889d728ea29e35,1448,1086
+sample-tarih-072,Uruk,072-uruk.png,922817f3b5e7e20c2ce3bff3477489afe5d7c0f42cdb687ea38dd468f87f7a93,1448,1086
+sample-tarih-073,Boğazköy,073-bogazkoy.png,fd1871c18aa4ba7bd3a5df467f1833d81e6fb65823bcb8f018b394fbc0e539c3,1448,1086
+sample-tarih-074,Palmira,074-palmira.png,9ef7dfebeba65035596bc42e94804fe8b43f22ff56b350f280e5c0274317f38a,1448,1086
+sample-tarih-075,Knossos Sarayı,075-knossos.png,2234652e2fb0134bee5d0cec8c01daf512558ee4fc0e76e483008cc0de257ceb,1448,1086
+sample-tarih-076,Kartaca Limanı,076-kartaca.png,136734bd7437a82a59d3c3947eead226ce81d02466bd5bd2bdd0f7ab4cb59207,1448,1086
+sample-tarih-077,Antakya,077-antakya.png,dee5ae4fccb1c81e7c82590c8b28a69dea4353f4fb98a883657d5a1fad17cca6,1448,1086
+sample-tarih-078,Sardis,078-sardis.png,c6656dfa08ae89ab996bb732796005b46c5da8d33800ddc7bdff1c7aa9feddaa,1448,1086
+sample-tarih-079,Babil,079-babil.png,147bf7ccc370cba7e8306f4fed655cb856787f6b5a23c344757f67a6fff3e197,1448,1086
+sample-tarih-080,Gize Platosu,080-gize.png,152bec492253ef86cbfac27951225c7eb910dd2471d09ea0b6b8a98bfe7c4fbf,1448,1086
+sample-tarih-081,Antik Akdeniz,081-akdeniz.png,a82d1e1ea6fe299ef7deaaa80f888a057bf4aae6b9cf84d9cfa3b400adbeed45,1448,1086
+sample-tarih-082,Roma Başkent,082-roma-baskent.png,7a8d0e9ae2fe46d4127fd7f19e719b42a75283d150b5d69d882ac798742b42e2,1448,1086
+sample-tarih-083,Teb Nekropolü,083-teb-nekropol.png,fe595e58b33bad7379d790d6df66772f317f6de8d31b6cd6a3c44a129678225b,1448,1086
+sample-tarih-084,Atina Panorama,084-atina-pan.png,ad3d706e40168535ec67f6f132976888463712f3d7f27772be68e752a309f3a6,1448,1086
+sample-tarih-085,Asur Kenti,085-asur-kent.png,7e0107388b4d0909085c990ce152994af8adf6b11ef1859e25b41892123bbef5,1448,1086
+sample-tarih-086,Efes Panorama,086-efes-pan.png,fdfd6089bb90a2769c22d883d66428bdbdeaed72fac6ddf82842eed4e5f8f2b4,1448,1086
+sample-tarih-087,Vaha Kenti,087-vaha-kent.png,af290d64e236ffd7bc479dad046a28ef651cbd035b441b147c51cf64b399a59d,1448,1086
+sample-tarih-088,Troya Ovası,088-troya-ovasi.png,787d9e1006c360eed5fe31c54498a92ac0ad1de5809d035c849598fe238c9edc,1448,1086
+sample-tarih-089,Persepolis Tören,089-persepolis-pan.png,ba26754b04ae75246e01455b23e1a263ccda022260355ac78a24f74d4dfd2923,1448,1086
+sample-tarih-090,Knossos ve Ege,090-knossos-pan.png,52a02ba368cb965ee4ef8b5142a6996f87b7feb834c467dccadc4d6e334d2e1d,1448,1086
+sample-tarih-091,Liman Uygarlıkları,091-liman-uygarlik.png,d881e5bd76fe832970ec6dcbac716b734ca0f7f76b6f0fe341337e532bf64bc6,1448,1086
