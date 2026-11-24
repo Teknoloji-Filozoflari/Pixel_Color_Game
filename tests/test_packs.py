@@ -60,7 +60,7 @@ def test_manifest_splits_bundled_and_remote():
     remote = [p for p in manifest["packs"] if not p.get("bundled")]
     assert {p["category"] for p in bundled} == BUNDLED_CATEGORIES
     assert len(bundled_painting_ids()) == 455
-    assert len(remote) == 9
+    assert len(remote) == 11
     for pack in remote:
         assert pack["sha256"]
         assert pack["file"].endswith(".zip")

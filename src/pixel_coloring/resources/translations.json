@@ -1864,5 +1864,29 @@
     "az": "Xalq nağılları və əfsanə səhnələri.",
     "es": "Escenas de cuentos populares y leyendas.",
     "ru": "Сцены народных сказок и легенд."
+  },
+  "Mitoloji": {
+    "en": "Mythology",
+    "az": "Mifologiya",
+    "es": "Mitología",
+    "ru": "Мифология"
+  },
+  "Mitoloji sahneleri.": {
+    "en": "Mythology scenes.",
+    "az": "Mifologiya səhnələri.",
+    "es": "Escenas de mitología.",
+    "ru": "Мифологические сцены."
+  },
+  "Kaşifler": {
+    "en": "Explorers",
+    "az": "Kəşfiyyatçılar",
+    "es": "Exploradores",
+    "ru": "Исследователи"
+  },
+  "Keşif ve kaşiflik sahneleri.": {
+    "en": "Exploration and explorer scenes.",
+    "az": "Kəşf və kəşfiyyatçı səhnələri.",
+    "es": "Escenas de exploración y exploradores.",
+    "ru": "Сцены открытий и исследователей."
   }
 }

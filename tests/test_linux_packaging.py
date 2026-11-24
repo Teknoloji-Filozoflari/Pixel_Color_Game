@@ -14,15 +14,15 @@ def _bundle_with_core(tmp_path):
     resources = tmp_path / "_internal/pixel_coloring/resources"
     gallery = resources / "paintings"
     gallery.mkdir(parents=True)
-    catalog = [{"id": f"painting-{index}"} for index in range(1264)]
+    catalog = [{"id": f"painting-{index}"} for index in range(1446)]
     (gallery / "catalog.json").write_text(json.dumps(catalog))
     keep = build_bundle.bundled_painting_ids()
     # Map real bundled IDs onto placeholder files for validate_resources.
     for value in keep:
         (gallery / f"{value}.pcolor").touch()
-    # Catalog must still list 1264 unique ids — use real keep ids plus fillers.
+    # Catalog must still list 1446 unique ids — use real keep ids plus fillers.
     real_catalog = [{"id": painting_id} for painting_id in sorted(keep)]
-    fillers = [{"id": f"remote-filler-{index}"} for index in range(1264 - len(keep))]
+    fillers = [{"id": f"remote-filler-{index}"} for index in range(1446 - len(keep))]
     (gallery / "catalog.json").write_text(json.dumps(real_catalog + fillers))
     packs = resources / "packs"
     packs.mkdir(parents=True)
@@ -45,8 +45,8 @@ def test_bundle_requires_complete_collection_and_icon(tmp_path):
 def test_bundle_rejects_duplicate_catalog_identifiers(tmp_path):
     gallery = tmp_path / "_internal/pixel_coloring/resources/paintings"
     gallery.mkdir(parents=True)
-    (gallery / "catalog.json").write_text(json.dumps([{"id": "duplicate"}] * 1264))
+    (gallery / "catalog.json").write_text(json.dumps([{"id": "duplicate"}] * 1446))
     (tmp_path / "_internal/pixel_coloring/resources/packs").mkdir(parents=True)
     (tmp_path / "_internal/pixel_coloring/resources/packs/manifest.json").write_text("{}")
-    with pytest.raises(RuntimeError, match="1264 unique"):
+    with pytest.raises(RuntimeError, match="1446 unique"):
         build_bundle.validate_resources(tmp_path)

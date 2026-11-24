@@ -24,6 +24,8 @@ REMOTE_CATEGORIES = frozenset(
         "Spor",
         "Tarih ve Uygarlıklar",
         "Masallar ve Efsaneler",
+        "Mitoloji",
+        "Kaşifler",
     }
 )
 
@@ -42,6 +44,8 @@ CATEGORY_ORDER = [
     "Spor",
     "Tarih ve Uygarlıklar",
     "Masallar ve Efsaneler",
+    "Mitoloji",
+    "Kaşifler",
 ]
 
 

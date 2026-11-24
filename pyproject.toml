@@ -43,6 +43,12 @@ pixel_coloring = [
   "resources/paintings/sample-harikalar-*.pcolor",
   "resources/paintings/sample-arabalar-*.pcolor",
   "resources/paintings/sample-teknoloji-*.pcolor",
+  "resources/paintings/sample-uzay-*.pcolor",
+  "resources/paintings/sample-spor-*.pcolor",
+  "resources/paintings/sample-tarih-*.pcolor",
+  "resources/paintings/sample-masallar-*.pcolor",
+  "resources/paintings/sample-mitoloji-*.pcolor",
+  "resources/paintings/sample-kasifler-*.pcolor",
 ]
 
 [tool.pytest.ini_options]
