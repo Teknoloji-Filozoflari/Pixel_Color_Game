@@ -101,6 +101,11 @@ def main() -> None:
         assert np.array_equal(painting.target_map, restored.target_map)
         assert np.array_equal(painting.palette, restored.palette)
         updates.append((output, path))
+        previous = existing.get(painting.id) or {}
+        previous_sha = previous.get("source_sha256")
+        previous_revision = int(previous.get("revision", 1) or 1)
+        source_sha = verified[item["id"]]["sha256"]
+        revision = previous_revision + 1 if previous_sha and previous_sha != source_sha else max(previous_revision, 1)
         existing[painting.id] = {
             "id": painting.id,
             "title": painting.title,
@@ -112,14 +117,14 @@ def main() -> None:
             "tier": item["tier"],
             "difficulty": item["difficulty"],
             "order": item["order"],
-            "revision": 1,
+            "revision": revision,
             "color_budget": item["colors"],
             "source_order": item["source_order"],
             "reference_id": item["reference_id"],
             "complexity_score": item["complexity_score"],
             "reference_cells": item["reference_cells"],
             "conversion_policy": "game-progression-v3",
-            "source_sha256": verified[item["id"]]["sha256"],
+            "source_sha256": source_sha,
             "source_generated": True,
             "interpretation": "Uzay ve gök cisimlerinin sanatsal piksel yorumu.",
         }
@@ -131,7 +136,7 @@ def main() -> None:
         existing[item["id"]] for item in plan
     ]
     assert all(hashlib.sha256(path.read_bytes()).hexdigest() == digest for path, digest in baseline.items())
-    assert len(catalog) == 991
+    assert len(catalog) == 1264  # current catalog (bundled + all shipped remotes)
     temp_catalog = catalog_path.with_suffix(".tmp")
     temp_catalog.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     os.replace(temp_catalog, catalog_path)
