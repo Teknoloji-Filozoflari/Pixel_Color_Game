@@ -38,8 +38,8 @@ def validate_resources(bundle: Path) -> None:
     gallery = resources / "paintings"
     catalog = json.loads((gallery / "catalog.json").read_text(encoding="utf-8"))
     identifiers = {item["id"] for item in catalog}
-    if len(catalog) != 1446 or len(identifiers) != 1446:
-        raise RuntimeError("The source catalog must contain 1446 unique paintings")
+    if len(catalog) != 1355 or len(identifiers) != 1355:
+        raise RuntimeError("The source catalog must contain 1355 unique paintings")
     keep = bundled_painting_ids()
     present = {file.stem for file in gallery.glob("*.pcolor")}
     if present != keep:

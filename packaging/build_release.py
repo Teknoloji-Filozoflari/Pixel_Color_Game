@@ -55,8 +55,8 @@ def main():
             shutil.copy2(file, target)
         gallery = source / 'src/pixel_coloring/resources/paintings'
         catalog = json.loads((gallery / 'catalog.json').read_text(encoding='utf-8'))
-        if len(catalog) != 1446 or len({item['id'] for item in catalog}) != 1446:
-            raise RuntimeError('The source catalog must contain 1446 unique paintings')
+        if len(catalog) != 1355 or len({item['id'] for item in catalog}) != 1355:
+            raise RuntimeError('The source catalog must contain 1355 unique paintings')
         if {file.stem for file in gallery.glob('*.pcolor')} != {item['id'] for item in catalog}:
             raise RuntimeError('Source paintings do not match the catalog')
         for item in catalog:

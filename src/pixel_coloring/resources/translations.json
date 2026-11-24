@@ -1877,16 +1877,16 @@
     "es": "Escenas de mitología.",
     "ru": "Мифологические сцены."
   },
-  "Kaşifler": {
-    "en": "Explorers",
-    "az": "Kəşfiyyatçılar",
-    "es": "Exploradores",
-    "ru": "Исследователи"
+  "Keşifler": {
+    "en": "Discoveries",
+    "az": "Kəşflər",
+    "es": "Descubrimientos",
+    "ru": "Открытия"
   },
-  "Keşif ve kaşiflik sahneleri.": {
-    "en": "Exploration and explorer scenes.",
-    "az": "Kəşf və kəşfiyyatçı səhnələri.",
-    "es": "Escenas de exploración y exploradores.",
-    "ru": "Сцены открытий и исследователей."
+  "Keşif ve keşif sahneleri.": {
+    "en": "Exploration and discovery scenes.",
+    "az": "Kəşf səhnələri.",
+    "es": "Escenas de exploración y descubrimiento.",
+    "ru": "Сцены открытий и исследований."
   }
 }

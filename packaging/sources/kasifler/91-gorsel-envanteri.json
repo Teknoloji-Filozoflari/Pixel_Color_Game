@@ -2,7 +2,7 @@
   {
     "id": "sample-kasifler-001",
     "title": "Pusula",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "001-pusula.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -15,7 +15,7 @@
   {
     "id": "sample-kasifler-002",
     "title": "Harita Rulosu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "002-harita-rulosi.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -28,7 +28,7 @@
   {
     "id": "sample-kasifler-003",
     "title": "Dürbün",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "003-durbun.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -41,7 +41,7 @@
   {
     "id": "sample-kasifler-004",
     "title": "Çapa",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "004-capa.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -54,7 +54,7 @@
   {
     "id": "sample-kasifler-005",
     "title": "Kum Saati",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "005-kum-saati.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -67,7 +67,7 @@
   {
     "id": "sample-kasifler-006",
     "title": "Sekstant",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "006-sekstant.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -80,7 +80,7 @@
   {
     "id": "sample-kasifler-007",
     "title": "Büyüteç",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "007-buyutec.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -93,7 +93,7 @@
   {
     "id": "sample-kasifler-008",
     "title": "Seyahat Defteri",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "008-seyahat-defteri.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -106,7 +106,7 @@
   {
     "id": "sample-kasifler-009",
     "title": "İp Düğümü",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "009-ip-dugum.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -119,7 +119,7 @@
   {
     "id": "sample-kasifler-010",
     "title": "Keşif Flaması",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "010-kesif-flamasi.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -132,7 +132,7 @@
   {
     "id": "sample-kasifler-011",
     "title": "Deri Torba",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "011-deri-torba.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -145,7 +145,7 @@
   {
     "id": "sample-kasifler-012",
     "title": "Güneş Saati",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "012-gunes-saati.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -158,7 +158,7 @@
   {
     "id": "sample-kasifler-013",
     "title": "Harita İğnesi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "013-harita-igne.png",
     "tier": 1,
     "difficulty": "Çok Kolay",
@@ -171,7 +171,7 @@
   {
     "id": "sample-kasifler-014",
     "title": "Gemi Direği",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "014-gemi-diregi.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -184,7 +184,7 @@
   {
     "id": "sample-kasifler-015",
     "title": "Seyahat Çantası",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "015-seyahat-cantasi.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -197,7 +197,7 @@
   {
     "id": "sample-kasifler-016",
     "title": "Fener",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "016-fener.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -210,7 +210,7 @@
   {
     "id": "sample-kasifler-017",
     "title": "Kürek",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "017-kurek.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -223,7 +223,7 @@
   {
     "id": "sample-kasifler-018",
     "title": "Sandal",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "018-sandal.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -236,7 +236,7 @@
   {
     "id": "sample-kasifler-019",
     "title": "Çadır",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "019-cadir.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -249,7 +249,7 @@
   {
     "id": "sample-kasifler-020",
     "title": "Kamp Ateşi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "020-kamp-atesi.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -262,7 +262,7 @@
   {
     "id": "sample-kasifler-021",
     "title": "Su Tulumu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "021-su-tulumu.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -275,7 +275,7 @@
   {
     "id": "sample-kasifler-022",
     "title": "Dağ Botu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "022-dag-botu.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -288,7 +288,7 @@
   {
     "id": "sample-kasifler-023",
     "title": "Teleskop",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "023-teleskop.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -301,7 +301,7 @@
   {
     "id": "sample-kasifler-024",
     "title": "Harita Masası",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "024-harita-masasi.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -314,7 +314,7 @@
   {
     "id": "sample-kasifler-025",
     "title": "Bayrak Direği",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "025-bayrak-diregi.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -327,7 +327,7 @@
   {
     "id": "sample-kasifler-026",
     "title": "Liman Feneri",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "026-liman-feneri.png",
     "tier": 2,
     "difficulty": "Kolay",
@@ -340,7 +340,7 @@
   {
     "id": "sample-kasifler-027",
     "title": "Kaşif",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "027-kasif.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -353,7 +353,7 @@
   {
     "id": "sample-kasifler-028",
     "title": "Kervan",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "028-kervan.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -366,7 +366,7 @@
   {
     "id": "sample-kasifler-029",
     "title": "Liman İskelesi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "029-liman.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -379,7 +379,7 @@
   {
     "id": "sample-kasifler-030",
     "title": "Deve Sürücüsü",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "030-deve-surucusu.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -392,7 +392,7 @@
   {
     "id": "sample-kasifler-031",
     "title": "Haritacı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "031-haritaci.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -405,7 +405,7 @@
   {
     "id": "sample-kasifler-032",
     "title": "Gemici",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "032-gemici.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -418,7 +418,7 @@
   {
     "id": "sample-kasifler-033",
     "title": "Dağcı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "033-dagci.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -431,7 +431,7 @@
   {
     "id": "sample-kasifler-034",
     "title": "Orman Rehberi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "034-orman-rehberi.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -444,7 +444,7 @@
   {
     "id": "sample-kasifler-035",
     "title": "Kutup Gezgini",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "035-kutup-gezgini.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -457,7 +457,7 @@
   {
     "id": "sample-kasifler-036",
     "title": "Çöl Yolcusu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "036-col-yolcusu.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -470,7 +470,7 @@
   {
     "id": "sample-kasifler-037",
     "title": "Nehir Kayığı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "037-nehir-kayigi.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -483,7 +483,7 @@
   {
     "id": "sample-kasifler-038",
     "title": "Köprü Geçişi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "038-kopru-gecisi.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -496,7 +496,7 @@
   {
     "id": "sample-kasifler-039",
     "title": "Gözetleme Kulesi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "039-gozetleme-kulesi.png",
     "tier": 3,
     "difficulty": "Kolay-Orta",
@@ -509,7 +509,7 @@
   {
     "id": "sample-kasifler-040",
     "title": "Yelkenli",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "040-yelkenli.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -522,7 +522,7 @@
   {
     "id": "sample-kasifler-041",
     "title": "Dağ Geçidi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "041-dag-gecidi.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -535,7 +535,7 @@
   {
     "id": "sample-kasifler-042",
     "title": "Vaha",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "042-vaha.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -548,7 +548,7 @@
   {
     "id": "sample-kasifler-043",
     "title": "Karavela",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "043-karavela.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -561,7 +561,7 @@
   {
     "id": "sample-kasifler-044",
     "title": "Volkan Adası",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "044-volkan-adasi.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -574,7 +574,7 @@
   {
     "id": "sample-kasifler-045",
     "title": "Buzul Kenarı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "045-buzul-kenari.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -587,7 +587,7 @@
   {
     "id": "sample-kasifler-046",
     "title": "Tropik Koy",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "046-tropik-koy.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -600,7 +600,7 @@
   {
     "id": "sample-kasifler-047",
     "title": "Çöl Kanyonu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "047-col-kanyonu.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -613,7 +613,7 @@
   {
     "id": "sample-kasifler-048",
     "title": "Yağmur Ormanı Yolu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "048-yagmur-ormani.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -626,7 +626,7 @@
   {
     "id": "sample-kasifler-049",
     "title": "Antik Harabe",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "049-antik-harabe.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -639,7 +639,7 @@
   {
     "id": "sample-kasifler-050",
     "title": "Deniz Feneri",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "050-deniz-feneri.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -652,7 +652,7 @@
   {
     "id": "sample-kasifler-051",
     "title": "Kervansaray",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "051-kervansaray.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -665,7 +665,7 @@
   {
     "id": "sample-kasifler-052",
     "title": "Nehir Deltası",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "052-nehir-deltasi.png",
     "tier": 4,
     "difficulty": "Orta",
@@ -678,7 +678,7 @@
   {
     "id": "sample-kasifler-053",
     "title": "Antik Harita",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "053-antik-harita.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -691,7 +691,7 @@
   {
     "id": "sample-kasifler-054",
     "title": "Kutup Kampı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "054-kutup.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -704,7 +704,7 @@
   {
     "id": "sample-kasifler-055",
     "title": "Orman Keşfi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "055-orman-kesif.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -717,7 +717,7 @@
   {
     "id": "sample-kasifler-056",
     "title": "Afrika Savanı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "056-afrika-savani.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -730,7 +730,7 @@
   {
     "id": "sample-kasifler-057",
     "title": "Amazon Nehri",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "057-amazon-nehri.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -743,7 +743,7 @@
   {
     "id": "sample-kasifler-058",
     "title": "Himalaya Geçidi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "058-himalaya-gecidi.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -756,7 +756,7 @@
   {
     "id": "sample-kasifler-059",
     "title": "Büyük Kanyon",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "059-buyuk-kanyon.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -769,7 +769,7 @@
   {
     "id": "sample-kasifler-060",
     "title": "Pasifik Atolü",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "060-pasifik-atolu.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -782,7 +782,7 @@
   {
     "id": "sample-kasifler-061",
     "title": "İpek Yolu Hanı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "061-ipek-yolu-hani.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -795,7 +795,7 @@
   {
     "id": "sample-kasifler-062",
     "title": "Keşif Kampı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "062-kesif-kampi.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -808,7 +808,7 @@
   {
     "id": "sample-kasifler-063",
     "title": "Mağara Ağzı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "063-magara-agzi.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -821,7 +821,7 @@
   {
     "id": "sample-kasifler-064",
     "title": "Fırtınalı Burnu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "064-firtinali-burnu.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -834,7 +834,7 @@
   {
     "id": "sample-kasifler-065",
     "title": "Yeşil Ada",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "065-yesil-ada.png",
     "tier": 5,
     "difficulty": "Orta-Zor",
@@ -847,7 +847,7 @@
   {
     "id": "sample-kasifler-066",
     "title": "Yeni Dünya",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "066-yeni-dunya.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -860,7 +860,7 @@
   {
     "id": "sample-kasifler-067",
     "title": "İpek Yolu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "067-ipek-yolu.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -873,7 +873,7 @@
   {
     "id": "sample-kasifler-068",
     "title": "Mağara Keşfi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "068-magara.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -886,7 +886,7 @@
   {
     "id": "sample-kasifler-069",
     "title": "Kutuptan Dönüş",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "069-kutuptan-donus.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -899,7 +899,7 @@
   {
     "id": "sample-kasifler-070",
     "title": "Afrika Kıyısı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "070-afrika-kiyasi.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -912,7 +912,7 @@
   {
     "id": "sample-kasifler-071",
     "title": "Amerika Kıyısı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "071-amerika-kiyasi.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -925,7 +925,7 @@
   {
     "id": "sample-kasifler-072",
     "title": "Avustralya Kıyısı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "072-avustralya-kiyasi.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -938,7 +938,7 @@
   {
     "id": "sample-kasifler-073",
     "title": "Çin Seddi Yolu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "073-cin-seddi-yolu.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -951,7 +951,7 @@
   {
     "id": "sample-kasifler-074",
     "title": "Büyük Okyanus Geçişi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "074-buyuk-okyanus.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -964,7 +964,7 @@
   {
     "id": "sample-kasifler-075",
     "title": "Sahra Geçişi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "075-sahra-gecisi.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -977,7 +977,7 @@
   {
     "id": "sample-kasifler-076",
     "title": "Antarktika Seferi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "076-antarktika-seferi.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -990,7 +990,7 @@
   {
     "id": "sample-kasifler-077",
     "title": "Keşif Filosu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "077-kesif-filosu.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -1003,7 +1003,7 @@
   {
     "id": "sample-kasifler-078",
     "title": "Kayıp Şehir",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "078-kayip-sehir.png",
     "tier": 6,
     "difficulty": "Zor",
@@ -1016,7 +1016,7 @@
   {
     "id": "sample-kasifler-079",
     "title": "Dünya Turu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "079-cevre-dunya.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1029,7 +1029,7 @@
   {
     "id": "sample-kasifler-080",
     "title": "Büyük Keşif",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "080-buyuk-kesif.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1042,7 +1042,7 @@
   {
     "id": "sample-kasifler-081",
     "title": "Harita Odası",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "081-harita-odasi.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1055,7 +1055,7 @@
   {
     "id": "sample-kasifler-082",
     "title": "Yedi Kıta",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "082-yedi-kita.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1068,7 +1068,7 @@
   {
     "id": "sample-kasifler-083",
     "title": "Macellan Geçidi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "083-macellan-gecidi.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1081,7 +1081,7 @@
   {
     "id": "sample-kasifler-084",
     "title": "Kuzey Buz Denizi",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "084-kuzey-buz-denizi.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1094,7 +1094,7 @@
   {
     "id": "sample-kasifler-085",
     "title": "İpek Yolu Panorama",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "085-ipek-yolu-panorama.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1107,7 +1107,7 @@
   {
     "id": "sample-kasifler-086",
     "title": "Yeni Kıta Ufku",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "086-yeni-kita-ufku.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1120,7 +1120,7 @@
   {
     "id": "sample-kasifler-087",
     "title": "Büyük Keşif Filosu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "087-buyuk-kesif-filosu.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1133,7 +1133,7 @@
   {
     "id": "sample-kasifler-088",
     "title": "Dünya Haritası Salonu",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "088-harita-salonu.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1146,7 +1146,7 @@
   {
     "id": "sample-kasifler-089",
     "title": "Keşif Altın Çağı",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "089-kesif-altin-cagi.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1159,7 +1159,7 @@
   {
     "id": "sample-kasifler-090",
     "title": "Kıtalararası Yolculuk",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "090-kitalararasi.png",
     "tier": 7,
     "difficulty": "Uzman",
@@ -1172,7 +1172,7 @@
   {
     "id": "sample-kasifler-091",
     "title": "Sonsuz Ufuk",
-    "category": "Kaşifler",
+    "category": "Keşifler",
     "file": "091-sonsuz-ufuk.png",
     "tier": 7,
     "difficulty": "Uzman",

@@ -1,4 +1,4 @@
-"""Import Kaşifler using the same verified grid progression as Wonders."""
+"""Import Keşifler using the same verified grid progression as Wonders."""
 
 from __future__ import annotations
 
@@ -21,9 +21,9 @@ HELPERS = runpy.run_path(str(ROOT / "packaging/import_wonders.py"))
 convert = HELPERS["convert"]
 progression_plan = HELPERS["progression_plan"]
 
-CATEGORY = "Kaşifler"
+CATEGORY = "Keşifler"
 ID_PREFIX = "sample-kasifler-"
-EXPECTED_TOTAL = 1446  # 1355 after Mitoloji + 91 Kaşifler
+EXPECTED_TOTAL = 1446  # after Mitoloji (1355) + 91 Keşifler
 
 
 def main() -> None:
@@ -130,7 +130,7 @@ def main() -> None:
             "conversion_policy": "game-progression-v3",
             "source_sha256": source_sha,
             "source_generated": True,
-            "interpretation": "Kaşiflik ve keşif sahnelerinin sanatsal piksel yorumu.",
+            "interpretation": "Keşif ve keşif sahnelerinin sanatsal piksel yorumu.",
         }
 
     for output, path in updates:
@@ -164,7 +164,7 @@ def main() -> None:
     report = ROOT / "work/kasifler-progression-plan.json"
     report.parent.mkdir(exist_ok=True)
     report.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("Imported Kaşifler levels:", len(plan), "; total paintings:", len(catalog))
+    print("Imported Keşifler levels:", len(plan), "; total paintings:", len(catalog))
 
 
 if __name__ == "__main__":
