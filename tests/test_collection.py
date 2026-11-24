@@ -9,7 +9,7 @@ def test_catalog_matches_bundled_files():
     catalog = json.loads((PAINTINGS / "catalog.json").read_text(encoding="utf-8"))
     ids = [item["id"] for item in catalog]
 
-    assert len(catalog) == 1264
+    assert len(catalog) == 1355
     assert len(ids) == len(set(ids))
     assert {path.stem for path in PAINTINGS.glob("*.pcolor")} == set(ids)
 
