@@ -1,6 +1,6 @@
 ﻿# Koleksiyon özeti
 
-Piksel Atölyesi toplam **1355** hazır resim içerir (isteğe bağlı Uzay, Spor, Tarih, Masallar ve Mitoloji paketleri dahil). Uygulamanın kullandığı eksiksiz ve makine tarafından okunabilir liste `src/pixel_coloring/resources/paintings/catalog.json` dosyasındadır.
+Piksel Atölyesi toplam **1446** hazır resim içerir (isteğe bağlı Uzay, Spor, Tarih, Masallar, Mitoloji ve Keşifler paketleri dahil). Uygulamanın kullandığı eksiksiz ve makine tarafından okunabilir liste `src/pixel_coloring/resources/paintings/catalog.json` dosyasındadır.
 
 ## Kategoriler
 
@@ -21,7 +21,8 @@ Piksel Atölyesi toplam **1355** hazır resim içerir (isteğe bağlı Uzay, Spo
 | Tarih ve Uygarlıklar | 91 |
 | Masallar ve Efsaneler | 91 |
 | Mitoloji | 91 |
-| **Toplam** | **1355** |
+| Keşifler | 91 |
+| **Toplam** | **1446** |
 
 ## Zorluk dağılımı
 
@@ -34,7 +35,7 @@ Piksel Atölyesi toplam **1355** hazır resim içerir (isteğe bağlı Uzay, Spo
 | Orta-Zor | 184 |
 | Zor | 184 |
 | Uzman | 346 |
-| **Toplam** | **1355** |
+| **Toplam** | **1446** |
 
 Görseller 48×48 ile 1920×1080 arasında, 2.880 ile 2.073.600 hücre ve 10–60 renk aralığındadır. Katalogdaki kimlikler kayıt ilerlemesini eşleştirdiği için mevcut bir resmin kimliği yayınlar arasında değiştirilmemelidir.
 

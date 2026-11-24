@@ -25,6 +25,7 @@ GitHub Releases üzerinden isteğe bağlı ZIP paketleri olarak indirilir.
 - Tarih ve Uygarlıklar
 - Masallar ve Efsaneler
 - Mitoloji
+- Keşifler
 
 Uygulama içi **Mağaza** ekranından bir dokunuşla indirilir; tarayıcı açılmaz.
 İndirme bitince SHA-256 doğrulanır, seviyeler kurulur ve koleksiyon yenilenir.
