@@ -22,7 +22,7 @@ convert = HELPERS["convert"]
 progression_plan = HELPERS["progression_plan"]
 
 CATEGORY = "Masallar ve Efsaneler"
-EXPECTED_TOTAL = 1264  # 1173 + 91 (after Spor + Tarih)
+EXPECTED_TOTAL = 1264  # current catalog (bundled + all shipped remotes)
 
 
 def main() -> None:
@@ -104,6 +104,11 @@ def main() -> None:
         assert np.array_equal(painting.target_map, restored.target_map)
         assert np.array_equal(painting.palette, restored.palette)
         updates.append((output, path))
+        previous = existing.get(painting.id) or {}
+        previous_sha = previous.get("source_sha256")
+        previous_revision = int(previous.get("revision", 1) or 1)
+        source_sha = verified[item["id"]]["sha256"]
+        revision = previous_revision + 1 if previous_sha and previous_sha != source_sha else max(previous_revision, 1)
         existing[painting.id] = {
             "id": painting.id,
             "title": painting.title,
@@ -115,14 +120,14 @@ def main() -> None:
             "tier": item["tier"],
             "difficulty": item["difficulty"],
             "order": item["order"],
-            "revision": 1,
+            "revision": revision,
             "color_budget": item["colors"],
             "source_order": item["source_order"],
             "reference_id": item["reference_id"],
             "complexity_score": item["complexity_score"],
             "reference_cells": item["reference_cells"],
             "conversion_policy": "game-progression-v3",
-            "source_sha256": verified[item["id"]]["sha256"],
+            "source_sha256": source_sha,
             "source_generated": True,
             "interpretation": "Masallar ve efsanelerin sanatsal piksel yorumu.",
         }
